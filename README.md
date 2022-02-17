@@ -32,10 +32,10 @@ Rigorous application of preregistration prevents researcher from
 reporting a simple confirmatory story for a set of results that were
 produced by an arduous process of try and error. The scientific
 community, widely agrees that actively concealing such “trying for
-results” is misconduct. But what exactly is such concealment cheating
-the scientific community of? We believe that a rigorous answer to this
-question enables us to clear some common misunderstandings that lead
-researchers to deem preregistration as unfit for their purposes. These
+results” is misconduct. But how is such concealment hurting the
+scientific process? We believe that a rigorous answer to this question
+enables us to clear some common misunderstandings that lead researchers
+to deem preregistration as unfit for their purposes. These
 misunderstandings are interesting from a theoretical perspective but
 also lead to decreased efficiency of the scientific process if
 researcher misguidedly decide that preregistration is not applicable for
@@ -54,26 +54,29 @@ conceptualization of preregistration deem a study “properly”
 preregistrated even if it contains a recipe for p-hacking before data
 collection but “improper” if the researcher did technically deviate
 afterwards. This, of course, goes against common researchers intuition
-about what is considered exploratory and confirmatory. We point these
-issues out as symptoms of a misunderstanding.\#change We do want not to
-discredit preregistration as a useful practice for advancing science,
-but challenge the common view that preregistration somehow cleanly
-separates confirmatory from exploratory.
+about what is considered exploratory and confirmatory. We take these
+issues as signals of a misunderstanding about how preregistration
+contributes to the scientific progress. In particular, we want to
+challenge the common view that preregistration somehow cleanly separates
+confirmatory from exploratory.
 
 Deciding if a study is confirmatory or exploratory is a judgment made by
 the researcher. The aforementioned issues arise by delegating this
 judgment to a simple decision rule, that is, if something is
 preregistered it is confirmatory and if it is not preregistered it is
-exploratory. Preregistering an analysis that is inherently exploratory
-(like testing dozens of relations) does not make it confirmatory nor
-will a careful confirmatory study become exploratory if researcher
-deviate from the preregistration in minor details. To uphold the simple
-decision rule, it is routinely suggested to only preregister when a
-study is expected to have a low type I error rate by design and will
-run/be analysed without changes no matter what. Under these conditions
-the decision rule holds, but such restricted use makes preregistration a
-niche solution not able to match the greater problem of replicability in
-psychology and elsewhere.
+exploratory. This rule is often assumed implicitly as a rule of thumb,
+other times it is stated as the explicit goal of preregistration, but
+always leads to confusion when researchers try to apply it outside
+specific bounds. Preregistering an analysis that is inherently
+exploratory (like testing dozens of relations) does not make it
+confirmatory nor will a careful confirmatory study become exploratory if
+researcher deviate from the preregistration in minor details. To uphold
+the simplilicity of the decision rule, it is routinely suggested to only
+preregister when a study is expected to have a low type I error rate by
+design and will run/be analysed without changes no matter what. Under
+these conditions the rule holds, but such restricted use makes
+preregistration a niche solution not able to match the greater problem
+of replicability in psychology and elsewhere.
 
 We show that this simple decision rule is a special case of a more
 general conceptualization under Bayesian reasoning. To that end, we
@@ -111,11 +114,11 @@ researchers plan to conduct a study they usually hope it will change
 their assessment of the verisimilitude (truthlikeness) of some theory.
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study in
-relation to a specific theory is what we call epistemic value. While
-researcher can not know what exactly they will learn from a study, they
-can form an expectation. This expectation is what we call expected
-epistemic value. We assume three things about this process of estimation
-and how it relates to choosing a study to conduct.
+relation to the versimilitude of a specific theory is what we call
+epistemic value. While researcher can not know what exactly they will
+learn from a study, they can form an expectation. This expectation is
+what we call expected epistemic value. We assume three things about this
+process of estimation and how it relates to choosing a study to conduct.
 
 1.  Researchers judge evidence for or against a hypothesis rationally.
 2.  They expect other researchers to apply the same rational process.
@@ -139,18 +142,19 @@ persuasive that researchers should not violate the axioms of probability
 if they have some expectation about what they stand to gain with some
 likelihood from conducting a study. The axioms of probability are all
 that is required to derive the famous Bayes formula, on which we will
-heavily rely for our arguments. Please note that our decision to adopt a
-Bayesian philosophy of science does not imply anything about the
-statistical methods researcher use. In fact, this conceptualization is
-purposefully reductionistic to be compatible with a wide range of
-philosophies of science and statistical methods researchers might
-subscribe to. Our conclusions can be applied to bayesian and frequentist
-methods alike. Of course, frequentist methods are traditionally viewed
-from a poperian philosophy of science, but our conclusions are
-compatible with it and notable later advancements like the error
-statistical view. However, those philosophies of science require a much
-richer set of assumptions that are not quite necessary for the points we
-want to make.
+heavily rely for our arguments. Please note that our decision to adopt
+this aspect of Bayesian philosophy of science does not imply anything
+about the statistical methods researcher use. In fact, this
+conceptualization is purposefully reductionistic to be compatible with a
+wide range of philosophies of science and statistical methods
+researchers might subscribe to. Our conclusions can be applied to
+bayesian and frequentist methods alike. Of course, frequentist methods
+are traditionally viewed from a poperian philosophy of science, but our
+conclusions are compatible with this view and and notable later
+advancements like the error statistical view. However, those
+philosophies of science require a much richer set of assumptions that
+are not quite necessary for the points we want to make about the value
+of preregistration.
 
 ## Relating Riskiness to epistemic value
 
@@ -164,16 +168,70 @@ or does not), since continues evidence would led to some quite involved
 derivations. We denote the probability of a theory before observing
 evidence as \(P(H)\) and its complement as \(P(¬H) = 1 - P(H)\). The
 probability of observing evidence under some hypothesis is \(P(E|H)\).
-The total probability of evidence, \(P(E)\), is given by
-\(P(H)P(E|H) + P(¬H)P(E|¬H)\). From these probabilities we can calculate
-the probability of the hypothesis after observing the evidence via:
+We can calculate the probability of the hypothesis after observing the
+evidence with help from the Bayes formula:
+
+\[
+P(H|E) = \frac{P(H)P(E|H)}{P(E)}
+\]
+
+There we can replace the total probability of evidence, \(P(E)\) with
+\(P(H)P(E|H) + P(¬H)P(E|¬H)\) and arrive at:
 
 \[
 P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H) + P(¬H)P(E|¬H)}
 \]
 
-From the three probabilities involved in the calculation \(P(E|¬H)\) is
-the one our argument rests on.
+From the three probabilities involved in the calculation, \(P(E|¬H)\) is
+the one our argument rests on. It tells use how likely it is that we
+find evidence, when in fact the theory is not true. How \(P(E|¬H)\)
+relates to \(P(H|E)\) is of great relevance, since \(P(H|E)\) is often
+used directly or indirectly as a measure of corroboration of a
+hypothesis. In carnaps tradition, in its direct use, it is called
+corroboration as firmness, in its relation to \(P(H)\) it is called
+increase in firmness. We refrain from discussing specific measures of
+corroboration, since there is no measure that show universally better
+properties than others. However, it is generally expected that any
+measure of corroboration increases monotonically with an increase in
+\(P(H|E)\).
+
+In short, we want to increase \(P(H|E)\). Increases in \(P(H|E)\) are
+associated with increases epistemic value, of which we want to maximize
+the expectation. So how can we increase \(P(H|E)\)? The Bayes formula
+gives us three options to investigate, namely \(P(H)\), \(P(E|H)\) and
+\(P(E|¬H)\). Before we continue, let us note that \(P(E|H)\) and
+\(P(E|¬H)\) are not complements (they do not necessarily sum to 1). The
+first option leads us to the unsurprising conclusion that higher
+\(P(H)\) leads to higher \(P(H|E)\), but the a priori probability of a
+hypothesis is nothing our study design can change. The second option is
+similar commonsense, that is an increase \(P(E|H)\) leads to higher
+\(P(H|E)\). Researcher therefore should make sure that they design their
+studies in a way that in case their hypothesis is true, they can
+actually find evidence for it. While this truism is strongly related to
+study design, it is unrelated to preregistration. The third option,
+while mathematically equally straightforward, is not quite as intuitive.
+It concerns \(P(E|¬H)\), therefore the probability of observing evidence
+for the theory, when in fact the theory is wrong. Before we discuss what
+this probability means and how it relates to preregistration, let us
+show how it impacts \(P(H|E)\). First, increasing \(P(E|¬H)\) does
+decrease \(P(H|E)\).
+
+## How statistical method contribute to \(P(E|¬H)\)
+
+For the overly simplistic case that the hypothesis is a statistical
+nill-hypothesis, \(P(E|¬H)\) becomes the type I error rate. Researchers
+who choose a smaller type I error rate, can therefore be surer of their
+results. However, the research hypothesis is seldomly equal to the
+statistical null hypothesis. \(P(E|¬H)\) encompasses factors also
+outside of the statistical realm, like the studies design. Statistical
+methods have the great advantage that we have a large toolbox of
+assessing and controlling their contribution to \(P(E|¬H)\). Examples of
+our ability to exert control are the setting of type I error rate, the
+use of corrected fit measures (i.e., adjusted R²) or cross validation in
+machine learning. These are all tools that help us to factor in the
+tendency of statistical methods to show results even when in fact their
+are none and are therefore closely related to the probability of
+observing evidence when in fact there is none.
 
 The other two assumptions are later necessary to connect individual
 decisions that effect epistemic value to the research community as a
