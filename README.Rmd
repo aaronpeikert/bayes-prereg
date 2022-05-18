@@ -67,12 +67,25 @@ We then propose two interpretations of how theoretical risk is influenced by pre
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently limiting type I error.
 The second interpretation is our main contribution and shows the broad applicability of preregistration for both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes.
 Under this interpretation, the theoretical risk is not necessarily directly maximized by preregistration, but the uncertainty in judging the theoretical risk is minimized.
+
+<!--this does not belong to the introduction-->
 This changed viewpoint is crucial for the following reason.
 As the name implies, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favouring the theory.
 As we will later show, minimizing the uncertainty around the theoretical risk shares the beneficial properties without increasing the likelihood of a "failed" study.
 Let us note that a study that does not result in the evidence a researcher is hoping for is still precious for the scientific process.
 Under the current incentive structure, however, many researchers have reason to avoid such outcome and few, if any, have the privilege to operate outside of these incentives.
 We, therefore, propose an interpretation of preregistration that increases the expected epistemic value of studies without necessarily increasing the theoretical risk.
+
+To arrive at this interpretation we rely on three arguments.
+The first is that theoretical risk is important for judging theories.
+This argument is not self evident for a conformationist, so we make a lengthy argument for why an inductionist should care.
+We assume that a falsificationist is generally interested in the probability of finding evidence against a theory if it is wrong.
+The second argument is that the theoretical risk for a given study is generally uncertain.
+The third and last assumption is that this uncertainty is reduced by applying preregistration.
+
+When we put these arguments into the Bayes' formula, we conclude that decreasing uncertainty about the theoretical risk increases our expectation to gain evidence for or against a theory.
+We will later discuss how our argument relates to a frequentist philosophy of science.
+For now we stick to a Bayesian rational since it is straightforward to incorporate uncertainty; a move that would require considerable thought otherwise.
 
 # Epistemic value and the Bayesian rationale
 
@@ -170,14 +183,39 @@ This sounds like a truism but is directly related to Poppers famous criterion of
 He stated that if it is impossible to prove a hypothesis false, therefore $P(E|¬H) = 1$ or conversely $P(¬E|¬H) = 0$, it can not be a scientific hypothesis (Popper 1962, 39).
 We note these relations to underline that the Bayesian rational we apply here is able to reconstruct many commonly held views on riskiness and epistemic value.
 
-# Preregistration Tasked with Increasing the Theoretical Risk
+# Preregistration as a Means to Increase Theoretical Risk?
 
 After we discussed that increasing the theoretical risk will increase the epistemic value, it is only natural to task preregistration with maximizing theoretical risk.
-In fact, limiting type I error rate is a commonly stated as a goal of preregistration.
-While we think it is often beneficial to increase the theorethical risk but it is comes with a cost.
+In fact, limiting type I error rate is commonly stated as a goal of preregistration.
+We argue that while such conclusion it plausible, we must first consider at least two constrains that put an upper bound to the theoretical risk.
 
+First, the theory itself.
+Some theories simply do not make risky predictions and preregistration will not change that.
+It would show a great deal of arrogance to advise researchers to stop investigating such theories.
+Consider the case of a researcher contemplating the relation between two sets of variables.
+Suppose each set considered alone is well studied and strong theories tell the researcher how the variables within the set relate.
+But our imaginary researcher considers the relation of these two sets and for lack of a better theory they assume that some relation between any variables of the two sets exists.
+This is not a risky prediction to make in psychology even without statistical issues like alpha inflation (cite crud factor).
+However, we would consider it an success if the researcher would use the evidence to develop a more precise (and hence risky) theory, e.g. by proposing which variables from the one set relate to which from the other set to what extend, direction, functional shape etc.
+We will later show that preregistration increases the expected epistemic value of the further specified theory, though it remains low till substantiated by testing it again.
+The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
+Changing what theories to test is not on our agenda.
 
-# Theorethical Risk and Statistical Methods 
+The second upper bound to theoretical risk is resources.
+Increasing $P(¬E|¬H)$ will usually decease $P(E|H)$ unless more resources are invested.
+In other words, one can not increase power, while maintaining the same type I error rate, without increasing the invested resources.
+Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade off.
+As we alluded to earlier the resource and incentive structure of research also does not make this easier.
+
+# Uncertainty about Theorethical Risk 
+
+We established that higher theoretical risk leads to more credible evidence.
+Nevertheless there are trait offs for increasing it.
+In other words we have reconstructed the interpretation that preregistrations restrict the researchers which increases theoretical risk (or equivalently limit type I error rate) and thereby creates more impactfull evidence.
+However, employing a mathematical framework allows us to navigate the trade offs more effectively and move towards a second, more favorable, interpretation.
+To that end, we incorporate uncertainty into the our mathematical framework.
+
+## Statistical Methods
 
 Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ and statistical methods.
 If you consider the overly simplistic case where the research hypothesis is equal to the statistical nill-hypothesis, then the alternative hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
@@ -187,12 +225,12 @@ We argue that $P(E|¬H)$ also encompasses factors outside the statistical realm,
 
 Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to $P(E|¬H)$.
 Examples of our ability to exert this control are the setting of type I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria or cross-validation in machine learning.
-These are all tools that help us factor in the tendency of statistical methods to show results even when there are none and are therefore closely related to $P(E|¬H)$  (the probability of observing evidence when in fact, there is none).
+These are all tools that help us factor in the tendency of statistical methods to show results even when there are none and are therefore closely related to theorethical risk.
 
 The point is that the contribution of statistical methods to $P(E|¬H)$ can be formally assessed.
-For many statistical models, $P(E|¬H)$ can be analytically computed under some assumptions.
-For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate $P(E|¬H)$.
-The precision with which researchers can discuss $P(E|¬H)$ has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
+For many statistical models, their $P(E|¬H)$ can be analytically computed under some assumptions.
+For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution $P(E|¬H)$.
+The precision with which researchers can discuss statistical contributions to $P(E|¬H)$ has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
 We can not hope to resolve this uncertainty; however, we may discuss its implications.
 
 If one chooses to focus only on the contribution of statistical methods to $P(E|¬H)$, one is bound to underestimate it.
@@ -201,10 +239,23 @@ Under ideal circumstances (assumption of independence, normality of residuals, e
 However, researchers might do many very reasonable things in the broader context of the study.
 They might exclude outliers, choose to drop an item, enlarge their definition of the population to be sampled, translate their questionnaire, impute missing values, or any number of other things, that all carry a small risk that they obtain evidence despite their hypothesis being false.
 Even if the t-test itself perfectly maintains its type I error rate, these factors have to be added to $P(E|¬H)$.
-Statistical properties, therefore, only guarantee a lower bound to the quantity we seek to minimize.
-Put simply, the only thing we can conclude with certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees.
+While in theory these factors may leave $P(E|¬H)$ unaffected or even decrease it, we argue that in practice this is not the case.
+If researchers want to or not, except under strict blinding, they continuously observe information about how the study is going, which at best does not effect them in any way.
+We therefore conclude, that statistical properties, only guarantee a lower bound to the quantity we seek to minimize.
+Put simply, the only thing we can conclude with some certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees.
 
-# Preregistration Tasked with Decreasing Uncertainty about the Theoretical Risk
+## The effects of uncertainty
+
+Before we ask how preregistration is influencing uncertainty about theorethical risk, we must consider 
+
+# Preregistration as a Means to Decreasing Uncertainty about the Theoretical Risk
+
+We hope to have persuaded you to accept two arguments: First, theoretical risk is important for judging evidential support for theories.
+Second, the theorethical risk is inherently uncertain, which diminishes the persuasiveness of the gathered evidence.
+
+# Old Material
+
+If you are a follow a hypo-deductive rational this is self evident, if you are positivist we hope our
 
 The other two assumptions are later necessary to connect individual decisions that affect epistemic value to the research community as a whole.
 
@@ -219,7 +270,6 @@ Equipped with some of the basic tools of Bayesian Philosophy of Science, we can 
 To that end we show that the appreciation for the distinction between exploration and confirmatory neatly falls in line with Bayesian reasoning connected through a quantity we call *theorethical risk*.
 Than we proceed to show that preregistration impacts the theorethical risk via two pathways.
 Only considering the one path rationalizes recommendation to employ preregistration only for confirmatory studies, taking both paths together into consideration leads to a much wider applicability of preregistration.
-
 
 But what exactly have you been cheated of?
 This appreciation of confirmatory results falls neatly in line with Bayesian reasoning (XXX).
@@ -275,3 +325,8 @@ Third, by reducing the type I error rate the researcher directly increases the l
 A study that fails to deliver results can be crippling to the researchers career.
 Depending on individual circumstances, e.g. the theory in question, resources allocated to a study, the career stage of the researcher, a researcher may simply feel unable to reduce the type I error rate to the threshold necessary for a confirmatory study.
 Constrained by these factors researchers tasked with writing a preregistration are incentiviced to either give up or to muddle through by being intentionally vague. The latter practice leads to preregistrations stating unspecific assumptions such as "we expect some of the Xs to correlate with some of the Ys".
+
+Our conclusions can be applied to bayesian and frequentist methods alike.
+Of course, frequentist methods are traditionally viewed from a Popperian (or hypo-deductive) philosophy of science, but our conclusions are compatible with this view and notable later advancements like the error statistical view.
+However, error statistical view marries a statistical philosophy with specific statistical models and procedures.
+A marriage which leaves us with richer set of assumptions than necessary for the points we want to make about the value of preregistration.
