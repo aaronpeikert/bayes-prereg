@@ -28,6 +28,12 @@ knitr::opts_chunk$set(
 )
 ```
 
+<!--problems to solve:
+* I feel like I am describing a ruby goldberg machine here and expect the reader to understand what happens when you move the spoon
+* what about falsificationists, every time I write a paragraph relating to I delete it and try to move it a discussion
+* references!!!
+-->
+
 A successful prediction should lend more credibility to a theory than a postdiction, all else equal.
 Much has been theorized on this important distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth (see XXXX).
 To honour this distinction, many researchers preregister their studies to produce results that are considered confirmatory.
