@@ -1,3 +1,4 @@
 FROM rocker/verse:4.2.0
-RUN install2.r --error --skipinstalled pacman tikzDevice
+RUN apt-get -y install inkscape curl git rsync
 RUN tlmgr install collection-latexrecommended pgf preview
+RUN install2.r --error --skipinstalled pacman tikzDevice
