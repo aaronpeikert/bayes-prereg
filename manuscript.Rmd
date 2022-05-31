@@ -4,6 +4,7 @@ output:
   bookdown::pdf_document2:
     latex_engine: "xelatex"
     toc: false
+    number_sections: false
 header-includes:
    - \usepackage{libertine}
 fontsize: 11pt
@@ -436,22 +437,30 @@ results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>%
                values_to = "value")
 ```
 
-```{r, dev = "tikz", cache=TRUE}
+```{r, dev = "tikz", cache=TRUE, warning=FALSE}
+#| fig.cap: "Several measures for corroboration as increase in firmness as a function of α, where α is either certain (solid line) or maximally uncertain (dotted line)."
+
 results %>%
-  mutate(name = str_remove(name, "Measure")) %>% 
+  mutate(name = str_remove(name, "Measure")) %>%
   split(., .$name) %>%
   imap(
     ~ ggplot(.x, aes(enh, value)) +
-      geom_line(aes(linetype = certainty)) + 
-      labs(title = .x$name, y = element_blank(), x = element_blank())
-  ) %>% 
+      geom_line(aes(linetype = certainty)) +
+      labs(
+        title = .x$name,
+        y = element_blank(),
+        x = element_blank()
+      )
+  ) %>%
   reduce(`+`) +
   plot_layout(ncol = 2, guides = 'collect') &
   theme_tufte() &
-  theme(legend.title = element_blank(),
-        legend.position = "bottom",
-        plot.title = element_text(size = 7),
-        axis.text = element_text(size = 6))
+  theme(
+    legend.title = element_blank(),
+    legend.position = "bottom",
+    plot.title = element_text(size = 7),
+    axis.text = element_text(size = 6)
+  )
 ```
 
 Neither absolute certainty nor uncertainty are realistic scenarios but represent the boundary conditions that all realistic conditions fall in.
