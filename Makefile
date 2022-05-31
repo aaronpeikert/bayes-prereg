@@ -1,6 +1,6 @@
 all: manuscript.pdf
 
-manuscript.pdf: manuscript.Rmd abstract.md
+manuscript.pdf: manuscript.Rmd abstract.md references.bib
 	Rscript -e "rmarkdown::render('$<')"
 
 publish/: manuscript.pdf
