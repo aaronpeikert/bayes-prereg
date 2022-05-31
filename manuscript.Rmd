@@ -170,7 +170,7 @@ Third, if the theoretical risk equals zero, then $P(H|E)$ can at best be equal t
 In other words, observing a sure fact does not lend credence to a hypothesis.
 
 This sounds like a truism but is directly related to Popper's famous criterion of demarcation.
-He stated that if it is impossible to prove a hypothesis false, therefore $P(E|¬H) = 1$ or conversely $P(¬E|¬H) = 0$, it can not be a scientific hypothesis (Popper 1962, 39).
+He stated that if it is impossible to prove a hypothesis false, therefore $P(E|¬H) = 1$ or conversely $P(¬E|¬H) = 0$, it can not be a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
 We note these relations to underline that the Bayesian rational we apply here is able to reconstruct many commonly held views on riskiness and epistemic value.
 
 # Preregistration as a Means to Increase Theoretical Risk?
