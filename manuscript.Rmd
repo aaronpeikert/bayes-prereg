@@ -29,12 +29,7 @@ if(!requireNamespace("tikzDevice"))install.packages("tikzDevice")
 
 options(
   tikzDefaultEngine = "xetex",
-  tikzXelatexPackages = c(
-    getOption("tikzXelatexPackages"),
-    "\\usepackage{amsfonts}",
-    "\\usepackage[utf8]{inputenc}",
-    "\\usepackage{libertine}"
-  )
+  tikzXelatexPackages = c(getOption("tikzXelatexPackages"), "\\usepackage{amsfonts}", "\\usepackage{libertine}")
 )
 ```
 
