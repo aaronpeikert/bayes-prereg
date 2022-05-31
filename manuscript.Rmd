@@ -70,12 +70,12 @@ Under this interpretation, the theoretical risk is not necessarily directly maxi
 
 To arrive at this interpretation, we rely on three arguments.
 The first is that theoretical risk is vital for judging theories.
-This argument comes natural to a (Neo-)Popperian or falsificationist, but  is not self-evident for a conformationist.
+This argument comes natural to a (Neo‑)Popperian or falsificationist, but  is not self-evident for a conformationist.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last assumption is that this uncertainty is reduced by applying preregistration.
 
 When we put these arguments into the Bayes' formula, we conclude that because preregistration decrease the uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
-We will later discuss how our argument relates to a (Neo-)Popperian philosophy of science.
+We will later discuss how our argument relates to a (Neo‑)Popperian philosophy of science.
 For now, we stick to a Bayesian rationale since quantifying uncertainty is crucial for our argument, which would require considerable thought in a falsificationist framework.
 
 # Epistemic value and the Bayesian rationale
