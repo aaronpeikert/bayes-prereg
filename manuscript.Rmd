@@ -4,7 +4,12 @@ output:
   bookdown::pdf_document2:
     latex_engine: "xelatex"
     toc: false
-linestretch: 1
+header-includes:
+   - \usepackage{libertine}
+fontsize: 11pt
+linestretch: 1.2
+geometry: "left=3.9cm, right=3.3cm, top=2.5cm, bottom=3cm"
+papersize: a4
 bibliography: references.bib
 abstract: "`r paste0(readLines('abstract.md'), collapse = ' ')`"
 ---
@@ -23,7 +28,7 @@ if(!requireNamespace("tikzDevice"))install.packages("tikzDevice")
 
 options(
   tikzDefaultEngine = "xetex",
-  tikzXelatexPackages = c(getOption("tikzXelatexPackages"), "\\usepackage{amsfonts}")
+  tikzXelatexPackages = c(getOption("tikzXelatexPackages"), "\\usepackage{amsfonts}", "\\usepackage{libertine}")
 )
 ```
 
@@ -293,7 +298,8 @@ vary_alpha_long <- vary_alpha %>%
                values_to = "h2")
 ```
 
-```{r, dev = "tikz", warning=FALSE}
+```{r, dev='tikz'}
+#| fig.cap: "Corroboration as firmness ($p(E|H)$) as a function of α, where α is either certain (solid line) or maximally uncertain (dotted line)."
 vary_alpha_long %>%
   ggplot() +
   geom_line(aes(alpha, h2, linetype = certainty)) +
