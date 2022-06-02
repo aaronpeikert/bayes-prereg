@@ -48,7 +48,7 @@ We believe that a rigorous answer to this question enables us to clear some comm
 These misunderstandings are interesting from a conceptual perspective but also lead to decreased efficiency of the scientific process if researchers misguidedly decide that preregistration is not applicable for their intended study.
 Asking researcher to invest time and resources into preregistration demands a principled justification for its utility.
 
-One reason why researchers are hesitant to preregister is that they feel too limited by preregistration.
+One reason why researchers are hesitant to preregister is that they feel too limited by preregistration [@goldin-meadowWhyPreregistrationMakes2016].
 Even researchers who have been persuaded of its advantages sometimes apply strategies to skirt the self-imposed restrictions.
 One strategy is to write a loose preregistration, to begin with; another is to deviate from the preregistration afterwards.
 To complicate matters further, both strategies may be used with compelling scientific reasoning or with the self-serving intent of generating good looking results no matter the nature of the phenomenon under study.
