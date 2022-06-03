@@ -151,7 +151,7 @@ A high risk, high reward strategy is bound to result in many losses that are eve
 Sustaining many "failed" studies is not exactly aligned with the incentive structure under which many if not most researchers operate.
 Consequently, researchers have an incentive to appear to take more risks than they actually do, which misleads their readers to give their claims more credence than they deserve.
 It is at this juncture that the practice and mispractice of preregistration comes into play.
-They try to ensure a proper judgment of the riskiness of a study by making tempering with the appearance of $P(E)$ difficult.
+We argue that the main function of preregistration is to ensure proper judgment of the riskiness ($P(E)$) a study.
 
 To better understand how preregistrations can do that, let us take a closer look at what contributes to $P(E)$.
 Using the law of total probability, we can split $P(E)$ into two terms:
