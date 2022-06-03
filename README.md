@@ -18,8 +18,11 @@ reduce the uncertainty in judging the theoretical risk instead of
 directly limiting the type-I error rate. We argue that this
 reformulation extends the utility of preregistration, provides
 principled justification for preregistration and is more closely aligned
-with researchers’ intuition. If we do not know what a researcher did, we
-have great uncertainty about the theoretical risk they took, which
-severely limits the utility of the researchers’ evidence.
-Preregistration effectively reduces this uncertainty and therefore
-generates more persuasive evidence.
+with researchers’ intuition. If we do not know how the researchers
+arrived at their evidence, we have great uncertainty about the
+theoretical risk they took, which severely limits the utility of the
+researchers’ evidence. Preregistration effectively reduces this
+uncertainty and therefore generates more persuasive evidence.
+
+[🗎 PDF of draft
+🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
