@@ -40,9 +40,9 @@ options(
 -->
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else equal.
-Much has been theorized on this vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
+Much has been theorized on the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
 To honour this distinction and produce results that are considered confirmatory, many researchers opt to preregister their studies [@nosekPreregistrationRevolution2018].
-Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of try and error [@wagenmakersAgendaPurelyConfirmatory2012].
+Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
 The scientific community widely agrees that actively concealing such "trying for results" is misconduct --- but how exactly is it impeding scientific progress?
 We believe that a rigorous answer to this question enables us to clarify common misunderstandings that lead researchers to deem preregistration as unfit for their purposes.
 These misunderstandings are interesting from a conceptual perspective but also lead to decreased efficiency of the scientific process if researchers misguidedly decide that preregistration is not applicable for their intended study.
@@ -57,7 +57,7 @@ This, of course, goes against most researchers' intuition about what is consider
 We take these issues as signals of a misunderstanding about how preregistration contributes to scientific progress.
 In particular, we want to challenge the common view that preregistration somehow cleanly separates confirmatory from exploratory.
 
-Deciding if a study is confirmatory or exploratory is a judgment made by the researcher assessing it.
+Deciding if a study is confirmatory or exploratory is a judgment made by the researcher.
 The issues outlined above arise by delegating this judgment to a simple decision rule.
 That is, if something is preregistered, it is considered confirmatory, and if it is not preregistered, it is considered exploratory.
 This rule of thumb is often applied implicitly.
@@ -86,7 +86,7 @@ For now, we stick to a Bayesian rationale since quantifying uncertainty is cruci
 
 # Epistemic value and the Bayesian rationale
 
-Let us start by defining what we mean by expected epistemic value.
+Let us start by defining what we call expected epistemic value.
 If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude (truthlikeness).
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory is what we call epistemic value.
@@ -96,11 +96,11 @@ We assume three things about this estimation process and how it relates to choos
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
 2. They expect other researchers to apply the same rational process.
-2. All else equal, researchers try to increase the expected epistemic value for other researchers.
+2. All else equal, researchers try to maximize the expected epistemic value for other researchers.
 
 The first assumption leads to our adoption of a Bayesian framework.
 Our rationale is as follows.
-Researchers that decide to conduct a study are akin to choosing a study to bet on.
+Researchers who decide to conduct a study are akin to choosing a study to bet on.
 They have to "place the bet" by conducting the study, therefore, invest resources and stand to gain epistemic value with some probability.
 This conceptualization of choosing a study as a betting problem allows us to apply a "Dutch Book" argument [@christensenCleverBookiesCoherent1991].
 This argument states that any better must follow the axioms of probability to avoid being "irrational", i.e., accepting bets that lead to sure losses.
