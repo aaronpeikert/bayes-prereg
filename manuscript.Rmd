@@ -187,7 +187,6 @@ We argue that while such a conclusion is plausible, we must first consider at le
 
 First, the theory itself limits theoretical risk:
 Some theories simply do not make risky predictions, and preregistration will not change that.
-It would show a great deal of arrogance to advise researchers to stop investigating such theories.
 Consider the case of a researcher contemplating the relation between two sets of variables.
 Suppose each set by itself is well studied, and strong theories tell the researcher how the variables within the set relate.
 However, our imaginary researcher considers the relation between these two sets.
@@ -196,7 +195,6 @@ This is not a risky prediction to make in psychology, even without statistical i
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g. by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape etc.
 We will later show that preregistration increases the expected epistemic value of the further specified theory, though it remains low till substantiated by testing it again.
 The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
-It is outside the scope of our agenda to changing or place demands on what theories should be tested through empirical research. 
 
 Second, available resources limit theoretical risk.
 Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
