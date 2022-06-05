@@ -169,7 +169,7 @@ Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical 
 bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))
 ```
 
-Let us note some interesting properties of theoretical risk $P(¬H|¬E)$.
+Let us note some interesting properties of theoretical risk $P(¬E|¬H)$.
 First, increasing theoretical risk leads to higher $P(H|E)$ (our objective).
 Second, if the theoretical risk is smaller than $P(E|H)$ it follows that $P(H|E)$ must decrease when observing the evidence.
 Third, if the theoretical risk equals zero, then $P(H|E)$ can at best be equal to $P(H)$ but only if $P(H|E)$ is one.
