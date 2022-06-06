@@ -193,7 +193,7 @@ However, our imaginary researcher considers the relation between these two sets.
 For lack of a better theory, they assume that some relation between any variables of the two sets exists.
 This is not a risky prediction to make in psychology, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g. by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape etc.
-We will later show that preregistration increases the expected epistemic value of the further specified theory, though it remains low till substantiated by testing it again.
+We will later show that preregistration increases the belief one can stake in the further specified theory, though it remains low till substantiated by testing it again.
 The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
 
 Second, available resources limit theoretical risk.
@@ -221,7 +221,7 @@ Preregistration is often discussed in relation to statistical methods, so let us
 If you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, then the nill-hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
 Researchers who choose a smaller type I error rate can hence be more sure of their results, if significant.
 However, the research hypothesis is seldomly equal to the statistical null hypothesis.
-We argue that $P(E|¬H)$ also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
+We argue that $P(E|¬H)$ (and hence its inverse, theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
 Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to $P(E|¬H)$.
 Examples of our ability to exert this control are the setting of type I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria or cross-validation in machine learning.
@@ -229,7 +229,7 @@ These are all tools that help us account for biases in statistical methods that 
 They are thus  closely related to theoretical risk.
 
 The point is that the contribution of statistical methods to $P(E|¬H)$ can be formally assessed.
-For many statistical models, their $P(E|¬H)$ can be analytically computed under some assumptions.
+For many statistical models it can be analytically computed under some assumptions.
 For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution to $P(E|¬H)$.
 The precision with which researchers can discuss statistical contributions to $P(E|¬H)$ has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
 We can not hope to resolve this uncertainty; but we have to be aware of its implications.
