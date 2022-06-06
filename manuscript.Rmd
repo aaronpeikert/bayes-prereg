@@ -209,7 +209,7 @@ It follows that allowing deviations is wholly incompatible with the goal of maxi
 
 # Uncertainty about Theoretical Risk 
 
-We established that higher theoretical risk leads to more credible evidence.
+We established that higher theoretical risk leads to more persuasive evidence.
 In other words, we have reconstructed the interpretation that preregistrations supposedly work by restricting the researchers, which in turn increases the theoretical risk (or equivalently limit type I error rate) and thereby creates more persuasive evidence.
 Nevertheless, there are trade-offs for increasing theoretical risk.
 However, employing a mathematical framework allows us to navigate the trade-offs more effectively and move towards a second, more favourable interpretation.
