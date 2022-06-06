@@ -40,19 +40,24 @@ options(
 -->
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else equal.
-Much has been theorized on the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
-To honour this distinction and produce results that are considered confirmatory, many researchers opt to preregister their studies [@nosekPreregistrationRevolution2018].
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
+Many researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
-The scientific community widely agrees that actively concealing such "trying for results" is misconduct --- but how exactly is it impeding scientific progress?
-We believe that a rigorous answer to this question enables us to clarify common misunderstandings that lead researchers to deem preregistration as unfit for their purposes.
-These misunderstandings are interesting from a conceptual perspective but also lead to decreased efficiency of the scientific process if researchers misguidedly decide that preregistration is not applicable for their intended study.
-Asking researchers to invest time and resources into preregistration demands a principled justification of its utility.
+However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
+Those without this intuition ask the fundamental question of why should a study be preregistered at all?
+Nevertheless, even researchers convinced of its advantages have some problems with an intuitive approach.
+Before data collection, they must make difficult decisions about what to include in the preregistration and in how much detail.
+After data collection, they might be uncertain what conditions warrant deviating from the preregistration.
+If the research community remains confused by the purpose of preregistrations, it decreases the efficiency of the scientific endeavour. 
+We propose a principled justification for preregistration with a formal objective against which researcher can evaluate their trade-offs.
 
-One reason why researchers are hesitant to preregister is that they feel restricted by the boundaries specified in their preregistration [@goldin-meadowWhyPreregistrationMakes2016].
-Even researchers who have been persuaded of its advantages sometimes apply strategies to skirt these self-imposed restrictions.
+Preregistrations trade-off researchers' degrees of freedom (XXX) to obtain more confirmatory results.
+However, balancing this trade-off is difficult.
+Being too restricted by the boundaries set in the preregistration make some researchers hesitant to adopt the practice [@goldin-meadowWhyPreregistrationMakes2016].
+Even researchers who have been persuaded of its advantages sometimes apply strategies to skirt the self-imposed restrictions.
 One strategy is to write a loose preregistration, to begin with; another is to deviate from the preregistration afterwards.
-To complicate matters further, both strategies may be used with compelling scientific reasoning or with the self-serving intent of generating desirable results no matter the nature of the phenomenon under study.
-To summarize, the conundrum is that the current conceptualization of preregistration deems a study "properly" preregistered even if it contains a recipe for p-hacking before data collection but "improper" if the researcher did technically deviate afterwards.
+Both strategies may be used with compelling scientific reasoning or with the self-serving intent of generating desirable results no matter the nature of the phenomenon under study.
+The conundrum is that the current conceptualization of preregistration deems a study "properly" preregistered even if it contains a recipe for p-hacking before data collection but "improper" if the researcher did technically deviate afterwards.
 This, of course, goes against most researchers' intuition about what is considered exploratory and confirmatory.
 We take these issues as signals of a misunderstanding about how preregistration contributes to scientific progress.
 In particular, we want to challenge the common view that preregistration somehow cleanly separates confirmatory from exploratory.
