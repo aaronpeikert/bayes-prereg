@@ -513,10 +513,10 @@ Allowing to deviate from the preregistration is controversial (XXX) because the 
 This argument, in its fullest consequence, might result in the same uncertainty we argued is appropriate for not preregistered studies.
 However, if the authors offer a convincing argument for their deviation, their readers might be compelled to increase their uncertainty only a limited amount.
 
-> As far as I am aware, Mayo’s severity argument currently provides one of the few philosophies of science that allows for a coherent conceptual analysis of the value of preregistration.
-
-
 # Old Material
+
+> As far as I am aware, Mayo’s severity argument currently provides one of the few philosophies of science that allows for a coherent conceptual analysis of the value of preregistration.
+> Borsboom
 
 
 We, therefore, propose an interpretation of preregistration that increases the expected epistemic value of studies without necessarily increasing the theoretical risk.
