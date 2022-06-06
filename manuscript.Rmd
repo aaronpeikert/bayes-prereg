@@ -200,6 +200,7 @@ Second, available resources limit theoretical risk.
 Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
 In other words, one can not increase power while maintaining the same type I error rate without increasing the invested resources.
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
+Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
 
 # Uncertainty about Theoretical Risk 
 
