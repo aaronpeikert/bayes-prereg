@@ -44,22 +44,22 @@ The scientific community has long pondered the vital distinction between explora
 Many researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
 However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
-Skeptics question why a study should be preregistered at all.
-Even researchers convinced of the advantages have some problems when left with nothing more than an intuitive appeal.
-Their intuition must answer difficult questions, such as what to include, in how much detail, in the preregistration, or what conditions warrant deviating from the preregistration.
-If the research community remains confused about the purpose of preregistrations, it is bound to misapply it and hence decrease the efficiency of the scientific endeavour. 
-We propose a principled justification for preregistration with a formal objective against which researcher can evaluate their trade-offs.
+These skeptics question why a study should be preregistered at all.
+Even researchers convinced of the advantages of preregistration face difficult problems when they exclusively rely on an intuitive appeal.
+Specifially, an intuitive convinction is unable to address pragmatic questions, such as what to include, in how much detail in the preregistration, or about the conditions that warrant deviating from it.
+If the research community remains confused about the purpose of preregistration, it is bound to misapply it and hence decrease the efficiency of the scientific endeavour. 
+We thus propose a principled justification for preregistration with a formal objective against which researchers can evaluate several pragmatic trade-offs.
 
-The scientific community asserts that the objective of preregistration is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018, @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012].
+The scientific community asserts that the objective of preregistration is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012].
 Taken at face value, this objective implies that research is confirmatory if, and only if, it is preregistered.
-However, this postulate is indefensible.
+However, this postulate not warrented.
 Researchers can conduct confirmatory research without preregisteration.
-Wether they can convince other researchers of the confirmatory nature of their research is a seperate issue.
+Weather they can convince other researchers of the confirmatory nature of their research is a separate issue.
 Preregistered but not strictly confirmatory studies are also commonplace.
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations.
 One strategy is to write a loose preregistration, to begin with; another is to deviate from the preregistration afterwards.
 Both strategies may be used with compelling scientific reasoning or with the self-serving intent of generating desirable results no matter the nature of the phenomenon under study.
-Insisting on equating preregistration and confirmation has led to criticism that preregistration is actually negative sum, and neither sufficent nor neccesary to establish confirmation [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021]
+Insisting on equating preregistration and confirmation has, hence, led to criticism that preregistration is actually negative sum, and neither sufficient nor necessary to establish confirmation [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021]
 
 These issues arise from a fundamental confusion about the objective of preregistration.
 Researchers are bound to be confused when they delegate an important scientific judgment to a simple decision rule, that only takes into account the existence of a preregistration.
@@ -77,7 +77,7 @@ Following this interpretation, the theoretical risk is not necessarily directly 
 To arrive at this interpretation, we rely on three arguments.
 The first is that theoretical risk is vital for judging theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
-The third and last assumption is that this uncertainty is reduced by applying preregistration.
+The third and last argument is that this uncertainty is reduced by applying preregistration.
 We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
 
 # Epistemic value and the Bayesian rationale
@@ -88,13 +88,13 @@ In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory is what we call epistemic value.
 While researchers can not know what exactly they will learn from a study, they can form an expectation that helps them decide which study to conduct.
 This expectation is what we term expected epistemic value.
-We assume three things about this estimation process and how it relates to choosing a study to conduct.
+To make our three arguments, we must assume three things about this estimation process and how it relates to choosing a study to conduct.
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
 2. They expect other researchers to apply the same rational process.
 2. All else equal, researchers try to maximize the expected epistemic value for other researchers.
 
-The first assumption leads to our adoption of a Bayesian framework.
+The assumption of rationality can be connected to Bayesian reasoning and leads to our adoption of the framework.
 Our rationale is as follows.
 Researchers who decide to conduct a study are akin to choosing a study to bet on.
 They have to "place the bet" by conducting the study, therefore, invest resources and stand to gain epistemic value with some probability.
