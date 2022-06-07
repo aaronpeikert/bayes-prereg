@@ -35,7 +35,7 @@ jobs:
       - 
         name: Comment Link
         uses: actions/github-script@v5
-        if: steps.deploy.outcome == 'success'
+        if: steps.preview.outcome == 'success'
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
