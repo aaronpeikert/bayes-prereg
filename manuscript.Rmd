@@ -197,12 +197,7 @@ Second, available resources limit theoretical risk.
 Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
 In other words, one can not increase power while maintaining the same type I error rate without increasing the invested resources.
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
-
-This objective also raises the problem of changing the plan after data collection started.
-One could argue that allowing deviation from the preregistration would allow researchers the same freedoms as having no preregistration at all.
-Hypothethically at least, researchers might try any number of possible deviations and pick the one that is most favorable to their theory.
-Hence, allowing deviation would void any otherwise guaranteed lower limits to the theoretical risk.
-It follows that allowing deviations is wholly incompatible with the goal of maximizing theoretical risk.
+Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
 
 # Uncertainty about Theoretical Risk 
 
@@ -515,10 +510,10 @@ Allowing to deviate from the preregistration is controversial (XXX) because the 
 This argument, in its fullest consequence, might result in the same uncertainty we argued is appropriate for not preregistered studies.
 However, if the authors offer a convincing argument for their deviation, their readers might be compelled to increase their uncertainty only a limited amount.
 
-> As far as I am aware, Mayo’s severity argument currently provides one of the few philosophies of science that allows for a coherent conceptual analysis of the value of preregistration.
-
-
 # Old Material
+
+> As far as I am aware, Mayo’s severity argument currently provides one of the few philosophies of science that allows for a coherent conceptual analysis of the value of preregistration.
+> Borsboom
 
 
 We, therefore, propose an interpretation of preregistration that increases the expected epistemic value of studies without necessarily increasing the theoretical risk.

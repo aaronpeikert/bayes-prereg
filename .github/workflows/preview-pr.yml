@@ -1,0 +1,48 @@
+name: Preview Documentation
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    workflow_dispatch:
+
+env:
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+  GHP_URL: 'https://aaronpeikert.github.io/bayes-prereg/'
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    container: ghcr.io/aaronpeikert/bayes-prereg:main
+    steps:
+      - 
+        name: Checkout repository
+        uses: actions/checkout@v3
+      - 
+        name: Render PDF
+        run: |
+          make publish/${{ env.PR_NUMBER }}/
+      - 
+        name: Deploy 🚀
+        # only deploy when push to main
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # The branch the action should deploy to.
+          branch: gh-pages
+          # The folder the action should deploy. Adapt if you changed in Quarto config
+          folder: publish/
+          # Organizations require token of the bearer!
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/github-script@v5
+        if: steps.deploy.outcome == 'success'
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+
+              body: 'Docs can be previewed here: ${{ env.GHP_URL }}/PR${{ env.PR_NUMBER }}/manuscript.pdf'
+            })
