@@ -3,6 +3,7 @@ name: Preview Documentation
 on:
   pull_request:
     types: [opened, synchronize]
+    workflow_dispatch:
 
 env:
   PR_NUMBER: ${{ github.event.pull_request.number }}
