@@ -9,7 +9,8 @@ env:
   GHP_URL: 'https://aaronpeikert.github.io/bayes-prereg/'
 
 jobs:
-  build:
+  preview:
+    runs-on: ubuntu-latest
     container: ghcr.io/aaronpeikert/bayes-prereg:main
     steps:
       - 
