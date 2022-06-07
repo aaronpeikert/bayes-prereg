@@ -20,7 +20,7 @@ jobs:
       - 
         name: Render PDF
         run: |
-          make publish/${{ env.PR_NUMBER }}/
+          make publish/PR${{ env.PR_NUMBER }}/
       - 
         name: Deploy 🚀
         # only deploy when push to main
