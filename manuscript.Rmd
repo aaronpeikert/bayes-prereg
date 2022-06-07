@@ -41,7 +41,8 @@ options(
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else equal.
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
-Many researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
+Confusing exploratory findings with confirmed theories has lead to a crisis of confidence of in the results of empirical sciences [@ioannidisWhyMostPublished2005] and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
+As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
 However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
 These skeptics question why a study should be preregistered at all.
@@ -52,9 +53,9 @@ We thus propose a principled justification for preregistration with a formal obj
 
 The scientific community asserts that the objective of preregistration is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012].
 Taken at face value, this objective implies that research is confirmatory if, and only if, it is preregistered.
-However, this postulate not warrented.
+However, this postulate is not warrented.
 Researchers can conduct confirmatory research without preregisteration.
-Weather they can convince other researchers of the confirmatory nature of their research is a separate issue.
+Convincing other researchers of the confirmatory nature of their research is a separate issue.
 Preregistered but not strictly confirmatory studies are also commonplace.
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations.
 One strategy is to write a loose preregistration, to begin with; another is to deviate from the preregistration afterwards.
