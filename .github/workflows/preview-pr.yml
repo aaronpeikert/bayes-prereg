@@ -45,5 +45,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
 
-              body: 'Manuscript can be previewed here: ${{ env.GHP_URL }}/PR${{ env.PR_NUMBER }}/manuscript.pdf'
+              body: 'Manuscript can be previewed here: ${{ env.GHP_URL }}PR${{ env.PR_NUMBER }}/manuscript.pdf'
             })
