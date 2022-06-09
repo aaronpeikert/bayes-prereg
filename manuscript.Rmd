@@ -13,6 +13,7 @@ geometry: "left=3.9cm, right=3.3cm, top=2.5cm, bottom=3cm"
 papersize: a4
 bibliography: references.bib
 abstract: "`r paste0(readLines('abstract.md'), collapse = ' ')`"
+csl: apa.csl
 ---
 
 ```{r, include = FALSE}
