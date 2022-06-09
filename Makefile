@@ -1,6 +1,9 @@
-all: manuscript.pdf
+all: manuscript.pdf README.md .gitignore
 
 manuscript.pdf: manuscript.Rmd abstract.md references.bib
+	Rscript -e "rmarkdown::render('$<')"
+
+README.md: README.Rmd abstract.md
 	Rscript -e "rmarkdown::render('$<')"
 
 publish/: manuscript.pdf
