@@ -55,9 +55,9 @@ The scientific community asserts that the objective of preregistration is to dis
 Taken at face value, this objective implies that research is confirmatory if, and only if, it is preregistered.
 However, this postulate is not warranted.
 Researchers can conduct confirmatory research without preregisteration, though it might be difficult to convince other researchers of the confirmatory nature of their research.
-The exact opposite, preregistered but not strictly confirmatory studies, are also commonplace.
+The exact opposite, preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations.
-One strategy is to write a loose preregistration to begin with; another is to deviate from the preregistration afterwards.
+One strategy is to write a loose preregistration to begin with [@stefanBigLittleLies2022]; another is to deviate from the preregistration afterwards.
 Both strategies may be used with compelling scientific reasoning or with the self-serving intent of generating desirable results no matter the nature of the phenomenon under study.
 Insisting on equating preregistration and confirmation has, hence, led to criticism that preregistration is actually harmfull all things considered, and neither sufficient nor necessary to establish confirmation [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021]
 
