@@ -124,22 +124,25 @@ $$
 P(H|E) = \frac{P(H)P(E|H)}{P(E)}
 $$
 
-$P(H|E)$ is of great relevance since $P(H|E)$ is often used directly or indirectly as a measure of corroboration of a hypothesis.
-In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to $P(H)$, it is called increase in firmness.
+The posterior probability ($P(H|E)$) is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
+In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability ($P(H)$), it is called increase in firmness.
 We refrain from discussing specific measures of corroboration since no measure shows universally better properties than others.
-However, it is generally expected that any measure of corroboration increases monotonically with an increase in $P(H|E)$.
+However, it is generally expected that any measure of corroboration (and even increases monotonically with an increase in posterior probability ($P(H|E)$).
 
-In short, we want to increase $P(H|E)$.
-Increases in $P(H|E)$ are associated with increased epistemic value, of which we want to maximize the expectation.
-So how can we increase $P(H|E)$?
+In short, we want to increase posterior probability ($P(H|E)$).
+Increases in posterior probability ($P(H|E)$) are associated with increased epistemic value, of which we want to maximize the expectation.
+So how can we increase posterior probability?
 The Bayes formula gives us three options to investigate, namely $P(H)$, $P(E|H)$ and $P(E)$.
-The first option leads us to the unsurprising conclusion that higher $P(H)$ leads to higher $P(H|E)$.
-However, the a priori probability of a hypothesis is nothing our study design can change.
-The second option is similar commonsensical; that is, an increase in $P(E|H)$ leads to higher $P(H|E)$.
+The first option leads us to the unsurprising conclusion that higher a priori probability ($P(H)$) leads to higher posterior probability ($P(H|E)$).
+However, the prior probability of a hypothesis is nothing our study design can change.
+The second option is similar commonsensical; that is, an increase in $P(E|H)$ leads to higher posterior probability ($P(H|E)$).
+$P(E|H)$ is the probability of obtaining evidence for a theory, when the theory holds.
+In other words, how probable is it that we "detect" that a theory holds, we therefore call it "detectability".
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
-While this truism is strongly related to study design, it is unrelated to preregistration.
+When applied strictly within the bounds of null hypothesis testing, detectability is equivalent to power (or the inverse of type II error rate).
+However, while detectability is of great importance for study design, it is not directly relevant for the objective of preregistration.
 Thus, $P(E)$ remains to be considered.
-Since $P(E)$ is the denominator, increasing it will decrease $P(H|E)$: The more unlikely it is to observe evidence, the more it increases the probability of the hypothesis if we do observe it.
+Since $P(E)$ is the denominator, increasing it will decrease the posterior probability: The more unlikely it is to observe evidence, the more it increases the probability of the hypothesis if we do observe it.
 In other words, high risk, high reward.
 
 If we equate riskiness with a low probability of obtaining evidence, the Bayesian rationale perfectly aligns with the observation that risky predictions lead to persuasive evidence.
@@ -157,7 +160,7 @@ $$
 P(E) = P(H)P(E|H) + P(¬H)P(E|¬H)
 $$
 
-We already have noted that there is not much to do about $P(H)$ (and hence its counter probability $P(¬H)$), and that it is common sense to increase $P(E|H)$.
+We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(¬H)$), and that it is common sense to increase detectability ($P(E|H)$).
 The real lever to pull is, therefore, $P(E|¬H)$.
 This probability tells us how likely it is that we find evidence when in fact, the theory is not true.
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
@@ -166,14 +169,15 @@ Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical 
 bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))
 ```
 
-Let us note some interesting properties of theoretical risk $P(¬E|¬H)$.
-First, increasing theoretical risk leads to higher $P(H|E)$ (our objective).
-Second, if the theoretical risk is smaller than $P(E|H)$ it follows that $P(H|E)$ must decrease when observing the evidence.
-Third, if the theoretical risk equals zero, then $P(H|E)$ can at best be equal to $P(H)$ but only if $P(H|E)$ is one.
+Let us note some interesting properties of theoretical risk ($P(¬E|¬H)$).
+First, increasing theoretical risk leads to higher posterior probability ($P(H|E)$, our objective).
+Second, if the theoretical risk is smaller than detectability ($P(E|H)$) it follows that the posterior probability must decrease when observing the evidence.
+If detectability exceeds theorethical risk, the evidence is less likely under the theory than it is when the theory does not hold.
+Third, if the theoretical risk equals zero, then posterior probability is at best equal to prior probability but only if detectability is perfect ($P(H|E)$ = 1).
 In other words, observing a sure fact does not lend credence to a hypothesis.
 
 This sounds like a truism but is directly related to Popper's seminal criterion of demarcation.
-He stated that if it is impossible to prove a hypothesis false ($P(E|¬H) = 1$ or $P(¬E|¬H) = 0$), it can not be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
+He stated that if it is impossible to prove a hypothesis false ($P(¬E|¬H) = 0$, theoretical risk is zero), it can not be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
 We note these relations to underline that the Bayesian rational we apply here is able to reconstruct many commonly held views on riskiness and epistemic value.
 
 # Preregistration as a Means to Increase Theoretical Risk?
@@ -194,7 +198,7 @@ We will later show that preregistration increases the belief one can stake in th
 The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
 
 Second, available resources limit theoretical risk.
-Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
+Increasing theorethical risk ($P(¬E|¬H)$) will usually decrease detectability ($P(E|H)$) unless more resources are invested.
 In other words, one can not increase power while maintaining the same type I error rate without increasing the invested resources.
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
 Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
@@ -209,11 +213,11 @@ To that end, we incorporate uncertainty into our framework.
 
 ## Statistical Methods
 
-Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ and statistical methods.
+Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ (the inverse of theorethical risk) and statistical methods.
 If you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, then the nill-hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
 Researchers who choose a smaller type I error rate can hence be more sure of their results, if significant.
 However, the research hypothesis is seldomly equal to the statistical null hypothesis.
-We argue that $P(E|¬H)$ (and hence its inverse, theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
+We argue that $P(E|¬H)$ (and hence theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
 Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to $P(E|¬H)$.
 Examples of our ability to exert this control are the setting of type I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria or cross-validation in machine learning.
