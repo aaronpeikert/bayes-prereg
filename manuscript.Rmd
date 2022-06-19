@@ -41,7 +41,7 @@ options(
 -->
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else being equal.
-The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
 Confusing exploratory findings with confirmed theories has lead to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005] and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
