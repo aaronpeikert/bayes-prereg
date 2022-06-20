@@ -69,7 +69,7 @@ Equating confirmatory research with preregistered research is only possible for 
 Under these conditions, the rule upholds, but such restricted use makes preregistration a niche solution unable to match the greater problem of replicability in psychology and elsewhere.
 
 We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
-To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [we borrow the term from @meehlTheoreticalRisksTabular1978], which is inversely related to type I error rate.
+To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978 but assigned to the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to type I error rate.
 We then outline two interpretations of how theoretical risk is impacted by preregistration.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type I error.
 The second interpretation is our main contribution and demonstrates the broad applicability of preregistration for both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes after preregistration.
@@ -161,6 +161,9 @@ We already have noted that there is not much to do about $P(H)$ (and hence its c
 The real lever to pull is, therefore, $P(E|¬H)$.
 This probability tells us how likely it is that we find evidence when in fact, the theory is not true.
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
+We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
+In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
+However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ is theoretical risk.
 
 ```{r, include=FALSE}
 bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))

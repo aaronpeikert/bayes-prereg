@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: references.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -18,3 +19,5 @@ cat(readLines('abstract.md'))
 ```
 
 [🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+
+## References
