@@ -528,22 +528,22 @@ From the perspective of an ultimate sceptic, they may claim maximum uncertainty.
 Communicating clearly what the authors did to arrive at the evidence (<!--AB: "to arrive at the evidence" is unclear to me, do you mean a conditional probability or really the evidence itself, say, in numeric form in a data table)? --> is crucial for judging the theoretical risk they took.
 Preregistrations are ideal to communicate just that, because any description after the fact is suspect to be incomplete.
 The authors could have decided to exclude a number of analytic strategies they tried out etc.
-That is not to say that any study that was not preregistered was subjected to practices of p hacking.
-The point is, we can not exclude this and a myriad of other possibilities and, hence, are left uncertain.
-If the researcher do describe what they intend to do beforehand, and then report they did exactly that, the readers can be certain, that they have received a complete account of the situation.
-They still might be uncertain about the actual theoretical risk the authors took but much less so.
-Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms, the probability of plain error in analyses etc.
+That is not to say that a study that was not preregistered was subjected to practices of p hacking or other questionable research practices.
+The point is, as a sceptic, we cannot exclude this and a myriad of other possibilities that may bias the conclusions drawn from the presented evidence and, hence, are left in a state of uncertainty.
+If the researchers do describe what they intend to do beforehand, and then report they did exactly that, this uncertainty is drastically reduced.
+They still might be uncertain about the concrete theoretical risk the authors took but much less so.
+Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analysies, etc.
 In any case a well written preregistration should aim to reduce the uncertainty about the theoretical risk and hence increase the persuasiveness of evidence.
 
 # Discussion
 
-We started out with the observation that preregistrations do no always cleanly divide preregistration from confirmation.
+We started out with the observation that preregistrations do no always cleanly distinguish exploration from confirmation. 
 Enforcing this distinction would mean to use preregistrations as a means to increase the theorethical risk researcher take on.
 No doubt this results in more trustworthy evidence and may even increase the effectiveness of scientific undertakings in general.
-However, as the term implies, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favoring the theory.
-As we showed, minimizing the uncertainty around the theoretical risk shares the beneficial properties without increasing the likelihood of a "failed" study.
-Let us note that a study that does not result in the evidence a researcher is hoping for is still precious for the scientific process.
-Under the current incentive structure, however, many researchers have reason to avoid such outcomes and few, if any, have the privilege to operate outside of these incentives.
+However, as argued earlier, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favoring the theory (a special instance of this problem is the well-known trade-off of statistical power and type-I error rate).
+As we further argued, minimizing the uncertainty about theoretical risk is similarly beneficial without increasing the likelihood of a "failed" study.
+Note that any single study that does not produce evidence in favor of a research hypothesis is still precious for the scientific process. <!--AB: is my rephrasing correct? Please elaborate more. Why is it helpful? In the sense of a meta-analysis? -->
+Under the current incentive structure in academia, however, many researchers have reason to avoid such negative outcomes and few, if any, have the privilege to operate outside of these incentives. <!--AB: but see registered reports, journals that increasingly publish null findings, Bayesian analyses etc-->
 
 The advantage of this perspective that puts uncertainty about theoretical risk front and center is twofold.
 First, aiming to reduce uncertainty is beneficial across a wide range of potential theoretical risks.
