@@ -68,7 +68,7 @@ These issues arise from a fundamental confusion about the objective of preregist
 Researchers are bound to be confused when they delegate an important scientific judgment to a simple decision rule, that only takes into account the existence of a preregistration.
 Preregistering an inherently exploratory analysis (like testing dozens of relations) does not make it confirmatory, nor will a carefully conducted confirmatory study become exploratory if the researcher deviates from the preregistration in minor details.
 Equating confirmatory research with preregistered research is only possible for studies that expect low type I error rate and will run/be analyzed without changes no matter what [@simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
-Under these conditions, the rule upholds, but such restricted use makes preregistration a niche solution unable to match the greater problem of replicability in psychology and elsewhere.
+Under these conditions, the rule upholds, but such restricted use makes preregistration a niche solution unable to match the greater problem of replicability in psychological research or elsewhere.
 
 
 We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
@@ -80,9 +80,7 @@ The second interpretation is our main contribution and demonstrates the broad ap
 Following this interpretation, the theoretical risk is not necessarily directly maximized by preregistration, but rather the uncertainty in judging the theoretical risk is minimized.
 
 To arrive at this interpretation, we rely on three arguments.
-
 The first is that theoretical risk is vital for judging theories.
-
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
 We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
@@ -92,8 +90,8 @@ We conclude that because preregistration decreases uncertainty about the theoret
 Let us start by defining what we call expected epistemic value.
 If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude (truthlikeness).
 In other words, they hope to learn something from conducting the study.
-The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory is what we call epistemic value.
-While researchers can not know what exactly they will learn from a study, they can form an expectation that helps them decide which study to conduct.
+The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
+Researchers cannot know what they will learn from a study before they have run it. However, they can develop an expectation that helps them to decide which study to conduct <!--AB in the sense of maximum information gain? What does "which study" mean? I guess you mean just any possible property of an study in the planning phase that can be altered?-->.
 This expectation is what we term expected epistemic value.
 To make our three arguments, we must assume three things about this estimation process and how it relates to choosing a study to conduct.
 
@@ -112,7 +110,7 @@ Without deliberating these concepts further, we find it persuasive that research
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
 The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of probability; that remains a leap of faith.
 Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
-In fact, this conceptualization is purposefully reductionistic to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
+In fact, this conceptualization is intentionally reductionistic to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
 
 # Epistemic Value and Theoretical Risk
 
