@@ -428,3 +428,5 @@ rsconnect/
 .httr-oauth
 .DS_Store
 *.pdf
+README.html
+apa.csl
