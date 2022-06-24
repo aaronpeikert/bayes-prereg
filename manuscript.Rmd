@@ -119,9 +119,9 @@ Put simply, risky predictions create persuasive evidence if they turn out to be 
 This point is crucial because we attribute much of the appeal of preregistration to this fact.
 
 Let us make some simplifying assumptions and define notation.
-We restrict ourselves to evidence of a binary nature (either exists or does not) since continuous evidence would lead to some quite involved derivations.
+We restrict ourselves to evidence of a binary nature (either exists or does not exist) <!--this seems like an ontological level but here again, aren't we on an epistemic level, so shouldn't it be: was observed or not? --> since continuous evidence would lead to some quite involved derivations.
 <!--AB: What about measurement error? Is evidence thought to be measurement-free her? -->
-We denote the probability of a hypothesis before observing evidence as $P(H)$ and its complement as $P(¬H) = 1 - P(H)$.
+We denote the probability <!--AB: personally, I think that a lot of confusion with Bayesian results is that the 'term' probability makes it sound objective and truthful; would you be okay with replacing probability with credibility to underline the subjective nature of this approach? Or would this be even more confusing?--> of a hypothesis before observing evidence as $P(H)$ and its complement as $P(¬H) = 1 - P(H)$.
 <!--AB: Not all readers may understand what the probability of a hypothesis is. Elaborate more on the probability interpretation of Bayesians as credibility.-->
 The probability of observing evidence under some hypothesis is $P(E|H)$.
 We can calculate the probability of the hypothesis after observing the evidence with help from the Bayes formula:
@@ -131,18 +131,19 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)}
 $$
 
 $P(H|E)$ is of great relevance since $P(H|E)$ is often used directly or indirectly as a measure of corroboration of a hypothesis.
-In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to $P(H)$, it is called increase in firmness.
+In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the prior believe in the hypothesis, $P(H)$, it is called increase in firmness.
 We refrain from discussing specific measures of corroboration since no measure shows universally better properties than others.
 However, it is generally expected that any measure of corroboration increases monotonically with an increase in $P(H|E)$.
 
-In short, we want to increase $P(H|E)$.
-Increases in $P(H|E)$ are associated with increased epistemic value, of which we want to maximize the expectation.
+In short, to support our theory as good as possible, we want to increase $P(H|E)$. <!-- or: to corroborate or to confirm or...?-->
+Increases in $P(H|E)$ are associated with increased epistemic value, of which we want to maximize the expectation. <!--Why the expectation? Because you take the expectation of an entire field or a scientist who does multiple experiments over her/his career? -->
 So how can we increase $P(H|E)$?
 The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
-The first option leads us to the unsurprising conclusion that higher $P(H)$ leads to higher $P(H|E)$.
-However, the a priori probability of a hypothesis is nothing our study design can change.
-The second option is similar commonsensical; that is, an increase in $P(E|H)$ leads to higher $P(H|E)$.
-Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
+The first option leads us to the unsurprising conclusion that a higher prior believe in a theory, $P(H)$, leads to higher $P(H|E)$.
+If a hypothesis is more credible to begin with, the same increase in corroboration will lead to a higher credibility than if the study was less credible to begin with. <!--AB: not sure - state the obvious explicitly?-->
+Anyhow, the a priori probability of a hypothesis is nothing our study design can change.
+The second option is similar unsurprising; that is, an increase in $P(E|H)$ leads to higher $P(H|E)$.
+In other words, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
 While this truism is strongly related to study design, it is unrelated to preregistration.
 Thus, $P(E)$ remains to be considered.
 Since $P(E)$ is the denominator, increasing it will decrease $P(H|E)$: The more unlikely it is to observe evidence, the more it increases the probability of the hypothesis if we do observe it.
@@ -170,7 +171,7 @@ This probability tells us how likely it is that we find evidence in favor of the
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
 We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
 In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
-However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ is theoretical risk.
+However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ can be related to or even equated to theoretical risk.
 
 ```{r, include=FALSE}
 bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))
@@ -195,7 +196,7 @@ not E: people improve less or equal to 10 points on the depression scale
 -->
 
 
-Let us note some interesting properties of theoretical risk $P(¬E|¬H)$.
+Let us note some interesting properties of theoretical risk, $P(¬E|¬H)$.
 <!--AB: I rephrased this sentence. Is credibility equal to epistemic value?-->
 First, if the objective is to increase the credibility of a theory $P(H|E)$, this can
 be achieved by increasing theoretical risk.
@@ -268,22 +269,22 @@ The precision with which researchers can discuss statistical contributions to $P
 We can not hope to resolve this uncertainty; but we have to be aware of its implications.
 These are relayed in the following.
 
-## Causes of Uncertainty
+## Sources of Uncertainty <!--AB really causes?-->
 
 As we noted, it is possible to quantify how statistical models affect the theoretical risk based on mathematical considerations and simulation.
-However, other factors in the broader context of the study are much harder to quantify.
+However, other factors in the broader context of a given study are much harder to quantify.
 If one chooses to focus only on the contribution of statistical methods to $P(E|¬H)$, one is bound to underestimate it.
-Take, for example, a t-test of mean differences.
-Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its promised type I error rate.
+Take, for example, a t-test of mean differences in two samples.
+Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it will keep its promised type I error rate.
 However, researchers might do many very reasonable things in the broader context of the study that affect theoretical risk:
-They might exclude outliers, choose to drop an item before computing a sum score, broaden their definition of the population to be sampled, translate their questionnaires into a different language without validating it, impute missing values, or any number of other things.
-All of these decisions carry a small risk that they increase the likelihood of obtaining evidence despite the underlying hypothesis being false.
+They might exclude outliers, choose to drop an item before computing a sum score, broaden their definition of the population to be sampled (thus jeopardizing distributional assumptions<!-- AB: is this what you meant?-->), translate their questionnaires into a different language without validating it, impute missing values, or any number of other things.
+All of these decisions carry a small risk that they increase the likelihood of obtaining evidence despite the underlying research hypothesis being false.
 Even if the t-test itself perfectly maintains its type I error rate, these factors influence $P(E|¬H)$.
 While, in theory, these factors may leave $P(E|¬H)$ unaffected or even decrease it, we argue that this is not the case in practice.
 Whether researchers want to or not, except under strict blinding, they continuously process information about how the study is going.
-While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
+While one can hope that processing this information does not affect their decision making either way, this cannot be ruled out.
 We, therefore, conclude that statistical properties only guarantee a lower bound to the quantity we seek to minimize.
-The only thing we can conclude with some certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees without knowledge about the other factors at play.
+The only thing we can conclude with some certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees without knowledge about other factors that play a role.
 
 ## The effects of uncertainty
 
@@ -500,13 +501,15 @@ results %>%
 
 Neither absolute certainty nor uncertainty are realistic scenarios but represent the boundary conditions that all realistic conditions fall in.
 Depending on the distribution that expresses our state of knowledge about the theoretical risk a study took on, our expectation for what to gain varies considerably.
-Uncertainty about theoretical risk is expressed through the variance (or rather entropy) of the distribution.
+Uncertainty about theoretical risk is expressed through the entropy of the distribution. Under Gaussian assumptions, this is proportional to the variance of the distribution.
 Generally, we expect that increases in uncertainty (expressed as more entropic distributions) lead to a decreased expected epistemic value.
+
+<!--AB: I am confused that a new section heading is following but I haven't still understood or seen what follows from the expectation that you just gave. I assume the problem is that you created Figures 1 & 2 to illustrate the consequences of the choices you made and the expectation you presented but you do not refer to these Figures from the text, o the reader is lost and may never read the figures... please refer to the figures and explain what is going on in the text. Currently, I do not know what to take from Figure 2 other than that there are different ways to formalize this. Please also cite all sources for these measures in the text.-->
 
 # Preregistration as a Means to Decreasing Uncertainty about the Theoretical Risk
 
-We hope to have persuaded you to accept two arguments: First, the theoretical risk is important for judging evidential support for theories.
-Second, the theoretical risk is inherently uncertain, which diminishes the persuasiveness of the gathered evidence.
+We hope to have persuaded the reader to accept two arguments: First, the theoretical risk is important for judging evidential support for theories.
+Second, the theoretical risk is inherently uncertain and the degree of uncertainty diminishes the persuasiveness of the gathered evidence. <!--AB my rewrite correct?-->
 The last argument is that preregistrations reduces this uncertainty.
 
 Recollect, our three assumptions:
@@ -522,7 +525,7 @@ While the authors may have deep insight into what they did and how it might infl
 In particular, they never know what relevant factors the authors, intentionally or not, failed to disclose.
 From the perspective of an ultimate sceptic, they may claim maximum uncertainty.
 
-Communicating clearly what the authors did to arrive at the evidence is crucial for judging the theoretical risk they took.
+Communicating clearly what the authors did to arrive at the evidence (<!--AB: "to arrive at the evidence" is unclear to me, do you mean a conditional probability or really the evidence itself, say, in numeric form in a data table)? --> is crucial for judging the theoretical risk they took.
 Preregistrations are ideal to communicate just that, because any description after the fact is suspect to be incomplete.
 The authors could have decided to exclude a number of analytic strategies they tried out etc.
 That is not to say that any study that was not preregistered was subjected to practices of p hacking.
