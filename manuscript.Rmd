@@ -122,9 +122,9 @@ We denote the probability of a hypothesis before observing evidence as $P(H)$ an
 The probability of observing evidence under some hypothesis is $P(E|H)$.
 We can calculate the probability of the hypothesis after observing the evidence with help from the Bayes formula:
 
-$$
-P(H|E) = \frac{P(H)P(E|H)}{P(E)}
-$$
+\begin{equation}
+P(H|E) = \frac{P(H)P(E|H)}{P(E)} (\#eq:bayes)
+\end{equation}
 
 The posterior probability ($P(H|E)$) is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
 In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability ($P(H)$), it is called increase in firmness.
@@ -158,9 +158,9 @@ We argue that the main function of preregistration is to enable proper judgment 
 To better understand how preregistrations can achieve that, let us take a closer look at what factors contribute to $P(E)$. 
 Using the law of total probability, we can split $P(E)$ into two terms:
 
-$$
-P(E) = P(H)P(E|H) + P(¬H)P(E|¬H)
-$$
+\begin{equation}
+P(E) = P(H)P(E|H) + P(¬H)P(E|¬H) (\#eq:total-expectedness)
+\end{equation}
 
 We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(¬H)$), and that it is common sense to increase detectability ($P(E|H)$).
 The real lever to pull is, therefore, $P(E|¬H)$.
@@ -290,18 +290,18 @@ Before we ask how preregistration is influencing this uncertainty, we must consi
 Within the Bayesian framework, this is both straightforward and insightful.
 To get an expectation, we express uncertainty as a probability distribution and then integrate over it:
 
-$$
-\mathbb{E}(p(H|E)) = \int \frac{p(H)p(E|H)}{p(H)p(E|H)+p(\neg H) p(E|\neg H) } \; \text{d}\; \mathbb{P}(p(E|\neg H))
-$$
+\begin{equation}
+\mathbb{E}(p(H|E)) = \int \frac{p(H)p(E|H)}{p(H)p(E|H)+p(\neg H) p(E|\neg H) } \; \text{d}\; \mathbb{P}(p(E|\neg H)) (\#eq:integral)
+\end{equation}
 
 To illustrate the effect of uncertainty, let $p(E|H) = .8$ (e.g., power of 80%) and $p(H) = .1$ and assume a uniform distribution for $p(E|\neg{}H)$ of the form:
 
-$$
+\begin{equation}
 f(x)=\begin{cases}
   \frac{1}{\tau} & \mathrm{for}\ 0 \le x \le \tau,\\
   0 & \mathrm{for}\ x<0\ \mathrm{or}\ x>\tau
   \end{cases}
-$$
+\end{equation}
 
 Where $\tau{}$ is the upper bound of theoretical risk (e.g., .95 for a statistical model with a nominal type I error rate of 5%).
 
