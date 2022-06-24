@@ -41,9 +41,10 @@ options(
 -->
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else being equal.
-The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [see @hoyningen-hueneContextDiscoveryContext2006].
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
 Confusing exploratory findings with confirmed theories has lead to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005] and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
+
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
 However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
 These skeptics question why a study should be preregistered at all.
@@ -69,14 +70,15 @@ Equating confirmatory research with preregistered research is only possible for 
 Under these conditions, the rule upholds, but such restricted use makes preregistration a niche solution unable to match the greater problem of replicability in psychology and elsewhere.
 
 We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
-To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [we borrow the term from @meehlTheoreticalRisksTabular1978], which is inversely related to type I error rate.
+To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978 but assigned to the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to type I error rate.
+
 We then outline two interpretations of how theoretical risk is impacted by preregistration.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type I error.
 The second interpretation is our main contribution and demonstrates the broad applicability of preregistration for both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes after preregistration.
 Following this interpretation, the theoretical risk is not necessarily directly maximized by preregistration, but rather the uncertainty in judging the theoretical risk is minimized.
 
 To arrive at this interpretation, we rely on three arguments.
-The first is that theoretical risk is vital for judging theories.
+The first is that theoretical risk is vital for judging evidential support for theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
 We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
@@ -110,7 +112,7 @@ In fact, this conceptualization is purposefully reductionistic to be compatible 
 
 # Epistemic Value and Theoretical Risk
 
-Our first argument is that theorethical risk is crucial for judging theories.
+Our first argument is that theorethical risk is crucial for judging evidential support for theories.
 Put simply, risky predictions create persuasive evidence if they turn out to be correct.
 This point is crucial because we attribute much of the appeal of preregistration to this fact.
 
@@ -127,12 +129,12 @@ $$
 The posterior probability ($P(H|E)$) is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
 In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability ($P(H)$), it is called increase in firmness.
 We refrain from discussing specific measures of corroboration since no measure shows universally better properties than others.
-However, it is generally expected that any measure of corroboration (and even increases monotonically with an increase in posterior probability ($P(H|E)$).
+However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability ($P(H|E)$).
 
 In short, we want to increase posterior probability ($P(H|E)$).
 Increases in posterior probability ($P(H|E)$) are associated with increased epistemic value, of which we want to maximize the expectation.
 So how can we increase posterior probability?
-The Bayes formula gives us three options to investigate, namely $P(H)$, $P(E|H)$ and $P(E)$.
+The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
 The first option leads us to the unsurprising conclusion that higher a priori probability ($P(H)$) leads to higher posterior probability ($P(H|E)$).
 However, the prior probability of a hypothesis is nothing our study design can change.
 The second option is similar commonsensical; that is, an increase in $P(E|H)$ leads to higher posterior probability ($P(H|E)$).
@@ -153,7 +155,7 @@ Consequently, researchers have an incentive to appear to take more risks than th
 It is at this juncture that the practice and mispractice of preregistration comes into play.
 We argue that the main function of preregistration is to enable proper judgment of the riskiness of a study.
 
-To better understand how preregistrations can achieve that, let us take a closer look at what factors contribute to $P(E)$. <!--AB: is this expectedness (Pap, 1962) as quoted on p.818 in Meehl's risk paper?-->
+To better understand how preregistrations can achieve that, let us take a closer look at what factors contribute to $P(E)$. 
 Using the law of total probability, we can split $P(E)$ into two terms:
 
 $$
@@ -162,8 +164,11 @@ $$
 
 We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(¬H)$), and that it is common sense to increase detectability ($P(E|H)$).
 The real lever to pull is, therefore, $P(E|¬H)$.
-This probability tells us how likely it is that we find evidence when in fact, the theory is not true.
+This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
+We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
+In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
+However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ is theoretical risk.
 
 Let us note some interesting properties of theoretical risk ($P(¬E|¬H)$).
 First, increasing theoretical risk leads to higher posterior probability ($P(H|E)$, our objective).
@@ -240,26 +245,26 @@ Mindlessly maximizing theoretical risk would either never produce evidence or re
 We established that higher theoretical risk leads to more persuasive evidence.
 In other words, we have reconstructed the interpretation that preregistrations supposedly work by restricting the researchers, which in turn increases the theoretical risk (or equivalently limit type I error rate) and thereby creates more persuasive evidence.
 Nevertheless, there are trade-offs for increasing theoretical risk.
-Employing a mathematical framework allows us to navigate the trade-offs more effectively and move towards a second, more favourable interpretation.
+Employing a mathematical framework allows us to navigate the trade-offs more effectively and move towards a second, more favorable interpretation.
 To that end, we incorporate uncertainty into our framework.
 
 ## Statistical Methods
 
-Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ (the inverse of theorethical risk) and statistical methods.
-If you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, then the nill-hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
-Researchers who choose a smaller type I error rate can hence be more sure of their results, if significant.
-However, the research hypothesis is seldomly equal to the statistical null hypothesis.
-We argue that $P(E|¬H)$ (and hence theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
+Theoretical risk is deeply connected with statistical methods, because its the inverse of $P(E|¬H)$.
+$P(E|¬H)$ is equivalent to the type I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill-hypothesis is $¬H$.
+Because many researchers are familiar with type I error rate, it can be helpful to remember this connection to theorethical risk.
+Researchers who choose a smaller type I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
+However, the research hypothesis is seldomly equal to the statistical null hypothesis, and therefore, the relation between statistical type I error rate and theoretical risk should not be over interpreted.
+We argue that theoretical risk (and hence its inverse, $P(E|¬H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
-Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to $P(E|¬H)$.
+Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to theoretical risk.
 Examples of our ability to exert this control are the setting of type I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria or cross-validation in machine learning.
-These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none.
-They are thus closely related to theoretical risk.
+These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none ($P(E|¬H)$).
 
-The point is that the contribution of statistical methods to $P(E|¬H)$ can be formally assessed.
+The point is that the contribution of statistical methods to theoretical risk can be formally assessed.
 For many statistical models it can be analytically computed under some assumptions.
-For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution to $P(E|¬H)$.
-The precision with which researchers can discuss statistical contributions to $P(E|¬H)$ has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
+For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution to theoretical risk.
+The precision with which statisticians can discuss contributions to theoretical risk has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
 We can not hope to resolve this uncertainty; but we have to be aware of its implications.
 These are relayed in the following.
 
@@ -267,18 +272,17 @@ These are relayed in the following.
 
 As we noted, it is possible to quantify how statistical models affect the theoretical risk based on mathematical considerations and simulation.
 However, other factors in the broader context of the study are much harder to quantify.
-If one chooses to focus only on the contribution of statistical methods to $P(E|¬H)$, one is bound to underestimate it.
+If one chooses to focus only on the contribution of statistical methods to theorethical risk, one is bound to overestimate it.
 Take, for example, a t-test.
 Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its type I error rate.
 However, researchers might do many very reasonable things in the broader context of the study that affect theoretical risk:
 They might exclude outliers, choose to drop an item, enlarge their definition of the population to be sampled, translate their questionnaires, impute missing values, or any number of other things.
 All of these decisions carry a small risk that they increase the likelhood of obtaining evidence despite the underlying hypothesis being false.
-Even if the t-test itself perfectly maintains its type I error rate, these factors must be added to $P(E|¬H)$.
-While, in theory, these factors may leave $P(E|¬H)$ unaffected or even decrease it, we argue that this is not the case in practice.
+Even if the t-test itself perfectly maintains its type I error rate, these factors must be added to $P(E|¬H)$ and, hence, be subtracted from theoretical risk.
+While, in theory, these factors may leave theoretical risk unaffected or even increase it, we argue that this is not the case in practice.
 Whether researchers want to or not, except under strict blinding, they continuously process information about how the study is going.
 While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
-We, therefore, conclude that statistical properties only guarantee a lower bound to the quantity we seek to minimize.
-The only thing we can conclude with some certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees without knowledge about the other factors at play.
+The only thing we can conclude with some certainty is that theorethical risk is not higher than what the statistical model guarantees without knowledge about the other factors at play.
 
 ## The effects of uncertainty
 
@@ -294,97 +298,77 @@ To illustrate the effect of uncertainty, let $p(E|H) = .8$ (e.g., power of 80%) 
 
 $$
 f(x)=\begin{cases}
-  \frac{1}{1 - \alpha} & \mathrm{for}\ \alpha \le x \le 1,\\
-  0 & \mathrm{for}\ x<\alpha\ \mathrm{or}\ x>1
+  \frac{1}{\tau} & \mathrm{for}\ 0 \le x \le \tau,\\
+  0 & \mathrm{for}\ x<0\ \mathrm{or}\ x>\tau
   \end{cases}
 $$
 
-Where $\alpha$ is, e.g., the statistical model's nominal type I error rate.
+Where $\tau{}$ is the upper bound of theoretical risk (e.g., .95 for a statistical model with a nominal type I error rate of 5%).
 
-We chose this uniform distribution to capture our statement that a statistical model only guarantees a lower bound to $p(E|\neg{}H)$ (and since its a probability the upper bound is 1) as it is the maximum entropy distribution under this assumption and conforms therefore with our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
-
-```{r, include=FALSE, cache=TRUE}
-bayes <- function(h1, power, alpha, ...) {
-  (h1 * power) / (h1 * power + (1 - h1) * alpha)
-}
-uncertain_bayes <- function(h1, power, alpha, alpha_upper = 1, ...) {
-  mean(bayes(h1, power, runif(1e6, alpha, alpha_upper)))
-}
-
-step <- 0.01
-vary_alpha <-
-  tidyr::expand_grid(
-    h1 = .1,
-    power = .8,
-    alpha = seq(step, 1 - step, step)
-  ) %>% 
-  dplyr::mutate(.,
-    certain = purrr::pmap_dbl(., bayes),
-    uncertain = purrr::pmap_dbl(., uncertain_bayes)
-  )
-
-vary_alpha_long <- vary_alpha %>% 
-  pivot_longer(c(certain, uncertain),
-               names_to = "certainty",
-               values_to = "h2")
-```
-
-```{r, dev='tikz'}
-#| fig.cap: "Corroboration as firmness ($p(E|H)$) as a function of α, where α is either certain (solid line) or maximally uncertain (dotted line)."
-vary_alpha_long %>%
-  ggplot() +
-  geom_line(aes(alpha, h2, linetype = certainty)) +
-  lims(x = c(0, 1), y = 0:1) +
-  geom_ribbon(data = vary_alpha, aes(x = alpha, ymin = uncertain, ymax = certain), alpha = .1) +
-  labs(caption = "$p(E|H) = .8$, $p(H) = .1$",
-       y = "$\\mathbb{E}\\big(p(H|E)\\big)$",
-       x = "$\\alpha$") +
-  theme_tufte() +
-  theme(legend.position = c(.85, .8),
-        legend.title = element_blank())
-```
+We chose this uniform distribution to capture our statement that a statistical model only guarantees an upper bound to theorethical rsik (and since its a probability the lower bound is 0) as it is the maximum entropy distribution under this assumption and conforms therefore with our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
 
 ```{r, include=FALSE}
-# h1 = prior
-# eh = p(E|H)
-# enh = p(E|\neg{}H)
+forbid_additional_args <- function(...)stopifnot(length(list(...)) == 0L)
 
-bayes <- function(h1, eh, enh, ...) {
-  (h1 * eh) / (h1 * eh + (1 - h1) * enh)
+#' Apply the Bayes Theorem
+#'
+#' @param h The prior probability of the hypothesis \eqn{P(H)}.
+#' @param detectability The probability of detecting evidence, if hypothesis holds \eqn{P(E|H)}.
+#' @param theoretical_risk The probability of not detecting evidence, if hypothesis does not hold \eqn{P(¬E|¬H)}.
+#' @param tau Same as `theoretical_risk` for compatibility.
+#' @return The posterior probability of the hypothesis after observing evidence \eqn{P(H|E)}.
+bayes <- function(h, detectability, theoretical_risk, ...) {
+  forbid_additional_args(...)
+  true_positive <- h * detectability
+  false_positive <- (1 - h) * (1 - theoretical_risk)
+  true_positive / (true_positive + false_positive)
 }
+
 # all formulas taken from Bayesian Philosophy of Science, p. 51
 # first letter = function name in Bayesian Philosophy of Science
 # optional letter = p for prime
 # second letter = m for measure
 measures <- list(
+  pm = list(
+    name = "Posterior",
+    formula = "\\frac{P(H)P(E|H)}{P(H)P(E|H) + P(¬H)P(E|¬H)}",
+    fun = bayes
+  ),
   dm = list(
     name = "Difference Measure",
     formula = "d(H, E) = p(H|E) - p(H)",
-    fun = function(h1, eh, enh, ...) {
-      he <- bayes(h1, eh, enh)
-      he - h1
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      he - h
     }
   ),
   rm = list(
     name = "Log-Ratio Measure",
     formula = "r(H, E) = log(\\frac{p(H|E)}{p(H)})",
-    fun = function(h1, eh, enh, ...) {
-      he <- bayes(h1, eh, enh)
-      log(he / h1)
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      log(he / h)
     }
   ),
   lm = list(
     name = "Log-Likelihood Measure",
     formula = "l(H, E) = log(\\frac{p(H|E)}{p(E|\\neg{}H)})",
-    fun = function(h1, eh, enh, ...) {
-      he <- bayes(h1, eh, enh)
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      enh <- 1 - theoretical_risk
       log(he / enh)
     }
   ),
   km = list(
     name = "Kemeny–Oppenheim Measure",
     formula = "k(H, E) = \\frac{p(E|H) - p(E|\\neg{}H)}{p(E|H) + p(E|\\neg{}H)}",
-    fun = function(h1, eh, enh, ...) {
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      eh <- detectability
+      enh <- 1 - theoretical_risk
       (eh - enh) / (eh + enh)
     }
   ),
@@ -395,52 +379,75 @@ measures <- list(
   \\frac{p(E|H) - p(H)}{1 - p(H)}, & \\text{if } p(H|E) \\geq{} p(H) \\\\
   \\frac{p(E|H) - p(H)}{p(H)}, & \\text{if } p(H|E) < p(H)
 \\end{cases}",
-fun = function(h1, eh, enh, ...) {
-  he <- bayes(h1, eh, enh)
-  ifelse(he >= h1, (he - h1)/(1 - h1), (he - h1)/h1)
-}
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      ifelse(he >= h, (he - h) / (1 - h), (he - h) / h)
+    }
   ),
-sm = list(
-  name = "Christensen–Joyce Measure",
-  formula = "s(H, E) = p(H|E) - p(H|\\neg{}E)",
-  fun = function(h1, eh, enh, ...) {
-    he <- bayes(h1, eh, enh)
-    e <- h1 * eh + (1 - h1) * enh
-    hne <- (h1 * (1 - eh)) / (1 - e)
-    he - hne
-  }
-),
-cpm = list(
-  name = "Carnap’s Relevance Measure",
-  formula = "c'(H, E) = p(E)(p(H|E) - p(H))",
-  fun = function(h1, eh, enh, ...) {
-    he <- bayes(h1, eh, enh)
-    e <- h1 * eh + (1 - h1) * enh
-    e * (he - h1)
-  }
-),
-rpm = list(
-  name = "Rips Measure",
-  formula = "r'(H, E) = 1 - \\frac{p(\\neg{}H|E)}{p(\\neg{}H)}",
-  fun = function(h1, eh, enh, ...) {
-    he <- bayes(h1, eh, enh)
-    1 - (1 - he) / (1 - h1)
-  }
-)
+  sm = list(
+    name = "Christensen–Joyce Measure",
+    formula = "s(H, E) = p(H|E) - p(H|\\neg{}E)",
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      enh <- 1 - theoretical_risk
+      eh <- detectability
+      e <- h * eh + (1 - h) * enh
+      hne <- (h * (1 - eh)) / (1 - e)
+      he - hne
+    }
+  ),
+  cpm = list(
+    name = "Carnap’s Relevance Measure",
+    formula = "c'(H, E) = p(E)(p(H|E) - p(H))",
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      enh <- 1 - theoretical_risk
+      e <- h * detectability + (1 - h) * enh
+      e * (he - h)
+    }
+  ),
+  rpm = list(
+    name = "Rips Measure",
+    formula = "r'(H, E) = 1 - \\frac{p(\\neg{}H|E)}{p(\\neg{}H)}",
+    fun = function(h, detectability, theoretical_risk, ...) {
+      forbid_additional_args(...)
+      he <- bayes(h, detectability, theoretical_risk)
+      1 - (1 - he) / (1 - h)
+    }
+  )
 )
 
 measures <- tibble(!!!transpose(measures)) %>% 
   mutate(name = simplify(name, "chr"),
          formula = simplify(formula, "chr"))
 
-uncertainly <- function(fun, n = 1e5, seed = NULL){
-  function(h1, eh, enh){
+#' Integrate over uncertain theoretical risk
+#' 
+#' If theorethical risk is maximally uncertain, we represent this uncertainty
+#' as a uniform distribution from zero to tau from which we sample and average the measures.
+#'
+#' @param tau The guaranteed upper bound of theoretical risk.
+#' @param n Number of samples from the uniform distribution.
+#' @param seed Optional seed to set before execution. Is reset to global state on exit.
+#' @return A function similar to the original
+uncertainly <- function(measure, tau, n = 1e5, seed = NULL){
+  function(h, detectability, ...){
+    forbid_additional_args(...)
     if(!is.null(seed)){
       if(exists(".Random.seed"))on.exit(set.seed(.Random.seed))
       set.seed(seed)
     }
-    enh_samples <- runif(n, enh, 1)
-    mean(fun(h1, eh, enh_samples))
+    theoretical_risk_samples <- runif(n, 0, tau)
+    mean(measure(h, detectability, theoretical_risk_samples))
+  }
+}
+certainly <- function(measure, tau){
+  function(h, detectability, ...){
+    forbid_additional_args(...)
+    measure(h, detectability, tau)
   }
 }
 ```
@@ -448,15 +455,24 @@ uncertainly <- function(fun, n = 1e5, seed = NULL){
 ```{r, cache=TRUE, echo=FALSE}
 step <- 0.01
 
-grid <- tidyr::expand_grid(
-    h1 = .1,
-    eh = .8,
-    enh = seq(step, 1 - step, step)
+grid <-
+  tidyr::expand_grid(
+    h = .1,
+    detectability = .8,
+    tau = seq(step, 1 - step, step)
   )
-apply_on_grid <- function(f, grid) {
+apply_on_grid <- function(f, grid, seed = NULL, n = 1e4) {
+  certain <- function(h, detectability, tau, ...){
+    forbid_additional_args(...)
+    certainly(f, tau)(h, detectability)
+  }
+  uncertain <- function(h, detectability, tau, ...){
+    forbid_additional_args(...)
+    uncertainly(f, tau, seed = seed, n = n)(h, detectability)
+  }
   mutate(grid,
-         certain = pmap_dbl(grid, f),
-         uncertain = pmap_dbl(grid, uncertainly(f, seed = .Random.seed)))
+         certain = pmap_dbl(grid, certain),
+         uncertain = pmap_dbl(grid, uncertain))
 }
 
 results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>% 
@@ -467,21 +483,41 @@ results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>%
                values_to = "value")
 ```
 
-```{r, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "Several measures for corroboration as increase in firmness as a function of α, where α is either certain (solid line) or maximally uncertain (dotted line)."
-
-results %>%
+```{r, cache = TRUE}
+plots <- results %>%
   mutate(name = str_remove(name, "Measure")) %>%
   split(., .$name) %>%
   imap(
-    ~ ggplot(.x, aes(enh, value)) +
-      geom_line(aes(linetype = certainty)) +
-      labs(
-        title = .x$name,
-        y = element_blank(),
-        x = element_blank()
-      )
-  ) %>%
+    ~ ggplot() +
+      geom_line(aes(tau, value, linetype = certainty), data = .x) +
+      labs(title = .y,
+           y = element_blank(),
+           x = "$\\tau$") +
+      geom_ribbon(
+        data = pivot_wider(.x, names_from = certainty, values_from = value),
+        aes(x = tau, ymin = uncertain, ymax = certain),
+        alpha = .1
+      ) +
+      theme_tufte() +
+      NULL
+  )
+```
+
+
+```{r, dev = "tikz", cache=TRUE, warning=FALSE}
+#| fig.cap: "Posterior (corroboration as firmness) as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
+
+plots[["Posterior"]] +
+  labs(caption = "$p(E|H) = .8$, $p(H) = .1$",
+       y = "$\\mathbb{E}\\big(p(H|E)\\big)$") +
+  theme(legend.position = c(.2, .8),
+        legend.title = element_blank())
+```
+
+```{r, dev = "tikz", cache=TRUE, warning=FALSE}
+#| fig.cap: "Several measures for corroboration as increase in firmness as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
+
+plots[!(names(plots) %in% "Posterior")] %>% 
   reduce(`+`) +
   plot_layout(ncol = 2, guides = 'collect') &
   theme_tufte() &
