@@ -44,6 +44,7 @@ A successful prediction should lend more credibility to a theory than a postdict
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
 Confusing exploratory findings with confirmed theories has lead to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005] and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honour this distinction and produce results that are considered confirmatory.
+
 Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
 However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
 These skeptics question why a study should be preregistered at all.
@@ -70,6 +71,7 @@ Under these conditions, the rule upholds, but such restricted use makes preregis
 
 We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
 To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978 but assigned to the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to type I error rate.
+
 We then outline two interpretations of how theoretical risk is impacted by preregistration.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type I error.
 The second interpretation is our main contribution and demonstrates the broad applicability of preregistration for both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes after preregistration.
@@ -132,7 +134,7 @@ However, it is generally expected that any measure of corroboration increases mo
 In short, we want to increase $P(H|E)$.
 Increases in $P(H|E)$ are associated with increased epistemic value, of which we want to maximize the expectation.
 So how can we increase $P(H|E)$?
-The Bayes formula gives us three options to investigate, namely $P(H)$, $P(E|H)$ and $P(E)$.
+The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
 The first option leads us to the unsurprising conclusion that higher $P(H)$ leads to higher $P(H|E)$.
 However, the a priori probability of a hypothesis is nothing our study design can change.
 The second option is similar commonsensical; that is, an increase in $P(E|H)$ leads to higher $P(H|E)$.
@@ -159,7 +161,7 @@ $$
 
 We already have noted that there is not much to do about $P(H)$ (and hence its counter probability $P(¬H)$), and that it is common sense to increase $P(E|H)$.
 The real lever to pull is, therefore, $P(E|¬H)$.
-This probability tells us how likely it is that we find evidence when in fact, the theory is not true.
+This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
 We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
 In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
@@ -193,8 +195,8 @@ However, our imaginary researcher considers the relation between these two sets.
 For lack of a better theory, they assume that some relation between any variables of the two sets exists.
 This is not a risky prediction to make in psychology, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g. by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape etc.
-We will later show that preregistration increases the belief one can stake in the further specified theory, though it remains low till substantiated by testing it again.
-The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
+We will later show that preregistration increases the belief one can stake in the further specified theory, though it remains low until substantiated by testing it again.
+The point, however, is that we want to show that preregistration increases the expected epistemic value independent of the theory being tested.
 
 Second, available resources limit theoretical risk.
 Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
@@ -215,6 +217,7 @@ To that end, we incorporate uncertainty into our framework.
 Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ and statistical methods.
 If you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, then the nill-hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
 Researchers who choose a smaller type I error rate can hence be more sure of their results, if significant.
+In other words, the probability that a given significant finding reflects a true effect is larger if researchers lower their type I error rates.
 However, the research hypothesis is seldomly equal to the statistical null hypothesis.
 We argue that $P(E|¬H)$ (and hence its inverse, theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
@@ -235,12 +238,12 @@ These are relayed in the following.
 As we noted, it is possible to quantify how statistical models affect the theoretical risk based on mathematical considerations and simulation.
 However, other factors in the broader context of the study are much harder to quantify.
 If one chooses to focus only on the contribution of statistical methods to $P(E|¬H)$, one is bound to underestimate it.
-Take, for example, a t-test.
-Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its type I error rate.
+Take, for example, a t-test of mean differences.
+Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its promised type I error rate.
 However, researchers might do many very reasonable things in the broader context of the study that affect theoretical risk:
-They might exclude outliers, choose to drop an item, enlarge their definition of the population to be sampled, translate their questionnaires, impute missing values, or any number of other things.
-All of these decisions carry a small risk that they increase the likelhood of obtaining evidence despite the underlying hypothesis being false.
-Even if the t-test itself perfectly maintains its type I error rate, these factors must be added to $P(E|¬H)$.
+They might exclude outliers, choose to drop an item before computing a sum score, broaden their definition of the population to be sampled, translate their questionnaires into a different language without validating it, impute missing values, or any number of other things.
+All of these decisions carry a small risk that they increase the likelihood of obtaining evidence despite the underlying hypothesis being false.
+Even if the t-test itself perfectly maintains its type I error rate, these factors influence $P(E|¬H)$.
 While, in theory, these factors may leave $P(E|¬H)$ unaffected or even decrease it, we argue that this is not the case in practice.
 Whether researchers want to or not, except under strict blinding, they continuously process information about how the study is going.
 While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
