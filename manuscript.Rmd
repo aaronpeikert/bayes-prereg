@@ -195,8 +195,8 @@ However, our imaginary researcher considers the relation between these two sets.
 For lack of a better theory, they assume that some relation between any variables of the two sets exists.
 This is not a risky prediction to make in psychology, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g. by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape etc.
-We will later show that preregistration increases the belief one can stake in the further specified theory, though it remains low until substantiated by testing it again.
-The point, however, is that we want to show that preregistration increases the expected epistemic value independent of the theory being tested.
+We will later show that preregistration increases the belief one can stake in the further specified theory, though it remains low till substantiated by testing it again.
+The point, however, is that we want to show that preregistration increases the expected epistemic value without regard to the theory being tested.
 
 Second, available resources limit theoretical risk.
 Increasing $P(¬E|¬H)$ will usually decrease $P(E|H)$ unless more resources are invested.
@@ -209,27 +209,26 @@ Mindlessly maximizing theoretical risk would either never produce evidence or re
 We established that higher theoretical risk leads to more persuasive evidence.
 In other words, we have reconstructed the interpretation that preregistrations supposedly work by restricting the researchers, which in turn increases the theoretical risk (or equivalently limit type I error rate) and thereby creates more persuasive evidence.
 Nevertheless, there are trade-offs for increasing theoretical risk.
-Employing a mathematical framework allows us to navigate the trade-offs more effectively and move towards a second, more favourable interpretation.
+Employing a mathematical framework allows us to navigate the trade-offs more effectively and move towards a second, more favorable interpretation.
 To that end, we incorporate uncertainty into our framework.
 
 ## Statistical Methods
 
-Preregistration is often discussed in relation to statistical methods, so let us note some relations between $P(E|¬H)$ and statistical methods.
-If you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, then the nill-hypothesis is $¬H$, and therefore $P(E|¬H)$ is equivalent to the type I error rate.
-Researchers who choose a smaller type I error rate can hence be more sure of their results, if significant.
-In other words, the probability that a given significant finding reflects a true effect is larger if researchers lower their type I error rates.
-However, the research hypothesis is seldomly equal to the statistical null hypothesis.
-We argue that $P(E|¬H)$ (and hence its inverse, theorethical risk) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
+Theoretical risk is deeply connected with statistical methods, because its the inverse of $P(E|¬H)$.
+$P(E|¬H)$ is equivalent to the type I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill-hypothesis is $¬H$.
+Because many researchers are familiar with type I error rate, it can be helpful to remember this connection to theorethical risk.
+Researchers who choose a smaller type I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
+However, the research hypothesis is seldomly equal to the statistical null hypothesis, and therefore, the relation between statistical type I error rate and theoretical risk should not be over interpreted.
+We argue that theoretical risk (and hence its inverse, $P(E|¬H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
-Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to $P(E|¬H)$.
+Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to theoretical risk.
 Examples of our ability to exert this control are the setting of type I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria or cross-validation in machine learning.
-These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none.
-They are thus closely related to theoretical risk.
+These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none ($P(E|¬H)$).
 
-The point is that the contribution of statistical methods to $P(E|¬H)$ can be formally assessed.
+The point is that the contribution of statistical methods to theoretical risk can be formally assessed.
 For many statistical models it can be analytically computed under some assumptions.
-For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution to $P(E|¬H)$.
-The precision with which researchers can discuss statistical contributions to $P(E|¬H)$ has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
+For those models or assumptions where this is impossible, one can employ Monte Carlo simulation to estimate the contribution to theoretical risk.
+The precision with which statisticians can discuss contributions to theoretical risk has lured the community concerned with research methods into ignoring other factors that are much more uncertain.
 We can not hope to resolve this uncertainty; but we have to be aware of its implications.
 These are relayed in the following.
 
@@ -237,18 +236,17 @@ These are relayed in the following.
 
 As we noted, it is possible to quantify how statistical models affect the theoretical risk based on mathematical considerations and simulation.
 However, other factors in the broader context of the study are much harder to quantify.
-If one chooses to focus only on the contribution of statistical methods to $P(E|¬H)$, one is bound to underestimate it.
-Take, for example, a t-test of mean differences.
-Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its promised type I error rate.
+If one chooses to focus only on the contribution of statistical methods to theorethical risk, one is bound to overestimate it.
+Take, for example, a t-test.
+Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its type I error rate.
 However, researchers might do many very reasonable things in the broader context of the study that affect theoretical risk:
-They might exclude outliers, choose to drop an item before computing a sum score, broaden their definition of the population to be sampled, translate their questionnaires into a different language without validating it, impute missing values, or any number of other things.
-All of these decisions carry a small risk that they increase the likelihood of obtaining evidence despite the underlying hypothesis being false.
-Even if the t-test itself perfectly maintains its type I error rate, these factors influence $P(E|¬H)$.
-While, in theory, these factors may leave $P(E|¬H)$ unaffected or even decrease it, we argue that this is not the case in practice.
+They might exclude outliers, choose to drop an item, enlarge their definition of the population to be sampled, translate their questionnaires, impute missing values, or any number of other things.
+All of these decisions carry a small risk that they increase the likelhood of obtaining evidence despite the underlying hypothesis being false.
+Even if the t-test itself perfectly maintains its type I error rate, these factors must be added to $P(E|¬H)$ and, hence, be subtracted from theoretical risk.
+While, in theory, these factors may leave theoretical risk unaffected or even increase it, we argue that this is not the case in practice.
 Whether researchers want to or not, except under strict blinding, they continuously process information about how the study is going.
 While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
-We, therefore, conclude that statistical properties only guarantee a lower bound to the quantity we seek to minimize.
-The only thing we can conclude with some certainty is that $P(E|¬H)$ is not lower than what the statistical model guarantees without knowledge about the other factors at play.
+The only thing we can conclude with some certainty is that theorethical risk is not higher than what the statistical model guarantees without knowledge about the other factors at play.
 
 ## The effects of uncertainty
 
