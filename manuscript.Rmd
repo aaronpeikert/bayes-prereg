@@ -78,7 +78,7 @@ The second interpretation is our main contribution and demonstrates the broad ap
 Following this interpretation, the theoretical risk is not necessarily directly maximized by preregistration, but rather the uncertainty in judging the theoretical risk is minimized.
 
 To arrive at this interpretation, we rely on three arguments.
-The first is that theoretical risk is vital for judging theories.
+The first is that theoretical risk is vital for judging evidential support for theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
 We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
