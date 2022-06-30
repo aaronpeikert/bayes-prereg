@@ -40,6 +40,14 @@ options(
 * references!!!
 -->
 
+<!--AB: i feel that the intro needs a slower start and take the reader by the hand -->
+Imagine three researchers named Ben, Holly and the Wise Old Elf. <!--AB you may want to change these names--> 
+Based on his theoretical considerations, Ben predicts that personality traits are useful predictors of job success. 
+Based on her own theoretical considerations Holly specifically predicts that agreeableness is a good predictor of job success and she specifically predicts a correlation of 0.5. The Wise Old Elf who did not have a theory to begin with waits until Ben and Holly collected their data and after examining all correlations of job success and personality traits postdicts that indeed agreeableness is correlated with job success (which he claims to have known all along).
+Which theory should we attribute the largest credibility?
+
+Voice from off:  could we discuss precision of a theory and the exploration/confirmation distinction with an example like this?? And probably a lot more... let's discuss!
+-->
 
 A successful prediction should lend more credibility to a theory than a postdiction, all else being equal.
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
