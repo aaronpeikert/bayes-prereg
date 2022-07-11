@@ -185,7 +185,7 @@ Both theorethical risk ($P(¬E|¬H)$) and detectability ($P(E|H)$) aggregate unc
 To illustrate the concepts we introduced up to here, consider the following  example of a single theory and three experiments that may test it. 
 The experiments were created to illustrate how they may differ in their theoretical risk and detectability.
 Suppose the primary theory is about the cognitive phenomenon of "insight".
-For the purpose of illustration, we define it somewhat hand-wavinlyg as an cognitive abstraction that allows agents to consistently solve a well-defined class of problems.
+For the purpose of illustration, we define it somewhat hand-wavingly as an cognitive abstraction that allows agents to consistently solve a well-defined class of problems.
 We pose the hypothesis that the following problem belongs to such class of insight problems:
 
 > Use five matches (Ⅰ Ⅰ Ⅰ Ⅰ Ⅰ) to form the number eight. 
