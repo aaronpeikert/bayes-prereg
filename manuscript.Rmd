@@ -34,12 +34,6 @@ options(
 )
 ```
 
-<!--problems to solve:
-* I feel like I am describing a ruby goldberg machine here and expect the reader to understand what happens when you move the spoon
-* what about falsificationists, every time I write a paragraph relating to I delete it and try to move it a discussion
-* references!!!
--->
-
 A successful prediction should lend more credibility to a theory than a postdiction, all else being equal.
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
 Confusing exploratory findings with confirmed theories has lead to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005] and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
