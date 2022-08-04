@@ -12,7 +12,7 @@ env:
 jobs:
   preview:
     runs-on: ubuntu-latest
-    container: ghcr.io/aaronpeikert/bayes-prereg:main
+    container: ghcr.io/${{ github.repository }}:main
     steps:
       - 
         name: Checkout repository
