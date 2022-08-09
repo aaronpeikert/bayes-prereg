@@ -34,21 +34,21 @@ options(
 )
 ```
 
-A successful prediction should lend more credibility to a theory than a "postdiction," everything else being equal.
+A successful prediction should lend more credibility to a theory than a "postdiction," everything else being equal. <!-- ME: what is a postdiction? I think this word is to difficult if it is not a technical term -->
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
 Confusing exploratory findings with confirmed theories has led to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honor this distinction and produce results that are considered confirmatory.
 
-Indeed, rigorous application of preregistration prevents researchers from reporting a simple confirmatory story for a set of results produced by an arduous process of trial and error [@wagenmakersAgendaPurelyConfirmatory2012].
+Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012].
 However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
 These skeptics question why a study should be preregistered at all.
 Even researchers convinced of the advantages of preregistration face difficult problems when they exclusively rely on an intuitive appeal.
 Specifically, an intuitive conviction is unable to address pragmatic questions, such as what to include in the preregistration and how detailed this information should be, or about the conditions that warrant deviations.
-If the research community remains confused about the purpose of preregistration, it is bound to misapply it and hence decrease the efficiency of the scientific endeavor. 
+If the research community remains confused about the purpose of preregistration, it is bound to misapply it and hence decrease the efficiency of the scientific endeavor. <!-- what does efficiency mean in this case? Maybe there is a better word -->
 We thus propose a principled justification for preregistration with a formal objective against which researchers can evaluate several pragmatic trade-offs.
 
 The scientific community asserts that the objective of preregistration is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012].
-Taken at face value, this objective implies that research is confirmatory if, and only if, it is preregistered.
+Taken at face value, this objective implies that research is confirmatory if, and only if, it is preregistered. <!-- I dont think it does. I think it implies research can be 
 However, this postulate is not warranted.
 Researchers can conduct confirmatory research without preregistration, though it might be difficult to convince other researchers of the confirmatory nature of their research.
 The exact opposite, preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
