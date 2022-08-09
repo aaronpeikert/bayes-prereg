@@ -1,4 +1,4 @@
-As a response to the reproducibility crisis, preregistration is becoming increasingly popular in the psychological sciences to explicitly separate prediction from postdiction.
+As a response to the replication crisis, preregistration is becoming increasingly popular in the psychological sciences to explicitly separate prediction from postdiction.
 At the same time, many researchers struggle to translate their theories into precise predictions and may feel overwhelmed by the need to prespecify every tiny detail of their analysis plan.
 Should they surrender and discard the idea of preregistration altogether?
 Not at all.
