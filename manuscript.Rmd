@@ -8,7 +8,7 @@ output:
 header-includes:
    - \usepackage{libertine}
 fontsize: 11pt
-linestretch: 1.6
+linestretch: 1.2
 geometry: "left=3.9cm, right=3.3cm, top=2.5cm, bottom=3cm"
 papersize: a4
 bibliography: references.bib
