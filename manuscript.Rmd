@@ -182,8 +182,8 @@ It is unlikely that all students come up with the correct solution in a short ti
 The theoretical risk, however, is also low in absolute terms, but high compared to the detectability.
 In the unlikely event that all 10 students place their matches to form the Roman numeral Ⅷ ($E_3$), it is probably due to insight ($H$) and not by chance $P(¬E_2|¬H)$).
 Of course, in practice, we would allow the evidence to be probabilistic, e.g., relax the requirement of "all students" to nine out of ten students, more than eight, and so forth.
-<!-- I think this example needs to be swapped for a better one. For example: H: A coin is fair. E1: Observe if the person throwing the coin is betwenn 0 and 10 meters in height (high detectability, no theoretical risk). E2: Throw the coin 2 times and observe if it lands one time on heads and one time on
-As argued earlier, the remainder of the paper will focus on binary, non-probabilisitic evidence to keep the mathematical notation as simple as possible.
+<!-- I think this example needs to be swapped for a simpler one. For example: H: A coin is fair. E1: Observe if the person throwing the coin is betwenn 0 and 10 meters in height (high detectability, no theoretical risk). E2: Throw the coin 2 times and observe if it lands one time on heads and one time on tails (detectability: P(E|H) = 0.5, theoretical risk: P(E|p != 0.5) = 1/3) E3: throw the coin 200 times, compute #heads/#200, construct a test (high power -> high detectability, high theoretical risk). -->
+As argued earlier, the remainder of the paper will focus on binary, non-probabilisitic evidence to keep the mathematical notation as simple as possible. <!-- what is non-probabilistic evidence supposed to be? Evidence is always a random variable -->
 We discuss the relation between statistical methods and theoretical risk in the [Statistical Methods] section.
 
 ```{r, include=FALSE}
