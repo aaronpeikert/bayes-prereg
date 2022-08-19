@@ -62,7 +62,7 @@ Preregistering an inherently exploratory analysis (like testing dozens of relati
 Equating confirmatory research with preregistered research is only possible for studies that expect a low type-I error rate and will run/be analyzed without in any case [@simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020]. <!-- I dont understand this sentence -->
 Under these conditions, the rule holds, but such restricted use makes preregistration a niche solution unable to match the greater problem of lacking replicability in psychology and elsewhere.
 
-We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
+We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning.
 To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate. <!-- why is it called theoretical risk when it is about proving a hypothesis wrong? -->
 
 We then outline two interpretations of how theoretical risk is impacted by preregistration.
@@ -127,40 +127,40 @@ Consequently, researchers have an incentive to appear to take more risks than th
 It is at this juncture that the practice and mispractice of preregistration comes into play.
 We argue that the main function of preregistration is to enable proper judgment of the riskiness of a study.
 
-To better understand how preregistrations can achieve that, let us take a closer look at what factors contribute to $P(E)$. 
+To better understand how preregistrations can achieve that, let us take a closer look at what factors contribute to $P(E)$.
 Using the law of total probability, we can split $P(E)$ into two terms:
 
 \begin{equation}
 P(E) = P(H)P(E|H) + P(¬H)P(E|¬H) (\#eq:total-expectedness)
 \end{equation}
 
-We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(¬H)$), and that it is common sense to increase detectability ($P(E|H)$).
+We already have noted that there is not much to do about prior probability ($P(H)$ and that it is common sense to increase detectability ($P(E|H)$). <!-- the question is not whether it is common sense, but whether it has something to do with preregistration -->
 The real lever to pull is, therefore, $P(E|¬H)$.
 This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
-Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
+Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour. <!-- I am not shure if thats why we call it theoretical risk. I am also not shure if this is gramatically sensible. -->
 We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
 In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
 However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ can be related to or even equated to theoretical risk.
 
 Let us note some interesting properties of theoretical risk ($P(¬E|¬H)$).
 First, increasing theoretical risk leads to higher posterior probability ($P(H|E)$, our objective).
-Second, if the theoretical risk is smaller than detectability ($P(E|H)$) it follows that the posterior probability must decrease when observing the evidence.
+Second, if the theoretical risk is smaller than the detectability ($P(E|H)$) it follows that the posterior probability must decrease when observing the evidence.
 If detectability exceeds theoretical risk, the evidence is less likely under the theory than it is when the theory does not hold.
 Third, if the theoretical risk equals zero, then posterior probability is at best equal to prior probability but only if detectability is perfect ($P(H|E)$ = 1).
-In other words, observing a sure fact does not lend credence to a hypothesis.
+In other words, observing a fact that would also be observed if the hypotheses was wrong does not lend credence to the hypothesis.
 
 The last statement sounds like a truism but is directly related to Popper's seminal criterion of demarcation.
 He stated that if it is impossible to prove that a hypothesis is false ($P(¬E|¬H) = 0$, theoretical risk is zero), it cannot be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
 We note these relations to underline that the Bayesian rational we apply here is able to reconstruct many commonly held views on riskiness and epistemic value.
 
-Both theoretical risk ($P(¬E|¬H)$) and detectability ($P(E|H)$) aggregate uncountable influences, otherwise they could not model the process of evidential support for theories.
-To illustrate the concepts we introduced up to here, consider the following  example of a single theory and three experiments that may test it. 
-The experiments were created to illustrate how they may differ in their theoretical risk and detectability.
+Both theoretical risk ($P(¬E|¬H)$) and detectability ($P(E|H)$) aggregate uncountable influences, otherwise they could not model the process of evidential support for theories. <!-- I dont understand this sentence -->
+To illustrate the concepts we introduced up to here, consider the following  example of a single theory and three experiments that may test it.
+These examples were created to illustrate how experiments may differ in their theoretical risk and detectability.
 Suppose the primary theory is about the cognitive phenomenon of "insight."
 For the purpose of illustration, we define it, with quite some hand-waving, as a cognitive abstraction that allows agents to consistently solve a well-defined class of problems.
 We present the hypothesis that the following problem belongs to such a class of insight problems:
 
-> Use five matches (Ⅰ Ⅰ Ⅰ Ⅰ Ⅰ) to form the number eight. 
+> Use five matches (Ⅰ Ⅰ Ⅰ Ⅰ Ⅰ) to form the number eight.
 
 We propose three experiments that differ in theoretical risk and detectability.
 All experiments take a sample of ten psychology students.
@@ -182,9 +182,9 @@ It is unlikely that all students come up with the correct solution in a short ti
 The theoretical risk, however, is also low in absolute terms, but high compared to the detectability.
 In the unlikely event that all 10 students place their matches to form the Roman numeral Ⅷ ($E_3$), it is probably due to insight ($H$) and not by chance $P(¬E_2|¬H)$).
 Of course, in practice, we would allow the evidence to be probabilistic, e.g., relax the requirement of "all students" to nine out of ten students, more than eight, and so forth.
-
+<!-- I think this example needs to be swapped for a better one. For example: H: A coin is fair. E1: Observe if the person throwing the coin is betwenn 0 and 10 meters in height (high detectability, no theoretical risk). E2: Throw the coin 2 times and observe if it lands one time on heads and one time on
 As argued earlier, the remainder of the paper will focus on binary, non-probabilisitic evidence to keep the mathematical notation as simple as possible.
-We discuss the relation between statistical methods and theoretical risk in the [Statistical Methods] section. 
+We discuss the relation between statistical methods and theoretical risk in the [Statistical Methods] section.
 
 ```{r, include=FALSE}
 bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))
@@ -213,7 +213,7 @@ In other words, one cannot increase power while maintaining the same type-I erro
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
 Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
 
-# Uncertainty about theoretical risk 
+# Uncertainty about theoretical risk
 
 We have established that higher theoretical risk leads to more persuasive evidence.
 In other words, we have reconstructed the interpretation that preregistrations supposedly work by restricting the researchers, which in turn increases the theoretical risk (or equivalently limits the type-I error rate) and thereby creates more compelling evidence.
@@ -394,12 +394,12 @@ measures <- list(
   )
 )
 
-measures <- tibble(!!!transpose(measures)) %>% 
+measures <- tibble(!!!transpose(measures)) %>%
   mutate(name = simplify(name, "chr"),
          formula = simplify(formula, "chr"))
 
 #' Integrate over uncertain theoretical risk
-#' 
+#'
 #' If theoretical risk is maximally uncertain, we represent this uncertainty
 #' as a uniform distribution from zero to tau from which we sample and average the measures.
 #'
@@ -449,9 +449,9 @@ apply_on_grid <- function(f, grid, seed = NULL, n = 1e4) {
          uncertain = pmap_dbl(grid, uncertain))
 }
 
-results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>% 
-  select(-fun) %>% 
-  unnest(results) %>% 
+results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>%
+  select(-fun) %>%
+  unnest(results) %>%
   pivot_longer(c(certain, uncertain),
                names_to = "certainty",
                values_to = "value")
@@ -491,7 +491,7 @@ plots[["Posterior Probability"]] +
 ```{r, dev = "tikz", cache=TRUE, warning=FALSE}
 #| fig.cap: "Several measures for corroboration as increase in firmness as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
 
-plots[!(names(plots) %in% "Posterior Probability")] %>% 
+plots[!(names(plots) %in% "Posterior Probability")] %>%
   reduce(`+`) +
   plot_layout(ncol = 2, guides = 'collect') &
   theme_tufte() &
