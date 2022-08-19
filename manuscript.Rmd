@@ -205,7 +205,7 @@ For lack of a better theory, they assume that some relation between any variable
 This is not a risky prediction to make in psychology, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g., by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape, etc.
 We will later show that preregistration increases the degree of belief in the further specified theory, though it remains low till being substantiated by testing it again.
-The point, however, is that we want to show that preregistration increases the expected epistemic value regardless of the theory being tested.
+The point, however, is that we want to show that preregistration increases the expected epistemic value regardless of the theory being tested. <!-- I think the example is too theoretical and i dont understand the conclusions drawn from it -->
 
 Second, available resources limit theoretical risk.
 Increasing theoretical risk ($P(¬E|¬H)$) will usually decrease detectability ($P(E|H)$) unless more resources are invested.
@@ -224,15 +224,15 @@ To that end, we incorporate uncertainty into our framework.
 ## Statistical methods
 
 Theoretical risk is deeply connected with statistical methods, because it is the inverse of $P(E|¬H)$.
-$P(E|¬H)$ is equivalent to the type-I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $¬H$.
+$P(E|¬H)$ is equivalent to the type-I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $¬H$. 
 Because many researchers are familiar with the type-I error rate, it can be helpful to remember this connection to theoretical risk.
 Researchers who choose a smaller type-I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
-However, the research hypothesis seldomly equals  the statistical null hypothesis, and therefore, the relation between statistical type-I error rate and theoretical risk should not be overinterpreted.
-We argue that theoretical risk (and hence its inverse, $P(E|¬H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
+However, the research hypothesis seldomly equals  the statistical null hypothesis, and therefore, the relation between statistical type-I error rate and theoretical risk should not be overinterpreted. <!-- what is it now, the null or the alternative? -->
+We argue that theoretical risk also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
 Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to theoretical risk.
 Examples of our ability to exert this control are the setting of type-I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria, or cross-validation in machine learning.
-These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none ($P(E|¬H)$).
+These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none.
 
 The point is that the contribution of statistical methods to theoretical risk can be formally assessed.
 For many statistical models it can be analytically computed under some assumptions.
@@ -256,7 +256,7 @@ While, in theory, these factors may leave $P(E|¬H)$ unaffected or even decrease
 Whether researchers want to or not, they continuously process information about how the study is going, except under strict blinding.
 While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
 We, therefore, conclude that statistical properties only guarantee a lower bound to the quantity we seek to minimize.
-The only thing we can conclude with some certainty is that theoretical risk is not higher than what the statistical model guarantees without knowledge about the other factors at play.
+The only thing we can conclude with some certainty is that theoretical risk is not higher than what the statistical model guarantees without knowledge about the other factors at play. <!-- why are there no factors that increase theoretical risk? -->
 
 ## The effects of uncertainty
 
