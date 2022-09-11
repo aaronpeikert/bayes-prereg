@@ -1,4 +1,4 @@
-all: manuscript.pdf README.md .gitignore
+all: manuscript.pdf README.md .gitignore presentation.html
 
 manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
 	Rscript -e "rmarkdown::render('$<')"
@@ -6,7 +6,7 @@ manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
 README.md: README.Rmd abstract.md
 	Rscript -e "rmarkdown::render('$<')"
 
-publish/: manuscript.pdf
+publish/: manuscript.pdf presentation.html
 	mkdir -p $@
 	cp $< $@$<
 
@@ -21,3 +21,4 @@ publish/PR%/: manuscript.pdf
 apa.csl:
 	curl -sL https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl > $@
 
+include .repro/Makefile_Rmds
