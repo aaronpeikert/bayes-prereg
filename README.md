@@ -30,8 +30,9 @@ Preregistrations can effectively reduce uncertainty about theoretical
 risk, which increases the persuasiveness of evidence, and hence they are
 warranted for any empirical study.
 
-[🗎 PDF of draft
-🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+## [🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+
+## [Slides for Talk](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
 
 ## References
 
