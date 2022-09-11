@@ -10,7 +10,7 @@ publish/: manuscript.pdf presentation.html
 	mkdir -p $@
 	cp $< $@$<
 
-publish/PR%/: manuscript.pdf
+publish/PR%/: manuscript.pdf presentation.html
 	mkdir -p $@
 	cp $< $@$<
 
