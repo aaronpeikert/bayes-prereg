@@ -1,3 +1,6 @@
+PROJECT := reproworkshop
+WORKDIR := $(CURDIR)
+
 all: manuscript.pdf README.md .gitignore presentation.html
 
 manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
