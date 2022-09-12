@@ -337,6 +337,7 @@ results <- readr::read_rds(here::here("data", "simulation.rds"))
 plots[["Posterior Probability"]] +
   labs(caption = "$p(E|H) = 0.8$, $p(H) = 0.1$",
        y = "$\\mathbb{E}\\big(p(H|E)\\big)$") +
+  theme_tufte() +
   theme(legend.position = c(.2, .8),
         legend.title = element_blank())
 ```
@@ -345,6 +346,7 @@ plots[["Posterior Probability"]] +
 #| fig.cap: "Several measures for corroboration as increase in firmness as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[!(names(plots) %in% "Posterior Probability")] %>% 
+  map(~ . +   theme_tufte()) %>% 
   reduce(`+`) +
   plot_layout(ncol = 2, guides = 'collect') &
   theme_tufte() &

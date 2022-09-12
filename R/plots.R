@@ -16,6 +16,5 @@ plots <- results %>%
         aes(x = tau, ymin = uncertain, ymax = certain),
         alpha = .1
       ) +
-      theme_tufte() +
       NULL
   )
