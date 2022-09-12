@@ -64,12 +64,14 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
                                           margin = "0px",
                                           border = "0px"),
                            ".vertical" = list(`writing-mode` = "vertical-rl",
-                                              `text-orientation` = "mixed")),
+                                              `text-orientation` = "mixed"),
+                           ".blurry" = list(color = "transparent",
+                                            `text-shadow` = "0 0 5px rgba(0,0,0,0.5)")),
                 )
 ```
 
 ```{r, echo=FALSE}
-link <- "aaronpeikert.github.io/bayes-prereg"
+link <- "github.com/aaronpeikert/bayes-prereg"
 ```
 
 ```{r, echo=FALSE, out.width = "30%"}
@@ -414,10 +416,54 @@ class: center, middle, inverse
 # Theorethical Risk
 
 ---
+name: theoretical-risk-plot
 
 ```{r}
 results <- readr::read_rds(here::here("data", "simulation.rds"))
 ```
+
+```{r}
+results %>%
+  filter(name == "Posterior Probability", certainty == "certain") %>%
+  ggplot() +
+  geom_line(aes(tau, value)) +
+  xaringanthemer::theme_xaringan() +
+  theme(
+    legend.position = c(.2, .8),
+    legend.title = element_blank(),
+    text = element_text(size = 18, color = secondary_color),
+    title = element_blank(),
+    axis.title = element_text(size = 18),
+    plot.caption = element_text(size = 15)
+  ) +
+  labs(x = "Theorethical Risk",
+       y = "Posterior Probability",
+       caption = "P(E|H) = .8, P(H) = .1") +
+  NULL
+```
+---
+
+### So maximize theoretical risk?
+
+---
+
+### ~~So maximize theoretical risk?~~
+
+### So minimize researcher degrees of freedome?
+
+--
+
+## Not nessesarily.
+
+---
+class: center, middle, inverse
+
+# .blurry[Uncertain]
+
+---
+template: theoretical-risk-plot
+
+---
 
 ```{r measure-plots}
 # see R/plots.R
@@ -434,7 +480,8 @@ plots[["Posterior Probability"]] +
         plot.caption = element_text(size = 15)) +
   labs(x = "Theorethical Risk",
        y = "Posterior Probability",
-       caption = "P(E|H) = .8, P(H) = .1")
+       caption = "P(E|H) = .8, P(H) = .1") +
+  NULL
 ```
 
 ---
