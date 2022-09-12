@@ -14,6 +14,7 @@ RUN apt-get update -y && apt-get install -y git rsync curl inkscape
 RUN install2.r --error --skipinstalled \ 
   ggplot2 \ 
   ggthemes \ 
+  here \ 
   patchwork \ 
   showtext \ 
   svglite \ 

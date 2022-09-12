@@ -19,6 +19,7 @@ repro:
     - showtext
     - svglite
     - patchwork
+    - here
 ---
 class: inverse, center, middle
 

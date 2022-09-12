@@ -1,6 +1,7 @@
 RUN install2.r --error --skipinstalled \ 
   ggplot2 \ 
   ggthemes \ 
+  here \ 
   patchwork \ 
   showtext \ 
   svglite \ 
