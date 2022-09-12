@@ -6,9 +6,6 @@ all: manuscript.pdf README.md .gitignore presentation.html
 manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
 	Rscript -e "rmarkdown::render('$<')"
 
-README.md: README.Rmd abstract.md
-	Rscript -e "rmarkdown::render('$<')"
-
 publish/: manuscript.pdf presentation.html
 	mkdir -p $@
 	cp -r $^ $@
