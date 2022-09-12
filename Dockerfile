@@ -9,6 +9,7 @@ RUN MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE} \
   && echo MRAN=$MRAN >> /etc/environment \
   && export MRAN=$MRAN \
   && echo "options(repos = c(CRAN='$MRAN'), download.file.method = 'libcurl')" >> /usr/local/lib/R/etc/Rprofile.site
+RUN tlmgr install pgf preview libertine
 RUN apt-get update -y && apt-get install -y git rsync curl inkscape
 RUN install2.r --error --skipinstalled \ 
   ggplot2 \ 
