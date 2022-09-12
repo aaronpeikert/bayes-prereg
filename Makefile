@@ -10,11 +10,14 @@ data/simulation.rds: R/simulate.R
 
 R/simulate.R: R/funs.R
 
-publish/: manuscript.pdf presentation.html
+index.html: presentation.html
+	cp $< $@
+
+publish/: manuscript.pdf index.html xaringan-themer.css presentation_files/ images/
 	mkdir -p $@
 	cp -r $^ $@
 
-publish/PR%/: manuscript.pdf presentation.html
+publish/PR%/: manuscript.pdf index.html xaringan-themer.css presentation_files/ images/
 	mkdir -p $@
 	cp -r $^ $@
 
