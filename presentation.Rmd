@@ -366,4 +366,6 @@ P(E) = P(H)P(E|H) + P(¬H)\color{#F28705}{P(E|¬H)}
 $$
 
 ]
+
+$P(H)$, $P(¬H)$, $P(E|H)$, are already ruled out.
 ---
