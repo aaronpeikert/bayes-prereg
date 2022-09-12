@@ -17,6 +17,7 @@ csl: apa.csl
 repro:
   files: abstract.md
   packages:
+    - here
     - tidyverse
     - ggplot2
     - ggthemes
