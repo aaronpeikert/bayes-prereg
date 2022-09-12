@@ -29,6 +29,7 @@ library(xaringanthemer)
 library(tidyverse)
 library(patchwork)
 options(htmltools.dir.version = FALSE)
+knitr::read_chunk("R/plots.R")
 knitr::opts_chunk$set(
   fig.width=9, fig.height=4, fig.retina=3,
   out.width = "100%",
@@ -305,7 +306,7 @@ have to pay with hard work.
 
 --
 
-.right[Together with well intentions, we can justifiably use Bayes.]
+.right[Together with well intentions, we can justifiably use Bayes˟.]
 
 ---
 
@@ -367,5 +368,37 @@ $$
 
 ]
 
+--
+
 $P(H)$, $P(¬H)$, $P(E|H)$, are already ruled out.
+
 ---
+## $P(E|¬H)$
+
+The probability of finding evidence, even tough the theory does not hold.
+
+---
+class: center, middle, inverse
+
+# Theorethical Risk
+
+---
+
+```{r}
+results <- readr::read_rds(here::here("data", "simulation.rds"))
+```
+
+```{r measure-plots}
+# see R/plots.R
+```
+
+```{r}
+plots[["Posterior Probability"]] +
+  xaringanthemer::theme_xaringan() +
+    theme(legend.position = c(.2, .8),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        title = element_blank()) +
+  labs(x = "Theorethical Risk", y = "Posterior Probability")
+```
+
