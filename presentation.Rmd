@@ -3,9 +3,10 @@ title: "Why does preregistration increase the persuasiveness of evidence?"
 subtitle: "A Bayesian rationalization"
 author: 
   - "Aaron Peikert"
-date: 'DGPS | `r Sys.Date()`'
+date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
+    seal: false
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -20,15 +21,16 @@ repro:
     - svglite
     - patchwork
     - here
+    - qrcode
 ---
-class: inverse, center, middle
-
-# Why do we preregistrate?
+class: center, middle
+name: qrcode
 
 ```{r setup, include=FALSE}
 library(xaringanthemer)
 library(tidyverse)
 library(patchwork)
+library(qrcode)
 options(htmltools.dir.version = FALSE)
 knitr::read_chunk("R/plots.R")
 knitr::opts_chunk$set(
@@ -65,6 +67,34 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
                                               `text-orientation` = "mixed")),
                 )
 ```
+
+```{r, echo=FALSE}
+link <- "aaronpeikert.github.io/bayes-prereg"
+```
+
+```{r, echo=FALSE, out.width = "30%"}
+fs::dir_create("images")
+generate_svg(qr_code(link), here::here("images/", "qr_slides.svg"), foreground = secondary_color, background = primary_color, show = FALSE)
+knitr::include_graphics("images/qr_slides.svg")
+```
+
+`r link`
+
+---
+class: center, middle
+
+# Why does preregistration increase the persuasiveness of evidence?
+
+## A Bayesian rationalization
+
+### Aaron Peikert
+
+### DGPS | `r Sys.Date()`
+
+---
+class: inverse, center, middle
+
+# Why do we preregister?
 
 ???
 
@@ -407,3 +437,7 @@ plots[["Posterior Probability"]] +
        caption = "P(E|H) = .8, P(H) = .1")
 ```
 
+---
+template: qrcode
+
+---

@@ -13,11 +13,11 @@ R/simulate.R: R/funs.R
 index.html: presentation.html
 	cp $< $@
 
-publish/: manuscript.pdf index.html xaringan-themer.css presentation_files/
+publish/: manuscript.pdf index.html xaringan-themer.css presentation_files/ images/
 	mkdir -p $@
 	cp -r $^ $@
 
-publish/PR%/: manuscript.pdf index.html xaringan-themer.css presentation_files/
+publish/PR%/: manuscript.pdf index.html xaringan-themer.css presentation_files/ images/
 	mkdir -p $@
 	cp -r $^ $@
 
