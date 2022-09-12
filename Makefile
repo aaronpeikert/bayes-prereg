@@ -3,8 +3,12 @@ WORKDIR := $(CURDIR)
 
 all: manuscript.pdf README.md .gitignore presentation.html
 
-manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
-	Rscript -e "rmarkdown::render('$<')"
+manuscript.pdf: manuscript.tex
+
+data/simulation.rds: R/simulate.R
+	Rscript -e "source('$<')"
+
+R/simulate.R: R/funs.R
 
 publish/: manuscript.pdf presentation.html
 	mkdir -p $@
