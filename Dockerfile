@@ -16,6 +16,7 @@ RUN install2.r --error --skipinstalled \
   ggthemes \ 
   here \ 
   patchwork \ 
+  qrcode \ 
   showtext \ 
   svglite \ 
   tidyverse \ 
