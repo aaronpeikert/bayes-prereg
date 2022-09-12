@@ -11,11 +11,11 @@ README.md: README.Rmd abstract.md
 
 publish/: manuscript.pdf presentation.html
 	mkdir -p $@
-	cp $< $@$<
+	cp -r $^ $@
 
 publish/PR%/: manuscript.pdf presentation.html
 	mkdir -p $@
-	cp $< $@$<
+	cp -r $^ $@
 
 .gitignore: .gitignore-manual
 	curl -sL https://www.toptal.com/developers/gitignore/api/LaTex,R,Julia,VisualStudioCode > .gitignore
