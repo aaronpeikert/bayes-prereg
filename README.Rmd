@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 cat(readLines('abstract.md'))
 ```
 
-[🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+## [🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+
+## [Slides for Talk](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
 
 ## References

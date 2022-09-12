@@ -1,0 +1,409 @@
+---
+title: "Why does preregistration increase the persuasiveness of evidence?"
+subtitle: "A Bayesian rationalization"
+author: 
+  - "Aaron Peikert"
+date: 'DGPS | `r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+repro:
+  packages:
+    - xaringanthemer
+    - showtext
+    - svglite
+    - patchwork
+    - here
+---
+class: inverse, center, middle
+
+# Why do we preregistrate?
+
+```{r setup, include=FALSE}
+library(xaringanthemer)
+library(tidyverse)
+library(patchwork)
+options(htmltools.dir.version = FALSE)
+knitr::read_chunk("R/plots.R")
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE,
+  dev = "svglite"
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+primary_color <- "#024959"
+secondary_color <- "#F28705"
+style_duo(
+  primary_color = primary_color,
+  secondary_color = secondary_color,
+  header_font_google = google_font("Didact Gothic", "400", "400i"),
+  text_font_google   = google_font("IBM Plex Sans", "400", "400i"),
+  text_font_size = "1.5rem",
+  )
+
+style_extra_css(css = list(".todo" = list(color = "#17C25B"),
+                           ".optional" = list(color = "#05BCE6"),
+                           ".large" = list(`font-size` = "130%"),
+                           ".small" = list(`font-size` = "80%"),
+                           ".full" = list(padding = "0px",
+                                          margin = "0px",
+                                          border = "0px"),
+                           ".vertical" = list(`writing-mode` = "vertical-rl",
+                                              `text-orientation` = "mixed")),
+                )
+```
+
+???
+
+An objective for preregistration.
+If commiting to specific research question and data analysis before gathering data is to be a useful tool, we must know to what end we employ it.
+
+If you are uncertain about why you should preregister, I hope to provide some clarity.
+If you think you know why you should preregister, I hope to sow some doubt.
+
+---
+
+```{r, echo=FALSE}
+crisis <- tribble(
+  ~response, ~bin, ~prop,
+  "Yes, a signicant crisis", "YES", .52,
+  "Yes, a slight crisis", "YES", .38,
+  "No, there is no crisis", "NO", .03,
+  "Don’t know", "NA", 0.07
+)
+
+crisis_plot <- crisis %>%
+  group_by(bin) %>%
+  summarise(prop = sum(prop)) %>%
+  ungroup() %>% 
+  ggplot(aes(
+    "response",
+    prop,
+    fill = bin,
+    label = bin,
+    size = prop
+  )) +
+  geom_col() +
+  geom_text(position = position_stack(vjust = 0.5)) +
+  coord_flip() +
+  theme_void() +
+  theme(
+    legend.position = "none",
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background = element_rect(fill = "transparent", colour = NA)
+  ) +
+  scale_y_continuous(expand=c(0,0)) +
+  scale_x_discrete(expand=c(0,0), limits = NULL) +
+  scale_fill_manual(values = c("YES" = "#E3350E", "NO" = "#F28705", "NA" = "lightgrey")) +
+  scale_size_continuous(range = c(4, 20)) +
+  NULL
+```
+
+## Is there a replication crisis?*
+
+.center[
+
+```{r, out.width = '70%'}
+crisis_plot /
+  (crisis_plot +
+     aes(label = str_c(prop * 100, "%")) + 
+     scale_size_continuous(range = c(3, 12))) + 
+  plot_layout(heights = c(.7, .3)) + 
+  plot_annotation(theme = theme_void() + theme(
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background = element_rect(fill = "transparent", colour = NA)
+))
+
+```
+]
+
+.small.right[Baker, M. 1,500 scientists lift the lid on reproducibility. *Nature* 533, 452–454 (2016). https://doi.org/10.1038/533452a]
+
+--
+
+.small.right[***They call it "reproducibility" and fail to publish the raw data.**]
+
+???
+
+The simple answer is that we preregister because we think it is a remedy against the replication crisis.
+
+---
+class: center, middle
+layout: true
+---
+
+## Because researchers are *fraudsters*?
+
+--
+
+# No
+
+???
+
+Some say to prevent intentional wrongdoing. 
+However, preregistrations are easily circumvented with bad intentions.
+We must assume researchers have good intentions.
+
+---
+
+## Because researchers are *fools*?
+
+--
+
+# No
+--
+, not necessarily
+
+???
+
+Some say to prevent unintentional wrongdoing.
+Researchers must be put in restrains to prevent them from cutting themselves on the sharp edge of "false positives".
+
+---
+layout: false
+class: inverse, center, middle
+
+# Traditional view
+
+---
+class: center
+
+# Researchers confuse:
+
+
+.pull-left.center[
+
+# confirmatory
+
+]
+
+.pull-right.center[
+
+# exploratory
+
+]
+
+---
+class: center
+
+# Preregistration seperates:
+
+.pull-left.center[
+
+# confirmatory
+
+]
+
+.pull-right.center[
+
+# exploratory
+
+]
+
+--
+
+.pull-left.center[
+
+# ≈
+
+# preregistered
+
+]
+
+.pull-right.center[
+
+
+# ≈
+
+# not preregistered
+
+]
+
+--
+
+# ?
+
+---
+class: middle
+
+.center[
+
+## When is one preregistration better than another?
+
+]
+
+---
+class: middle
+
+.large[
+
+What must be **included** in the preregistration?
+
+When is a preregistration **detailed** enough?
+
+Can one **deviate** from the preregistration?
+
+]
+
+---
+class: inverse, center, middle
+
+# A Formal Objective
+
+---
+class: middle
+
+.large[
+
+Ideally:
+
+1. The original author has **good intentions**.
+2. Their readers are **rational**.
+3. The goal is to **convince** the readers.
+
+]
+
+---
+layout: true
+class: center, middle
+---
+
+.large[To connect rationality to probability imagine:]
+
+---
+
+## Researchers as gamblers
+
+---
+
+.large[
+
+They bet on studies:
+
+hoping to gain knowledge, and 
+
+have to pay with hard work.
+
+]
+
+---
+
+.left[The Dutch book argument:]
+
+## Any rational better must follow the laws of probability.
+
+--
+
+.right[Together with well intentions, we can justifiably use Bayes˟.]
+
+---
+
+.large[
+
+$$
+\frac{P(H)P(E|H)}{P(E)}
+$$
+
+]
+
+---
+
+.large[
+
+$$
+\frac{\color{#F28705}{P(H)}P(E|H)}{P(E)}
+$$
+
+]
+
+.right[The prior probability has nothing to with preregistration.]
+
+---
+
+.large[
+
+$$
+\frac{P(H)\color{#F28705}{P(E|H)}}{P(E)}
+$$
+
+]
+
+.right[The true positive rate / power has nothing to with preregistration.]
+
+
+---
+
+.large[
+
+$$
+\frac{P(H)P(E|H)}{\color{#F28705}{P(E)}}
+$$
+
+]
+
+.right[The probability of evidence is the only thing left.]
+
+
+---
+
+.left[Law of total probability:]
+
+.large[
+
+$$
+P(E) = P(H)P(E|H) + P(¬H)\color{#F28705}{P(E|¬H)}
+$$
+
+]
+
+--
+
+$P(H)$, $P(¬H)$, $P(E|H)$, are already ruled out.
+
+---
+## $P(E|¬H)$
+
+The probability of finding evidence, even though the theory does not hold.
+
+---
+class: center, middle, inverse
+
+# Theorethical Risk
+
+---
+
+```{r}
+results <- readr::read_rds(here::here("data", "simulation.rds"))
+```
+
+```{r measure-plots}
+# see R/plots.R
+```
+
+```{r}
+plots[["Posterior Probability"]] +
+  xaringanthemer::theme_xaringan() +
+    theme(legend.position = c(.2, .8),
+        legend.title = element_blank(),
+        text = element_text(size = 18, color = secondary_color),
+        title = element_blank(),
+        axis.title = element_text(size = 18),
+        plot.caption = element_text(size = 15)) +
+  labs(x = "Theorethical Risk",
+       y = "Posterior Probability",
+       caption = "P(E|H) = .8, P(H) = .1")
+```
+

@@ -15,7 +15,12 @@ bibliography: references.bib
 abstract: "`r paste0(c('\\\\noindent', readLines('abstract.md')), collapse = ' ')`"
 csl: apa.csl
 repro:
-  files: abstract.md
+  scripts:
+    - R/plots.R
+  files:
+    - abstract.md
+    - data/simulation.rds
+    - apa.csl
   packages:
     - here
     - tidyverse
@@ -38,6 +43,7 @@ repro:
 knitr::opts_chunk$set(
   echo = FALSE
 )
+knitr::read_chunk("R/plots.R")
 
 if(!requireNamespace("pacman"))install.packages("pacman")
 pacman::p_load("tidyverse", "ggplot2", "ggthemes", "patchwork")
@@ -228,10 +234,6 @@ Of course, in practice, we would allow the evidence to be probabilistic, e.g., r
 As argued earlier, the remainder of the paper will focus on binary, non-probabilisitic evidence to keep the mathematical notation as simple as possible.
 We discuss the relation between statistical methods and theoretical risk in the [Statistical Methods] section. 
 
-```{r, include=FALSE}
-bayes <- function(h, eh, enh)(h * eh)/((h * eh) + ((1 - h) * enh))
-```
-
 # Preregistration as a means to increase theoretical risk?
 
 Having discussed that increasing the theoretical risk will increase the epistemic value, it is intuitive to task preregistration with maximizing theoretical risk.
@@ -323,202 +325,13 @@ Where $\tau{}$ is the upper bound of theoretical risk (e.g., 0.95 for a statisti
 
 We chose this uniform distribution to capture our statement that a statistical model only guarantees an upper bound to theoretical risk (and since it is a probability the lower bound is 0) as it is the maximum entropy distribution under this assumption and conforms therefore to our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
 
-```{r, include=FALSE}
-forbid_additional_args <- function(...)stopifnot(length(list(...)) == 0L)
-
-#' Apply the Bayes Theorem
-#'
-#' @param h The prior probability of the hypothesis \eqn{P(H)}.
-#' @param detectability The probability of detecting evidence, if hypothesis holds \eqn{P(E|H)}.
-#' @param theoretical_risk The probability of not detecting evidence, if hypothesis does not hold \eqn{P(¬E|¬H)}.
-#' @param tau Same as `theoretical_risk` for compatibility.
-#' @return The posterior probability of the hypothesis after observing evidence \eqn{P(H|E)}.
-bayes <- function(h, detectability, theoretical_risk, ...) {
-  forbid_additional_args(...)
-  true_positive <- h * detectability
-  false_positive <- (1 - h) * (1 - theoretical_risk)
-  true_positive / (true_positive + false_positive)
-}
-
-# all formulas taken from Bayesian Philosophy of Science, p. 51
-# first letter = function name in Bayesian Philosophy of Science
-# optional letter = p for prime
-# second letter = m for measure
-measures <- list(
-  pm = list(
-    name = "Posterior Probability",
-    formula = "\\frac{P(H)P(E|H)}{P(H)P(E|H) + P(¬H)P(E|¬H)}",
-    fun = bayes
-  ),
-  dm = list(
-    name = "Difference Measure",
-    formula = "d(H, E) = p(H|E) - p(H)",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      he - h
-    }
-  ),
-  rm = list(
-    name = "Log-Ratio Measure",
-    formula = "r(H, E) = log(\\frac{p(H|E)}{p(H)})",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      log(he / h)
-    }
-  ),
-  lm = list(
-    name = "Log-Likelihood Measure",
-    formula = "l(H, E) = log(\\frac{p(H|E)}{p(E|\\neg{}H)})",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      enh <- 1 - theoretical_risk
-      log(he / enh)
-    }
-  ),
-  km = list(
-    name = "Kemeny–Oppenheim Measure",
-    formula = "k(H, E) = \\frac{p(E|H) - p(E|\\neg{}H)}{p(E|H) + p(E|\\neg{}H)}",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      eh <- detectability
-      enh <- 1 - theoretical_risk
-      (eh - enh) / (eh + enh)
-    }
-  ),
-  zm = list(
-    name = "Generalized Entailment Measure",
-    formula =
-      "z(H, E) =\\begin{cases}
-  \\frac{p(E|H) - p(H)}{1 - p(H)}, & \\text{if } p(H|E) \\geq{} p(H) \\\\
-  \\frac{p(E|H) - p(H)}{p(H)}, & \\text{if } p(H|E) < p(H)
-\\end{cases}",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      ifelse(he >= h, (he - h) / (1 - h), (he - h) / h)
-    }
-  ),
-  sm = list(
-    name = "Christensen–Joyce Measure",
-    formula = "s(H, E) = p(H|E) - p(H|\\neg{}E)",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      enh <- 1 - theoretical_risk
-      eh <- detectability
-      e <- h * eh + (1 - h) * enh
-      hne <- (h * (1 - eh)) / (1 - e)
-      he - hne
-    }
-  ),
-  cpm = list(
-    name = "Carnap’s Relevance Measure",
-    formula = "c'(H, E) = p(E)(p(H|E) - p(H))",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      enh <- 1 - theoretical_risk
-      e <- h * detectability + (1 - h) * enh
-      e * (he - h)
-    }
-  ),
-  rpm = list(
-    name = "Rips Measure",
-    formula = "r'(H, E) = 1 - \\frac{p(\\neg{}H|E)}{p(\\neg{}H)}",
-    fun = function(h, detectability, theoretical_risk, ...) {
-      forbid_additional_args(...)
-      he <- bayes(h, detectability, theoretical_risk)
-      1 - (1 - he) / (1 - h)
-    }
-  )
-)
-
-measures <- tibble(!!!transpose(measures)) %>% 
-  mutate(name = simplify(name, "chr"),
-         formula = simplify(formula, "chr"))
-
-#' Integrate over uncertain theoretical risk
-#' 
-#' If theoretical risk is maximally uncertain, we represent this uncertainty
-#' as a uniform distribution from zero to tau from which we sample and average the measures.
-#'
-#' @param tau The guaranteed upper bound of theoretical risk.
-#' @param n Number of samples from the uniform distribution.
-#' @param seed Optional seed to set before execution. Is reset to global state on exit.
-#' @return A function similar to the original
-uncertainly <- function(measure, tau, n = 1e5, seed = NULL){
-  function(h, detectability, ...){
-    forbid_additional_args(...)
-    if(!is.null(seed)){
-      if(exists(".Random.seed"))on.exit(set.seed(.Random.seed))
-      set.seed(seed)
-    }
-    theoretical_risk_samples <- runif(n, 0, tau)
-    mean(measure(h, detectability, theoretical_risk_samples))
-  }
-}
-certainly <- function(measure, tau){
-  function(h, detectability, ...){
-    forbid_additional_args(...)
-    measure(h, detectability, tau)
-  }
-}
+```{r}
+results <- readr::read_rds(here::here("data", "simulation.rds"))
 ```
 
-```{r, cache=TRUE, echo=FALSE}
-step <- 0.01
-
-grid <-
-  tidyr::expand_grid(
-    h = .1,
-    detectability = .8,
-    tau = seq(step, 1 - step, step)
-  )
-apply_on_grid <- function(f, grid, seed = NULL, n = 1e4) {
-  certain <- function(h, detectability, tau, ...){
-    forbid_additional_args(...)
-    certainly(f, tau)(h, detectability)
-  }
-  uncertain <- function(h, detectability, tau, ...){
-    forbid_additional_args(...)
-    uncertainly(f, tau, seed = seed, n = n)(h, detectability)
-  }
-  mutate(grid,
-         certain = pmap_dbl(grid, certain),
-         uncertain = pmap_dbl(grid, uncertain))
-}
-
-results <- mutate(measures, results = map(fun, apply_on_grid, grid)) %>% 
-  select(-fun) %>% 
-  unnest(results) %>% 
-  pivot_longer(c(certain, uncertain),
-               names_to = "certainty",
-               values_to = "value")
+```{r measure-plots}
+# see R/plots.R
 ```
-
-```{r, cache = TRUE}
-plots <- results %>%
-  mutate(name = str_remove(name, "Measure")) %>%
-  split(., .$name) %>%
-  imap(
-    ~ ggplot() +
-      geom_line(aes(tau, value, linetype = certainty), data = .x) +
-      labs(title = .y,
-           y = element_blank(),
-           x = "$\\tau$") +
-      geom_ribbon(
-        data = pivot_wider(.x, names_from = certainty, values_from = value),
-        aes(x = tau, ymin = uncertain, ymax = certain),
-        alpha = .1
-      ) +
-      theme_tufte() +
-      NULL
-  )
-```
-
 
 ```{r, dev = "tikz", cache=TRUE, warning=FALSE}
 #| fig.cap: "Posterior Probability (corroboration as firmness) as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
@@ -526,6 +339,7 @@ plots <- results %>%
 plots[["Posterior Probability"]] +
   labs(caption = "$p(E|H) = 0.8$, $p(H) = 0.1$",
        y = "$\\mathbb{E}\\big(p(H|E)\\big)$") +
+  theme_tufte() +
   theme(legend.position = c(.2, .8),
         legend.title = element_blank())
 ```
@@ -534,6 +348,7 @@ plots[["Posterior Probability"]] +
 #| fig.cap: "Several measures for corroboration as increase in firmness as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[!(names(plots) %in% "Posterior Probability")] %>% 
+  map(~ . +   theme_tufte()) %>% 
   reduce(`+`) +
   plot_layout(ncol = 2, guides = 'collect') &
   theme_tufte() &

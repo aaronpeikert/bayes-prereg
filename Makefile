@@ -1,18 +1,25 @@
-all: manuscript.pdf README.md .gitignore
+PROJECT := reproworkshop
+WORKDIR := $(CURDIR)
 
-manuscript.pdf: manuscript.Rmd abstract.md references.bib apa.csl
-	Rscript -e "rmarkdown::render('$<')"
+all: manuscript.pdf README.md .gitignore presentation.html
 
-README.md: README.Rmd abstract.md
-	Rscript -e "rmarkdown::render('$<')"
+manuscript.pdf: manuscript.tex
 
-publish/: manuscript.pdf
+data/simulation.rds: R/simulate.R
+	Rscript -e "source('$<')"
+
+R/simulate.R: R/funs.R
+
+index.html: presentation.html
+	cp $< $@
+
+publish/: manuscript.pdf index.html xaringan-themer.css presentation_files/
 	mkdir -p $@
-	cp $< $@$<
+	cp -r $^ $@
 
-publish/PR%/: manuscript.pdf
+publish/PR%/: manuscript.pdf index.html xaringan-themer.css presentation_files/
 	mkdir -p $@
-	cp $< $@$<
+	cp -r $^ $@
 
 .gitignore: .gitignore-manual
 	curl -sL https://www.toptal.com/developers/gitignore/api/LaTex,R,Julia,VisualStudioCode > .gitignore
@@ -21,3 +28,4 @@ publish/PR%/: manuscript.pdf
 apa.csl:
 	curl -sL https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl > $@
 
+include .repro/Makefile_Rmds
