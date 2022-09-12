@@ -14,12 +14,11 @@ knitr::opts_chunk$set(
 
 # Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
 
+## [🗎 Manuscript draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf) / [Talk slides](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
+
+
 ```{r abstract, echo=FALSE, results='asis'}
 cat(readLines('abstract.md'))
 ```
-
-## [🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
-
-## [Slides for Talk](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
 
 ## References

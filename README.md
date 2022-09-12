@@ -3,6 +3,8 @@
 
 # Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization.
 
+## [🗎 Manuscript draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf) / [Talk slides](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
+
 As a response to the replication crisis, preregistration is becoming
 increasingly popular in the psychological sciences to explicitly
 separate prediction from explinations after the fact. At the same time,
@@ -29,10 +31,6 @@ they accepted, and the more persuasive the researchers’ evidence is.
 Preregistrations can effectively reduce uncertainty about theoretical
 risk, which increases the persuasiveness of evidence, and hence they are
 warranted for any empirical study.
-
-## [🗎 PDF of draft 🗎](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
-
-## [Slides for Talk](https://aaronpeikert.github.io/bayes-prereg/presentation.html)
 
 ## References
 
