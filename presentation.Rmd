@@ -398,8 +398,12 @@ plots[["Posterior Probability"]] +
   xaringanthemer::theme_xaringan() +
     theme(legend.position = c(.2, .8),
         legend.title = element_blank(),
-        text = element_text(size = 15),
-        title = element_blank()) +
-  labs(x = "Theorethical Risk", y = "Posterior Probability")
+        text = element_text(size = 18, color = secondary_color),
+        title = element_blank(),
+        axis.title = element_text(size = 18),
+        plot.caption = element_text(size = 15)) +
+  labs(x = "Theorethical Risk",
+       y = "Posterior Probability",
+       caption = "P(E|H) = .8, P(H) = .1")
 ```
 
