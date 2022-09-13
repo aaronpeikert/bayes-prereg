@@ -82,6 +82,8 @@ knitr::include_graphics("images/qr_slides.svg")
 
 `r link`
 
+.pull-right[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)]
+
 ---
 class: center, middle
 
