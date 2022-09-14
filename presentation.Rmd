@@ -415,7 +415,7 @@ The probability of finding evidence, even though the theory does not hold.
 ---
 class: center, middle, inverse
 
-# Theorethical Risk
+# Theoretical Risk
 
 ---
 
@@ -473,7 +473,7 @@ results %>%
 
 ---
 
-## Theories determin $P(E|¬H)$ (theorethical risk)
+## Theories determine $P(E|¬H)$ (theoretical risk)
 
 ---
 
@@ -483,15 +483,15 @@ results %>%
 
 ## $P(E|H) \gg P(E|¬H)$
 
-## detectability $\gg$ theorethical risk
+## detectability $\gg$ theoretical risk
 
 *(statistical relevancy)*
 
 ---
 
-Maximizing theoretical risk / minimize researchers degrees of freedom is 
+Maximizing theoretical risk / minimizing researchers degrees of freedom is 
 
-# unsustainible
+# unsustainable
 
 --
 
@@ -506,7 +506,7 @@ class: center, middle, inverse
 template: theoretical-risk-plot
 
 ---
-name: theorethical-risk-plot2
+name: theoretical-risk-plot2
 
 ```{r measure-plots}
 # see R/plots.R
@@ -521,7 +521,7 @@ plots[["Posterior Probability"]] +
         title = element_blank(),
         axis.title = element_text(size = 18),
         plot.caption = element_text(size = 15)) +
-  labs(x = "Theorethical Risk",
+  labs(x = "Theoretical Risk",
        y = "Posterior Probability",
        caption = "P(E|H) = .8, P(H) = .1") +
   NULL
@@ -540,7 +540,7 @@ plots[["Posterior Probability"]] +
 # Yes.
 
 ---
-template: theorethical-risk-plot2
+template: theoretical-risk-plot2
 
 ---
 
@@ -551,7 +551,7 @@ template: theorethical-risk-plot2
 # Sometimes.
 
 ---
-template: theorethical-risk-plot2
+template: theoretical-risk-plot2
 
 ---
 
@@ -562,7 +562,7 @@ template: theorethical-risk-plot2
 # Very detailed.
 
 ---
-template: theorethical-risk-plot2
+template: theoretical-risk-plot2
 
 ---
 template: qrcode
