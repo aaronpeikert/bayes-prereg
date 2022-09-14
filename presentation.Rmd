@@ -506,6 +506,7 @@ class: center, middle, inverse
 template: theoretical-risk-plot
 
 ---
+name: theorethical-risk-plot2
 
 ```{r measure-plots}
 # see R/plots.R
@@ -529,6 +530,39 @@ plots[["Posterior Probability"]] +
 ---
 
 .large[**Preregistrations**] reduce .large[**uncertainty**] about .large[**theoretical risk**].
+
+---
+
+# Can I explore the data?
+
+--
+
+# Yes.
+
+---
+template: theorethical-risk-plot2
+
+---
+
+# Can I deviate?
+
+--
+
+# Sometimes.
+
+---
+template: theorethical-risk-plot2
+
+---
+
+# How much detail?
+
+--
+
+# Very detailed.
+
+---
+template: theorethical-risk-plot2
 
 ---
 template: qrcode
