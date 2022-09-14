@@ -233,7 +233,7 @@ class: center
 ---
 class: center
 
-# Preregistration seperates:
+# Preregistration separates:
 
 .pull-left.center[
 
@@ -341,7 +341,7 @@ have to pay with hard work.
 
 --
 
-.right[Together with well intentions, we can justifiably use Bayes˟.]
+.right[Together with well intentions, we may use Bayes˟.]
 
 ---
 
@@ -363,7 +363,7 @@ $$
 
 ]
 
-.right[The prior probability has nothing to with preregistration.]
+.right[The prior probability has nothing to do with preregistration.]
 
 ---
 
@@ -423,7 +423,7 @@ Related concepts
 
 ---
 
-## Theoretical risk > $\alpha$-error
+## Theoretical risk > α-error
 
 ---
 
@@ -455,7 +455,7 @@ results %>%
     axis.title = element_text(size = 18),
     plot.caption = element_text(size = 15)
   ) +
-  labs(x = "Theorethical Risk",
+  labs(x = "Theoretical Risk",
        y = "Posterior Probability",
        caption = "P(E|H) = .8, P(H) = .1") +
   NULL
