@@ -485,6 +485,12 @@ plots[["Posterior Probability"]] +
 
 ---
 
+## train/test split ↔ statistical model
+
+## preregistration ↔ hypothesis
+
+---
+
 # Can I explore the data?
 
 --
