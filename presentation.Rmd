@@ -271,28 +271,6 @@ class: center
 # ?
 
 ---
-class: middle
-
-.center[
-
-## When is one preregistration better than another?
-
-]
-
----
-class: middle
-
-.large[
-
-What must be **included** in the preregistration?
-
-When is a preregistration **detailed** enough?
-
-Can one **deviate** from the preregistration?
-
-]
-
----
 class: inverse, center, middle
 
 # A Formal Objective
@@ -312,36 +290,10 @@ Ideally:
 
 ---
 layout: true
-class: center, middle
+class: middle, center
 ---
 
-.large[To connect rationality to probability imagine:]
-
----
-
-## Researchers as gamblers
-
----
-
-.large[
-
-They bet on studies:
-
-hoping to gain knowledge, and 
-
-have to pay with hard work.
-
-]
-
----
-
-.left[The Dutch book argument:]
-
-## Any rational better must follow the laws of probability.
-
---
-
-.right[Together with well intentions, we may use Bayes˟.]
+# Bayesians are difficult to convince
 
 ---
 
