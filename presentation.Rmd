@@ -93,7 +93,7 @@ class: center, middle
 
 ### Aaron Peikert
 
-### DGPS | `r Sys.Date()`
+### Campus Carpentry | `r Sys.Date()`
 
 ---
 class: inverse, center, middle
