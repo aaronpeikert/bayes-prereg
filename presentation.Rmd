@@ -60,6 +60,7 @@ style_extra_css(css = list(".todo" = list(color = "#17C25B"),
                            ".optional" = list(color = "#05BCE6"),
                            ".large" = list(`font-size` = "130%"),
                            ".small" = list(`font-size` = "80%"),
+                           ".enormous" = list(`font-size` = "1000%"),
                            ".full" = list(padding = "0px",
                                           margin = "0px",
                                           border = "0px"),
@@ -175,60 +176,9 @@ crisis_plot /
 The simple answer is that we preregister because we think it is a remedy against the replication crisis.
 
 ---
-class: center, middle
-layout: true
----
-
-## Because researchers are *fraudsters*?
-
---
-
-# No
-
-???
-
-Some say to prevent intentional wrongdoing. 
-However, preregistrations are easily circumvented with bad intentions.
-We must assume researchers have good intentions.
-
----
-
-## Because researchers are *fools*?
-
---
-
-# No
---
-, not necessarily
-
-???
-
-Some say to prevent unintentional wrongdoing.
-Researchers must be put in restrains to prevent them from cutting themselves on the sharp edge of "false positives".
-
----
-layout: false
 class: inverse, center, middle
 
 # Traditional view
-
----
-class: center
-
-# Researchers confuse:
-
-
-.pull-left.center[
-
-# confirmatory
-
-]
-
-.pull-right.center[
-
-# exploratory
-
-]
 
 ---
 class: center
@@ -271,183 +221,97 @@ class: center
 # ?
 
 ---
+class: center, middle
+
+## Obvious problems:
+
+1. not a principled rational
+2. vagueness of prediction is not accounted for
+3. what about changes after the preregistration
+
+---
 class: inverse, center, middle
 
-# A Formal Objective
+# A Formal Objective*
 
----
-class: middle
-
-.large[
-
-Ideally:
-
-1. The original author has **good intentions**.
-2. Their readers are **rational**.
-3. The goal is to **convince** the readers.
-
-]
-
----
-layout: true
-class: middle, center
----
-
-# Bayesians are difficult to convince
+*Statisticians' Edition
 
 ---
 
-.large[
+### How we judge a model:
+
+Compare model and world.
 
 $$
-\frac{P(H)P(E|H)}{P(E)}
+L(\text{Model}(\text{World}), \text{World})
 $$
-
-]
-
----
-
-.large[
-
-$$
-\frac{\color{#F28705}{P(H)}P(E|H)}{P(E)}
-$$
-
-]
-
-.right[The prior probability has nothing to do with preregistration.]
-
----
-
-.large[
-
-$$
-\frac{P(H)\color{#F28705}{P(E|H)}}{P(E)}
-$$
-
-]
-
-.right[The true positive rate / power has nothing to with preregistration.]
-
-
----
-
-.large[
-
-$$
-\frac{P(H)P(E|H)}{\color{#F28705}{P(E)}}
-$$
-
-]
-
-.right[The probability of evidence is the only thing left.]
-
-
----
-
-.left[Law of total probability:]
-
-.large[
-
-$$
-P(E) = P(H)P(E|H) + P(¬H)\color{#F28705}{P(E|¬H)}
-$$
-
-]
 
 --
 
-$P(H)$, $P(¬H)$, $P(E|H)$, are already ruled out.
+But a sample of world must suffice:
 
----
-## $P(E|¬H)$
+$$
+L(\text{Model}(\text{Train}), \text{Train}) + \mathcal{C}(\text{Model})
+$$
+e.g.: Adjusted R², Stein's Unbiased Risk Estimator, Information Criteria, etc.
 
-The probability of finding evidence, even though the theory does not hold.
+.center[
 
----
-class: center, middle, inverse
+**We account for peeking at the data**
 
-# Theoretical Risk
-
----
-
-Related concepts
+]
 
 ---
 
-## Theoretical risk > α-error
+### Alternatively:
 
----
+The statistical complexity of some models is hard to estimate.
 
-## Researchers' degrees of freedom > theoretical risk
-
----
-class: center, middle, inverse
-
-# Effect
-
----
-name: theoretical-risk-plot
-
-```{r}
-results <- readr::read_rds(here::here("data", "simulation.rds"))
-```
-
-```{r}
-results %>%
-  filter(name == "Posterior Probability", certainty == "certain") %>%
-  ggplot() +
-  geom_line(aes(tau, value)) +
-  xaringanthemer::theme_xaringan() +
-  theme(
-    legend.position = c(.2, .8),
-    legend.title = element_blank(),
-    text = element_text(size = 18, color = secondary_color),
-    title = element_blank(),
-    axis.title = element_text(size = 18),
-    plot.caption = element_text(size = 15)
-  ) +
-  labs(x = "Theoretical Risk",
-       y = "Posterior Probability",
-       caption = "P(E|H) = .8, P(H) = .1") +
-  NULL
-```
-
----
-
-### So maximize theoretical risk?
+Find a situation, were $\mathcal{C}(\text{Model}) = 0$
 
 --
 
-# No
---
-, not necessarily
+$$
+L(\text{Model}(\text{Train, Test}), \text{Test})
+$$
+.center[
+
+**There is no peeking to account for.**
+
+]
+
 
 ---
 
-## Theories determine $P(E|¬H)$ (theoretical risk)
+### How we judge a theory:
 
----
-
-## Resources limit $P(E|H)$ (detectability)
-
----
-
-## $P(E|H) \gg P(E|¬H)$
-
-## detectability $\gg$ theoretical risk
-
-*(statistical relevancy)*
-
----
-
-Maximizing theoretical risk / minimizing researchers degrees of freedom is 
-
-# unsustainable
-
+$$L(\text{Theory}, \text{Train})$$
 --
 
-Other ideas?
+We often replace a theory by a model:
+
+$$
+L(\text{Model}(\text{Theory,Train}), \text{Train}) + \mathcal{C}(\text{Model})
+$$
+--
+
+Who are we kidding?
+
+$$
+L(\text{Model}(\text{Theory,Train}), \text{Train}) + \mathcal{C}(\text{Model}) + \mathcal{C}(\text{Human})
+$$
+---
+## $\mathcal{C}(\text{Human})$
+
+The statistical complexity of humans is hard to estimate.
+
+Find a situation, were $\mathcal{C}(\text{Human}) = 0$
+
+--
+
+.center[
+# Preregistration
+]
 
 ---
 class: center, middle, inverse
@@ -455,10 +319,23 @@ class: center, middle, inverse
 # .blurry[Uncertainty]
 
 ---
-template: theoretical-risk-plot
+class: center, middle
+
+
+# $\infty$ loss functions
 
 ---
+class: center, middle, inverse
+
+# Practice
+
+---
+class: center, middle
 name: theoretical-risk-plot2
+
+```{r}
+results <- readr::read_rds(here::here("data", "simulation.rds")) 
+```
 
 ```{r measure-plots}
 # see R/plots.R
@@ -482,12 +359,6 @@ plots[["Posterior Probability"]] +
 ---
 
 .large[**Preregistrations**] reduce .large[**uncertainty**] about .large[**theoretical risk**].
-
----
-
-## train/test split ↔ statistical model
-
-## preregistration ↔ hypothesis
 
 ---
 
