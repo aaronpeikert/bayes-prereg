@@ -94,7 +94,7 @@ class: center, middle
 
 ### Aaron Peikert
 
-### Campus Carpentry | `r Sys.Date()`
+### 23rd Research Colloquium  | 09.11.2022
 
 ---
 class: inverse, center, middle
@@ -239,14 +239,6 @@ class: inverse, center, middle
 ---
 
 ### How we judge a model:
-
-Compare model and world.
-
-$$
-L(\text{Model}(\text{World}), \text{World})
-$$
-
---
 
 But a sample of world must suffice:
 
