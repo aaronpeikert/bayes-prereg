@@ -339,6 +339,9 @@ plots[["Posterior Probability"]] +
 ```
 
 ---
+class: center, middle
+layout: true
+---
 
 .large[**Preregistrations**] reduce .large[**uncertainty**] about .large[**theoretical risk**].
 
