@@ -168,9 +168,6 @@ acs-*.bib
 *.trc
 *.xref
 
-# hypdoc
-*.hd
-
 # hyperref
 *.brf
 
@@ -414,12 +411,6 @@ rsconnect/
 .history
 .ionide
 
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
-
 # End of https://www.toptal.com/developers/gitignore/api/LaTex,R,Julia,VisualStudioCode
 .Rproj.user
 .Rhistory
@@ -431,3 +422,4 @@ README.html
 apa.csl
 *.html
 data/
+images/
