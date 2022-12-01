@@ -1,12 +1,10 @@
-As a response to the replication crisis, preregistration is becoming increasingly popular in the psychological sciences to explicitly separate prediction from explinations after the fact.
-At the same time, many researchers struggle to translate their theories into precise predictions and may feel overwhelmed by the need to prespecify every detail of their analysis plan.
-Should they surrender and discard the idea of preregistration altogether?
-Not at all.
-We argue for the utility of preregistration for all types of studies, even beyond purely confirmatory studies.
-Drawing from Bayesian philosophy of science, we define a formal objective for preregistration that neither declares post hoc changes to a preregistration to be sinful nor punishes rigor.
-This objective rests on the concept of “theoretical risk” [@meehlTheoreticalRisksTabular1978], which is a generalization of the type-I error rate that allows researchers to judge the evidential support for their theories.
-A common view is that preregistration is supposed to limit the type-I error rate by committing to a specific data analysis plan before data are collected.
-In our view, the purpose of preregistration is to reduce the uncertainty in judging the theoretical risk of a given study. 
-We argue that this perspective provides a principled justification for preregistration, extends its utility, and is more closely aligned with researchers' intuitions about evidential support.
-The more we know about how researchers arrived at their findings, the smaller our uncertainty about the theoretical risk they accepted, and the more persuasive the researchers' evidence is.
-Preregistrations can effectively reduce uncertainty about theoretical risk, which increases the persuasiveness of evidence, and hence they are warranted for any empirical study.
+In response to the replication crisis, many researchers detail their analysis plans before acquiring data.
+So-called preregistrations hold the promise to produce more robust research results.
+However, many researchers find preregistration challenging to apply in practice because they struggle to translate their theories into precise predictions.
+We argue that much of this difficulty stems from the belief that researchers must preregister results when, in fact, they can preregister procedures.
+While the former is only possible for the small subset of strictly confirmatory studies, the latter is applicable even amid the considerable uncertainties present in empirical sciences.
+Drawing from Bayesian philosophy of science, we provide a principled justification of preregistration that extends its utility beyond confirmatory studies and is more closely aligned with researchers' needs and intuition about evidential support.
+Such justification provides researchers with a formal objective that allows them to evaluate their own and others' preregistrations and weigh the cost and benefits of deviating from the analysis plan after data collection.
+This objective rests on the concept of "theoretical risk" [@meehlTheoreticalRisksTabular1978], a generalization of the type-I error rate that allows researchers to judge the evidential support for their theories.
+We argue that the purpose of preregistration is to reduce the uncertainty in judging the theoretical risk of a given study.
+The more we know about how researchers arrived at their findings, the smaller the uncertainty about the theoretical risk they accepted and the more persuasive the researchers' evidence.
