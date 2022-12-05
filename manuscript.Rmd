@@ -58,36 +58,38 @@ options(
 )
 ```
 
+<!--introduce confirmatory vs. exploratory-->
 A theory able to generate successful prediction should be more credible than a theory build around the facts afterwards.
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
-Confusing exploratory findings with confirmed theories has led to a crisis of confidence in the results of empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
-As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to honor this distinction and produce results that are considered confirmatory.
-
+Mistaking exploratory findings for empirically confirmed results has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
+As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to observe this distinction and produce results that are considered confirmatory.
 Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012].
-However, while many researchers intuitively recognize this as an advantage of preregistration, some remain unconvinced.
-These skeptics question why a study should be preregistered at all.
-Even researchers convinced of the advantages of preregistration face difficult problems when they exclusively rely on an intuitive appeal.
-Specifically, an intuitive conviction is unable to address pragmatic questions, such as what to include in the preregistration and how detailed this information should be, or about the conditions that warrant deviations.
-If the research community remains confused about the purpose of preregistration, it is bound to misapply it and waste resources on writing preregistrations that do not address the underlying problem.
-We thus propose a principled justification for preregistration with a formal objective against which researchers can evaluate several pragmatic trade-offs.
+This ability to provide a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
+Still an overwhelming majority of empirical researchers do not routinely preregister their studies because they do not find that the theoretical advantages outweigh the practical hurdles.
+This suggests a demand for explicating what the objective of preregistration is and what such objective implies in practice.
 
-The scientific community asserts that the objective of preregistration is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012].
-However, it is not principally warranted to suggest a close coupling of the categories preregistered vs. non-preregistered and confirmatory vs. exploratory research.
-In fact, researchers can conduct confirmatory research without preregistration (though it might be difficult to convince other researchers of the confirmatory nature of their research).
+<!--the current goal of preregistration is confirmation-->
+One objective of preregistration that has received widespread attention, is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
+In such narrative, preregistration is justified by a confirmatory research agenda.
+However, two problems emerge under closer inspection.
+First, many researcher do not subscribe to a confirmatory research agenda.
+Second, it is not principally warranted to suggest a close coupling of the categories preregistered vs. non-preregistered and confirmatory vs. exploratory research.
+
+<!---false dichotomy--->
+In fact, researchers can conduct confirmatory research without preregistration—though it might be difficult to convince other researchers of the confirmatory nature of their research.
 The exact opposite, preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterwards.
 Both strategies may be used for sensible scientific reasons or with the self-serving intent of generating desirable results.
-Thus, insisting on equating preregistration and confirmation has led to criticism that, all things considered, preregistration is actually harmful, and neither sufficient nor necessary to establish confirmation [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021]
+Thus, insisting on equating preregistration and confirmation has led to criticism that, all things considered, preregistration is actually harmful, and neither sufficient nor necessary for good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
 
-These issues arise from a fundamental misunderstanding about the objective of preregistration.
-Researchers are bound to be misled when they delegate an important scientific judgment to a simple decision rule, that only takes into account the existence of a preregistration.
-Preregistering an inherently exploratory analysis (like testing dozens of relations) does not make it confirmatory, nor will a carefully conducted confirmatory study become exploratory if the researcher deviates from the preregistration in minor details.
-To force preregistrations to generate results that are rightfully considered confirmatory additional restrictions on the types of analyses allowed have to be imposed.
-First, the analysis must have a low type-I error rate. second, 
-Equating confirmatory research with preregistered research is only possible for studies that expect a low type-I error rate and will run/be analyzed without in any case [@simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
-Under these conditions, the rule holds, but such restricted use makes preregistration a niche solution unable to match the greater problem of lacking replicability in psychology and elsewhere.
+<!---many researcher do not subscribe to confirmatory agenda--->
+We argue that such criticism is not directed against preregistration itself but against a justification through a confirmatory research agenda [@wagenmakersAgendaPurelyConfirmatory2012].
+When researcher criticize preregistration as too inflexible to fit their research question they often simply acknowledge that their research goals are not strictly confirmatory.
+Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
+However reasonable such move is, changing core believes of large community is much harder than convincing them that a method is well justified.
+We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
 
-We show that the simple decision rule is just a special case of a more general conceptualization under Bayesian reasoning. 
+<!---outline-structure--->
 To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
 
 We then outline two interpretations of how theoretical risk is impacted by preregistration.
