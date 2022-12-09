@@ -1,7 +1,7 @@
 The replication crisis spurned many researchers to preregister their analyses before acquiring data.
 However, there is no agreement on what preregistration should accomplish and why it is uniquely suited to these goals.
 A widespread view is that preregistration should limit how much the data may influence the hypotheses tested on the same data (i.e., restrict researchers' degrees of freedom, alpha error, and theoretical risk).
-Using the data to test the hypothesis without refining the hypothesis based on the results is the hallmark of confirmatory research.
+If no such influence occurs, an analysis is generally considered confirmatory.
 Consequently, many researchers believe that only confirmatory studies benefit from preregistration.
 Hence, they struggle to preregister their research, as many study designs and theories require adapting to the data.
 We show that limiting preregistration to confirmatory research is unnecessarily restrictive.
