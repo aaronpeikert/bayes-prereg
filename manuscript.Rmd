@@ -230,7 +230,7 @@ With regard to detectability, experiments 1 and 2 differ in no obvious way.
 Experiment 3, however, also has low detectability.
 It is unlikely that all students come up with the correct solution in a short time ($E_3$), even if insight is required ($H$) experiment 3 therefore has low detectability ($P(E_3|H)$).
 The theoretical risk, however, is also low in absolute terms, but high compared to the detectability.
-In the unlikely event that all 10 students place their matches to form the Roman numeral Ⅷ ($E_3$), it is probably due to insight ($H$) and not by chance $P(¬E_2|¬H)$).
+In the unlikely event that all 10 students place their matches to form the Roman numeral Ⅷ ($E_3$), it is probably due to insight ($H$) and not by chance $P(¬E_3|¬H)$).
 Of course, in practice, we would allow the evidence to be probabilistic, e.g., relax the requirement of "all students" to nine out of ten students, more than eight, and so forth.
 
 As argued earlier, the remainder of the paper will focus on binary, non-probabilisitic evidence to keep the mathematical notation as simple as possible.
