@@ -127,7 +127,10 @@ This argument states that any better must follow the axioms of probability to av
 Fully developing a Dutch book argument for this problem requires careful consideration of what kind of studies to include as possible bets, defining a conversion rate from the stakes to the reward, and modelling what liberties researchers have in what studies to conduct.
 Without deliberating these concepts further, we find it persuasive that researchers should not violate the axioms of probability if they have some expectation about what they stand to gain with some likelihood from conducting a study.
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
-The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of probability; that remains a leap of faith.
+The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of posterior probability; that remains a leap of faith.
+However, the argument applies to any reward function that satisfies the "statistical relevancy condition" (XXX).
+That is epistemic value is gained if evidence is observed, given that it is more likely to observe evidence when the theory holds than if the theory does not hold.
+
 Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
 In fact, this conceptualization is intentionally reductionistic to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
 
@@ -149,8 +152,10 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} (\#eq:bayes)
 
 The posterior probability ($P(H|E)$) is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
 In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability ($P(H)$), it is called increase in firmness.
-We refrain from discussing specific measures of corroboration since no measure shows universally better properties than others.
+As noted before, we concentrate on posterior probability as a measure of epistemic value, since no measure shows universally better properties than others.
 However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability ($P(H|E)$).
+We assume that any measure shows gain if, and only if, evidence is observed assuming $P(E|H) > P(E|¬H)$.
+This assumption is sometimes called statistical relevance condition (XXX).
 
 In short, we want to increase posterior probability ($P(H|E)$).
 Increases in posterior probability ($P(H|E)$) are associated with increased epistemic value, for which we want to maximize the expectation.
