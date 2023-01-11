@@ -162,7 +162,7 @@ Increases in posterior probability ($P(H|E)$) are associated with increased epis
 So how can we increase posterior probability?
 The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
 The first option leads us to the unsurprising conclusion that higher a priori probability ($P(H)$) leads to higher posterior probability ($P(H|E)$).
-If a hypothesis is more probable to begin with, the same increase in corroboration will lead to a higher probability than if the study was less probable to begin with.
+If a hypothesis is more probable to begin with, observing evidence in favor will result a more corroborated hypothesis, all else equal.
 However, the prior probability of a hypothesis is nothing our study design can change.
 The second option is similarly commonsensical; that is, an increase in $P(E|H)$ leads to higher posterior probability ($P(H|E)$).
 $P(E|H)$ is the probability of obtaining evidence for a theory, when the theory holds.
@@ -227,7 +227,7 @@ After that, the three experiments differ as follows:
 3. The experimenter does nothing; if all students come up with the solution, she records it as evidence for the hypothesis.
 
 We argue that experiment 1 has high theoretical risk ($P(¬E_1|¬H)$) and high detectability ($P(E_1|H)$).
-If "insight" has nothing to do with solving the problem ($¬H$), then presenting the insight that Roman numerals could be used, should not lead to all students solving the problem ($¬E_1$); the experiment therefore has high theoretical risk ($P(¬E_1|¬H)$)
+If "insight" has nothing to do with solving the problem ($¬H$), then presenting the insight that Roman numerals could be used, should not lead to all students solving the problem ($¬E_1$); the experiment therefore has high theoretical risk ($P(¬E_1|¬H)$).
 Conversely, if insight is required to solve the problem ($H$), then it is likely to help all students to solve the problem ($E_1$), the experiment therefore has high detectability ($P(E_1|H)$).
 The second experiment, on the other hand, has low theoretical risk ($P(¬E_2|¬H)$).
 Even if "insight" has nothing to do with solving the problem ($¬H$), there are other plausible reasons for observing the evidence ($E_2$), because the students could simply copy the solution, without having any insight.
@@ -244,7 +244,7 @@ We discuss the relation between statistical methods and theoretical risk in the 
 # Preregistration as a means to increase theoretical risk?
 
 Having discussed that increasing the theoretical risk will increase the epistemic value, it is intuitive to task preregistration with maximizing theoretical risk.
-Indeed, limiting the type-I error rate is commonly stated as a goal of preregistration.
+Indeed, limiting the type-I error rate is commonly stated as a goal of preregistration (XXX).
 We argue that while such a conclusion is plausible, we must first consider at least two constraints that place an upper bound on the theoretical risk.
 
 First, the theory itself limits theoretical risk:
@@ -399,7 +399,7 @@ The point is, that we cannot exclude this and innumerable possibilities and, hen
 This uncertainty is drastically reduced, if the researchers have described what they intended to do beforehand, and then report that they did exactly that.
 In that case, the readers can be certain, that they have received a complete account of the situation.
 They still might be uncertain about the actual theoretical risk the authors took, but to a much smaller extend than if the study would not have been preregistered.
-Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analysies, etc.
+Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analyses, etc.
 In any case a well written preregistration should aim to reduce the uncertainty about the theoretical risk and hence increase the persuasiveness of evidence.
 
 # Discussion
