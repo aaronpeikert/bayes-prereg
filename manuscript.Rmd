@@ -110,7 +110,7 @@ If researchers plan to conduct a study, they usually hope it will change their a
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
 Researchers cannot know what exactly they will learn from a study before they have run it.
-However, they can develop, they can form an expectation that helps them decide which study to conduct in what manner.
+However, they can develop an expectation that helps them decide which study to conduct in what manner.
 This expectation is what we term expected epistemic value.
 To make our three arguments, we must assume three things about this estimation process and how it relates to what studies (preregistered vs not preregistered) to conduct.
 
