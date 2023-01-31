@@ -59,54 +59,61 @@ options(
 ```
 
 <!--introduce confirmatory vs. exploratory-->
-A theory able to generate successful prediction should be more credible than a theory build around the facts afterwards.
-The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing and so forth [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010].
-Mistaking exploratory findings for empirically confirmed results has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
-As a response, more and more researchers preregister their studies [@nosekPreregistrationRevolution2018] to observe this distinction and produce results that are considered confirmatory.
-Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012].
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing, or prediction and postdiction [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010, @nosekPreregistrationRevolution2018].
+There is a broad consensus that both approaches are necessary for science to progress; exploration for making new discoveries and confirmation for exposing these discoveries to potential falsification and assess in how far it has been corroborated.
+Mistaking exploratory findings for empirically confirmed results inflates the the likelihood of believing that there is evidence for a given explanation to be true if it is false.
+A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
+Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
+As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
+They do so to stress the predictive nature of their registered statistical analyses and to produce results that were clearly and transparently to be labeled confirmatory.
+Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping promised false-positive rates.
 This ability to provide a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
-Still an overwhelming majority of empirical researchers do not routinely preregister their studies because they do not find that the theoretical advantages outweigh the practical hurdles.
-This suggests a demand for explicating what the objective of preregistration is and what such objective implies in practice.
+Still, the majority of empirical researchers do not routinely preregister their studies.
+One reason may be that some do not find that the theoretical advantages outweigh the practical hurdles, such as specifying every aspect of a theory in advance.
+We believe that we can reach a greater acceptance of preregistration by explicating a more general objective of preregistration that benefits all kinds of studies, even those that leave data-dependent decisions unspecified.
 
 <!--the current goal of preregistration is confirmation-->
-One objective of preregistration that has received widespread attention, is to distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
+One goal of preregistration that has received widespread attention, is to clearly distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
 In such narrative, preregistration is justified by a confirmatory research agenda.
 However, two problems emerge under closer inspection.
-First, many researcher do not subscribe to a confirmatory research agenda.
-Second, it is not principally warranted to suggest a close coupling of the categories preregistered vs. non-preregistered and confirmatory vs. exploratory research.
+First, many researcher do not subscribe to a purely confirmatory research agenda.
+Second, it is not necessary to strictly map the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
 
 <!---false dichotomy--->
-In fact, researchers can conduct confirmatory research without preregistration—though it might be difficult to convince other researchers of the confirmatory nature of their research.
-The exact opposite, preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
+Obviously, researchers can conduct confirmatory research without preregistration— hough it might be difficult to convince other researchers of the confirmatory nature of their research, that is, that they were free of cognitive biases, made no data-dependent decisions whatsoever, etc.
+The opposite would be preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterwards.
 Both strategies may be used for sensible scientific reasons or with the self-serving intent of generating desirable results.
-Thus, insisting on equating preregistration and confirmation has led to criticism that, all things considered, preregistration is actually harmful, and neither sufficient nor necessary for good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
+Thus, insisting on equating preregistration and confirmation has led to the criticism that, all things considered, preregistration is actually harmful, and neither sufficient nor necessary for doing good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
 
 <!---many researcher do not subscribe to confirmatory agenda--->
 We argue that such criticism is not directed against preregistration itself but against a justification through a confirmatory research agenda [@wagenmakersAgendaPurelyConfirmatory2012].
-When researcher criticize preregistration as too inflexible to fit their research question they often simply acknowledge that their research goals are not strictly confirmatory.
+When researcher criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
 Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
-However reasonable such move is, changing core believes of large community is much harder than convincing them that a method is well justified.
+However reasonable such a move is, changing core believes of a large community is much harder than convincing them that a method is well justified.
 We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
+While preregistration is especially useful for dividing confirmatory and exploratory research, we argue that preregistration can be useful for any kind of study in the continuum between purely confirmatory and fully exploratory.
 
 <!---outline-structure--->
 To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
 
-We then outline two interpretations of how theoretical risk is impacted by preregistration.
-The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type-I error.
+We then outline two interpretations of how preregistration impacts theoretical risk.
+The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
 The second interpretation is our main contribution and demonstrates the broad applicability of preregistration to both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes after preregistration.
-Following this interpretation, the theoretical risk is not necessarily directly maximized by preregistration, but rather the uncertainty in judging the theoretical risk is minimized.
+We argue that the classic view on the utility of preregistration can be interpreted as maximization of theoretical risk, which is reduced by researchers' degrees of freedom, p-hacking, and such.
+Importantly, we argue that theoretical risk is not necessarily directly maximized by preregistration, but rather the uncertainty in judging the theoretical risk is minimized.
 
 To arrive at this interpretation, we rely on three arguments.
 The first is that theoretical risk is vital for judging evidential support for theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
-We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is warranted for any study.
+We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is potentially useful for any kind of study, no matter how exploratory.
 
 # Epistemic value and the Bayesian rationale
 
 Let us start by defining what we call expected epistemic value.
 If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude.
+ <!--AB: reference needed, where this term is defined; whose definition do we use?-->
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
 Researchers cannot know what exactly they will learn from a study before they have run it.
@@ -405,23 +412,26 @@ In any case a well written preregistration should aim to reduce the uncertainty 
 # Discussion
 
 We started out with the observation that preregistrations do not always cleanly divide preregistration from confirmation.
-Enforcing this distinction would mean using preregistrations as a means to increase the theoretical risk researchers take on.
-No doubt this results in more trustworthy evidence and may even increase the effectiveness of scientific undertakings in general.
+<--AB: can you rewrite this and be more clear? Isn't this more about researchers who do not distinguish these concepts? -->
+Subscribing to this distinction would mean to use preregistrations solely as a means to increase the theoretical risk researchers are willing to accept.
+Undoubtedly, this results in more trustworthy evidence and may even increase the effectiveness of scientific undertakings in general.
 However, as argued earlier, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favoring the theory (a special instance of this problem is the well-known trade-off of statistical power and type-I error rate).
+<!--AB: maybe add "everything else being the same" or the specific conditions?-->
 As we further argued, minimizing the uncertainty about theoretical risk (without necessarily increasing the theoretical risk itself) has benefits for the epistemic value, too, but without increasing the likelihood of producing a "failed" study.
 Note that any single study that does not produce evidence in favor of a research hypothesis is still precious for the scientific process.
 Under the current incentive structure, however, many researchers have reason to avoid such outcomes and few, if any, have the privilege to operate outside of these incentives.
 
-In our view, the advantage of uncertainty reduction about theoretical risk front and center is two-fold.
-First, aiming to reduce uncertainty is beneficial across a wide range of potential theoretical risks.
-That is, researchers benefit from preregistering their study, regardless of whether or not the study is "exploratory".
+In our view, there are two advantages to focusing on uncertainty over theoretical risk itself.
+First, aiming to reduce uncertainty is beneficial across a wide range of potential theoretical risks one encounters as researcher.
+That is, researchers benefit from preregistering their study, regardless of whether or not the study is tagged "exploratory".
 If researchers conduct a more exploratory study they can clearly communicate how exploratory they aim to be and their results can be judged accordingly.
-Second, if researchers realize after the fact that it would be unwise to follow their preregistration in certain details, they may change their strategy.
-Allowing researchers to deviate from the preregistration is controversial (XXX) because the authors might sift through all the possibilities and then select the most beneficial for their theory.
-In its fullest consequence, this argument might result in the same uncertainty that we argued plagues for not-preregistered studies.
-However, if the authors offer a convincing argument for their deviation, their readers might may judge it to be a reasonable explanation for the deviation.
+Second, if researchers realize after the fact that a deviation from their preregistration in certain details is sensible (and sometimes, the only reasonable way forward), they are explicitly allowed to change their strategy.
+<!--AB: this sounds like a new claim but it is accepted that deviations are OK, isn't it? maybe stress that this view is natural under the proposed framework but less so in stricter views of preregistration-->
+Allowing researchers to deviate from the preregistration is controversial (XXX) <!--AB: ref missing--> because the authors might sift through all the possibilities and then select the most beneficial for their theory.
+In its full consequence, this argument might result in the same uncertainty that we argued plagues not-preregistered studies.
+However, if authors of study offer a convincing argument for their deviation, their readers might may judge it to be a reasonable explanation for the deviation.
 In fact, using the here presented framework, we can distinguish reasonable from unreasonable deviations.
-If a change increases detectability enough to offset the increase in uncertainty in theoretical risk, it is worthwhile.
+If a deviation increases detectability enough to offset the increase in uncertainty in theoretical risk, it is a deviation worth doing.
 
 # References
 
