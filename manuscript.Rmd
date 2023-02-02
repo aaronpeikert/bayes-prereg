@@ -82,11 +82,11 @@ A variety of practices, such as researchers' degrees of freedom together with re
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
 They do so to stress the predictive nature of their registered statistical analyses and to produce results that were clearly and transparently to be labeled confirmatory.
-Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping promised false-positive rates.
+Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping low false-positive rates.
 This ability to provide a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
 Still, the majority of empirical researchers do not routinely preregister their studies.
 One reason may be that some do not find that the theoretical advantages outweigh the practical hurdles, such as specifying every aspect of a theory in advance.
-We believe that we can reach a greater acceptance of preregistration by explicating a more general objective of preregistration that benefits all kinds of studies, even those that leave data-dependent decisions unspecified.
+We believe that we can reach a greater acceptance of preregistration by explicating a more general objective of preregistration that benefits all kinds of studies, even those that allow data-dependent decisions.
 
 <!--the current goal of preregistration is confirmation-->
 One goal of preregistration that has received widespread attention, is to clearly distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
@@ -108,7 +108,7 @@ When researcher criticize preregistration as being too inflexible to fit their r
 Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
 However reasonable such a move is, changing core believes of a large community is much harder than convincing them that a method is well justified.
 We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
-While preregistration is especially useful for dividing confirmatory and exploratory research, we argue that preregistration can be useful for any kind of study in the continuum between purely confirmatory and fully exploratory.
+It might be that psychology needs more confirmatory studies but preregistration can be useful for any kind of study in the continuum between purely confirmatory and fully exploratory.
 
 <!---outline-structure--->
 To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
