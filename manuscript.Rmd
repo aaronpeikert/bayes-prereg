@@ -238,7 +238,7 @@ Suppose the primary theory is about the cognitive phenomenon of "insight."
 For the purpose of illustration, we define it, with quite some hand-waving, as a cognitive abstraction that allows agents to consistently solve a well-defined class of problems.
 We present the hypothesis that the following problem belongs to such a class of insight problems:
 
-> Use five matches (Ⅰ Ⅰ Ⅰ Ⅰ Ⅰ) to form the number eight. 
+> Use five matches (IIII) to form the number eight. 
 
 We propose three experiments that differ in theoretical risk and detectability.
 All experiments take a sample of ten psychology students.
@@ -246,7 +246,7 @@ We present the students with the problem for a brief span of time.
 After that, the three experiments differ as follows:
 
 1. The experimenter gives a hint that  the problem is easy to solve when using Roman numerals; if all students come up with the solution, she records it as evidence for the hypothesis.
-2. The experimenter shows the solution "Ⅷ" and explains it; if all students come up with the solution, she records it as evidence for the hypothesis.
+2. The experimenter shows the solution "IX" and explains it; if all students come up with the solution, she records it as evidence for the hypothesis.
 3. The experimenter does nothing; if all students come up with the solution, she records it as evidence for the hypothesis.
 
 We argue that experiment 1 has high theoretical risk ($P(¬E_1|¬H)$) and high detectability ($P(E_1|H)$).
