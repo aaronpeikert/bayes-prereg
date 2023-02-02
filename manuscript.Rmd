@@ -1,19 +1,24 @@
 ---
 title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization."
-output:
-  bookdown::pdf_document2:
-    latex_engine: "xelatex"
-    toc: false
-    number_sections: false
-header-includes:
-   - \usepackage{libertine}
-fontsize: 11pt
-linestretch: 1.2
-geometry: "left=3.9cm, right=3.3cm, top=2.5cm, bottom=3cm"
-papersize: a4
 bibliography: references.bib
 abstract: "`r paste0(c('\\\\noindent', readLines('abstract.md')), collapse = ' ')`"
-csl: apa.csl
+author:
+  - name: Aaron Peikert
+    affil: a, b
+    email: peikert@mpib-berlin.mpg.de
+  - name: Andreas M. Brandmaier
+    affil: a, c
+    email: brandmaier@mpib-berlin.mpg.de
+affiliation:
+  - num: a
+    address: |
+      Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany
+  - num: b
+    address: |
+      Department of Psychology, Humboldt-Universität zu Berlin, Unter den Linden 6, 10117 Berlin, Germany
+  - num: c
+    address: |
+      MSB Medical School Berlin, Rüdesheimer Str. 50, 14197 Berlin, Germany
 repro:
   scripts:
     - R/plots.R
@@ -28,6 +33,7 @@ repro:
     - ggthemes
     - patchwork
     - tikzDevice
+    - rticles
   tlmgr:
     - pgf
     - preview
@@ -37,6 +43,16 @@ repro:
     - rsync
     - curl
     - inkscape
+output:
+  rticles::tf_article:
+    latex_engine: xelatex
+type: ARTICLE TEMPLATE
+keywords: |
+  preregistration; confirmatory analyses; exploratory analyses; hypothesis testing; bayesian
+header-includes: |
+  \usepackage{hyperref}
+  \usepackage[utf8]{inputenc}
+  \def\tightlist{}
 ---
 
 ```{r, include = FALSE}
