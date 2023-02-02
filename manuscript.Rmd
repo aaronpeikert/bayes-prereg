@@ -217,7 +217,7 @@ The real lever to pull is, therefore, $P(E|¬H)$.
 This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
 Its counter probability $P(¬E|¬H)= 1 - P(E|¬H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
 We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(¬E|¬H)$.
-In a response to the original paper, @kuklaClinicalStatisticalTheory1990 argued that the arguments layed out in @meehlTheoreticalRisksTabular1978 can be reconstructed in purely Bayesian framework.
+@kuklaClinicalStatisticalTheory1990 argued that the core arguments in @meehlAppraisingAmendingTheories1990 can be reconstructed in purely Bayesian framework.
 However, while he did not name $P(¬E|¬H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|¬H)$ which would imply that $P(¬E|¬H)$ can be related to or even equated to theoretical risk.
 
 Let us note some interesting properties of theoretical risk ($P(¬E|¬H)$).
