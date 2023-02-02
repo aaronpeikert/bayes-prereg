@@ -61,7 +61,7 @@ options(
 <!--introduce confirmatory vs. exploratory-->
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing, or prediction and postdiction [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010, @nosekPreregistrationRevolution2018].
 There is a broad consensus that both approaches are necessary for science to progress; exploration for making new discoveries and confirmation for exposing these discoveries to potential falsification and assess in how far it has been corroborated.
-Mistaking exploratory findings for empirically confirmed results inflates the the likelihood of believing that there is evidence for a given explanation to be true if it is false.
+Mistaking exploratory findings for empirically confirmed results inflates the the likelihood of believing that there is evidence for a given explanation even if it is false.
 A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
@@ -80,8 +80,8 @@ First, many researcher do not subscribe to a purely confirmatory research agenda
 Second, it is not necessary to strictly map the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
 
 <!---false dichotomy--->
-Obviously, researchers can conduct confirmatory research without preregistration— hough it might be difficult to convince other researchers of the confirmatory nature of their research, that is, that they were free of cognitive biases, made no data-dependent decisions whatsoever, etc.
-The opposite would be preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
+Obviously, researchers can conduct confirmatory research without preregistration— though it might be difficult to convince other researchers of the confirmatory nature of their research, that is, that they were free of cognitive biases, made no data-dependent decisions whatsoever, etc.
+The opposite, i.e., preregistered but not strictly confirmatory studies, are also commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 Researchers may apply two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterwards.
 Both strategies may be used for sensible scientific reasons or with the self-serving intent of generating desirable results.
 Thus, insisting on equating preregistration and confirmation has led to the criticism that, all things considered, preregistration is actually harmful, and neither sufficient nor necessary for doing good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
