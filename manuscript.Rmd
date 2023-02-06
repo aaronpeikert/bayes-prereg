@@ -364,7 +364,7 @@ results <- readr::read_rds(here::here("data", "simulation.rds"))
 ```
 
 ```{r, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "Posterior Probability (corroboration as firmness) as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
+#| fig.cap: "Posterior Probability (corroboration as firmness) as a function of $\tau$, where $\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[["Posterior Probability"]] +
   labs(caption = "$p(E|H) = 0.8$, $p(H) = 0.1$",
@@ -375,7 +375,7 @@ plots[["Posterior Probability"]] +
 ```
 
 ```{r, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "Several measures for corroboration as increase in firmness as a function of τ, where τ is either certain (solid line) or maximally uncertain (dotted line)."
+#| fig.cap: "Several measures for corroboration as increase in firmness as a function of $\tau$, where $\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[!(names(plots) %in% "Posterior Probability")] %>% 
   map(~ . +   theme_tufte()) %>% 
