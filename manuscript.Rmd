@@ -173,21 +173,21 @@ We can calculate the probability of the hypothesis after observing the evidence 
 P(H|E) = \frac{P(H)P(E|H)}{P(E)} (\#eq:bayes)
 \end{equation}
 
-The posterior probability ($P(H|E)$) is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
-In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability ($P(H)$), it is called increase in firmness.
+The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
+In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness.
 As noted before, we concentrate on posterior probability as a measure of epistemic value, since no measure shows universally better properties than others.
-However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability ($P(H|E)$).
+However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability $P(H|E)$.
 We assume that any measure shows gain if, and only if, evidence is observed assuming $P(E|H) > P(E|\neg{}H)$.
 This assumption is sometimes called statistical relevance condition (XXX).
 
-In short, we want to increase posterior probability ($P(H|E)$).
-Increases in posterior probability ($P(H|E)$) are associated with increased epistemic value, for which we want to maximize the expectation.
+In short, we want to increase posterior probability $P(H|E)$.
+Increases in posterior probability $P(H|E)$ are associated with increased epistemic value, for which we want to maximize the expectation.
 So how can we increase posterior probability?
 The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
-The first option leads us to the unsurprising conclusion that higher a priori probability ($P(H)$) leads to higher posterior probability ($P(H|E)$).
+The first option leads us to the unsurprising conclusion that higher a priori probability $P(H)$ leads to higher posterior probability $P(H|E)$.
 If a hypothesis is more probable to begin with, observing evidence in favor will result a more corroborated hypothesis, all else equal.
 However, the prior probability of a hypothesis is nothing our study design can change.
-The second option is similarly commonsensical; that is, an increase in $P(E|H)$ leads to higher posterior probability ($P(H|E)$).
+The second option is similarly commonsensical; that is, an increase in $P(E|H)$ leads to higher posterior probability $P(H|E)$.
 $P(E|H)$ is the probability of obtaining evidence for a theory, when the theory holds.
 We call this probability of detecting evidence given that the theory holds "detectability."
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
@@ -212,7 +212,7 @@ Using the law of total probability, we can split $P(E)$ into two terms:
 P(E) = P(H)P(E|H) + P(\neg{}H)P(E|\neg{}H) (\#eq:total-expectedness)
 \end{equation}
 
-We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(\neg{}H)$), and that it is common sense to increase detectability ($P(E|H)$).
+We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(\neg{}H)$), and that it is common sense to increase detectability $P(E|H)$.
 The real lever to pull is, therefore, $P(E|\neg{}H)$.
 This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
 Its counter probability $P(\neg{}E|\neg{}H)= 1 - P(E|\neg{}H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favour.
@@ -220,9 +220,9 @@ We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not a
 @kuklaClinicalStatisticalTheory1990 argued that the core arguments in @meehlAppraisingAmendingTheories1990 can be reconstructed in purely Bayesian framework.
 However, while he did not name $P(\neg{}E|\neg{}H)$ but did suggest that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|\neg{}H)$ which would imply that $P(\neg{}E|\neg{}H)$ can be related to or even equated to theoretical risk.
 
-Let us note some interesting properties of theoretical risk ($P(\neg{}E|\neg{}H)$).
-First, increasing theoretical risk leads to higher posterior probability ($P(H|E)$, our objective).
-Second, if the theoretical risk is smaller than detectability ($P(E|H)$) it follows that the posterior probability must decrease when observing the evidence.
+Let us note some interesting properties of theoretical risk $P(\neg{}E|\neg{}H)$.
+First, increasing theoretical risk leads to higher posterior probability $P(H|E)$, our objective.
+Second, if the theoretical risk is smaller than detectability $P(E|H)$ it follows that the posterior probability must decrease when observing the evidence.
 If detectability exceeds theoretical risk, the evidence is less likely under the theory than it is when the theory does not hold.
 Third, if the theoretical risk equals zero, then posterior probability is at best equal to prior probability but only if detectability is perfect ($P(H|E)$ = 1).
 In other words, observing a sure fact does not lend credence to a hypothesis.
@@ -231,7 +231,7 @@ The last statement sounds like a truism but is directly related to Popper's semi
 He stated that if it is impossible to prove that a hypothesis is false ($P(\neg{}E|\neg{}H) = 0$, theoretical risk is zero), it cannot be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
 We note these relations to underline that the Bayesian rational we apply here is able to reconstruct many commonly held views on riskiness and epistemic value.
 
-Both theoretical risk ($P(\neg{}E|\neg{}H)$) and detectability ($P(E|H)$) aggregate uncountable influences, otherwise they could not model the process of evidential support for theories.
+Both theoretical risk $P(\neg{}E|\neg{}H)$ and detectability $P(E|H)$ aggregate uncountable influences, otherwise they could not model the process of evidential support for theories.
 To illustrate the concepts we introduced up to here, consider the following  example of a single theory and three experiments that may test it. 
 The experiments were created to illustrate how they may differ in their theoretical risk and detectability.
 Suppose the primary theory is about the cognitive phenomenon of "insight."
@@ -249,15 +249,15 @@ After that, the three experiments differ as follows:
 2. The experimenter shows the solution "IX" and explains it; if all students come up with the solution, she records it as evidence for the hypothesis.
 3. The experimenter does nothing; if all students come up with the solution, she records it as evidence for the hypothesis.
 
-We argue that experiment 1 has high theoretical risk ($P(\neg{}E_1|\neg{}H)$) and high detectability ($P(E_1|H)$).
-If "insight" has nothing to do with solving the problem ($\neg{}H$), then presenting the insight that Roman numerals could be used, should not lead to all students solving the problem ($\neg{}E_1$); the experiment therefore has high theoretical risk ($P(\neg{}E_1|\neg{}H)$).
-Conversely, if insight is required to solve the problem ($H$), then it is likely to help all students to solve the problem ($E_1$), the experiment therefore has high detectability ($P(E_1|H)$).
-The second experiment, on the other hand, has low theoretical risk ($P(\neg{}E_2|\neg{}H)$).
+We argue that experiment 1 has high theoretical risk $P(\neg{}E_1|\neg{}H)$ and high detectability $P(E_1|H)$.
+If "insight" has nothing to do with solving the problem ($\neg{}H$), then presenting the insight that Roman numerals could be used, should not lead to all students solving the problem ($\neg{}E_1$); the experiment therefore has high theoretical risk $P(\neg{}E_1|\neg{}H)$.
+Conversely, if insight is required to solve the problem ($H$), then it is likely to help all students to solve the problem ($E_1$), the experiment therefore has high detectability $P(E_1|H)$.
+The second experiment, on the other hand, has low theoretical risk $P(\neg{}E_2|\neg{}H)$.
 Even if "insight" has nothing to do with solving the problem ($\neg{}H$), there are other plausible reasons for observing the evidence ($E_2$), because the students could simply copy the solution, without having any insight.
 With regard to detectability, experiments 1 and 2 differ in no obvious way.
 Experiment 3, however, also has low detectability.
-It is unlikely that all students come up with the correct solution in a short time ($E_3$), even if insight is required ($H$) experiment 3 therefore has low detectability ($P(E_3|H)$).
-The theoretical risk, however, is also low in absolute terms, but high compared to the detectability.
+It is unlikely that all students come up with the correct solution in a short time ($E_3$), even if insight is required ($H$) experiment 3 therefore has low detectability $P(E_3|H)$.
+The theoretical risk, however, is also low in absolute terms, but high compared to the detectability (statistical relevancy condition is satisfied).
 In the unlikely event that all 10 students place their matches to form the Roman numeral VIII ($E_3$), it is probably due to insight ($H$) and not by chance $P(\neg{}E_3|\neg{}H)$).
 Of course, in practice, we would allow the evidence to be probabilistic, e.g., relax the requirement of "all students" to nine out of ten students, more than eight, and so forth.
 
@@ -282,7 +282,7 @@ We will later show that preregistration increases the degree of belief in the fu
 The point, however, is that we want to show that preregistration increases the expected epistemic value regardless of the theory being tested.
 
 Second, available resources limit theoretical risk.
-Increasing theoretical risk ($P(\neg{}E|\neg{}H)$) will usually decrease detectability ($P(E|H)$) unless more resources are invested.
+Increasing theoretical risk $P(\neg{}E|\neg{}H)$ will usually decrease detectability $P(E|H)$ unless more resources are invested.
 In other words, one cannot increase power while maintaining the same type-I error rate without increasing the invested resources.
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
 Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
@@ -306,7 +306,7 @@ We argue that theoretical risk (and hence its inverse, $P(E|\neg{}H)$) also enco
 
 Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to theoretical risk.
 Examples of our ability to exert this control are the setting of type-I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria, or cross-validation in machine learning.
-These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none ($P(E|\neg{}H)$).
+These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none $P(E|\neg{}H)$.
 
 The point is that the contribution of statistical methods to theoretical risk can be formally assessed.
 For many statistical models it can be analytically computed under some assumptions.
