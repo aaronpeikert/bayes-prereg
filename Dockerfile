@@ -12,13 +12,17 @@ RUN MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE} \
 RUN tlmgr install pgf preview libertine
 RUN apt-get update -y && apt-get install -y git rsync curl inkscape
 RUN install2.r --error --skipinstalled \ 
+  gert \ 
   ggplot2 \ 
   ggthemes \ 
   here \ 
   patchwork \ 
   qrcode \ 
+  rticles \ 
   showtext \ 
   svglite \ 
   tidyverse \ 
   tikzDevice \ 
   xaringanthemer
+RUN installGithub.r \ 
+  aaronpeikert/repro@5075336

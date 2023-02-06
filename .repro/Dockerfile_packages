@@ -1,11 +1,15 @@
 RUN install2.r --error --skipinstalled \ 
+  gert \ 
   ggplot2 \ 
   ggthemes \ 
   here \ 
   patchwork \ 
   qrcode \ 
+  rticles \ 
   showtext \ 
   svglite \ 
   tidyverse \ 
   tikzDevice \ 
   xaringanthemer
+RUN installGithub.r \ 
+  aaronpeikert/repro@5075336

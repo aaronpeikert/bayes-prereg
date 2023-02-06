@@ -34,6 +34,8 @@ repro:
     - patchwork
     - tikzDevice
     - rticles
+    - gert
+    - aaronpeikert/repro@5075336
   tlmgr:
     - pgf
     - preview
