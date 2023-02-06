@@ -170,7 +170,7 @@ The probability of observing evidence under some hypothesis is $P(E|H)$.
 We can calculate the probability of the hypothesis after observing the evidence with the help of the Bayes formula:
 
 \begin{equation}
-P(H|E) = \frac{P(H)P(E|H)}{P(E)} (\#eq:bayes)
+P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 \end{equation}
 
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
@@ -209,7 +209,7 @@ To better understand how preregistrations can achieve that, let us take a closer
 Using the law of total probability, we can split $P(E)$ into two terms:
 
 \begin{equation}
-P(E) = P(H)P(E|H) + P(\neg{}H)P(E|\neg{}H) (\#eq:total-expectedness)
+P(E) = P(H)P(E|H) + P(\neg{}H)P(E|\neg{}H) \label{eq:total-expectedness}
 \end{equation}
 
 We already have noted that there is not much to do about prior probability ($P(H)$, and hence its counter probability $P(\neg{}H)$), and that it is common sense to increase detectability $P(E|H)$.
@@ -339,7 +339,7 @@ Within the Bayesian framework, this is both straightforward and insightful.
 To get an expectation, we express uncertainty as a probability distribution and then integrate over it:
 
 \begin{equation}
-\mathbb{E}(p(H|E)) = \int \frac{p(H)p(E|H)}{p(H)p(E|H)+p(\neg H) p(E|\neg H) } \; \text{d}\; \mathbb{P}(p(E|\neg H)) (\#eq:integral)
+\mathbb{E}(p(H|E)) = \int \frac{p(H)p(E|H)}{p(H)p(E|H)+p(\neg H) p(E|\neg H) } \; \text{d}\; \mathbb{P}(p(E|\neg H)) \label{eq:integral}
 \end{equation}
 
 To illustrate the effect of uncertainty, let $p(E|H) = 0.8$ (e.g., power of 80%) and $p(H) = 0.1$ and assume a uniform distribution for $p(E|\neg{}H)$ of the form:
