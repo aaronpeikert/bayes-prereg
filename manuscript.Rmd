@@ -104,7 +104,7 @@ Thus, insisting on equating preregistration and confirmation has led to the crit
 
 <!---many researcher do not subscribe to confirmatory agenda--->
 We argue that such criticism is not directed against preregistration itself but against a justification through a confirmatory research agenda [@wagenmakersAgendaPurelyConfirmatory2012].
-When researcher criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
+When researchers criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
 Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
 However reasonable such a move is, changing core believes of a large community is much harder than convincing them that a method is well justified.
 We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
@@ -428,7 +428,7 @@ In any case a well written preregistration should aim to reduce the uncertainty 
 # Discussion
 
 We started out with the observation that preregistrations do not always cleanly divide preregistration from confirmation.
-<--AB: can you rewrite this and be more clear? Isn't this more about researchers who do not distinguish these concepts? -->
+<!--AB: can you rewrite this and be more clear? Isn't this more about researchers who do not distinguish these concepts? -->
 Subscribing to this distinction would mean to use preregistrations solely as a means to increase the theoretical risk researchers are willing to accept.
 Undoubtedly, this results in more trustworthy evidence and may even increase the effectiveness of scientific undertakings in general.
 However, as argued earlier, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favoring the theory (a special instance of this problem is the well-known trade-off of statistical power and type-I error rate).
