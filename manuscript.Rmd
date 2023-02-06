@@ -45,9 +45,7 @@ repro:
     - rsync
     - curl
     - inkscape
-output:
-  rticles::tf_article:
-    latex_engine: xelatex
+output: rticles::tf_article
 type: ARTICLE TEMPLATE
 keywords: |
   preregistration; confirmatory analyses; exploratory analyses; hypothesis testing; bayesian
