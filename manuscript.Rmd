@@ -137,8 +137,8 @@ This expectation is what we term expected epistemic value.
 To make our three arguments, we must assume three things about this estimation process and how it relates to what studies (preregistered vs not preregistered) to conduct.
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
-2. They expect other researchers to apply the same rational process.
-2. All else being equal, researchers try to maximize the expected epistemic value for other researchers.
+2. They expect other researchers to apply a similar rational process.
+2. They try to maximize the expected epistemic value for other researchers.
 
 The assumption of rationality can be connected to Bayesian reasoning and leads to our adoption of the framework.
 Our rationale is as follows.
@@ -151,7 +151,7 @@ Without deliberating these concepts further, we find it persuasive that research
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
 The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of posterior probability; that remains a leap of faith.
 However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
-That is epistemic value is gained if evidence is observed, given that it is more likely to observe evidence when the theory holds than if the theory does not hold.
+That is, evidence only increases epistemic value for a theory, if the evidence is more likely to observe under the theory than without it.
 
 Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
 In fact, this conceptualization is intentionally reductionistic to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
