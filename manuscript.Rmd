@@ -151,7 +151,7 @@ Fully developing a Dutch book argument for this problem requires careful conside
 Without deliberating these concepts further, we find it persuasive that researchers should not violate the axioms of probability if they have some expectation about what they stand to gain with some likelihood from conducting a study.
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
 The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of posterior probability; that remains a leap of faith.
-However, the argument applies to any reward function that satisfies the "statistical relevancy condition" (XXX).
+However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
 That is epistemic value is gained if evidence is observed, given that it is more likely to observe evidence when the theory holds than if the theory does not hold.
 
 Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
@@ -174,11 +174,11 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 \end{equation}
 
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
-In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness.
+In the tradition of Carnap, in its direct use, it is called corroboration as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
 As noted before, we concentrate on posterior probability as a measure of epistemic value, since no measure shows universally better properties than others.
-However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability $P(H|E)$.
+However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability $P(H|E)$ and our argument applies to those measures as well.
 We assume that any measure shows gain if, and only if, evidence is observed assuming $P(E|H) > P(E|\neg{}H)$.
-This assumption is sometimes called statistical relevance condition (XXX).
+This assumption is sometimes called statistical relevance condition [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
 
 In short, we want to increase posterior probability $P(H|E)$.
 Increases in posterior probability $P(H|E)$ are associated with increased epistemic value, for which we want to maximize the expectation.
@@ -267,7 +267,7 @@ We discuss the relation between statistical methods and theoretical risk in the 
 # Preregistration as a means to increase theoretical risk?
 
 Having discussed that increasing the theoretical risk will increase the epistemic value, it is intuitive to task preregistration with maximizing theoretical risk, i.e., a confirmatory research agenda.
-Indeed, limiting the type-I error rate is commonly stated as a goal of preregistration (XXX).
+Indeed, limiting the type-I error rate is commonly stated as a goal of preregistration [@nosekPreregistrationRevolution2018; @oberauerPreregistrationForkingPath2019; @rubinDoesPreregistrationImprove2020].
 We argue that while such a conclusion is plausible, we must first consider at least two constraints that place an upper bound on the theoretical risk.
 
 First, the theory itself limits theoretical risk:
@@ -468,9 +468,9 @@ However, theoretical risk is something researcher have only limited control over
 Before researchers may preregister a confirmatory study with high theoretical risk, they must ensure that they are able to conduct a confirmatory study.
 Researchers must develop theories sufficiently and then have the resources to adequately balance detectability against theoretical risk.
 A preregistration may at most help to invest some time into developing more specific, hence riskier, implications of a theory, but enabling confirmatory research is a task that requires action from the whole research community.
-Incentive structures must be more willing to evaluate not the outcomes of a study but the rigor with which it was conducted.
-Journal editors could encourage theoretical developments and be willing to accept registered reports.
-Funding agencies should demand an explicit statement about theoretical risk in relation to detectability and must be willing to provide the necessary resources to reach adequate levels of both.
+Incentive structures must be more willing to evaluate not the outcomes of a study but the rigor with which it was conducted [@caganSanFranciscoDeclaration2013; @schonbrodtResponsibleResearchAssessment2022].
+Journal editors could encourage theoretical developments and be willing to accept registered reports [@friedLackTheoryBuilding2020; @friedTheoriesModelsWhat2020; @vanrooijTheoryDevelopmentRequires2020; @vanrooijTheoryTestHow2021].
+Funding agencies should demand an explicit statement about theoretical risk in relation to detectability and must be willing to provide the necessary resources to reach adequate levels of both [@kooleRewardingReplicationsSure2012].
 
 Our later result, on the importance of preregistration for minimizing uncertainty, has two important implications.
 The first is, that even if all imaginable actions regarding promoting higher theoretical risk are taken, confirmatory research should be preregistered.
