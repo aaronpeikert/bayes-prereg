@@ -48,7 +48,7 @@ repro:
 output: rticles::tf_article
 type: ARTICLE TEMPLATE
 keywords: |
-  preregistration; confirmatory analyses; exploratory analyses; hypothesis testing; bayesian
+  preregistration; confirmatory analyses; exploratory analyses; hypothesis testing; bayesian; open science
 header-includes: |
   \usepackage{hyperref}
   \usepackage[utf8]{inputenc}
@@ -81,7 +81,7 @@ Mistaking exploratory findings for empirically confirmed results inflates the th
 A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
-They do so to stress the predictive nature of their registered statistical analyses and to produce results that were clearly and transparently to be labeled confirmatory.
+They do so to stress the predictive nature of their registered statistical analyses and often with the hopes of obtaining a label that marks the study as "confirmatory".
 Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping low false-positive rates.
 This promise of a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
 Still, the majority of empirical researchers do not routinely preregister their studies.
@@ -107,7 +107,7 @@ We argue that such criticism is not directed against preregistration itself but 
 When researchers criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
 Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
 However reasonable such a move is, changing core believes of a large community is much harder than convincing them that a method is well justified.
-We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
+We therefore attempt to disentangle the *methodological* goals of preregistration from the *ideological* goals of confirmatory science.
 It might be that psychology needs more confirmatory studies but preregistration can be useful for any kind of study in the continuum between purely confirmatory and fully exploratory.
 
 <!---outline-structure--->
@@ -128,8 +128,7 @@ We conclude that because preregistration decreases uncertainty about the theoret
 # Epistemic value and the Bayesian rationale
 
 Let us start by defining what we call expected epistemic value.
-If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude.
- <!--AB: reference needed, where this term is defined; whose definition do we use?-->
+If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude [@niiniluotoVerisimilitudeThirdPeriod1998].
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
 Researchers cannot know what exactly they will learn from a study before they have run it.
