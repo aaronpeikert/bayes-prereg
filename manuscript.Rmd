@@ -296,6 +296,7 @@ To that end, we incorporate uncertainty into our framework.
 
 ## Statistical methods
 
+One factor that is known without much uncertainty is the contribution of statistical methods to theoretical risk.
 Theoretical risk is deeply connected with statistical methods, because it is the inverse of $P(E|\neg{}H)$.
 $P(E|\neg{}H)$ is equivalent to the type-I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $\neg{}H$.
 Because many researchers are familiar with the type-I error rate, it can be helpful to remember this connection to theoretical risk.
@@ -424,7 +425,7 @@ However, if a hypothesis in a certain study has low theoretical risk, researcher
 However, studies do not only differ by how high the theoretical risk is but also how certain the recipient is about the theoretical risk.
 A study that has a very high theoretical risk, e.g., `r (1-confirmatory_tau)*100`% chance that if the hypothesis is wrong, evidence in its favor will be observed, i.e., alpha error, but has also maximum uncertainty will result in a posterior probability of `r round(confirmatory_uncertain*100)`%, while the same study with maximum certainty will result in `r round(confirmatory_certain*100)`% posterior probability.
 The other factors (detectability, prior beliefs, measure of epistemic value) and, therefore, the extend of the benefit very of course with the specifics of the study.
-Crucially, even exploratory studies benefit from preregistration, e.g., in this scenario with a $\tau$ = `r some_exploration_tau`, so false positive rate of `r 1-some_exploration_tau`, moving from uncertain to certain increases the posterior by a factor of `r round(some_exploration_certain/some_exploration_uncertain, 2)`.
+Crucially, even studies with some exploratory aspects benefit from preregistration, e.g., in this scenario with a $\tau$ = `r some_exploration_tau`, so false positive rate of `r 1-some_exploration_tau`, moving from uncertain to certain increases the posterior by a factor of `r round(some_exploration_certain/some_exploration_uncertain, 2)`.
 
 # Preregistration as a means to decrease uncertainty about the theoretical risk
 
@@ -466,7 +467,10 @@ The former result, that increasing theoretical risk leads to higher expected epi
 However, theoretical risk is something researcher have only limited control over, e.g., theories are often vague and illdefined, resources are limited, and increasing theoretical risk usually decreases detectability (a special instance of this trade off is the well known tension between alpha error and power).
 Before researchers may preregister a confirmatory study with high theoretical risk, they must ensure that they are able to conduct a confirmatory study.
 Researchers must develop theories sufficiently and then have the resources to adequately balance detectability against theoretical risk.
-A preregistration may at most help to invest some time into developing more specific, hence riskier, implications of a theory, but enabling confirmatory research is a task that requires action from the whole research community.
+
+A preregistration may at most help to invest some time into developing more specific, hence riskier, implications of a theory.
+But for a confirmatory science it will not be enough to preregister.
+This undertaking requires action from the whole research community [@lishnerConciseSetCore2015].
 Incentive structures must be more willing to evaluate not the outcomes of a study but the rigor with which it was conducted [@caganSanFranciscoDeclaration2013; @schonbrodtResponsibleResearchAssessment2022].
 Journal editors could encourage theoretical developments and be willing to accept registered reports [@friedLackTheoryBuilding2020; @friedTheoriesModelsWhat2020; @vanrooijTheoryDevelopmentRequires2020; @vanrooijTheoryTestHow2021].
 Funding agencies should demand an explicit statement about theoretical risk in relation to detectability and must be willing to provide the necessary resources to reach adequate levels of both [@kooleRewardingReplicationsSure2012].
@@ -483,9 +487,9 @@ First, researchers seldomly predict precise numerical outcomes, instead they use
 Precise predictions would have very high theoretical risk (they are likely incorrect if the theory is wrong).
 A statistical procedure, may have high or low theoretical risk depending on the specifics of the model used.
 Specifying the process, therefore, is in line with the rational we propose here, but is incompatible with strictly confirmatory research.
+
 Second, researchers often have to deviate from the preregistration and make data-dependent decisions outside of the preregistration.
 If the only goal of preregistration is to ensure confirmatory research, such changes are not justifiable.
-
 However, under our rational some changes may be justified.
 Any change would increase the uncertainty about the theoretical risk and may even decrease the theorethical risk.
 The changes still may be worthwhile, if the negative outcomes may be offset by an increase in detectability due to the change.
