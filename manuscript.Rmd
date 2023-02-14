@@ -81,7 +81,7 @@ Mistaking exploratory findings for empirically confirmed results inflates the th
 A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
-They do so to stress the predictive nature of their registered statistical analyses and often with the hopes of obtaining a label that marks the study as "confirmatory".
+They do so to stress the predictive nature of their registered statistical analyses; often with the hopes of obtaining a label that marks the study as "confirmatory".
 Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping low false-positive rates.
 This promise of a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
 Still, the majority of empirical researchers do not routinely preregister their studies.
