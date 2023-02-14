@@ -421,7 +421,7 @@ Mathematically, uncertainty about theoretical risk is expressed through the vari
 Generally, we expect that increases in uncertainty (expressed as more entropic distributions) lead to a decreased expected epistemic value.
 
 The argument for a confirmatory research agenda is that by increasing theoretical risk we increase expected epistemic value, i.e., moving to the right on the x-axis in Figure \ref{fig:posterior} increases posterior probability (on the y-axis).
-However, if a hypothesis in a certain study has low theoretical risk, researchers cannot do much to change that.
+However, if a hypothesis in a certain study has low theoretical risk, there is not much researchers can do about it.
 However, studies do not only differ by how high the theoretical risk is but also how certain the recipient is about the theoretical risk.
 A study that has a very high theoretical risk, e.g., `r (1-confirmatory_tau)*100`% chance that if the hypothesis is wrong, evidence in its favor will be observed, i.e., alpha error, but has also maximum uncertainty will result in a posterior probability of `r round(confirmatory_uncertain*100)`%, while the same study with maximum certainty will result in `r round(confirmatory_certain*100)`% posterior probability.
 The other factors (detectability, prior beliefs, measure of epistemic value) and, therefore, the extend of the benefit very of course with the specifics of the study.
