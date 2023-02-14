@@ -1,6 +1,6 @@
 The replication crisis has led many researchers to preregister their hypotheses and data analysis plans before collecting data.
 A widely held view is that preregistration is supposed to limit the extent to which data may influence the hypotheses to be tested.
-Only if data have no influence, an analysis is considered confirmatory. 
+Only if data have no influence an analysis is considered confirmatory. 
 Consequently, many researchers believe that preregistration is only applicable in confirmatory paradigms.
 In practice, researchers may struggle to preregister their hypotheses because of vague theories that necessitate data-dependent decisions (aka exploration).
 We argue that preregistration benefits any study on the continuum between confirmatory and exploratory research.
