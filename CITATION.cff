@@ -1,10 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
+title: >-
+  Why does preregistration increase the persuasiveness of
+  evidence? A Bayesian rationalization.
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: article
 authors:
-- family-names: "Peikert"
-  given-names: "Aaron"
-  orcid: "https://orcid.org/0000-0001-7813-818X"
-- family-names: "Brandmaier"
-  given-names: "Andreas M."
-  orcid: "https://orcid.org/0000-0001-8765-6982"
-title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization."
-url: "https://github.com/aaronpeikert/bayes-prereg"
+  - family-names: Peikert
+    given-names: Aaron
+    orcid: 'https://orcid.org/0000-0001-7813-818X'
+  - family-names: Brandmaier
+    given-names: Andreas M.
+    orcid: 'https://orcid.org/0000-0001-8765-6982'
+repository-code: 'https://github.com/aaronpeikert/bayes-prereg'
+url: 'https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf'
+license: CC0-1.0
+commit: 16b2bbd
