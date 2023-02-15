@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+authors:
+- family-names: "Peikert"
+  given-names: "Aaron"
+  orcid: "https://orcid.org/0000-0001-7813-818X"
+- family-names: "Brandmaier"
+  given-names: "Andreas M."
+  orcid: "https://orcid.org/0000-0001-8765-6982"
+title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization."
+url: "https://github.com/aaronpeikert/bayes-prereg"
