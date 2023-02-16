@@ -48,7 +48,7 @@ repro:
 output: rticles::tf_article
 type: ARTICLE TEMPLATE
 keywords: |
-  preregistration; confirmatory analyses; exploratory analyses; hypothesis testing; bayesian
+  preregistration; confirmation; exploration; hypothesis testing; bayesian; open science
 header-includes: |
   \usepackage{hyperref}
   \usepackage[utf8]{inputenc}
@@ -81,9 +81,9 @@ Mistaking exploratory findings for empirically confirmed results inflates the th
 A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
 As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
-They do so to stress the predictive nature of their registered statistical analyses and to produce results that were clearly and transparently to be labeled confirmatory.
+They do so to stress the predictive nature of their registered statistical analyses; often with the hopes of obtaining a label that marks the study as "confirmatory".
 Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping low false-positive rates.
-This ability to provide a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
+This promise of a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
 Still, the majority of empirical researchers do not routinely preregister their studies.
 One reason may be that some do not find that the theoretical advantages outweigh the practical hurdles, such as specifying every aspect of a theory in advance.
 We believe that we can reach a greater acceptance of preregistration by explicating a more general objective of preregistration that benefits all kinds of studies, even those that allow data-dependent decisions.
@@ -104,14 +104,14 @@ Thus, insisting on equating preregistration and confirmation has led to the crit
 
 <!---many researcher do not subscribe to confirmatory agenda--->
 We argue that such criticism is not directed against preregistration itself but against a justification through a confirmatory research agenda [@wagenmakersAgendaPurelyConfirmatory2012].
-When researcher criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
+When researchers criticize preregistration as being too inflexible to fit their research question, they often simply acknowledge that their research goals are not strictly confirmatory.
 Forcing researchers into a confirmatory research agenda does not only imply changing *how* they investigate but also *what* research questions.
 However reasonable such a move is, changing core believes of a large community is much harder than convincing them that a method is well justified.
-We therefore attempt to disentangle the methodological goals of preregistration from the ideological goals of confirmatory science.
+We therefore attempt to disentangle the *methodological* goals of preregistration from the *ideological* goals of confirmatory science.
 It might be that psychology needs more confirmatory studies but preregistration can be useful for any kind of study in the continuum between purely confirmatory and fully exploratory.
 
 <!---outline-structure--->
-To that end, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
+To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
 
 We then outline two interpretations of how preregistration impacts theoretical risk.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -123,13 +123,12 @@ To arrive at this interpretation, we rely on three arguments.
 The first is that theoretical risk is vital for judging evidential support for theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
-We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for or against a theory, preregistration is potentially useful for any kind of study, no matter how exploratory.
+We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases our expectation to gain evidence for a theory, preregistration is potentially useful for any kind of study, no matter how exploratory.
 
 # Epistemic value and the Bayesian rationale
 
 Let us start by defining what we call expected epistemic value.
-If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude.
- <!--AB: reference needed, where this term is defined; whose definition do we use?-->
+If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude [@niiniluotoVerisimilitudeThirdPeriod1998].
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
 Researchers cannot know what exactly they will learn from a study before they have run it.
@@ -138,8 +137,8 @@ This expectation is what we term expected epistemic value.
 To make our three arguments, we must assume three things about this estimation process and how it relates to what studies (preregistered vs not preregistered) to conduct.
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
-2. They expect other researchers to apply the same rational process.
-2. All else being equal, researchers try to maximize the expected epistemic value for other researchers.
+2. They expect other researchers to apply a similar rational process.
+2. Researchers try to maximize the expected epistemic value for other researchers.
 
 The assumption of rationality can be connected to Bayesian reasoning and leads to our adoption of the framework.
 Our rationale is as follows.
@@ -151,8 +150,8 @@ Fully developing a Dutch book argument for this problem requires careful conside
 Without deliberating these concepts further, we find it persuasive that researchers should not violate the axioms of probability if they have some expectation about what they stand to gain with some likelihood from conducting a study.
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
 The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of posterior probability; that remains a leap of faith.
-However, the argument applies to any reward function that satisfies the "statistical relevancy condition" (XXX).
-That is epistemic value is gained if evidence is observed, given that it is more likely to observe evidence when the theory holds than if the theory does not hold.
+However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
+That is, evidence only increases epistemic value for a theory, if the evidence is more likely to observe under the theory than without it.
 
 Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
 In fact, this conceptualization is intentionally reductionistic to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
@@ -161,7 +160,7 @@ In fact, this conceptualization is intentionally reductionistic to be compatible
 
 Our first argument is that theoretical risk is crucial for judging evidential support for theories.
 Put simply, risky predictions create persuasive evidence if they turn out to be correct.
-This point is crucial because we attribute much of the appeal of preregistration to this fact.
+This point is crucial because we attribute much of the appeal of a confirmatory research agenda to this notion.
 
 Let us make some simplifying assumptions and define notation.
 We restrict ourselves to evidence of a binary nature (either it was observed or not) since continuous evidence would lead to some quite involved derivations.
@@ -174,11 +173,11 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 \end{equation}
 
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of corroboration of a hypothesis.
-In the tradition of Carnap (XXX), in its direct use, it is called corroboration as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness.
+In the tradition of Carnap, in its direct use, it is called corroboration as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
 As noted before, we concentrate on posterior probability as a measure of epistemic value, since no measure shows universally better properties than others.
-However, it is generally expected that any measure of corroboration increases monotonically with an increase in posterior probability $P(H|E)$.
+However, it is reasonable that any measure of corroboration increases monotonically with an increase in posterior probability $P(H|E)$, and our argument applies to those measures as well.
 We assume that any measure shows gain if, and only if, evidence is observed assuming $P(E|H) > P(E|\neg{}H)$.
-This assumption is sometimes called statistical relevance condition (XXX).
+We referred to this assumption as "statistical relevance condition" earlier [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
 
 In short, we want to increase posterior probability $P(H|E)$.
 Increases in posterior probability $P(H|E)$ are associated with increased epistemic value, for which we want to maximize the expectation.
@@ -238,7 +237,7 @@ Suppose the primary theory is about the cognitive phenomenon of "insight."
 For the purpose of illustration, we define it, with quite some hand-waving, as a cognitive abstraction that allows agents to consistently solve a well-defined class of problems.
 We present the hypothesis that the following problem belongs to such a class of insight problems:
 
-> Use five matches (IIII) to form the number eight. 
+> Use five matches (IIIII) to form the number eight. 
 
 We propose three experiments that differ in theoretical risk and detectability.
 All experiments take a sample of ten psychology students.
@@ -266,8 +265,8 @@ We discuss the relation between statistical methods and theoretical risk in the 
 
 # Preregistration as a means to increase theoretical risk?
 
-Having discussed that increasing the theoretical risk will increase the epistemic value, it is intuitive to task preregistration with maximizing theoretical risk.
-Indeed, limiting the type-I error rate is commonly stated as a goal of preregistration (XXX).
+Having discussed that increasing the theoretical risk will increase the epistemic value, it is intuitive to task preregistration with maximizing theoretical risk, i.e., a confirmatory research agenda.
+Indeed, limiting the type-I error rate is commonly stated as  *the* central goal of preregistration [@nosekPreregistrationRevolution2018; @oberauerPreregistrationForkingPath2019; @rubinDoesPreregistrationImprove2020].
 We argue that while such a conclusion is plausible, we must first consider at least two constraints that place an upper bound on the theoretical risk.
 
 First, the theory itself limits theoretical risk:
@@ -297,6 +296,7 @@ To that end, we incorporate uncertainty into our framework.
 
 ## Statistical methods
 
+One factor that is known without much uncertainty is the contribution of statistical methods to theoretical risk.
 Theoretical risk is deeply connected with statistical methods, because it is the inverse of $P(E|\neg{}H)$.
 $P(E|\neg{}H)$ is equivalent to the type-I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $\neg{}H$.
 Because many researchers are familiar with the type-I error rate, it can be helpful to remember this connection to theoretical risk.
@@ -329,7 +329,7 @@ Even if the t-test itself perfectly maintains its type I error rate, these facto
 While, in theory, these factors may leave $P(E|\neg{}H)$ unaffected or even decrease it, we argue that this is not the case in practice.
 Whether researchers want to or not, they continuously process information about how the study is going, except under strict blinding.
 While one can hope that processing this information does not affect their decision making either way, this cannot be secured.
-We, therefore, conclude that statistical properties only guarantee a lower bound to the quantity we seek to minimize.
+We, therefore, conclude that statistical properties only guarantee a lower bound for theoretical risk.
 The only thing we can conclude with some certainty is that theoretical risk is not higher than what the statistical model guarantees without knowledge about the other factors at play.
 
 ## The effects of uncertainty
@@ -342,7 +342,7 @@ To get an expectation, we express uncertainty as a probability distribution and 
 \mathbb{E}(p(H|E)) = \int \frac{p(H)p(E|H)}{p(H)p(E|H)+p(\neg H) p(E|\neg H) } \; \text{d}\; \mathbb{P}(p(E|\neg H)) \label{eq:integral}
 \end{equation}
 
-To illustrate the effect of uncertainty, let $p(E|H) = 0.8$ (e.g., power of 80%) and $p(H) = 0.1$ and assume a uniform distribution for $p(E|\neg{}H)$ of the form:
+To illustrate the effect of uncertainty, let $p(E|H) = 0.8$ (e.g., power of 80%) and $p(H) = 0.1$ and assume a uniform distribution for theoretical risk $p(\neg{}E|\neg{}H)$ of the form:
 
 \begin{equation}
 f(x)=\begin{cases}
@@ -352,7 +352,6 @@ f(x)=\begin{cases}
 \end{equation}
 
 Where $\tau{}$ is the upper bound of theoretical risk (e.g., 0.95 for a statistical model with a nominal type-I error rate of 5%).
-
 We chose this uniform distribution to capture our statement that a statistical model only guarantees an upper bound to theoretical risk (and since it is a probability the lower bound is 0) as it is the maximum entropy distribution under this assumption and conforms therefore to our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
 
 ```{r}
@@ -364,14 +363,16 @@ results <- readr::read_rds(here::here("data", "simulation.rds"))
 ```
 
 ```{r posterior-fig, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "\\label{fig:posterior}Posterior Probability (corroboration as firmness) as a function of $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
+#| fig.cap: "\\label{fig:posterior}Posterior Probability (corroboration as firmness) as a function of theoretical risk $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[["Posterior Probability"]] +
   labs(caption = "$p(E|H) = 0.8$, $p(H) = 0.1$",
        y = "$\\mathbb{E}\\big(p(H|E)\\big)$") +
   theme_tufte() +
   theme(legend.position = c(.2, .8),
-        legend.title = element_blank())
+        legend.title = element_blank()) +
+    scale_y_continuous(breaks = seq(0, 1, 1/4), limits = c(0,1)) +
+  NULL
 ```
 
 ```{r other-measures-fig, dev = "tikz", cache=TRUE, warning=FALSE}
@@ -390,16 +391,48 @@ plots[!(names(plots) %in% "Posterior Probability")] %>%
   )
 ```
 
+```{r}
+confirmatory_tau <- .99
+confirmatory_uncertain <- results %>%
+  filter(certainty == "uncertain",
+         name == "Posterior Probability",
+         tau == confirmatory_tau) %>% pull(value)
+confirmatory_certain <- results %>%
+  filter(certainty == "certain",
+         name == "Posterior Probability",
+         tau == confirmatory_tau) %>% pull(value)
+some_exploration_tau <- .8
+some_exploration_certain <-  results %>%
+  filter(certainty == "certain",
+         name == "Posterior Probability",
+         tau == some_exploration_tau) %>% pull(value)
+
+some_exploration_uncertain <-  results %>%
+  filter(certainty == "uncertain",
+         name == "Posterior Probability",
+         tau == some_exploration_tau) %>% pull(value)
+```
+
+
+Figure \ref{fig:posterior} shows exemplary the effect of theoretical risk (x-axis) on the posterior probability (y-axis) being fully certain (solid line) or fully uncertain (dashed line) about the theoretical risk of a study.
 Neither absolute certainty nor uncertainty are realistic scenarios but represent the boundary conditions into which all realistic conditions fall.
 Depending on how uncertain we are about the theoretical risk a study took on, our expectation the gained epistemic value varies considerably.
 Mathematically, uncertainty about theoretical risk is expressed through the variance (or rather entropy) of the distribution.
 Generally, we expect that increases in uncertainty (expressed as more entropic distributions) lead to a decreased expected epistemic value.
+
+The argument for a confirmatory research agenda is that by increasing theoretical risk we increase expected epistemic value, i.e., moving to the right on the x-axis in Figure \ref{fig:posterior} increases posterior probability (on the y-axis).
+However, if a hypothesis in a certain study has low theoretical risk, there is not much researchers can do about it.
+However, studies do not only differ by how high the theoretical risk is but also how certain the recipient is about the theoretical risk.
+A study that has a very high theoretical risk, e.g., `r (1-confirmatory_tau)*100`% chance that if the hypothesis is wrong, evidence in its favor will be observed, i.e., alpha error, but has also maximum uncertainty will result in a posterior probability of `r round(confirmatory_uncertain*100)`%, while the same study with maximum certainty will result in `r round(confirmatory_certain*100)`% posterior probability.
+The other factors (detectability, prior beliefs, measure of epistemic value) and, therefore, the extend of the benefit very of course with the specifics of the study.
+Crucially, even studies with some exploratory aspects benefit from preregistration, e.g., in this scenario with a $\tau$ = `r some_exploration_tau`, so false positive rate of `r 1-some_exploration_tau`, moving from uncertain to certain increases the posterior by a factor of `r round(some_exploration_certain/some_exploration_uncertain, 2)`.
 
 # Preregistration as a means to decrease uncertainty about the theoretical risk
 
 We hope to have persuaded the reader to accept two arguments: First, the theoretical risk is important for judging evidential support for theories.
 Second, the theoretical risk is inherently uncertain and the degree of uncertainty diminishes the persuasiveness of the gathered evidence.
 The third and last argument is that preregistrations reduce this uncertainty.
+Following the last argument, a preregistered study is represented by the solid line (certainty about theoretical risk) and a study that was not preregistered is more similar to the dashed line (maximally uncertain about theoretical risk) in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
 
 Recollect, our three assumptions:
 
@@ -424,30 +457,76 @@ In that case, the readers can be certain, that they have received a complete acc
 They still might be uncertain about the actual theoretical risk the authors took, but to a much smaller extend than if the study would not have been preregistered.
 Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analyses, etc.
 In any case a well written preregistration should aim to reduce the uncertainty about the theoretical risk and hence increase the persuasiveness of evidence.
+A study with a perfect preregistration will, therefore, resemble the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
+Crucially, perfect means here that the theoretical risk can be judged with low uncertainty, not the the theoretical risk is necessarily high.
 
 # Discussion
 
-We started out with the observation that preregistrations do not always cleanly divide preregistration from confirmation.
-<--AB: can you rewrite this and be more clear? Isn't this more about researchers who do not distinguish these concepts? -->
-Subscribing to this distinction would mean to use preregistrations solely as a means to increase the theoretical risk researchers are willing to accept.
-Undoubtedly, this results in more trustworthy evidence and may even increase the effectiveness of scientific undertakings in general.
-However, as argued earlier, directly maximizing theoretical risk increases the likelihood that a study fails to deliver results favoring the theory (a special instance of this problem is the well-known trade-off of statistical power and type-I error rate).
-<!--AB: maybe add "everything else being the same" or the specific conditions?-->
-As we further argued, minimizing the uncertainty about theoretical risk (without necessarily increasing the theoretical risk itself) has benefits for the epistemic value, too, but without increasing the likelihood of producing a "failed" study.
-Note that any single study that does not produce evidence in favor of a research hypothesis is still precious for the scientific process.
-Under the current incentive structure, however, many researchers have reason to avoid such outcomes and few, if any, have the privilege to operate outside of these incentives.
+To summarize, we showed that both higher theoretical risk and lower uncertainty about theoretical risk lead to higher expected epistemic value across a variety of measures.
+The former result, that increasing theoretical risk leads to higher expected epistemic value, reconstructs the appeal and central goal of confirmatory research.
+However, theoretical risk is something researcher have only limited control over, e.g., theories are often vague and ill-defined, resources are limited, and increasing theoretical risk usually decreases detectability of a hypothesized effect (a special instance of this trade-off is the well known tension between type-I error and statistical power).
+While we believe that preregistration is always beneficial, it might be counterproductive to pursue high theoretical risk if the conditions for highly confirmatory research are not given.
+Specifically, this entails the development of sufficiently precise theories and having the resources (typically sample size) to adequately balance detectability against theoretical risk.
 
-In our view, there are two advantages to focusing on uncertainty over theoretical risk itself.
-First, aiming to reduce uncertainty is beneficial across a wide range of potential theoretical risks one encounters as researcher.
-That is, researchers benefit from preregistering their study, regardless of whether or not the study is tagged "exploratory".
-If researchers conduct a more exploratory study they can clearly communicate how exploratory they aim to be and their results can be judged accordingly.
-Second, if researchers realize after the fact that a deviation from their preregistration in certain details is sensible (and sometimes, the only reasonable way forward), they are explicitly allowed to change their strategy.
-<!--AB: this sounds like a new claim but it is accepted that deviations are OK, isn't it? maybe stress that this view is natural under the proposed framework but less so in stricter views of preregistration-->
-Allowing researchers to deviate from the preregistration is controversial (XXX) <!--AB: ref missing--> because the authors might sift through all the possibilities and then select the most beneficial for their theory.
-In its full consequence, this argument might result in the same uncertainty that we argued plagues not-preregistered studies.
-However, if authors of study offer a convincing argument for their deviation, their readers might may judge it to be a reasonable explanation for the deviation.
-In fact, using the here presented framework, we can distinguish reasonable from unreasonable deviations.
-If a deviation increases detectability enough to offset the increase in uncertainty in theoretical risk, it is a deviation worth doing.
+In terms of preparing the conditions for confirmatory research, preregistration may at most help to invest some time into developing more specific, hence riskier, implications of a theory.
+But for a confirmatory science, it will not be enough to preregister all studies.
+This undertaking requires action from the whole research community [@lishnerConciseSetCore2015].
+Incentive structures must be created to evaluate not the outcomes of a study but the rigor with which it was conducted [@caganSanFranciscoDeclaration2013; @schonbrodtResponsibleResearchAssessment2022].
+Journal editors could encourage theoretical developments that allow for precise predictions that will be tested by other researchers and be willing to accept registered reports [@friedLackTheoryBuilding2020; @friedTheoriesModelsWhat2020; @vanrooijTheoryDevelopmentRequires2020; @vanrooijTheoryTestHow2021].
+Funding agencies should demand an explicit statement about theoretical risk in relation to detectability and must be willing to provide the necessary resources to reach adequate levels of both [@kooleRewardingReplicationsSure2012].
+
+Our latter result, on the importance of preregistration for minimizing uncertainty, has two important implications.
+The first is, that even if all imaginable actions regarding promoting higher theoretical risk are taken, confirmatory research should be preregistered.
+Otherwise the uncertainty about the theoretical risk will diminish the advantage of confirmatory research.
+Second, even under less than ideal circumstances for confirmatory research, preregistration is beneficial.
+Preregistering exploratory studies increases the expected epistemic value by virtue of reducing uncertainty about theorethical risk.
+Nevertheless, exploratory studies will have a lower expected epistemic value than a more confirmatory study, if both are preregistered and have equal detectability.
+
+Focusing on uncertainty reduction also explains two common practices of preregistration that do not align with a confirmatory research agenda.
+First, researchers seldomly predict precise numerical outcomes, instead they use preregistrations to describe the process that generates the results.
+Precise predictions would have very high theoretical risk (they are likely incorrect if the theory is wrong).
+A statistical procedure, may have high or low theoretical risk depending on the specifics of the model used.
+Specifying the process, therefore, is in line with the rational we propose here, but is incompatible with strictly confirmatory research.
+
+Second, researchers often have to deviate from the preregistration and make data-dependent decisions after the preregistration.
+If the only goal of preregistration is to ensure confirmatory research, such changes are not justifiable.
+However, under our rational some changes may be justified.
+Any change increases the uncertainty about the theoretical risk and may even decrease the theorethical risk.
+The changes still may be worthwhile, if the negative outcomes may be offset by an increase in detectability due to the change.
+Consider a preregistration that failed to specify how to handle missing values, and researchers subsequently encountering missing values.
+In such case, detectability becomes zero because the data cannot be analyzed without a post-hoc decision about how to handle the missing data.
+Any such decision would constitute a deviation from the preregistration, which is perfectly waranted under our general objective.
+Note that a reader cannot rule out that the researchers leveraged the decision to decrease theoretical risk, i.e., picking among all options the one that delivers the most beneficial results for the theory (in the previous example, chosing between various options of handling missing values).
+Whatever decision they make, increased uncertainty about the theoretical risk is inevitable and the expected epistemic value is decreased compared to a world where they anticipated the need to deal with missing data.
+However, it is still justified to deviate.
+After all they have not anticipated the case and are left with a detectablilty of zero.
+Any decision will increase detectability to a non-zero value, likely offsetting the increase in uncertainty.
+The researchers also may do their best to argue that the deviation was not motivated by increasing theoretical risk, thereby, decreasing the uncertainty.
+Ideally, there is a default decision that fits well with the theory or with the study design.
+Or, if there is no obvious candidate, the researchers could conduct a multiverse analysis of the available options to deal with missings to show the influence of the decision [@steegenIncreasingTransparencyMultiverse2016].
+
+As explained above, reduction in uncertainty as the objective for preregistration does not only explain some existing behavior, that does not align with confirmation as a goal, it also allows to form recommendations to improve the practice of preregistration.
+Importantly, we now have a theoretical measure to gauge the functionality of preregistrations, which can only help increase its utility.
+In particular, a preregistration should be specific about the procedure that is intended to generate evidence for a theory.
+Such procedure may accommodate a wide range of possible data, i.e., it may be exploratory.
+The theoretical risk, however low, must be communicated clearly.
+Parts of the process left unspecified, imply uncertainty, which is what a preregistration should reduce.
+However, specifying procedures that can be expected to not work, will lead to deviation, and subsequently to larger uncertainty.
+
+We have proposed a workflow for preregistration called preregistration as code (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
+In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
+This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
+The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
+Such approach dissolves the distinction between the preregistration document and the final scientific report.
+Instead of fundamentally separate documents, preregistration, and final report are different versions of the same underlying dynamic document.
+Deviations from the preregistration can therefore be clearly (and if necessary, automatically) isolated, highlighted, and inspected using version control.
+Crucially, because the preregistration contains code, it may accommodate many different data patterns, i.e., it may be exploratory.
+However, while a PAC is not the extend of exploration, it is very specific about exactly how probable it is to generate evidence even when the theory does not hold (theoretical risk).
+Please note that while PAC is ideally suited to reduce uncertainty about theoretical risk, other more traditional forms of preregistration are also able to advance this goal.
+
+Contrary to what is widely assumed about preregistration, a preregistration is not necessarily a seal of confirmatory research.
+Confirmatory research would almost always be less persuasive without preregistration, but in our view, preregistration primarily communicates the extent of confirmation, i.e., theoretical risk, of a study.
+Clearly communicating theoretical risk is important because it reduces the uncertainty and hence increases expected epistemic value.
 
 # Notes {-}
 
