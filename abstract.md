@@ -8,4 +8,4 @@ To that end, we formalize a general objective of preregistration and demonstrate
 Drawing on Bayesian philosophy of science, we argue that preregistration should primarily aim to reduce uncertainty about the inferential procedure used to derive results.
 This approach provides a principled justification of preregistration, separating the procedure from the goal of ensuring strictly confirmatory research.
 We acknowledge that knowing the extent to which a study is exploratory is central, but certainty about the inferential procedure is a prerequisite for persuasive evidence.
-Last, we discuss the implications of these insights for the practice of preregistration.
+Finally, we discuss the implications of these insights for the practice of preregistration.
