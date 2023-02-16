@@ -7,7 +7,7 @@ author:
     affil: a, b
     email: peikert@mpib-berlin.mpg.de
   - name: Andreas M. Brandmaier
-    affil: a, c
+    affil: a, c, d
     email: brandmaier@mpib-berlin.mpg.de
 affiliation:
   - num: a
@@ -19,6 +19,9 @@ affiliation:
   - num: c
     address: |
       MSB Medical School Berlin, Rüdesheimer Str. 50, 14197 Berlin, Germany
+  - num: d
+    address: |
+     Max Planck UCL Centre for Computational Psychiatry and Ageing Research Berlin, Germany and London, UK
 repro:
   scripts:
     - R/plots.R
