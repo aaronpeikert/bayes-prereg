@@ -514,16 +514,15 @@ Parts of the process left unspecified, imply uncertainty, which is what a prereg
 However, specifying procedures that can be expected to not work, will lead to deviation, and subsequently to larger uncertainty.
 
 We have proposed a workflow for preregistration called preregistration as code (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
-In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for preregistration.
+In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
 The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
-Using dynamic documents helps dissolve the distinction between the preregistration document and the final scientific report.
+Such approach dissolves the distinction between the preregistration document and the final scientific report.
 Instead of fundamentally separate documents, preregistration, and final report are different versions of the same underlying dynamic document.
-This enables a preregistrations to accommodate many different data patterns, yet is very specific about exactly how probable it is to generate evidence even when the theory does not hold (theoretical risk).
-To reduce the liklihood of deviation, we suggest that a PAC is tested on simulated or pilot data.
-Another advantage is that with a PAC, deviations from the preregistration can be clearly (and if necessary, automatically) isolated, highlighted, and inspected.
-This is possible because in a PAC, preregistration and final manuscript are different versions of the same dynamic document, which can be compared via version control.
-However, while PAC is ideally suited to reduce uncertainty about theoretical risk, other more traditional forms of preregistration are also suited to achieve this goal.
+Deviations from the preregistration can therefore be clearly (and if necessary, automatically) isolated, highlighted, and inspected using version control.
+Crucially, because the preregistration contains code, it may accommodate many different data patterns, i.e., it may be exploratory.
+However, while a PAC is not the extend of exploration, it is very specific about exactly how probable it is to generate evidence even when the theory does not hold (theoretical risk).
+Please note that while PAC is ideally suited to reduce uncertainty about theoretical risk, other more traditional forms of preregistration are also able to advance this goal.
 
 Contrary to what is widely assumed about preregistration, a preregistration is not necessarily a seal of confirmatory research.
 Confirmatory research would almost always be less persuasive without preregistration, but in our view, preregistration primarily communicates the extent of confirmation, i.e., theoretical risk, of a study.
