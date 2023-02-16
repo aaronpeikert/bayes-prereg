@@ -117,9 +117,9 @@ We therefore attempt to disentangle the *methodological* goals of preregistratio
 It is likely that psychology needs more confirmatory studies to progress as a science, but quite independently of this, preregistration can be useful for any kind of study on the continuum between strictly confirmatory and fully exploratory.
 
 <!---outline-structure--->
-To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate.
+To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate in statistical test theory.
 
-We then outline two interpretations of how preregistration impacts theoretical risk.
+Further, we outline two interpretations of how preregistration impacts theoretical risk.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
 The second interpretation is our main contribution and demonstrates the broad applicability of preregistration to both exploratory and confirmatory studies that are implemented as preregistered or have undergone changes after preregistration.
 We argue that the classic view on the utility of preregistration can be interpreted as maximization of theoretical risk, which is reduced by researchers' degrees of freedom, p-hacking, and such.
@@ -134,11 +134,11 @@ We conclude that because preregistration decreases uncertainty about the theoret
 # Epistemic value and the Bayesian rationale
 
 Let us start by defining what we call expected epistemic value.
-If researchers plan to conduct a study, they usually hope it will change their assessment of some theory's verisimilitude [@niiniluotoVerisimilitudeThirdPeriod1998].
+If researchers plan to conduct a study, they usually hope that it will change their assessment of some theory's verisimilitude [@niiniluotoVerisimilitudeThirdPeriod1998].
 In other words, they hope to learn something from conducting the study.
 The amount of knowledge researchers gain from a particular study concerning the verisimilitude of a specific theory (which itself is an ontologocial concept) is what we call epistemic value.
 Researchers cannot know what exactly they will learn from a study before they have run it.
-However, they can develop an expectation that helps them decide which study to conduct in what manner.
+However, they can develop an expectation that helps them decide about the specifics of a planned study.
 This expectation is what we term expected epistemic value.
 To make our three arguments, we must assume three things about this estimation process and how it relates to what studies (preregistered vs not preregistered) to conduct.
 
@@ -304,14 +304,14 @@ To that end, we incorporate uncertainty into our framework.
 
 One factor that is known without much uncertainty is the contribution of statistical methods to theoretical risk.
 Theoretical risk is deeply connected with statistical methods, because it is the inverse of $P(E|\neg{}H)$.
-$P(E|\neg{}H)$ is equivalent to the type-I error rate, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $\neg{}H$.
+$P(E|\neg{}H)$ is equivalent to the type-I error rate in statistical hypothesis testing, if you consider the overly simplistic case where the research hypothesis is equal to the statistical alternative hypothesis, because then the nill hypothesis is $\neg{}H$.
 Because many researchers are familiar with the type-I error rate, it can be helpful to remember this connection to theoretical risk.
 Researchers who choose a smaller type-I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
 However, the research hypothesis seldomly equals  the statistical null hypothesis, and therefore, the relation between statistical type-I error rate and theoretical risk should not be overinterpreted.
 We argue that theoretical risk (and hence its inverse, $P(E|\neg{}H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 
-Statistical methods stand out among these factors because we have a large toolbox for assessing and controlling their contribution to theoretical risk.
-Examples of our ability to exert this control are the setting of type-I error rate, the use of corrected fit measures (i.e., adjusted R²), information criteria, or cross-validation in machine learning.
+Statistical methods stand out among these factors because we have a large and well-understood toolbox for assessing and controlling their contribution to theoretical risk.
+Examples of our ability to exert this control are the choice of type-I error rate, adjustments for multiple testing, the use of corrected fit measures (i.e., adjusted R²), information criteria, or cross-validation in machine learning.
 These tools help us account for biases in statistical methods that increase the likelihood of signifying results even when there are none $P(E|\neg{}H)$.
 
 The point is that the contribution of statistical methods to theoretical risk can be formally assessed.
@@ -329,7 +329,7 @@ If one chooses to focus only on the contribution of statistical methods to theor
 Take, for example, a t-test  of mean differences in two samples.
 Under ideal circumstances (assumption of independence, normality of residuals, equal variance), it stays true to its type-I error rate.
 However, researchers might do many very reasonable things in the broader context of the study that affect theoretical risk:
-They might exclude outliers, choose to drop an item before computing a sum score, broaden, enlarge their definition of the population to be sampled, translate their questionnaires into a different language, impute missing values, or any number of other things.
+They might exclude outliers, choose to drop an item before computing a sum score, broaden, enlarge their definition of the population to be sampled, translate their questionnaires into a different language, impute missing values, switch between different estimators of the pooled variance, or any number of other things.
 All of these decisions carry a small risk that they increase the likelihood of obtaining evidence despite the underlying research hypothesis being false.
 Even if the t-test itself perfectly maintains its type I error rate, these factors influence $P(E|\neg{}H)$.
 While, in theory, these factors may leave $P(E|\neg{}H)$ unaffected or even decrease it, we argue that this is not the case in practice.
