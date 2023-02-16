@@ -117,7 +117,7 @@ We therefore attempt to disentangle the *methodological* goals of preregistratio
 It is likely that psychology needs more confirmatory studies to progress as a science, but quite independently of this, preregistration can be useful for any kind of study on the continuum between strictly confirmatory and fully exploratory.
 
 <!---outline-structure--->
-To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate in statistical test theory.
+To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong, if it does not hold], which is inversely related to the type-I error rate in null hypothesis testing.
 
 Further, we outline two interpretations of how preregistration impacts theoretical risk.
 The first interpretation corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or equivalently by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -443,8 +443,8 @@ Following the last argument, a preregistered study is represented by the solid l
 Let us recall our three assumptions:
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
-2. They expect other researchers to apply the same rational process.
-2. All else being equal, researchers try to increase the expected epistemic value for other researchers.
+2. They expect other researchers to apply a similar rational process.
+2. Researchers try to maximize the expected epistemic value for other researchers.
 
 The point we make with these assumptions is that researchers aim to persuade other researchers, for example, the readers of their articles.
 Not only the original authors are concerned with the process of weighing evidence for or against a theory but really all people the authors of a study hope to persuade.
@@ -469,7 +469,7 @@ Crucially, perfect means here that the theoretical risk can be judged with low u
 # Discussion
 
 To summarize, we showed that both higher theoretical risk and lower uncertainty about theoretical risk lead to higher expected epistemic value across a variety of measures.
-The former result, that increasing theoretical risk leads to higher expected epistemic value, reconstructs the appeal and central goal of preregistration ofr confirmatory research agendas.
+The former result, that increasing theoretical risk leads to higher expected epistemic value reconstructs the appeal and central goal of preregistration of confirmatory research agendas.
 However, theoretical risk is something researcher have only limited control over, for example, theories are often vague and ill-defined, resources are limited, and increasing theoretical risk usually decreases detectability of a hypothesized effect (a special instance of this trade-off is the well known tension between type-I error and statistical power).
 While we believe that preregistration is always beneficial, it might be counterproductive to pursue high theoretical risk if the research context is inappropriate for strictly confirmatory research.
 Specifically, appropriateness here entails the development of precise theories and the availability of necessary resources (often, large enough sample size, but also see @brandmaier2015lifespan) to adequately balance detectability against theoretical risk.
