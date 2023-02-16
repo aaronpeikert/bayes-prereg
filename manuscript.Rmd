@@ -7,7 +7,7 @@ author:
     affil: a, b, c
     email: peikert@mpib-berlin.mpg.de
   - name: Andreas M. Brandmaier
-    affil: a, b, c, d 
+    affil: a, b, d 
     email: brandmaier@mpib-berlin.mpg.de
 affiliation:
   - num: a
@@ -15,10 +15,10 @@ affiliation:
       Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany
   - num: b
     address: |
-      Department of Psychology, Humboldt-Universität zu Berlin, Unter den Linden 6, 10117 Berlin, Germany
+     Max Planck UCL Centre for Computational Psychiatry and Ageing Research Berlin, Germany and London, UK
   - num: c
     address: |
-     Max Planck UCL Centre for Computational Psychiatry and Ageing Research Berlin, Germany and London, UK
+      Department of Psychology, Humboldt-Universität zu Berlin, Unter den Linden 6, 10117 Berlin, Germany
   - num: d
     address: |
       MSB Medical School Berlin, Rüdesheimer Str. 50, 14197 Berlin, Germany
