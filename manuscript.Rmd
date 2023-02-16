@@ -438,26 +438,26 @@ Crucially, even studies with some exploratory aspects benefit from preregistrati
 We hope to have persuaded the reader to accept two arguments: First, the theoretical risk is important for judging evidential support for theories.
 Second, the theoretical risk is inherently uncertain and the degree of uncertainty diminishes the persuasiveness of the gathered evidence.
 The third and last argument is that preregistrations reduce this uncertainty.
-Following the last argument, a preregistered study is represented by the solid line (certainty about theoretical risk) and a study that was not preregistered is more similar to the dashed line (maximally uncertain about theoretical risk) in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
+Following the last argument, a preregistered study is represented by the solid line (certainty about theoretical risk) and a study that was not preregistered is more similar to the dashed line (maximally uncertain about theoretical risk) in Figure \ref{fig:posterior} and Figure \ref{fig:other-measures}.
 
-Recollect, our three assumptions:
+Let us recall our three assumptions:
 
 1. Researchers judge the evidence for or against a hypothesis rationally.
 2. They expect other researchers to apply the same rational process.
 2. All else being equal, researchers try to increase the expected epistemic value for other researchers.
 
-The point we make with these assumptions is that researchers aim to persuade other researchers, the readers of their articles.
-We have to remember that the process of weighing evidence for or against a theory extends beyond the original authors to all the people they hope to persuade.
-Unfortunately, the case for lack of insight into the myriad of factors that influence theoretical risk is particularly strong for the reader of a resulting article (or, more generally, the consumer of the research product).
-While the authors may have deep insight into what they did and how it might influence the theoretical risk they took, their readers have much greater uncertainty about these factors.
-In particular, they never know which relevant factors the authors of a given article failed to disclose, intentionally or not.
-From the perspective of an ultimate sceptic, they may claim maximum uncertainty.
+The point we make with these assumptions is that researchers aim to persuade other researchers, for example, the readers of their articles.
+Not only the original authors are concerned with the process of weighing evidence for or against a theory but really all people the authors of a study hope to persuade.
+Unfortunately, readers of a scientific article (or, more generally, any consumer of a research product), is likely to lack insight into the various factors that influence theoretical risk.
+While the authors themselves may have a clear picture of what they did and how it might have influenced the theoretical risk they took, their readers have much greater uncertainty about these factors.
+In particular, they never know which relevant factors the authors of a given article failed to disclose, be it intentionally or not.
+From the perspective of the ultimate sceptic, they may claim maximum uncertainty.
 
-Communicating clearly how the authors gathered the data and consequently analyzed it to arrive at the evidence they present is crucial for judging the theoretical risk they took.
+Communicating clearly how authors of a scientific report gathered their data and consequently analyzed it to arrive at the evidence they present is crucial for judging the theoretical risk they took.
 Preregistrations are ideal to communicate just that, because any description after the fact is suspect to be incomplete.
-For instance, the authors could have decided to exclude a number of analytic strategies they tried out.
-That is not to say that every study that was not-preregistered was subjected to practices of p hacking.
-The point is, that we cannot exclude this and innumerable possibilities and, hence, are left uncertain.
+For instance, the authors could have opted for selective reporting, that is, they decided to exclude a number of analytic strategies they tried out.
+That is not to say that every study that was not-preregistered was subjected to practices of questionable research practices.
+The point is, that we cannot exclude it with certainty.
 This uncertainty is drastically reduced, if the researchers have described what they intended to do beforehand, and then report that they did exactly that.
 In that case, the readers can be certain, that they have received a complete account of the situation.
 They still might be uncertain about the actual theoretical risk the authors took, but to a much smaller extend than if the study would not have been preregistered.
