@@ -528,6 +528,10 @@ Contrary to what is widely assumed about preregistration, a preregistration is n
 Confirmatory research would almost always be less persuasive without preregistration, but in our view, preregistration primarily communicates the extent of confirmation, i.e., theoretical risk, of a study.
 Clearly communicating theoretical risk is important because it reduces the uncertainty and hence increases expected epistemic value.
 
+# Acknowledgement {-}
+
+We thank Maximilian S. Ernst, Caspar van Lissa, Felix Schönbrodt, the discussants at the DGPS2022 conference and Open Science Center Munich, and many more for the insightful discussions about disentangling preregistration and confirmation.
+
 # Notes {-}
 
 The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
