@@ -463,16 +463,16 @@ In that case, the readers can be certain, that they have received a complete acc
 They still might be uncertain about the actual theoretical risk the authors took, but to a much smaller extend than if the study would not have been preregistered.
 Remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analyses, etc.
 In any case a well written preregistration should aim to reduce the uncertainty about the theoretical risk and hence increase the persuasiveness of evidence.
-A study with a perfect preregistration will, therefore, resemble the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
-Crucially, perfect means here that the theoretical risk can be judged with low uncertainty, not the the theoretical risk is necessarily high.
+Therefore, a study that perfectly adhered to its preregistration will resemble the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
+Crucially, perfect means here that the theoretical risk can be judged with low uncertainty, not that the theoretical risk is necessarily high.
 
 # Discussion
 
 To summarize, we showed that both higher theoretical risk and lower uncertainty about theoretical risk lead to higher expected epistemic value across a variety of measures.
-The former result, that increasing theoretical risk leads to higher expected epistemic value, reconstructs the appeal and central goal of confirmatory research.
-However, theoretical risk is something researcher have only limited control over, e.g., theories are often vague and ill-defined, resources are limited, and increasing theoretical risk usually decreases detectability of a hypothesized effect (a special instance of this trade-off is the well known tension between type-I error and statistical power).
-While we believe that preregistration is always beneficial, it might be counterproductive to pursue high theoretical risk if the conditions for highly confirmatory research are not given.
-Specifically, this entails the development of sufficiently precise theories and having the resources (typically sample size) to adequately balance detectability against theoretical risk.
+The former result, that increasing theoretical risk leads to higher expected epistemic value, reconstructs the appeal and central goal of preregistration ofr confirmatory research agendas.
+However, theoretical risk is something researcher have only limited control over, for example, theories are often vague and ill-defined, resources are limited, and increasing theoretical risk usually decreases detectability of a hypothesized effect (a special instance of this trade-off is the well known tension between type-I error and statistical power).
+While we believe that preregistration is always beneficial, it might be counterproductive to pursue high theoretical risk if the research context is inappropriate for strictly confirmatory research.
+Specifically, appropriateness here entails the development of precise theories and the availability of necessary resources (often, large enough sample size, but also see @brandmaier2015lifespan) to adequately balance detectability against theoretical risk.
 
 In terms of preparing the conditions for confirmatory research, preregistration may at most help to invest some time into developing more specific, hence riskier, implications of a theory.
 But for a confirmatory science, it will not be enough to preregister all studies.
