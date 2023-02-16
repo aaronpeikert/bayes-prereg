@@ -78,12 +78,14 @@ options(
 ```
 
 <!--introduce confirmatory vs. exploratory-->
-The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis-generating and hypothesis-testing, or prediction and postdiction [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010, @nosekPreregistrationRevolution2018].
-There is a broad consensus that both approaches are necessary for science to progress; exploration for making new discoveries and confirmation for exposing these discoveries to potential falsification and assess in how far it has been corroborated.
-Mistaking exploratory findings for empirically confirmed results inflates the the likelihood of believing that there is evidence for a given explanation even if it is false.
-A variety of practices, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis generation and hypothesis testing, or prediction and postdiction [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010; @nosekPreregistrationRevolution2018].
+Despite the different names, it is fundamentally the same dichotomy that is at stake here.
+There is a broad consensus that both approaches are necessary for science to progress; exploration for making new discoveries and confirmation for exposing these discoveries to potential falsification and assess in how far they have been corroborated.
+However, mistaking exploratory findings for empirically confirmed results is dangerous.
+It inflates the likelihood of believing that there is evidence supporting a given explanation even if it is false.
+A variety of problems, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
 Recognizing them has led to a crisis of confidence in the empirical sciences [@ioannidisWhyMostPublished2005], and psychology in particular [@opensciencecollaborationEstimatingReproducibilityPsychological2015].
-As a response to the crisis, more and more researchers preregister their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
+As a response to the crisis, more and more researchers preregister their hypotheses and their data collection and analysis plans in advance of the study [@nosekPreregistrationRevolution2018].
 They do so to stress the predictive nature of their registered statistical analyses; often with the hopes of obtaining a label that marks the study as "confirmatory".
 Indeed, rigorous application of preregistration prevents researchers from reporting a set of results produced by an arduous process of trial and error as a simple confirmatory story [@wagenmakersAgendaPurelyConfirmatory2012] while keeping low false-positive rates.
 This promise of a clear distinction between confirmation and exploration has obvious appeal to many who already accepted the practice.
