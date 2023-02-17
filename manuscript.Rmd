@@ -543,7 +543,7 @@ We are grateful to Julia Delius for her helpful assistance in language and style
 
 The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
 This version was created from git commit ``r repro::current_hash(backend = "gert")``.
-The manuscript is available as preprint [@no-preprint-yet] and will be submitted to [Philosophical Psychology](https://www.tandfonline.com/journals/cphp20).
+The manuscript is available as preprint [@peikertWhyDoesPreregistration2023] and was submitted to [Philosophical Psychology](https://www.tandfonline.com/journals/cphp20).
 
 # References
 
