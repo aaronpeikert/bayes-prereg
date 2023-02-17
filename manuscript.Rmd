@@ -51,7 +51,7 @@ repro:
 output: rticles::tf_article
 type: ARTICLE TEMPLATE
 keywords: |
-  preregistration; confirmation; exploration; hypothesis testing; Bayesian; open science
+  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 header-includes: |
   \usepackage{hyperref}
   \usepackage[utf8]{inputenc}
