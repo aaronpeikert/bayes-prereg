@@ -546,9 +546,8 @@ We are grateful to Julia Delius for her helpful assistance in language and style
 
 # Notes {-}
 
-The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
+The materials for this article are available on GitHub [@zenodo-release].
 This version was created from git commit ``r repro::current_hash(backend = "gert")``.
-The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023].
 
 # References
 
