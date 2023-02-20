@@ -524,7 +524,7 @@ The theoretical risk, however low, must be communicated clearly.
 Parts of the process left unspecified, imply uncertainty, which is what a preregistration should reduce.
 However, specifying procedures that can be expected to not work, will lead to deviation, and subsequently to larger uncertainty.
 
-We have proposed a workflow for preregistration called preregistration as code (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
+A workflow for preregistration called preregistration as code (PAC) that has several beneficial properties for uncertainty reduction was proposed in [@peikertReproducibleResearchTutorial2021].
 In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
 The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
