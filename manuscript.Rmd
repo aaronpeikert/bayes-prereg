@@ -1,5 +1,6 @@
 ---
 title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization"
+titlerunning: "Preregistration increases the persuasiveness of evidence"
 bibliography: references.bib
 abstract: "`r paste0(c('\\\\noindent', readLines('abstract.md')), collapse = ' ')`"
 author:
@@ -48,14 +49,18 @@ repro:
     - rsync
     - curl
     - inkscape
-output: rticles::tf_article
-type: ARTICLE TEMPLATE
-keywords: |
-  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
+output: rticles::springer_article
+keywords:
+  - preregistration
+  - confirmation
+  - exploration
+  - hypothesis testing
+  - Bayesian
+  - Open Science
+biblio-style: spbasic
 header-includes: |
-  \usepackage{hyperref}
-  \usepackage[utf8]{inputenc}
-  \def\tightlist{}
+  \usepackage{amsmath}
+  \usepackage{amssymb}
 ---
 
 ```{r, include = FALSE}
@@ -114,7 +119,7 @@ When researchers criticize preregistration as being too inflexible to fit their 
 Forcing researchers into adopting a strictly confirmatory research agenda does not only imply changing *how* they investigate a phenomenon but also *what* research questions they pose.
 However reasonable such a move is, changing core beliefs of a large community is much harder than convincing them that a method is well justified.
 We therefore attempt to disentangle the *methodological* goals of preregistration from the *ideological* goals of confirmatory science.
-It is likely that psychology needs more confirmatory studies to progress as a science, but quite independently of this, preregistration can be useful for any kind of study on the continuum between strictly confirmatory and fully exploratory.
+It is likely that empirical sciences need more confirmatory studies to progress as a science, but quite independently of this, preregistration can be useful for any kind of study on the continuum between strictly confirmatory and fully exploratory.
 
 <!---outline-structure--->
 To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong if it does not hold], which is inversely related to the type-I error rate in null hypothesis testing.
@@ -281,7 +286,7 @@ Consider the case of a researcher contemplating the relation between two sets of
 Suppose each set is separately well studied, and strong theories tell the researcher how the variables within the set relate.
 However, our imaginary researcher now considers the relation between these two sets.
 For lack of a better theory, they assume that some relation between any variables of the two sets exists.
-This is not a risky prediction to make in psychology, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
+This is not a risky prediction to make in empirical sciences, even without statistical issues like alpha inflation [@orbenCrudReDefined2020].
 However, we would consider it a success if the researcher would use the evidence to develop a more precise (and therefore risky) theory, e.g., by specifying which variables from one set relate to which variables from the other set, to what extent, in which direction, with which functional shape, etc.
 We will later show that preregistration increases the degree of belief in the further specified theory, though it remains low till being substantiated by testing the theory again.
 The point, however, is that we want to show that preregistration increases the expected epistemic value regardless of the theory being tested.
@@ -543,7 +548,7 @@ We are grateful to Julia Delius for her helpful assistance in language and style
 
 The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
 This version was created from git commit ``r repro::current_hash(backend = "gert")``.
-The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023] and was submitted to [Philosophical Psychology](https://www.tandfonline.com/journals/cphp20).
+The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023].
 
 # References
 
