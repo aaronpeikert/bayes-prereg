@@ -1,9 +1,8 @@
 name: Preview Documentation
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-    workflow_dispatch:
+  pull_request_target:
+  workflow_dispatch:
 
 permissions: write-all
 
