@@ -5,6 +5,8 @@ on:
     types: [opened, synchronize]
     workflow_dispatch:
 
+permissions: write-all
+
 env:
   PR_NUMBER: ${{ github.event.pull_request.number }}
   GHP_URL: 'https://aaronpeikert.github.io/bayes-prereg/'
