@@ -349,9 +349,9 @@ We chose this uniform distribution as it is the maximum entropy distribution wit
 
 With this, we derive the expected value of $P(H|E)$ as
 \begin{align}
-\mathbb{E}_Q[P(H|E)] &= \mathbb{E}_Q \left[ \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \right] \\
-&= \int_\mathbb{R} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \, \mathrm{d} Q \\
-&= \int_{[\tau, 1]} (1-\tau)^{-1} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) x } \, \mathrm{d} x \\
+\mathbb{E}_Q[P(H|E)] &= \mathbb{E}_Q \left[ \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \right] \\[1em]
+&= \int_\mathbb{R} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \, \mathrm{d} Q \\[1em]
+&= \int_{[\tau, 1]} (1-\tau)^{-1} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) x } \, \mathrm{d} x \\[1em]
 &= \frac{P(H)P(E|H)}{P(\neg{}H)(1-\tau)}\ln \left(\frac{P(H)P(E|H) + P(\neg{}H)}{P(H)P(E|H) + P(\neg{}H)\tau}\right)\label{eq:expectation}
 \end{align}
 
