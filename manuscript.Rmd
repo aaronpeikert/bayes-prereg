@@ -343,7 +343,7 @@ The only thing we can conclude with some certainty is that theoretical risk is n
 
 Before we ask how preregistration influences this uncertainty, we must consider the implications of being uncertain about the theoretical risk.
 Within the Bayesian framework, this is both straightforward and insightful.
-Let us assume a researcher is reading a study from another lab and tries to decide whether and how much the presented results confirm the theory.
+Let us assume a researcher is reading a study from another lab and tries to decide whether and how much the presented results confirm the hypothesis.
 As the researcher did not conduct the study (and the study is not preregistered), they can not be certain about the various factors influencing theoretical risk (researcher degrees of freedom).
 We therefore express this uncertainty about the theoretical risk as a probability distribution $Q$ of $P(E|\neg{}H)$ (remember that $P(E|\neg{}H)$ is related to theoretical risk by $P(E|\neg{}H) = 1 - P(\neg{}E|\neg{}H)$, so it does not matter wheter we consider the distribution of theoretical risk or $P(E|\neg{}H)$).
 To get the expected value of $P(H|E)$ that follows from the researchers uncertainty about the theoretical risk, we can compute the expectation using Bayes theorem:
@@ -353,13 +353,13 @@ To get the expected value of $P(H|E)$ that follows from the researchers uncertai
 \end{equation}
 
 Of course, the assigned probabilities and the distribution $Q$ varies from study to study and researcher to researcher, but we can illustrate the effect of uncertainty with a example.
-Assuming a power of 80\% we assign $P(E|H) = 0.8$, we assume the tested hypotheses is considered unlikely to be true by the research community before the study is conducted ($P(H) = 0.1$) and assign a uniform distribution for $P(E|\neg{}H) \sim U([1-\tau, 1])$ where $\tau{}$ is set to the nominal type-I error rate of the statistical model, reflecting our assumption that this error rate gives a lower bound for $P(E|\neg{}H)$.
-We chose this uniform distribution as it is the maximum entropy distribution with support $[\tau, 1]$ and hence conforms to our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
+Assuming a power of 80\% we assign $P(E|H) = 0.8$, we assume the tested hypotheses is considered unlikely to be true by the research community before the study is conducted ($P(H) = 0.1$) and assign a uniform distribution for $P(E|\neg{}H) \sim U([1-\tau, 1])$ where $\tau{}$ is set to $1 - \alpha$, reflecting our assumption that this term gives an upper bound for theoretical risk $P(\neg{}E|\neg{}H)$.
+We chose this uniform distribution as it is the maximum entropy distribution with support $[1-\tau, 1]$ and hence conforms to our Bayesian framework [@giffinUpdatingProbabilitiesData2007].
 
 With this, we derive the expected value of $P(H|E)$ as
 \begin{align}
 \mathbb{E}_Q[P(H|E)] &= \mathbb{E}_Q \left[ \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \right] \\[1em]
-&= \int_{[1-\tau, 1]} (\tau)^{-1} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \, \mathrm{d} P(E|\neg H) \\[1em]
+&= \int_{[1-\tau, 1]} \tau^{-1} \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H) P(E|\neg H) } \, \mathrm{d} P(E|\neg H) \\[1em]
 &= \frac{P(H)P(E|H)}{P(\neg{}H)\tau}\ln \left(\frac{P(H)P(E|H) + P(\neg{}H)}{P(H)P(E|H) + P(\neg{}H)(1-\tau)}\right)\label{eq:expectation}
 \end{align}
 
