@@ -9,8 +9,20 @@ author:
     email: peikert@mpib-berlin.mpg.de
     corresponding : yes    # Define only one corresponding author
     address: "Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany"
+    role:
+      - Conceptualization
+      - Writing---Original Draft Preparation
+      - Writing---Review & Editing
+      - Methodology
+      - Formal analysis
+      - Software
+      - Visualization
+      - Project administration
   - name: Andreas M. Brandmaier
     affiliation: "1, 2, 4"
+    role:
+      - Writing---Review & Editing
+      - Supervisions
 affiliation:
   - id: 1
     institution: Max Planck Institute for Human Development
