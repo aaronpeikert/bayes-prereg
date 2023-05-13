@@ -37,8 +37,6 @@ output:
   papaja::apa6_pdf:
     latex_engine: xelatex
 header-includes: |
-  \usepackage[utf8]{inputenc}
-  
   \raggedbottom
   \makeatletter
   
