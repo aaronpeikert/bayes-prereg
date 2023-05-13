@@ -2,26 +2,58 @@
 title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization"
 bibliography: references.bib
 abstract: "`r paste0(c('\\\\noindent', readLines('abstract.md')), collapse = ' ')`"
-author:
+shorttitle: "The Objective of Preregistration"
+author: 
   - name: Aaron Peikert
-    affil: a, b, c
+    affiliation: "1,2,3"
     email: peikert@mpib-berlin.mpg.de
+    corresponding : yes    # Define only one corresponding author
+    address: "Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany"
+    role:
+      - Conceptualization
+      - Writing---Original Draft Preparation
+      - Writing---Review & Editing
+      - Methodology
+      - Formal analysis
+      - Software
+      - Visualization
+      - Project administration
+  - name: Maximilian S. Ernst
+    affiliation: "3"
+    role:
+      - Writing---Review & Editing
+      - Formal analysis
+      - Validation
   - name: Andreas M. Brandmaier
-    affil: a, b, d 
-    email: brandmaier@mpib-berlin.mpg.de
+    affiliation: "1, 2, 4"
+    role:
+      - Writing---Review & Editing
+      - Supervisions
 affiliation:
-  - num: a
-    address: |
-      Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany
-  - num: b
-    address: |
-     Max Planck UCL Centre for Computational Psychiatry and Ageing Research Berlin, Germany and London, UK
-  - num: c
-    address: |
-      Department of Psychology, Humboldt-Universität zu Berlin, Unter den Linden 6, 10117 Berlin, Germany
-  - num: d
-    address: |
-      MSB Medical School Berlin, Rüdesheimer Str. 50, 14197 Berlin, Germany
+  - id: 1
+    institution: Max Planck Institute for Human Development
+  - id: 2
+    institution: Max Planck UCL Centre for Computational Psychiatry and Ageing Research
+  - id: 3
+    institution: Humboldt-Universität zu Berlin
+  - id: 4
+    institution: MSB Medical School Berlin
+keywords: |
+  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
+wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
+figsintext: false
+figurelist: false
+tablelist : false
+footnotelist: false
+lineno: true
+linkcolor: "blue"
+csquotes: false
+class: "man"
+output:
+  papaja::apa6_pdf:
+    latex_engine: xelatex
+header-includes:
+  - \raggedbottom
 repro:
   scripts:
     - R/plots.R
@@ -39,28 +71,22 @@ repro:
     - rticles
     - gert
     - aaronpeikert/repro@5075336
+    - crsh/papaja@1c488f7
   tlmgr:
+    - apa6
     - pgf
     - preview
-    - libertine
   apt:
     - git
     - rsync
     - curl
     - inkscape
-output: rticles::tf_article
-type: ARTICLE TEMPLATE
-keywords: |
-  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
-header-includes: |
-  \usepackage{hyperref}
-  \usepackage[utf8]{inputenc}
-  \def\tightlist{}
 ---
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  echo = FALSE
+  echo = FALSE,
+  dev = "tikz"
 )
 knitr::read_chunk("R/plots.R")
 
@@ -73,7 +99,7 @@ if(!requireNamespace("tikzDevice"))install.packages("tikzDevice")
 
 options(
   tikzDefaultEngine = "xetex",
-  tikzXelatexPackages = c(getOption("tikzXelatexPackages"), "\\usepackage{amsfonts}", "\\usepackage{libertine}")
+  tikzXelatexPackages = c(getOption("tikzXelatexPackages"), "\\usepackage{amsfonts}")
 )
 ```
 
@@ -372,7 +398,7 @@ results <- readr::read_rds(here::here("data", "simulation.rds"))
 # see R/plots.R
 ```
 
-```{r posterior-fig, dev = "tikz", cache=TRUE, warning=FALSE}
+```{r posterior-fig, cache=TRUE, warning=FALSE}
 #| fig.cap: "\\label{fig:posterior}Posterior probability (confirmation as firmness) as a function of theoretical risk $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[["Posterior Probability"]] +
@@ -385,7 +411,7 @@ plots[["Posterior Probability"]] +
   NULL
 ```
 
-```{r other-measures-fig, dev = "tikz", cache=TRUE, warning=FALSE}
+```{r other-measures-fig, cache=TRUE, warning=FALSE}
 #| fig.cap: "\\label{fig:other-measures}Several measures for confirmation as an increase in firmness as a function of $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[!(names(plots) %in% "Posterior Probability")] %>% 
@@ -549,4 +575,9 @@ The materials for this article are available on [GitHub](https://github.com/aaro
 This version was created from git commit ``r repro::current_hash(backend = "gert")``.
 The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023] and was submitted to [Philosophical Psychology](https://www.tandfonline.com/journals/cphp20).
 
+\newpage
+
 # References
+
+::: {#refs custom-style="Bibliography"}
+:::
