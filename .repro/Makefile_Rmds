@@ -1,9 +1,12 @@
-manuscript.tex: manuscript.Rmd R/plots.R references.bib abstract.md data/simulation.rds apa.csl
+manuscript.tex: manuscript.Rmd R/plots.R references.bib abstract.md data/simulation.rds
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
 presentation.html: presentation.Rmd
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
 README.md: README.Rmd references.bib
+	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
+
+Untitled/Untitled.pdf: Untitled/Untitled.Rmd bibliography.bib
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 

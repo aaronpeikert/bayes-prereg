@@ -60,7 +60,6 @@ repro:
   files:
     - abstract.md
     - data/simulation.rds
-    - apa.csl
   packages:
     - here
     - tidyverse
