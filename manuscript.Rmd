@@ -31,11 +31,24 @@ lineno: true
 linkcolor: "blue"
 csquotes: false
 class: "man"
+documentclass: "apa7"
+csl: "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
 output:
   papaja::apa6_pdf:
     latex_engine: xelatex
-header-includes:
-  - \raggedbottom
+header-includes: |
+  \raggedbottom
+  \makeatletter
+  
+  \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+    {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+    {-1em}%
+    {\normalfont\normalsize\bfseries\typesectitle}}
+  \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+    {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+    {-\z@\relax}%
+    {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+  \makeatother
 repro:
   scripts:
     - R/plots.R
@@ -54,7 +67,7 @@ repro:
     - aaronpeikert/repro@5075336
     - crsh/papaja@1c488f7
   tlmgr:
-    - apa6
+    - apa7
     - pgf
     - preview
   apt:
