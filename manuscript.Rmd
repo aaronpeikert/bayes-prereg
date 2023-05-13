@@ -18,6 +18,12 @@ author:
       - Software
       - Visualization
       - Project administration
+  - name: Maximilian S. Ernst
+    affiliation: "3"
+    role:
+      - Writing---Review & Editing
+      - Formal analysis
+      - Validation
   - name: Andreas M. Brandmaier
     affiliation: "1, 2, 4"
     role:
