@@ -5,7 +5,7 @@ ARG BUILD_DATE=2022-09-10
 WORKDIR /home/rstudio
 RUN apt-get update -y && apt-get install -y rsync
 RUN tlmgr install collection-latexrecommended
-RUN tlmgr install pgf preview libertine
+RUN tlmgr install apa7 pgf
 RUN apt-get update -y && apt-get install -y git rsync curl inkscape
 RUN install2.r --error --skipinstalled \ 
   gert \ 
