@@ -188,7 +188,7 @@ However, it is reasonable that any measure of confirmation increases monotonical
 In short, we want to increase posterior probability $P(H|E)$.
 Increases in posterior probability $P(H|E)$ are associated with increased epistemic value, of which we want to maximize the expectation.
 So how can we increase posterior probability?
-The Bayes formula yields three components that influence corroboration, namely $P(H)$, $P(E|H)$ and $P(E)$.
+The Bayes formula yields three components that influence confirmation, namely $P(H)$, $P(E|H)$ and $P(E)$.
 The first option leads us to the unsurprising conclusion that higher a priori probability $P(H)$ leads to higher posterior probability $P(H|E)$.
 If a hypothesis is more probable to begin with, observing evidence in its favor will result in a hypothesis that is more strongly confirmed, all else being equal.
 However, the prior probability of a hypothesis is nothing our study design can change.
@@ -372,7 +372,7 @@ results <- readr::read_rds(here::here("data", "simulation.rds"))
 ```
 
 ```{r posterior-fig, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "\\label{fig:posterior}Posterior probability (corroboration as firmness) as a function of theoretical risk $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
+#| fig.cap: "\\label{fig:posterior}Posterior probability (confirmation as firmness) as a function of theoretical risk $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[["Posterior Probability"]] +
   labs(caption = "$p(E|H) = 0.8$, $p(H) = 0.1$",
@@ -385,7 +385,7 @@ plots[["Posterior Probability"]] +
 ```
 
 ```{r other-measures-fig, dev = "tikz", cache=TRUE, warning=FALSE}
-#| fig.cap: "\\label{fig:other-measures}Several measures for corroboration as an increase in firmness as a function of $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
+#| fig.cap: "\\label{fig:other-measures}Several measures for confirmation as an increase in firmness as a function of $\\tau$, where $\\tau$ is either certain (solid line) or maximally uncertain (dotted line)."
 
 plots[!(names(plots) %in% "Posterior Probability")] %>% 
   map(~ . +   theme_tufte()) %>% 
