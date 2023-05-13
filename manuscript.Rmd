@@ -78,7 +78,7 @@ repro:
 note: |
   The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
   This version was created from git commit ``r repro::current_hash(backend = "gert")``.
-  The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023] and was submitted to [Psychological Methods](https://www.apa.org/pubs/journals/).
+  The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023] and was submitted to [Psychological Methods](https://www.apa.org/pubs/journals/) but has not been peer reviewed.
 
 ---
 
