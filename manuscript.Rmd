@@ -147,7 +147,7 @@ To form such an objective for preregistration, we first introduce some tools of 
 
 Further, we outline two interpretations of preregistration.
 The first one corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
-We argue that this view on the utility of preregistration can be interpreted as maximizing theoretical risk, which is reduced by researchers' degrees of freedom, p-hacking, and suchlike.
+We argue that this view on the utility of preregistration can be interpreted as maximizing theoretical risk, which otherwise may be reduced by researchers' degrees of freedom, p-hacking, and suchlike.
 The second interpretation is our main contribution:
 We argue that contrary to the classic view, the objective of preregistration is *not* the maximization of theoretical risk but rather the minimization of uncertainty about the theoretical risk.
 This interpretation leads to a broad applicability of preregistration to both exploratory and confirmatory studies.
@@ -156,7 +156,7 @@ To arrive at this interpretation, we rely on three arguments.
 The first is that theoretical risk is vital for judging evidential support for theories.
 The second argument is that the theoretical risk for a given study is generally uncertain.
 The third and last argument is that this uncertainty is reduced by applying preregistration.
-We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases the amount of knowledge we gain from a particular study, preregistration is potentially useful for any kind of study, no matter how exploratory.
+We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases the amount of knowledge we gain from a particular study, preregistration is potentially useful for any kind of study, no matter where it falls on the exploratory-confirmatory continuum.
 
 # Epistemic value and the Bayesian rationale
 
@@ -186,7 +186,7 @@ The argument is not sufficient, however, to warrant conceptualizing the kind of 
 However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
 That is, evidence only increases epistemic value for a theory if the evidence is more likely to be observed under the theory than under the alternative.
 
-Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not imply anything about the statistical methods researchers use.
+Please note that our decision to adopt this aspect of the Bayesian philosophy of science does not make assumptions about the statistical methods researchers use.
 In fact, this conceptualization is intentionally as minimal as possible to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
 
 # Epistemic value and theoretical risk
@@ -206,7 +206,7 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 \end{equation}
 
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of confirmation of a hypothesis.
-In the tradition of Carnap, in its direct use, it is called confirmation as firmness; in its relation to the a priori probability $P(H)$, it is called increase in firmness [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
+In the tradition of Carnap, in its direct use, it is called confirmation as firmness; in its relation to the a priori probability $P(H)$, it is called _increase in firmness_ @carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
 As noted before, we concentrate on posterior probability as a measure of epistemic value since no measure shows universally better properties than others.
 However, it is reasonable that any measure of confirmation increases monotonically with an increase in posterior probability $P(H|E)$, and our argument applies to those measures as well.
 
@@ -217,7 +217,7 @@ The Bayes formula yields three components that influence confirmation, namely $P
 The first option leads us to the unsurprising conclusion that higher a priori probability $P(H)$ leads to higher posterior probability $P(H|E)$.
 If a hypothesis is more probable to begin with, observing evidence in its favor will result in a hypothesis that is more strongly confirmed, all else being equal.
 However, the prior probability of a hypothesis is nothing our study design can change.
-The second option is similarly commonsensical; that is, an increase in $P(E|H)$ leads to a higher posterior probability $P(H|E)$.
+The second option is equally reasonable; that is, an increase in $P(E|H)$ leads to a higher posterior probability $P(H|E)$.
 $P(E|H)$ is the probability of obtaining evidence for a hypothesis when it holds.
 We call this probability of detecting evidence, given that the hypothesis holds "detectability."
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
@@ -246,7 +246,7 @@ We have already noted that there is not much to be done about prior probability 
 The real lever to pull is therefore $P(E|\neg{}H)$.
 This probability tells us how likely it is that we find evidence in favor of the theory when in fact, the theory is not true.
 Its counter probability $P(\neg{}E|\neg{}H)= 1 - P(E|\neg{}H)$ is what we call "theoretical risk", because it is the risk a theory takes on in predicting the occurrence of particular evidence in its favor.
-We "borrow" the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(\neg{}E|\neg{}H)$.
+We borrow the term from @meehlTheoreticalRisksTabular1978, though he has not assigned it to the probability $P(\neg{}E|\neg{}H)$.
 @kuklaClinicalStatisticalTheory1990 argued that the core arguments in @meehlAppraisingAmendingTheories1990 can be reconstructed in a purely Bayesian framework.
 However, while he did not mention $P(\neg{}E|\neg{}H)$ he suggested that @meehlTheoreticalRisksTabular1978 used the term "very strange coincidence" for a small $P(E|\neg{}H)$ which would imply, that $P(\neg{}E|\neg{}H)$ can be related to or even equated to theoretical risk.
 
@@ -548,7 +548,7 @@ The theoretical risk, however low, must be communicated clearly.
 Parts of the process left unspecified imply uncertainty, which preregistration should reduce.
 However, specifying procedures that can be expected to fail will lead to deviation and, subsequently, to larger uncertainty.
 
-We have proposed a workflow for preregistration called preregistration as code (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
+We have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
 In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
 The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
