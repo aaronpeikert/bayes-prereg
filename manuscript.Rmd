@@ -105,7 +105,7 @@ options(
 <!--introduce confirmatory vs. exploratory-->
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis generation and hypothesis testing, or prediction and postdiction  [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010; @nosekPreregistrationRevolution2018].
 Despite the different names, it is fundamentally the same dichotomy that is at stake here.
-There is a broad consensus that both approaches are necessary for science to progress; exploration, to make new discoveries and confirmation, to expose these discoveries to potential falsification, and assess empirical support for the theory.
+ a broad consensus that both approaches are necessary for science to progress; exploration, to make new discoveries and confirmation, to expose these discoveries to potential falsification, and assess empirical support for the theory.
 However, mistaking exploratory findings for empirically confirmed results is dangerous.
 It inflates the likelihood of believing that there is evidence supporting a given hypothesis, even if it is false.
 A variety of problems, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
@@ -123,7 +123,7 @@ One goal of preregistration that has received widespread attention is to clearly
 In such a narrative, preregistration is justified by a confirmatory research agenda.
 However, two problems become apparent under closer inspection.
 First, many researchers do not subscribe to a purely confirmatory research agenda.
-Second, there is strict mapping of the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
+Second, there is no strict mapping of the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
 
 <!---false dichotomy--->
 Obviously, researchers can conduct confirmatory research without preregistration — though it might be difficult to convince other researchers of the confirmatory nature of their research, that is, that they were free of cognitive biases, made no data-dependent decisions, and so forth.
