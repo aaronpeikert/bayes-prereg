@@ -105,7 +105,7 @@ options(
 <!--introduce confirmatory vs. exploratory-->
 The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis generation and hypothesis testing, or prediction and postdiction  [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010; @nosekPreregistrationRevolution2018].
 Despite the different names, it is fundamentally the same dichotomy that is at stake here.
- There is a broad consensus that both approaches are necessary for science to progress; exploration, to make new discoveries and confirmation, to expose these discoveries to potential falsification, and assess empirical support for the theory.
+There is a broad consensus that both approaches are necessary for science to progress; exploration, to make new discoveries and confirmation, to expose these discoveries to potential falsification, and assess empirical support for the theory.
 However, mistaking exploratory findings for empirically confirmed results is dangerous.
 It inflates the likelihood of believing that there is evidence supporting a given hypothesis, even if it is false.
 A variety of problems, such as researchers' degrees of freedom together with researchers' hindsight bias or naive p-hacking have led to such mistakes becoming commonplace yet unnoticed for a long time.
