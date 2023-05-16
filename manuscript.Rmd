@@ -9,17 +9,35 @@ author:
     email: peikert@mpib-berlin.mpg.de
     corresponding : yes    # Define only one corresponding author
     address: "Center for Lifespan Psychology, Max Planck Institute for Human Development, Lentzeallee 94, 14195 Berlin, Germany"
+    role:
+      - Conceptualization
+      - Writing---Original Draft Preparation
+      - Writing---Review & Editing
+      - Methodology
+      - Formal analysis
+      - Software
+      - Visualization
+      - Project administration
+  - name: Maximilian S. Ernst
+    affiliation: "1"
+    role:
+      - Writing---Review & Editing
+      - Formal analysis
+      - Validation
   - name: Andreas M. Brandmaier
     affiliation: "1, 2, 4"
+    role:
+      - Writing---Review & Editing
+      - Supervisions
 affiliation:
   - id: 1
-    institution: Max Planck Institute for Human Development
+    institution: Center for Lifespan Psychology, Max Planck Institute for Human Development
   - id: 2
     institution: Max Planck UCL Centre for Computational Psychiatry and Ageing Research
   - id: 3
-    institution: Humboldt-Universität zu Berlin
+    institution: Department of Psychology, Humboldt-Universität zu Berlin
   - id: 4
-    institution: MSB Medical School Berlin
+    institution: Department of Psychology, MSB Medical School Berlin
 keywords: |
   preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
