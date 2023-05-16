@@ -19,7 +19,7 @@ author:
       - Visualization
       - Project administration
   - name: Maximilian S. Ernst
-    affiliation: "3"
+    affiliation: "1"
     role:
       - Writing---Review & Editing
       - Formal analysis
