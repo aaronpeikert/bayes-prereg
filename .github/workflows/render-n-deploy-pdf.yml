@@ -31,3 +31,5 @@ jobs:
           folder: publish/
           # Organizations require token of the bearer!
           token: ${{ secrets.GITHUB_TOKEN }}
+          force: false
+          clean: false
