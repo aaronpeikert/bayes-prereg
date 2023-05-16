@@ -31,13 +31,13 @@ author:
       - Supervisions
 affiliation:
   - id: 1
-    institution: Center for Lifespan Psychology, Max Planck Institute for Human Development, Berlin, Germany
+    institution: Center for Lifespan Psychology, Max Planck Institute for Human Development
   - id: 2
-    institution: Max Planck UCL Centre for Computational Psychiatry and Ageing Research, Berlin, Germany
+    institution: Max Planck UCL Centre for Computational Psychiatry and Ageing Research
   - id: 3
-    institution: Department of Psychology, Humboldt-Universität zu Berlin, Berlin, Germany
+    institution: Department of Psychology, Humboldt-Universität zu Berlin
   - id: 4
-    institution: Department of Psychology, MSB Medical School Berlin, Berlin, Germany
+    institution: Department of Psychology, MSB Medical School Berlin
 keywords: |
   preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
