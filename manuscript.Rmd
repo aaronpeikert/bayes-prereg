@@ -588,13 +588,13 @@ Parts of the process left unspecified imply uncertainty, which preregistration s
 However, specifying procedures that can be expected to fail will lead to deviation and, subsequently, to larger uncertainty.
 
 Our emphasis on transparency echoes other justifications of preregistration, especially @lakensValuePreregistrationPsychological2019's, although we come from a very different philosophical starting point.
-What we hope to contribute, however, is a rationale that more stringently deals with the issues of exploration and confirmation as well as subjective evaluations of evidence.
+What we hope to contribute, however, is a rationale that more stringently deals with the issues of exploration and confirmation, post-hoc changes, as well as subjective evaluations of evidence.
 We find it difficult to content ourselves with vague terms like "control" or "transparency" if they ultimately remain unconnected to how much researchers believe in a theory.
 In our framework, researchers can input what they assume other researchers think and calculate what their actions, be it the preregistration itself or later deviations, may have on their readers.
 We put subjective evaluations at the centre of our consideration; we deal explicitly with researchers who are proponents of some theory (they have higher priors), researchers who suspect confounding variables (they have lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence then others (they differ in their confirmation function).
 We, therefore, hope to not only provide a rationale for preregistration for those who subscribe to a Bayesian philosophy of science but also a tool to navigate the complicated questions that arise in the practice of preregistration.
 
-We have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
+With the goal to facilitate, rigorous exploration, we have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
 In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
 The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
