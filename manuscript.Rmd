@@ -247,6 +247,7 @@ We call this probability of detecting evidence, given that the hypothesis holds 
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
 When applied strictly within the bounds of null hypothesis testing, detectability is equivalent to power (or the complement of type-II error rate).
 However, while detectability is of great importance for study design, it is not directly relevant to the objective of preregistration.
+However, we latter discuss why detectability can not be disregarded from consideration.
 Thus, $P(E)$ remains to be considered.
 Since $P(E)$ is the denominator, decreasing it can increase the posterior probability.
 In other words, high risk, high reward.
@@ -361,7 +362,8 @@ Because many researchers are familiar with the type-I error rate, it can be help
 Researchers who choose a smaller type-I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
 However, this connection should not be overinterpreted for two reasons.
 First, according to most interpretations of null hypothesis testing, the absence of a significant result should not generally be interpreted as evidence against the hypothesis [@mayoStatisticalInferenceSevere2018, 5.3].
-Second, the research hypothesis seldomly equals the statistical alternative-hypothesis.
+Second, the research hypothesis seldomly equals the statistical alternative-hypothesis (most research hypothesis are more specific then any value except zero).
+In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theortical risk and type-I/II error rate switch.
 We argue that theoretical risk (and hence its complement, $P(E|\neg{}H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 Type-I error rate is the property of a statistical test under some assumptions, whereas theoretical risk is a researchers believe.
 One may take such theoretical properties as a first starting point to form a substantive believe but surely researchers ought to take more factors into consideration.
