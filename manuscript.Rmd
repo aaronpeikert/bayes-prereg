@@ -340,8 +340,9 @@ Increasing theoretical risk $P(\neg{}E|\neg{}H)$ will usually decrease detectabi
 This is similar to the well known tradeoff between type-I error rate and power.
 Tasking preregistration with an increase in theoretical risk makes it difficult to balance this trade-off.
 Mindlessly maximizing theoretical risk would either never produce evidence or require huge amounts of resources.
-As noted before, we want high detectability and high theorethical risk.
-Maximizing one at the expense of the other is not nessesarily beneficial for increasing epistemic value.
+As noted before, we want high detectability and high theoretical risk.
+Maximizing one at the expense of the other is not necessarily beneficial for increasing epistemic value but depends on the specific function they apply to judge evidence and their specific location on the curve.
+One advantage of our framework is that researchers can employ it to balance the trade-off more effectively assuming they are willing to make some simplifiying assumptions.
 
 
 # Uncertainty about theoretical risk 
