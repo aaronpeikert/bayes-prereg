@@ -380,7 +380,7 @@ The precision with which statisticians can discuss contributions to theoretical 
 We cannot hope to resolve this uncertainty; but we have to be aware of its implications.
 These are presented in the following.
 
-## Sources of Uncertainty
+## Sources of uncertainty
 
 As we have noted, it is possible to quantify how statistical models affect the theoretical risk based on mathematical considerations and simulation.
 However, other factors in the broader context of a study are much harder to quantify.
