@@ -363,7 +363,7 @@ Researchers who choose a smaller type-I error rate can be more sure of their res
 However, this connection should not be overinterpreted for two reasons.
 First, according to most interpretations of null hypothesis testing, the absence of a significant result should not generally be interpreted as evidence against the hypothesis [@mayoStatisticalInferenceSevere2018, 5.3].
 Second, the research hypothesis seldomly equals the statistical alternative-hypothesis (most research hypothesis are more specific then any value except zero).
-In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theortical risk and type-I/II error rate switch.
+In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.
 We argue that theoretical risk (and hence its complement, $P(E|\neg{}H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 Type-I error rate is the property of a statistical test under some assumptions, whereas theoretical risk is a researchers believe.
 One may take such theoretical properties as a first starting point to form a substantive believe but surely researchers ought to take more factors into consideration.
