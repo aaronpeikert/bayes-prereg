@@ -527,6 +527,27 @@ In any case, a well-written preregistration should aim to reduce the uncertainty
 Therefore, a study that perfectly adhered to its preregistration will resemble the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
 Crucially, perfect means here that the theoretical risk can be judged with low uncertainty, not that the theoretical risk is necessarily high.
 
+# Hacking, harking, and other harms
+
+The importance of distinguishing between low and highly uncertain theoretical risk becomes perhaps clearer if we consider couple of hypothetical cases.
+
+1. We know with absolute certainty that the results are hacked.
+2. The hypothesis was picked to explain the results.
+3. We can not exclude the possibility of p-hacking.
+4. The results are obtained by planned exploration.
+5. The results are obtained by unplanned exploration.
+
+In case 1, there is no theoretical risk ($P(\neg{}E|\neg{}H) = 0$).
+If we know that no matter what, the results engineered to support the hypothesis, there is no reason to collect data.
+Case 2 has a similar problem.
+In fact, both cases should be problematic to anyone who subscribes to the statistical relevancy condition because if we choose the hypothesis in accordance with the data or vice versa, without restrictions, they are not related anymore (i.e., observing the data does not tell us anything about the hypothesis and the other way around).
+Case 3, is different since here the theoretical risk is not necessarily low but simply uncertain and perhaps represented by the dotted line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
+In case 4, the theoretical risk is neither zero (unless the researcher plans to do everything in their power to obtain favourable results, then we have a particular instance case of 1) nor high (that is what makes it exploratory).
+However, we can use statistical properties, simulation or resampling methods, together with scientific reasoning, to get a reasonably certain evaluation of the theoretical risk and hence are in a somewhat favourable position (i.e., close to the solid line in n Figure \ref{fig:posterior}/\ref{fig:other-measures}).
+This favorable position leads us to recommend preregistration of exploratory studies.
+Case 5 shares the neither zero nor high theoretical risk of case 4 but has additional uncertainty about how much exploration was going on (how hard did researcher try to come up with favourable results).
+Its low theoretical risk combined with high uncertainty about it, make it difficult to produce compelling evidence.
+
 # Discussion
 
 To summarize, we showed that both higher theoretical risk and lower uncertainty about theoretical risk lead to higher expected epistemic value across a variety of measures.
