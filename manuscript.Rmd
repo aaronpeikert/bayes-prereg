@@ -169,6 +169,7 @@ Specifically, it allows us to model changes in subjective degrees of belief due 
 Please note that our decision to adopt a Bayesian philosophy of science does not make assumptions about the statistical methods researchers use.
 In fact, this conceptualization is intentionally as minimal as possible to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
 However, we should note that Popperians would be appalled that we are content with positive inductive inferences (but we dislike "failing to disprove" too much to give it up), and Neopopperians would flinch that we assign probabilities to beliefs (we are fond of calculating things).
+While the latter move is not strictly necessary it allows us to connect the more abstract considerations more closely with the behavior of researchers.
 
 We outline two interpretations of preregistration.
 The first one corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -230,7 +231,7 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of confirmation of a hypothesis.
 In the tradition of Carnap, in its direct use, it is called confirmation as firmness; in its relation to the a priori probability $P(H)$, it is called _increase in firmness_ [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
 We concentrate on the posterior probability because of its simplicity but take it only as one example of a possible measure.
-In reality, surely researchers differ in what function they apply to judge evidence.
+In reality, surely researchers differ in what function they apply to judge evidence and it is often most fruitful to compare more than two competing hypotheses.
 The goal is therefore to reason about the space of possible measures researchers might apply.
 However, since it is reasonable that any measure of confirmation increases monotonically with an increase in posterior probability $P(H|E)$, we might well take it to illustrate our reasoning.
 
@@ -246,8 +247,8 @@ $P(E|H)$ is the probability of obtaining evidence for a hypothesis when it holds
 We call this probability of detecting evidence, given that the hypothesis holds "detectability."
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
 When applied strictly within the bounds of null hypothesis testing, detectability is equivalent to power (or the complement of type-II error rate).
-However, while detectability is of great importance for study design, it is not directly relevant to the objective of preregistration.
-However, we latter discuss why detectability can not be disregarded from consideration.
+However, while detectability is of great importance for study design, it is not directly relevant to what a preregistration is comunicating to other researchers.
+However, we latter discuss how issues detectability must be considered for the issue of preregistration.
 Thus, $P(E)$ remains to be considered.
 Since $P(E)$ is the denominator, decreasing it can increase the posterior probability.
 In other words, high risk, high reward.
@@ -284,7 +285,7 @@ In other words, observing a sure fact does not lend credence to a hypothesis.
 
 The last statement sounds like a truism but is directly related to Popper's seminal criterion of demarcation.
 He stated that if it is impossible to prove that a hypothesis is false ($P(\neg{}E|\neg{}H) = 0$, theoretical risk is zero), it cannot be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
-We note these relations to underline that the Bayesian rationale we apply here is able to reconstruct many commonly held views on riskiness and epistemic value (but Popper would disagree with attaching any form of believe in $H$ on the basis of evidence).
+We note these relations to underline that the Bayesian rationale we apply here is able to reconstruct many commonly held views on riskiness and epistemic value (but Popper would disagree with attaching any form of believe in $H$ on the basis of evidence beyond failing to disprove it).
 
 Both theoretical risk $P(\neg{}E|\neg{}H)$ and detectability $P(E|H)$ aggregate countless influences; otherwise, they could not model the process of evidential support for theories.
 To illustrate the concepts we have introduced here, consider the following example of a single theory and three experiments that may test it. 
@@ -362,7 +363,7 @@ Because many researchers are familiar with the type-I error rate, it can be help
 Researchers who choose a smaller type-I error rate can be more sure of their results, if significant, because the theoretical risk is higher.
 However, this connection should not be overinterpreted for two reasons.
 First, according to most interpretations of null hypothesis testing, the absence of a significant result should not generally be interpreted as evidence against the hypothesis [@mayoStatisticalInferenceSevere2018, 5.3].
-Second, the research hypothesis seldomly equals the statistical alternative-hypothesis (most research hypothesis are more specific then any value except zero).
+Second, the research hypothesis seldomly equals the statistical alternative-hypothesis (most research hypothesis are more specific then "any value except zero").
 In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.
 We argue that theoretical risk (and hence its complement, $P(E|\neg{}H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 Type-I error rate is the property of a statistical test under some assumptions, whereas theoretical risk is a researchers believe.
@@ -493,6 +494,7 @@ However, studies do not only differ by how high the theoretical risk is but also
 A study that has a very high theoretical risk (e.g., `r (1-confirmatory_tau)*100`% chance that if the hypothesis is wrong, evidence in its favor will be observed,) but has also maximum uncertainty will result in a posterior probability of `r round(confirmatory_uncertain*100)`%, while the same study with maximum certainty will result in `r round(confirmatory_certain*100)`% posterior probability.
 The other factors (detectability, prior beliefs, measure of epistemic value) and, therefore, the extent of the benefit varies, of course, with the specifics of the study.
 Crucially, even studies with some exploratory aspects benefit from preregistration, e.g., in this scenario with a $\tau$ = `r some_exploration_tau` (false positive rate of `r 1-some_exploration_tau`) moving from uncertain to certain increases the posterior from `r round(some_exploration_uncertain, 2)` to `r round(some_exploration_certain, 2)`.
+We find it helpful to calculate some example because of the nonlinear nature of the evidence functions.
 
 # Preregistration as a means to decrease uncertainty about the theoretical risk
 
@@ -540,6 +542,7 @@ The importance of distinguishing between low and highly uncertain theoretical ri
 In case 1, there is no theoretical risk ($P(\neg{}E|\neg{}H) = 0$).
 If we know that no matter what, the results engineered to support the hypothesis, there is no reason to collect data.
 Case 2 has a similar problem.
+After all, the hypothesis that it had to happen the way it did happen is irrefutable.
 In fact, both cases should be problematic to anyone who subscribes to the statistical relevancy condition because if we choose the hypothesis in accordance with the data or vice versa, without restrictions, they are not related anymore (i.e., observing the data does not tell us anything about the hypothesis and the other way around).
 Case 3, is different since here the theoretical risk is not necessarily low but simply uncertain and perhaps represented by the dotted line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
 In case 4, the theoretical risk is neither zero (unless the researcher plans to do everything in their power to obtain favourable results, then we have a particular instance case of 1) nor high (that is what makes it exploratory).
@@ -617,7 +620,7 @@ In our framework, researchers can input what they assume other researchers think
 We put subjective evaluations at the centre of our consideration; we deal explicitly with researchers who are proponents of some theory (they have higher priors), researchers who suspect confounding variables (they have lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence then others (they differ in their confirmation function).
 We, therefore, hope to not only provide a rationale for preregistration for those who subscribe to a Bayesian philosophy of science but also a tool to navigate the complicated questions that arise in the practice of preregistration.
 
-With the goal to facilitate, rigorous exploration, we have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
+With the goal to facilitate rigorous exploration, we have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
 In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
 The idea is that the preregistration already contains "mock results" based on simulated or pilot data, which are replaced after the actual study data becomes available.
