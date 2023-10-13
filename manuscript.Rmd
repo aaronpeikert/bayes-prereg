@@ -148,6 +148,7 @@ Obviously, researchers can conduct confirmatory research without preregistration
 The opposite, that is, preregistered but not strictly confirmatory studies, are also becoming more commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 
 This is the result of researchers applying one of two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration, to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterward.
+The latter is a frequent occurrence and, perhaps more worryingly, often remains undisclosed [@akkerEffectivenessPreregistrationPsychology2023; @claesenComparingDreamReality2021].
 Both strategies may be used for sensible scientific reasons or with the self-serving intent of generating desirable results.
 Thus, insisting on equating preregistration and confirmation has led to the criticism that, all things considered, preregistration is actually harmful and neither sufficient nor necessary for doing good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
 
