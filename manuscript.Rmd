@@ -121,7 +121,7 @@ options(
 ```
 
 <!--introduce confirmatory vs. exploratory-->
-The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis generation and hypothesis testing, or prediction and postdiction  [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010; @nosekPreregistrationRevolution2018].
+The scientific community has long pondered the vital distinction between exploration and confirmation, discovery and justification, hypothesis generation and hypothesis testing, or prediction and postdiction  [@hoyningen-hueneContextDiscoveryContext2006; @shmueliExplainPredict2010; @nosekPreregistrationRevolution2018; @tukeyWeNeedBoth1980].
 Despite the different names, it is fundamentally the same dichotomy that is at stake here.
 There is a broad consensus that both approaches are necessary for science to progress; exploration, to make new discoveries and confirmation, to expose these discoveries to potential falsification, and assess empirical support for the theory.
 However, mistaking exploratory findings for empirically confirmed results is dangerous.
@@ -140,7 +140,7 @@ We believe that we can reach a greater acceptance of preregistration by explicat
 One goal of preregistration that has received widespread attention is to clearly distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
 In such a narrative, preregistration is justified by a confirmatory research agenda.
 However, two problems become apparent under closer inspection.
-First, many researchers do not subscribe to a purely confirmatory research agenda.
+First, many researchers do not subscribe to a purely confirmatory research agenda [@tukeyExploratoryDataAnalysis1972; @baumeisterChartingFutureSocial2016; @finkelReplicabilityOtherFeatures2017].
 Second, there is no strict mapping of the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
 
 <!---false dichotomy--->
