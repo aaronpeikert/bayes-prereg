@@ -525,7 +525,11 @@ The point is that we cannot exclude it with certainty.
 This uncertainty is drastically reduced if the researchers have described what they intended to do beforehand and then report that they did exactly that.
 In that case, readers can be certain they received a complete account of the situation.
 They still might be uncertain about the actual theoretical risk the authors took, but to a much smaller extent than if the study would not have been preregistered.
+
 The remaining sources of uncertainty might be unfamiliarity with statistical methods or experimental paradigms used, the probability of an implementation error in the statistical analyses, a bug in the software used for analyses, etc.
+To further reduce the uncertainty about theoretical risk, researchers must therefore publish code and ideally data.
+After all, computational reproducibility is only possible if the data analytic procedure was communicated clearly enough to allow others to retrace the computational steps [@peikertReproducibleDataAnalysis2021].
+
 In any case, a well-written preregistration should aim to reduce the uncertainty about the theoretical risk and hence increase the persuasiveness of evidence.
 Therefore, a study that perfectly adhered to its preregistration will resemble the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}.
 Crucially, perfect means here that the theoretical risk can be judged with low uncertainty, not that the theoretical risk is necessarily high.
@@ -571,9 +575,9 @@ Funding agencies should demand an explicit statement about theoretical risk in r
 Theoretical risk may conceptually be related to the very fruitful conceptual framework of "severity" [@mayoStatisticalInferenceSevere2018; @mayoErrorStatistics2011].
 However, there are crucial differences.
 First, we are not primarily concerned with avoiding inductive reasoning but with subjective changes of belief.
+This is important because, while severity is calculable, it remains unclear how severity should be valued, e.g. if an increase in severity from .80 to .81 should be as impressive as from .99 to .9999.
 Second, severity considerations are mainly post-data.
 Only after the evidence was observed can the severity with which we can rule out alternatives be calculated.
-Third, while severity is calculable, it remains unclear how severity should be valued, e.g. if an increase in severity from .80 to .81 should be as impressive as from .99 to .9999.
 However, they also share properties, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
 
 Our latter result, on the importance of preregistration for minimizing uncertainty, has two important implications.
