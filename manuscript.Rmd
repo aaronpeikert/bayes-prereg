@@ -210,7 +210,7 @@ Fully developing a Dutch book argument for this problem requires careful conside
 Without deliberating these concepts further, we find it persuasive that researchers should not violate the axioms of probability if they have some expectation about what they stand to gain with some likelihood from conducting a study.
 The axioms of probability are sufficient to derive the Bayes formula, on which we will heavily rely for our further arguments.
 The argument is not sufficient, however, to warrant conceptualizing the kind of epistemic value we reason about in terms of posterior probability; that remains a leap of faith.
-However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974].
+However, the argument applies to any reward function that satisfies the "statistical relevancy condition" [@wesleyc.salmonStatisticalExplanation1970; @fetzerStatisticalExplanations1974] or as recent psychological literature come to call it "diagnosticity" [@fiedlerWhatConstitutesStrong2017; @oberauerAddressingTheoryCrisis2019].
 That is, evidence only increases epistemic value for a theory if the evidence is more likely to be observed under the theory than under the alternative.
 
 # Epistemic value and theoretical risk
