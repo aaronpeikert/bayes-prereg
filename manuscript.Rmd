@@ -625,6 +625,33 @@ In our framework, researchers can input what they assume other researchers think
 We put subjective evaluations at the centre of our consideration; we deal explicitly with researchers who are proponents of some theory (they have higher priors), researchers who suspect confounding variables (they have lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence then others (they differ in their confirmation function).
 We, therefore, hope to not only provide a rationale for preregistration for those who subscribe to a Bayesian philosophy of science but also a tool to navigate the complicated questions that arise in the practice of preregistration.
 
+However, approaching the evaluation of evidence using a Bayesian formalism is far from novel [e.g., @kuklaClinicalStatisticalTheory1990 @fiedlerWhatConstitutesStrong2017;@sprengerBayesianPhilosophyScience2019].
+To our knowledge, it was not yet applied to the problem of preregistration.
+However, @oberauerAddressingTheoryCrisis2019 made use of the formalism to model the relation between theory, hypothesis, and evidence.
+In the wake of this conceptualization, they discussed the usefulness of preregistration, though without applying the formalism there.
+Most interestingly, they are rather critical of the idea that preregistration has tangible benefits.
+Instead, they prefer multiverse analyses but contend that those could be preregistered if one fancies it.
+Their reasoning is based on two intuitions about what should *not* influence the evaluation of evidence: temporal order and the mental state of the originator.
+For one, they disregard the temporal order a bit too hastily, as it is a long-standing issue in Bayesian philosophy of science known as the "problem of old evidence" [@chiharaProblemsBayesianConfirmation1987].
+However, we agree that the information flow matters for preregistration, not the temporal order.
+For the other, we find that the mental state of the originator does matter.
+Suppose there are $k = 1, 2, \ldots, K$ ways to analyze data.
+Where each $k$ has a $P(E_k | \neg H) > 0$.
+If they intend to try each way after another but happen to be "lucky" on the first try and stop, should we then apply $P(\neg E| \neg H) = P(\neg E_1 | \neg H)$ or $P(\neg E| \neg H) = \prod_{k=1}^K P(\neg E_k | \neg H)$?
+We think the latter.
+
+Whatever the difference in evaluating preregistration as a tool, maybe conceptually more profound is that @oberauerAddressingTheoryCrisis2019 conceptualizes "discovery-oriented research" differently than we do "exploratory".
+They assume the same theoretical risk ($P(\neg E| \neg H) = .05$) and detectability ($P(E| H)) = .8$) in their calculation example as we but assign different prior probabilities, namely $.06$ for discovery versus $.6$ for theory testing.
+They then conclude that discovery-oriented researcher requires a much lower type-I error rate to control false positive in light of the low prior probability.
+This runs counter to our definition of exploratory research having low theoretical risk.
+Of course, we agree that low priors require more persuasive evidence; our disagreement, therefore, lies mainly in terminology.
+They imagine discovery-oriented researchers to conduct experiments where they have low expectations that they obtain positive evidence ($.06 \cdot .8 + .94 \cdot .05 = 0.095$), but if they do, it raises the posterior significantly (from $.06$ to $.51$)
+In our view, researchers who set out to explore a data set often find "something" (due to low $P(\neg E| \neg H)$); therefore, it should only slightly raise your posterior if they do.
+On a substantive matter, we believe both kinds of research are common in psychology.
+It is, therefore, mostly a disagreement on terminology.
+This disagreement only highlights why using a mathematical framework to investigate such things is so fruitful because we can clearly see where and how we differ.
+Both frameworks are highly compatible mathematically, and it might be interesting to combine their idea of updating on two nested levels (theory-hypothesis layered on top of hypothesis-evidence) with our approach to modelling uncertainty.
+
 With the goal to facilitate rigorous exploration, we have proposed a workflow for preregistration called _preregistration as code_ (PAC) elsewhere [@peikertReproducibleResearchTutorial2021].
 In a PAC, researchers use computer code for the planned analysis as well as a verbal description of theory and methods for the preregistration.
 This combination is facilitated by dynamic document generation, where the results of the code, such as numbers, figures, and tables, are inserted automatically into the document.
