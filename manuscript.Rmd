@@ -172,7 +172,7 @@ In fact, this conceptualization is intentionally as minimal as possible to be co
 However, we should note that Popperians would be appalled that we are content with positive inductive inferences (but we dislike "failing to disprove" too much to give it up), and Neopopperians would flinch that we assign probabilities to beliefs (we are fond of calculating things).
 While the latter move is not strictly necessary it allows us to connect the more abstract considerations more closely with the behavior of researchers.
 
-We outline two interpretations of preregistration.
+Now, we outline two possible perspectives on the utility of preregistration.
 The first one corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
 We argue that this view on the utility of preregistration can be interpreted as maximizing theoretical risk, which otherwise may be reduced by researchers' degrees of freedom, p-hacking, and suchlike.
 The second interpretation is our main contribution:
