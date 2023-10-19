@@ -672,6 +672,11 @@ Clearly communicating theoretical risk is important because it reduces the uncer
 We thank Leo Richter, Caspar van Lissa, Felix Schönbrodt, the discussants at the DGPS2022 conference and Open Science Center Munich, and many more for the insightful discussions about disentangling preregistration and confirmation.
 We are grateful to Julia Delius for her helpful assistance in language and style editing.
 
+# Declarations {-}
+
+All code and materials required to reproduce this article are available under https://github.com/aaronpeikert/bayes-prereg [@zenodo-release].
+The authors have no competing interests to declare that are relevant to the content of this article.
+
 \newpage
 
 # References
