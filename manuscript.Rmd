@@ -19,25 +19,27 @@ author:
       - Visualization
       - Project administration
   - name: Maximilian S. Ernst
-    affiliation: "1"
+    affiliation: "1, 4"
     role:
       - Writing---Review & Editing
       - Formal analysis
       - Validation
   - name: Andreas M. Brandmaier
-    affiliation: "1, 2, 4"
+    affiliation: "1, 3, 5"
     role:
       - Writing---Review & Editing
       - Supervisions
 affiliation:
-  - id: 1
-    institution: Center for Lifespan Psychology, Max Planck Institute for Human Development
-  - id: 2
-    institution: Max Planck UCL Centre for Computational Psychiatry and Ageing Research
-  - id: 3
-    institution: Department of Psychology, Humboldt-Universität zu Berlin
-  - id: 4
-    institution: Department of Psychology, MSB Medical School Berlin
+  - id            : "1"
+    institution   : "Center for Lifespan Psychology, Max Planck Institute for Human Development, Berlin, Germany"
+  - id            : "2"
+    institution   : "Department of Imaging Neuroscience, University College London, London, UK"
+  - id            : "3"
+    institution   : "Max Planck UCL Centre for Computational Psychiatry and Ageing Research, Berlin, Germany"
+  - id            : "4"
+    institution   : "Max Planck School of Cognition, Leipzig, Germany"
+  - id            : "5"
+    institution   : "Department of Psychology, MSB Medical School Berlin, Berlin, Germany"
 keywords: |
   preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
