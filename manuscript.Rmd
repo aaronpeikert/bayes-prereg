@@ -230,9 +230,9 @@ P(H|E) = \frac{P(H)P(E|H)}{P(E)} \label{eq:bayes}
 \end{equation}
 
 The posterior probability $P(H|E)$ is of great relevance since it is often used directly or indirectly as a measure of confirmation of a hypothesis.
-In the tradition of Carnap, in its direct use, it is called confirmation as firmness; in its relation to the a priori probability $P(H)$, it is called _increase in firmness_ [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
+In the tradition of Carnap, in its direct use, it is called _confirmation as firmness_; in its relation to the a priori probability $P(H)$, it is called _increase in firmness_ [@carnapLogicalFoundationsProbability1950, preface to the 1962 edition].
 We concentrate on the posterior probability because of its simplicity but take it only as one example of a possible measure.
-In reality, surely researchers differ in what function they apply to judge evidence and it is often most fruitful to compare more than two competing hypotheses.
+In reality, researchers surely differ in what function they apply to judge evidence and it is often most fruitful to compare more than two competing hypotheses.
 The goal is therefore to reason about the space of possible measures researchers might apply.
 However, since it is reasonable that any measure of confirmation increases monotonically with an increase in posterior probability $P(H|E)$, we might well take it to illustrate our reasoning.
 
@@ -249,7 +249,7 @@ We call this probability of detecting evidence, given that the hypothesis holds 
 Consequently, researchers should ensure that their study design allows them to find evidence for their hypothesis, in case it is true.
 When applied strictly within the bounds of null hypothesis testing, detectability is equivalent to power (or the complement of type-II error rate).
 However, while detectability is of great importance for study design, it is not directly relevant to what a preregistration is comunicating to other researchers.
-However, we latter discuss how issues detectability must be considered for the issue of preregistration.
+We later discuss how issues of detectability must be considered in a preregistration.
 Thus, $P(E)$ remains to be considered.
 Since $P(E)$ is the denominator, decreasing it can increase the posterior probability.
 In other words, high risk, high reward.
@@ -280,7 +280,7 @@ However, while he did not mention $P(\neg{}E|\neg{}H)$ he suggested that @meehlT
 Let us note some interesting properties of theoretical risk $P(\neg{}E|\neg{}H)$.
 First, increasing theoretical risk leads to higher posterior probability $P(H|E)$, our objective.
 Second, if the theoretical risk is smaller than detectability $P(E|H)$ it follows that the posterior probability must decrease when observing the evidence.
-If detectability exceeds theoretical risk, the evidence is less likely under the theory than it is when the theory does not hold (an inversion of statistical relevancy).
+If detectability exceeds theoretical risk, the evidence is less likely under the theory than it is when the theory does not hold (the inverse of statistical relevancy).
 Third, if the theoretical risk equals zero, then posterior probability is at best equal to prior probability but only if detectability is perfect ($P(H|E)$ = 1).
 In other words, observing a sure fact does not lend credence to a hypothesis.
 
