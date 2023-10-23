@@ -546,6 +546,7 @@ The importance of distinguishing between low and highly uncertain theoretical ri
 
 In case 1, there is no theoretical risk ($P(\neg{}E|\neg{}H) = 0$).
 If we know that the results will be engineered to support the hypothesis no matter what, there is no reason to collect data.
+A prime example of this case is the $p_\text{pointless}$ metric [@husseyMethodStreamlinePhacking2021].
 Case 2 has a similar problem.
 After all, the hypothesis that it had to happen the way it did happen is irrefutable.
 In fact, both cases should be problematic to anyone who subscribes to the statistical relevancy condition because if we choose the hypothesis in accordance with the data or vice versa, without restrictions, they are not related anymore (i.e., observing the data does not tell us anything about the hypothesis and the other way around).
