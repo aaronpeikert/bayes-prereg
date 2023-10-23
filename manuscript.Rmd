@@ -40,7 +40,7 @@ affiliation:
     institution: Department of Psychology, MSB Medical School Berlin
 keywords: |
   preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
-wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
+wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~8390')`"
 figsintext: true
 figurelist: false
 tablelist : false
