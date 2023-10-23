@@ -41,7 +41,7 @@ affiliation:
 keywords: |
   preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~7000')`"
-figsintext: false
+figsintext: true
 figurelist: false
 tablelist : false
 footnotelist: false
