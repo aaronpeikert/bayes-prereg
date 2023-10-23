@@ -539,7 +539,7 @@ Crucially, perfect means here that the theoretical risk can be judged with low u
 The importance of distinguishing between low and highly uncertain theoretical risk becomes perhaps clearer if we consider a few hypothetical cases for illustration.
 
 1. We know with absolute certainty that reported results came about by p-hacking.
-2. The hypothesis was picked to explain the results.
+2. A hypothesis was picked to explain reported results after the fact [HARKing, @kerrHARKingHypothesizingResults1998].
 3. We cannot exclude the possibility of p-hacking having led to the reported results.
 4. Reported results were obtained by planned exploration.
 5. Reported results were obtained by unplanned exploration.
