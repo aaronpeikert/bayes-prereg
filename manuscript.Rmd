@@ -142,7 +142,7 @@ We believe that we can reach a greater acceptance of preregistration by explicat
 One goal of preregistration that has received widespread attention is to clearly distinguish confirmatory from exploratory research [@mellorEasyPreregistrationWill2018; @nosekPreregistrationRevolution2018; @wagenmakersAgendaPurelyConfirmatory2012; @simmonsPreregistrationWhyHow2021; @bakkerEnsuringQualitySpecificity2020].
 In such a narrative, preregistration is justified by a confirmatory research agenda.
 However, two problems become apparent under closer inspection.
-First, many researchers do not subscribe to a purely confirmatory research agenda [@tukeyExploratoryDataAnalysis1972; @baumeisterChartingFutureSocial2016; @finkelReplicabilityOtherFeatures2017].
+First, many researchers do not subscribe to a purely confirmatory research agenda [@tukeyExploratoryDataAnalysis1972; @baumeisterChartingFutureSocial2016; @finkelReplicabilityOtherFeatures2017; @brandmaierStructuralEquationModel2013].
 Second, there is no strict mapping of the categories preregistered vs. non-preregistered onto the categories confirmatory vs. exploratory research.
 
 <!---false dichotomy--->
