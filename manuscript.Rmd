@@ -612,6 +612,7 @@ Any decision will increase detectability to a non-zero value offsetting the incr
 The researchers also may do their best to argue that the deviation was not motivated by increasing theoretical risk, thereby, decreasing the uncertainty.
 Ideally, there is a default decision that fits well with the theory or with the study design.
 Or, if there is no obvious candidate, the researchers could conduct a multiverse analysis of the available options to deal with missings to show the influence of the decision [@steegenIncreasingTransparencyMultiverse2016].
+In any case, deviations must be transparently reported and we applaud recent developments to standardize and normalize this process [@willrothBestLaidPlans2023].
 
 As explained above, reduction in uncertainty as the objective for preregistration does not only explain some existing practice, that does not align with confirmation as a goal, it also allows to form recommendations to improve the practice of preregistration.
 Importantly, we now have a theoretical measure to gauge the functionality of preregistrations, which can only help increase its utility.
