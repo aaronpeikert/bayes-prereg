@@ -371,7 +371,7 @@ In fact, it is entirely possible to assume the null hypothesis as a research hyp
 We argue that theoretical risk (and hence its complement, $P(E|\neg{}H)$) also encompasses factors outside the statistical realm, most notably the study design and broader analytical strategies.
 Type-I error rate is the property of a statistical test under some assumptions, whereas theoretical risk is a researchers' belief.
 One may take such theoretical properties as a first starting point to form a substantive belief but surely researchers ought to take other factors into consideration.
-For example, if a researcher believes that there might be confounding variables at play for the relation between two variables, this should decrease theorethical risk; after all they might find an association purely on account of the confounders.
+For example, if a researcher believes that there might be confounding variables at play for the relation between two variables, this should decrease theoretical risk; after all they might find an association purely on account of the confounders [@fiedlerWhatConstitutesStrong2017].
 
 Statistical methods stand out among these factors because we have a large and well-understood toolbox for assessing and controlling their contribution to theoretical risk.
 Examples of our ability to exert this control are the choice of type-I error rate, adjustments for multiple testing, the use of corrected fit measures (i.e., adjusted R²), information criteria, or cross-validation in machine learning.
