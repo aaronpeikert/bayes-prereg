@@ -288,7 +288,7 @@ In other words, observing a sure fact does not lend credence to a hypothesis.
 
 The last statement sounds like a truism but is directly related to Popper's seminal criterion of demarcation.
 He stated that if it is impossible to prove that a hypothesis is false ($P(\neg{}E|\neg{}H) = 0$, theoretical risk is zero), it cannot be considered a scientific hypothesis [@popperLogicScientificDiscovery2002, p. 18].
-We note these relations to underline that the Bayesian rationale we apply here is able to reconstruct many commonly held views on riskiness and epistemic value (but we of course differ from Popper on the central issue of induction in science).
+We note these relations to underline that the Bayesian rationale we apply here is able to reconstruct many commonly held views on riskiness and epistemic value (but we of course differ from Popper on the central role of induction in science).
 
 Both theoretical risk $P(\neg{}E|\neg{}H)$ and detectability $P(E|H)$ aggregate countless influences; otherwise, they could not model the process of evidential support for theories.
 To illustrate the concepts we have introduced here, consider the following example of a single theory and three experiments that may test it. 
@@ -639,9 +639,8 @@ Their reasoning is based on two intuitions about what should *not* influence the
 In our opinion, they disregard the temporal order a bit too hastily, as it is a long-standing issue in Bayesian philosophy of science known as the "problem of old evidence" [@chiharaProblemsBayesianConfirmation1987].
 However, we agree that not the temporal order is decisive but if the researchers incorporated the information into the hypothesis the evidence is supposed to confirm.
 For the other, we argue that the mental state of the originator does matter.
-Suppose there are $k = 1, 2, \ldots, K$ ways to analyze data.
-Where each $k$ has a $P(E_k | \neg H) > 0$.
-If they intend to try each way after another but happen to be "lucky" on the first try and stop, should we then apply $P(\neg E| \neg H) = P(\neg E_1 | \neg H)$ or $P(\neg E| \neg H) = P(\neg E_1 \land \ldots \land \neg E_k | \neg H)$?
+Suppose there are $k = 1, 2, \ldots, K$ ways to analyze data, where each $k$ has a $P(E_k | \neg H) > 0$.
+If they intend to try each way after another but happen to be "lucky" on the first try and stop, should we then apply $P(E| \neg H) = P(E_1 | \neg H)$ or $P(E| \neg H) = P(E_1 \lor \ldots \lor E_k | \neg H)$?
 We think the latter.
 However, this "Defeatist" intuition is not universally warranted and depends on what we take $H$ to mean specifically [@kotzenMultipleStudiesEvidential2013].
 Addressing, this problem might benefit from combining @oberauerAddressingTheoryCrisis2019's idea of updating on two nested levels (theory-hypothesis layered on top of hypothesis-evidence) with our approach to modelling uncertainty.
@@ -658,7 +657,7 @@ It is, therefore, mostly a disagreement on terminology.
 This disagreement only highlights why using a mathematical framework to investigate such things is so useful and ultimately indispensable because we can clearly see where and how we differ in our reasoning.
 
 We believe that our reasoning is quite similar to @hoflerMeansValuableExploration2022, who call for transparent exploration using preregistration.
-We could be surer of our agreement, if they had formulated their arguments within a mathematical framework, which would also have helped to dissolve an apparent conflict in their definitions of confirmation, exploration, and transparency.
+We could be more sure of our agreement, if they had formulated their arguments within a mathematical framework, which would also have helped to dissolve an apparent conflict in their definitions of confirmation, exploration, and transparency.
 On the one hand, they define "The principle difference between confirmation and exploration is that confirmation adheres to an evidential norm for the test of a hypothesis to pass.", but then suggest that transparent exploration can be conducted using inferences tests as a filtering mechanism.
 Their distinction between confirmation, intransparent and transparent exploration are otherwise just as well placed along the dimensions, theoretical risk and uncertainty about theoretical risk.
 
