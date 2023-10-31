@@ -7,6 +7,3 @@ presentation.html: presentation.Rmd
 README.md: README.Rmd references.bib
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
-Untitled/Untitled.pdf: Untitled/Untitled.Rmd bibliography.bib
-	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
-
