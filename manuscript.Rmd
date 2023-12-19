@@ -1,5 +1,6 @@
 ---
 title: "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization"
+titlerunning: "Preregistration increases the persuasiveness of evidence"
 bibliography: references.bib
 abstract: "`r paste0(c('\\\\noindent', readLines('abstract.md')), collapse = ' ')`"
 shorttitle: "The Objective of Preregistration"
@@ -40,8 +41,6 @@ affiliation:
     institution   : "Max Planck School of Cognition, Leipzig, Germany"
   - id            : "5"
     institution   : "Department of Psychology, MSB Medical School Berlin, Berlin, Germany"
-keywords: |
-  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~8390')`"
 figsintext: true
 figurelist: false
@@ -51,24 +50,10 @@ lineno: true
 linkcolor: "blue"
 csquotes: false
 class: "man"
-documentclass: "apa7"
-csl: "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
-output:
-  papaja::apa6_pdf:
-    latex_engine: xelatex
 header-includes: |
-  \raggedbottom
-  \makeatletter
-  
-  \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
-    {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
-    {-1em}%
-    {\normalfont\normalsize\bfseries\typesectitle}}
-  \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
-    {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
-    {-\z@\relax}%
-    {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
-  \makeatother
+  \usepackage{amsmath}
+  \usepackage{amssymb}
+  \usepackage{csquotes}
 repro:
   scripts:
     - R/plots.R
@@ -95,11 +80,18 @@ repro:
     - rsync
     - curl
     - inkscape
+output: rticles::springer_article
+keywords:
+  - preregistration
+  - confirmation
+  - exploration
+  - hypothesis testing
+  - Bayesian
+  - Open Science
 note: |
   The materials for this article are available on [GitHub](https://github.com/aaronpeikert/bayes-prereg) [@zenodo-release].
   This version was created from git commit ``r repro::current_hash(backend = "gert")``.
   The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023].
-
 ---
 
 ```{r, include = FALSE}
