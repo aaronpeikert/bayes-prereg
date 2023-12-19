@@ -12,4 +12,5 @@ RUN install2.r --error --skipinstalled \
   tikzDevice \ 
   xaringanthemer
 RUN installGithub.r \ 
-  aaronpeikert/repro@5075336
+  aaronpeikert/repro@5075336 \ 
+  crsh/papaja@1c488f7

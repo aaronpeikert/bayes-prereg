@@ -1,4 +1,4 @@
-manuscript.tex: manuscript.Rmd R/plots.R references.bib abstract.md data/simulation.rds apa.csl
+manuscript.tex: manuscript.Rmd R/plots.R references.bib abstract.md data/simulation.rds
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
 presentation.html: presentation.Rmd
