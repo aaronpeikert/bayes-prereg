@@ -52,11 +52,6 @@ lineno: true
 linkcolor: "blue"
 csquotes: false
 class: "man"
-documentclass: "apa7"
-csl: "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
-output:
-  papaja::apa6_pdf:
-    latex_engine: xelatex
 header-includes: |
   \usepackage{amsmath}
   \usepackage{amssymb}
