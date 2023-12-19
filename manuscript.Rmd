@@ -41,8 +41,6 @@ affiliation:
     institution   : "Max Planck School of Cognition, Leipzig, Germany"
   - id            : "5"
     institution   : "Department of Psychology, MSB Medical School Berlin, Berlin, Germany"
-keywords: |
-  preregistration; confirmation; exploration; hypothesis testing; Bayesian; Open Science
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~8390')`"
 figsintext: true
 figurelist: false
