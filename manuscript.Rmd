@@ -53,6 +53,7 @@ class: "man"
 header-includes: |
   \usepackage{amsmath}
   \usepackage{amssymb}
+  \usepackage{csquotes}
 repro:
   scripts:
     - R/plots.R
