@@ -100,6 +100,10 @@ note: |
   This version was created from git commit ``r repro::current_hash(backend = "gert")``.
   The manuscript is available as [preprint](https://www.doi.org/10.31234/osf.io/cs8wb) [@peikertWhyDoesPreregistration2023].
 
+  Submitted to *Meta-Psychology*. Participate in open peer review by sending an email to open.peer.reviewer@gmail.com. The full editorial process of all articles under review at Meta-Psychology can be found following this link:  
+  https://tinyurl.com/mp-submissions  
+  You will find this preprint by searching for the first author's name.
+
 ---
 
 ```{r, include = FALSE}
