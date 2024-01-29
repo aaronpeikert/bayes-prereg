@@ -175,7 +175,7 @@ class: center, middle, inverse
 # Ideal Preregistration
 
 ---
-class: center
+class: center, middle
 
 # Preregistration as Code
 
