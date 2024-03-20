@@ -83,9 +83,8 @@ link <- "github.com/aaronpeikert/bayes-prereg"
 ```
 
 ```{r, echo=FALSE, out.width = "30%"}
-fs::dir_create("images")
-generate_svg(qr_code(link), here::here("images/", "qr_slides.svg"), foreground = secondary_color, background = primary_color, show = FALSE)
-knitr::include_graphics("images/qr_slides.svg")
+generate_svg(qr_code(link), here::here("qr_slides.svg"), foreground = secondary_color, background = primary_color, show = FALSE)
+knitr::include_graphics("qr_slides.svg")
 ```
 
 `r link`
