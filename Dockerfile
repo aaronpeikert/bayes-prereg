@@ -5,13 +5,14 @@ ARG BUILD_DATE=2022-09-10
 WORKDIR /home/rstudio
 RUN apt-get update -y && apt-get install -y rsync
 RUN tlmgr install collection-latexrecommended
-RUN tlmgr install apa7 pgf preview
+RUN tlmgr install apa7 pgf preview scalerel threeparttable endfloat was multirow threeparttablex environ trimspaces xpatch csquotes
 RUN apt-get update -y && apt-get install -y git rsync curl inkscape
 RUN install2.r --error --skipinstalled \ 
   gert \ 
   ggplot2 \ 
   ggthemes \ 
   here \ 
+  pacman \ 
   patchwork \ 
   qrcode \ 
   rticles \ 

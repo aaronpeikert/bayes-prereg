@@ -86,10 +86,21 @@ repro:
     - gert
     - aaronpeikert/repro@5075336
     - crsh/papaja@1c488f7
+    - pacman
   tlmgr:
     - apa7
     - pgf
     - preview
+    - scalerel
+    - threeparttable
+    - endfloat
+    - was
+    - multirow
+    - threeparttablex
+    - environ
+    - trimspaces
+    - xpatch
+    - csquotes
   apt:
     - git
     - rsync

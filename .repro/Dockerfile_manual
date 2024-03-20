@@ -1,1 +1,1 @@
-RUN tlmgr install apa7 pgf preview
+RUN tlmgr install apa7 pgf preview scalerel threeparttable endfloat was multirow threeparttablex environ trimspaces xpatch csquotes
