@@ -182,12 +182,14 @@ However, independently of such a goal, preregistration can be useful for any kin
 To form such an objective for preregistration, we first introduce some tools of Bayesian philosophy of science and map the exploration/confirmation distinction onto a dimensional quantity we call "theoretical risk" [a term borrowed from @meehlTheoreticalRisksTabular1978, but formalized as the probability of proving a hypothesis wrong if it does not hold].
 
 We are interested in why preregistrations should change researchers' evaluation of evidence.
-Applying a Bayesian framework allows us to investigate our research question most straightforwardly. 
+Applying a Bayesian framework allows us to investigate our research question most straightforwardly because it directly deals with what we ought to believe, given the evidence presented.
 Specifically, it allows us to model changes in subjective degrees of belief due to preregistration or, more simply, "persuasion".
 Please note that our decision to adopt a Bayesian philosophy of science does not make assumptions about the statistical methods researchers use.
 In fact, this conceptualization is intentionally as minimal as possible to be compatible with a wide range of philosophies of science and statistical methods researchers might subscribe to.
+One feature of the Bayesian framework, is the strong emphasis on subjective yet rational judgement.
+Therefore, we assume that researchers will differ significantly in how they value evidence but that by making assumptions about the general process, we can make general statements that apply to all these subjective evaluations.
 However, we should note that Popperians would be appalled that we are content with positive inductive inferences (but we regard "failing to disprove" as too limited), and Neopopperians would flinch that we assign probabilities to beliefs (we are fond of calculating things).
-While the latter move is not strictly necessary it allows us to connect the more abstract considerations more closely with the behavior of researchers.
+While the latter move is not strictly necessary it allows us to connect the more abstract considerations more closely with what researchers believe.
 
 Now, we outline two possible perspectives on the utility of preregistration.
 The first one corresponds to the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -641,7 +643,7 @@ Our emphasis on transparency aligns with other justifications of preregistration
 Our goal is to contribute a rationale that more comprehensively captures the spectrum of exploration and confirmation in relation to preregistrations, post-hoc changes of preregistrations, and subjective evaluations of evidence.
 We find it difficult to content ourselves with vague terms like "control" or "transparency" if they ultimately remain unconnected to how much researchers believe in a theory.
 Within our framework, researchers have the ability to input their assumptions regarding the perspectives of other researchers and calculate the potential impact of their actions on their readership, whether these actions relate to study design, to the preregistration itself, or subsequent deviations from it.
-We put subjective evaluations at the centre of our considerations; we deal explicitly with researchers who are proponents of some theory (they have higher priors for the theory being true), researchers who suspect confounding variables (they assume lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence than others (they differ in their confirmation function).
+We put subjective evaluations at the center of our considerations; we deal explicitly with researchers who are proponents of some theory (they have higher priors for the theory being true), researchers who suspect confounding variables (they assume lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence than others (they differ in their confirmation function).
 We, therefore, hope to not only provide a rationale for preregistration for those who subscribe to a Bayesian philosophy of science but also a framework to navigate the complicated questions that arise in the practice of preregistration.
 
 At the same time, approaching the evaluation of evidence using a Bayesian formalism is far from novel [e.g., @kuklaClinicalStatisticalTheory1990 @fiedlerWhatConstitutesStrong2017;@sprengerBayesianPhilosophyScience2019].
