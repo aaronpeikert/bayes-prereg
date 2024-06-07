@@ -39,16 +39,7 @@ This is not correct.
 > What makes the arguments "Bayesian" is what we take probabilities to mean.
 > For a Bayesian, they represent degrees of belief.
 > For a frequentist, they represent (relative) frequencies of events that result from a random process.
-This is a subtle but most important distinction.
-> The Bayesian position deals with what agents (here "researchers") ought to believe, assuming they are rational.
-> However, even here, there is no universally agreed upon function that maps evidence onto belief (indeed, there can not be).
-> We tried to make this even clearer and more explicit as to why we include several functions (and that our reasoning applies to all possible functions satisfying our assumptions).
-> The frequentist understanding of probability refers strictly to statistical procedures.
-> From this position, one must either argue that preregistration is changing the underlying random process/ statistical procedure or trace the impact of preregistration via indirect paths outside of the core philosophy of frequentism.
-> Mayo's severity perspective is taking one more step in this direction by asserting that belief in a hypothesis is justified to the extent that it survives stringent scrutiny.
-> However, even this "strong" severity principle is only a proportional statement.
-> Faced with a specific tradeoff, e.g., is a particular post hoc change of a preregistration beneficial, we must revert to vague notions and "gut" instinct under this philosophy.
-> Within the Bayesian framework, we may directly ask: What consequences should preregistration have on the beliefs of individual scientists or the research community as a whole?
+> This is a subtle but most important distinction.
 
 Their rationalization is in essence based on the likelihood ratio.
 All else equal, a lower Type 1 error rate means that observing a significant result is relatively more likely when H1 is true.
@@ -79,6 +70,15 @@ So for a frequentist (and I mean a frequentist not in statistical terms, but als
 > In a Fisherian approach, no heat is paid to the power of a test; only the p-value is interpreted as the strength of evidence against the null.
 > In the Neyman-Person paradigm, a decision is to be made about rejecting one or the other hypothesis.
 > Mayo's severe testing returns to a gradual inference (instead of a decision) by evaluating the extent of evidence in favour of H as the extent to which a test was capable of showing that H is false.
+> The Bayesian position deals with what agents (here "researchers") ought to believe, assuming they are rational.
+> However, even here, there is no universally agreed upon function that maps evidence onto belief (indeed, there can not be).
+> We tried to make this even clearer and more explicit as to why we include several functions (and that our reasoning applies to all possible functions satisfying our assumptions).
+> The frequentist understanding of probability refers strictly to statistical procedures.
+> From this position, one must either argue that preregistration is changing the underlying random process/ statistical procedure or trace the impact of preregistration via indirect paths outside of the core philosophy of frequentism.
+> Mayo's severity perspective is taking one more step in this direction by asserting that belief in a hypothesis is justified to the extent that it survives stringent scrutiny.
+> However, even this "strong" severity principle is only a proportional statement.
+> Faced with a specific tradeoff, e.g., is a particular post hoc change of a preregistration beneficial, we must revert to vague notions and "gut" instinct under this philosophy.
+> Within the Bayesian framework, we may directly ask: What consequences should preregistration have on the beliefs of individual scientists or the research community as a whole?
 
 The title should not read a Bayesian rationalization, but a likelihood rationalization.
 A higher likelihood is not always better, as one can cherry pick a high likelihood ratio.
