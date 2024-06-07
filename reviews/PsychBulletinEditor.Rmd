@@ -1,0 +1,56 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+All changes of the manuscript since this review can be viewed on GitHub:
+
+<https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main#diff-a9a4aad3fa8c9c10c5404b632bc3a01a25d2d8430eb932bc35c76769963e4b70>
+
+Our responses to the review are formatted as follows.
+
+Normal text = the reviewer's comment
+
+> Indented text = our response
+
+Dear Mr. Peikert:
+
+I have now read Manuscript PBR-TR-23-119 entitled "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization" that you submitted to Psychonomic Bulletin & Review.
+You offer a new perspective on an important issue, and I truly enjoyed reading through your arguments for the role of preregistration in reducing uncertainty about theoretical risk.
+
+> We are thankful for the kind words.
+
+That said, this is more of a think piece than a theoretical review, and the value of assessing theoretical risk remains hypothetical.
+I think you would agree that your examples are highly schematic and serve to illustrate the principles that you are proposing as opposed to reporting specific examples of how these principles can improve psychological research.
+
+> We fully agree.
+
+Perhaps it would be possible to compare a range of studies with and without preregistrations to show how the act of preregistration helps clarify the reported results even when the preregistration does not report the level of detail required for a truly confirmatory study.
+
+> We are sure this is possible and would be enlightening but we would not be sure how to relate the results to the paper.
+> The issue is, that how close a theory is to truth, is very difficult to measure.
+> That implies that measuring if our approach is successfull is similarly difficult to measure empierically.
+> Our goal is more modest: Showing that if you subscribe to a certain class of philosphies of science, you should find preregistered evidence more persuasive.
+
+Given your broad scope, the reviewed studies would ideally come from a variety of research domains.
+In other words, perhaps it is possible to put your ideas through a few test runs to see how they can be applied when all the messy details of specific research endeavors are considered.
+
+> Applying preregistration with "all the messy details of specific research endeavors" arguably already leads to quite some confusion.
+> We hope that some conceptual clarity helps researcher in practice.
+> This hope is grounded in Kurt Lewins Maxim: "Nothing as practical as a good theory".
+
+In my view, theoretical reviews propose a new set of ideas *and* systematically apply the new ideas to existing findings to establish new discoveries or bolster conclusions with more rigorous methods.
+I don’t see the second element here, and I don’t see how getting reviewer comments would change that impression.
+
+> We agree. Empierically establishing our perspective on preregistration as "correct" would be very difficult.
+
+ACTION: I am rejecting the manuscript.
+Although a desk reject seems like a very negative outcome, I want to again emphasize that I found your analysis creative and valuable.
+I just don’t think a PBR theoretical review is the appropriate outlet.
+
+Thank you for considering Psychonomic Bulletin & Review for the publication of your research.
+
+Sincerely, Jeff Starns Action Editor, Psychonomic Bulletin & Review
+
+Editor: James Brockmole
