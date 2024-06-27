@@ -36,7 +36,7 @@ The authors say they provide a 'Bayesian rationalization'.
 This is not correct.
 
 > We respectfully disagree.
-> What makes the arguments "Bayesian" is what we take probabilities to mean.
+> What makes the arguments "Bayesian" is our interpretation of probabilities.
 > For a Bayesian, they represent degrees of belief.
 > For a frequentist, they represent (relative) frequencies of events that result from a random process.
 > This is a subtle but most important distinction.
@@ -48,6 +48,7 @@ Of course a higher likelihood ratio also means a higher Bayes factor, which mean
 > It is well known that the math for frequentists is similar or even identical to Bayesian under the right conditions.
 > Still, a frequentist would not conclude anything about the probability of H1.
 > However, our goal is to say something about how preregistration changes how believable researchers should find claims made in the literature.
+> This necessitates a Bayesian perspective on the process of scientific inquiry (which we adopted) yet it applies to cases of researchers either using frequentist and Bayesian inference in their daily routine.
 
 But the workhorse in the rationalization that the authors provide is the likelihood ratio.
 This does not change when we put a distribution on the Type 1 error rate (as the authors do).
@@ -57,7 +58,8 @@ This does not change when we put a distribution on the Type 1 error rate (as the
 
 The distribution (or the move to a Bayesian rationalization) does not add anything (although of course it can be added).
 
-> We find that it adds value by making an otherwise implicit process explicit to the point of calculatable.
+> We find that it adds value by making an otherwise implicit process (that is, the process of updating beliefs in the theories) explicit to the point of making it calculable.
+To our knowledge, there is no other perspective in the literature that makes this part of the process explicit.
 > By conceptualising uncertainty with a specific distribution, we rid ourselves of vague notions of transparency, control, or exploration.
 > This is of utmost importance because only this clarity enables us to effectively navigate the tradeoffs involved.
 
@@ -169,7 +171,6 @@ This might sound like a subtle difference, but I think it matters.
 The authors might reply that the did not really mean 'minimize uncertainty about the theoretical risk' but mainly meant that readers can judge for themselves what the Type 1 error of a test is (based on their own assumptions about what the most appropriate test is).
 In that case, their argument does not differ from mine in Lakens (2019), and the authors should explain what their contribution adds.
 
-> We took considerable time to put what we meant on paper.
 > In the revision, we tried hard to be clearer that uncertainty always refers to the uncertainty of the reader.
 > However, being content with claiming that readers have to judge for themselves what the theoretical risk/severity of a test results in a weak argument for preregistration.
 > We go further and show that for all individual assessments, preregistration has a benefit and that if one is willing to assume some parameters, this benefit is striking.
@@ -191,7 +192,7 @@ If a claim is made with 10% lower Type 1 error rate than it would have been made
 
 > Our claim is that uncertainty is reduced, not theoretical risk directly.
 > We claim that there are exploratory methods with a well-known error rate.
-> For example, a neural network has extreme flexibility in fitting the data closely, yet it is calculatable.
+> For example, a neural network has extreme flexibility in fitting the data closely, yet it is calculable.
 
 Thus, preregistration in exploratory studies reduces the error rate inflation, but it does not make the error rate known.
 Therefore, I do not believe preregistration in exploratory studies is useful, and the authors do not make an argument for it.
@@ -233,7 +234,9 @@ The Bayes factor is a continuous measure of how much we update our belief.
 If we want to argue for any function of preregistration from a Bayesian perspective, it must be focused on the Bayes factor.
 The authors then say 'If a hypothesis is more probable to begin with, observing evidence in its favor will result in a hypothesis that is more strongly confirmed, all else being equal'.
 
-> We explicitly consider the whole space of possible measures. From the revised paper:
+> We explicitly consider the whole space of possible measures.
+> We tried to clarify this.
+> Quoting From the revised paper:
 > *The goal is therefore to reason about the space of possible measures researchers might apply.*
 > *However, since any measure fulfilling the statistical relevancy condition increases monotonically with an increase in posterior probability $P(H|E)$, we might well take it to illustrate our reasoning.*
 > Later in the paper: *Of course, the assigned probabilities and the distribution $Q$ vary from study to study and researcher to researcher (and even the measure of confirmation), but we can illustrate the effect of uncertainty with an example.*
@@ -247,7 +250,7 @@ However, this is not true.
 Although the authors only discuss inflating the alpha level in their paper, one function of preregistration is to prevent HARKing, or hypothesizing after the results are true.
 Of course, if one comes up with a hypothesis after looking at the data, the 'prior' is 1: We already know the hypothesis will be supported by the data.
 
-> We included a section called "Hacking, harking, and other harms", which hopefully makes our thinking on these things clearer.
+> We included a section called "Hacking, harking, and other harms", which hopefully clarifies our position.
 
 HARKing is a major reason the field has moved towards preregistration, but the term 'HARKing' is not even mentioned in the article.
 The reason for this is that the arguments the authors provide can not deal with HARKing.
@@ -266,7 +269,7 @@ The idea of null-hacking is not crazy - sometimes a certain variable should *not
 
 > Absolutely. However, note that our H is always the research hypothesis, independent of the statistical H1 or H0.
 > If a researcher wants to provide evidence for a null hypothesis, this is their H, theoretical risk, then is related to power.
-> From the revised paper:
+> We tried to clarify this in our revision:
 > *In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.*
 > We reference the ideas of frequentist null hypothesis testing to provide readers who are more familiar with this line of reasoning with a better intuition, not to claim equivalent.
 
