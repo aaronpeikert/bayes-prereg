@@ -22,6 +22,44 @@ All changes of the manuscript since this review can be viewed on GitHub:
 
 # Daniel Lakens
 
+Lakens and our own positions on preregistration built upon two long standing traditions in philosophy of science, namely inductionist and anti-inductionist, that differ fundamentally in their core assumptions.
+
+Integration with Existing Literature:
+
+* Reviewer Concern: The manuscript needs better engagement with existing ideas, particularly those from Mayo’s work on severity.
+* Our Response: We expanded our discussion to include more literature that employs a Bayesian rationale and highlighted how our approach differs fundamentally from the concept of severity, situating our work within the broader philosophical landscape that is not limited to (Neo-)Popperian approaches.
+
+Bayesian vs. Frequentist Interpretation:
+
+* Reviewer Concern: The reviewer challenges our Bayesian approach, suggesting it merely re-frames a frequentist argument using the likelihood ratio.
+* Our Response: We clarified that our Bayesian approach, while indeed utilizing the likelihood ratio, offers a more explicit and calculable framework for updating beliefs based on evidence---a hallmark of Bayesian reasoning.
+
+Objective vs. Subjective Judgement:
+
+* Reviewer Concern: The reviewer is skeptical about the extent to which preregistration can objectively minimize uncertainty, particularly in exploratory studies, suggesting that our focus on subjective evaluation might downplay the need for more objective control of error rates.
+* Our Response: We argued that preregistration reduces uncertainty about theoretical risk, which is inherently a subjective evaluation made by the reader. Bayesian reasoning accommodates the subjectivity in scientific judgment, allowing for rational, individual interpretations of evidence.
+We acknowledged the reviewer’s concerns but maintained that the subjective aspect of Bayesian analysis is a strength, not a weakness.
+
+Control vs Transparency:
+
+* Reviewer Concern: The reviewer agrees that preregistration enhances transparency but believes we overstate its ability to minimize uncertainty, suggesting that error control should be the primary focus.
+* Our response: We contend that error control, as traditionally understood in the frequentist framework, assumes fully known random processes, making it difficult to analyse situations with incomplete or absent preregistration.
+As a consequence, a severe tester must differentiate error control and transparency, the former supported by formal reasoning, and the latter a necessary addition outside of the core philosophy.
+
+HARKing and Error-Statistical Perspective:
+
+* Reviewer Concern: The manuscript lacked a discussion on HARKing, a practice detrimental to the integrity of hypothesis testing, and the error-statistical perspective emphasizing the importance of severe tests.
+* Our Response: We acknowledged this oversight and added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
+
+Type I and Type II error rates:
+
+* Reviewer Concern: The manuscript was perceived as downplaying the importance of statistical power (P(E|H)) in favor of focusing on Type 1 error rates.
+* Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc, depending on the test results and if the research hypothesis is H1 or H2. 
+
+Terminology and Conceptual Clarity:
+* Reviewer Concern: The terminology used, particularly “theoretical risk,” was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
+* Our Response: We provided additional references and explanations to support our terminology. We believe our terms accurately reflect the concepts within our Bayesian framework, but we differentiated our terminology further from frequentist reasoning.
+
 :::reviewer
 Reviewer #1: The authors set out to explain what the primary aim of preregistration is.
 I think they are correct that many scientists have hardly thought about this question.
@@ -493,7 +531,7 @@ For a researcher to be rational, they have to be internally consistent.
 They must not change their process of weighing evidence just because they do not like the outcome.
 We take this assumption from the literature of the Bayesian philosophy of science and cite it appropriately.
 
-:::reviewer´
+:::reviewer
 The authors admit they are talking about an 'ideal' estimation process.
 :::
 
