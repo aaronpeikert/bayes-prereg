@@ -44,7 +44,8 @@ Control vs Transparency:
 
 * Reviewer Concern: The reviewer agrees that preregistration enhances transparency but believes we overstate its ability to minimize uncertainty, suggesting that error control should be the primary focus.
 * Our response: We contend that error control, as traditionally understood in the frequentist framework, assumes fully known random processes, making it difficult to analyse situations with incomplete or absent preregistration.
-As a consequence, a severe tester must differentiate error control and transparency, the former supported by formal reasoning, and the latter a necessary addition outside of the core philosophy.
+As a consequence, a severe tester must differentiate error control and transparency, the former supported by formal reasoning, and the latter a necessary addition outside of the core philosophy of severity.
+Not so in our Bayesian framework, where transparency maps cleanly onto uncertainty which can be mathematically modeled.
 
 HARKing and Error-Statistical Perspective:
 
