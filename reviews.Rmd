@@ -624,3 +624,48 @@ Daniel Lakens
 :::
 
 We thank Daniel Lakens for the review and for allowing us to share it!
+
+# James Brockmole
+
+
+:::reviewer
+Dear Mr. Peikert:
+
+I have now read Manuscript PBR-TR-23-119 entitled "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization" that you submitted to Psychonomic Bulletin & Review.
+You offer a new perspective on an important issue, and I truly enjoyed reading through your arguments for the role of preregistration in reducing uncertainty about theoretical risk.
+:::
+
+We are thankful for the kind words.
+
+:::reviewer
+That said, this is more of a think piece than a theoretical review, and the value of assessing theoretical risk remains hypothetical.
+I think you would agree that your examples are highly schematic and serve to illustrate the principles that you are proposing as opposed to reporting specific examples of how these principles can improve psychological research.
+Perhaps it would be possible to compare a range of studies with and without preregistrations to show how the act of preregistration helps clarify the reported results even when the preregistration does not report the level of detail required for a truly confirmatory study.
+Given your broad scope, the reviewed studies would ideally come from a variety of research domains.
+In other words, perhaps it is possible to put your ideas through a few test runs to see how they can be applied when all the messy details of specific research endeavors are considered.
+:::
+
+We are sure this would be possible and enlightening, but also way beyond the scope of the current paper.
+Out goal is more modest: we want to provide a bayesian justification of pre-registration that 1. clearly articulates the aims of a preregistration and 2. describes how preregistration achieves these goals.
+As a result, it eliminates common missconceptions about preregistrations, for example, that you are not allowed to deviate under any circumstances.
+To achieve these goals, our examples are purposely schematic, as we want them to apply to all empirical sciences.
+
+:::reviewer
+In my view, theoretical reviews propose a new set of ideas *and* systematically apply the new ideas to existing findings to establish new discoveries or bolster conclusions with more rigorous methods.
+I don’t see the second element here, and I don’t see how getting reviewer comments would change that impression.
+:::
+
+We agree. Empirically establishing our perspective on preregistration as "correct" would be very difficult.
+
+:::reviewer
+ACTION: I am rejecting the manuscript.
+Although a desk reject seems like a very negative outcome, I want to again emphasize that I found your analysis creative and valuable.
+I just don’t think a PBR theoretical review is the appropriate outlet.
+
+Thank you for considering Psychonomic Bulletin & Review for the publication of your research.
+
+Sincerely, Jeff Starns Action Editor, Psychonomic Bulletin & Review
+
+Editor: James Brockmole
+:::
+
