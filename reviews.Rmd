@@ -88,6 +88,9 @@ What makes the arguments "Bayesian" is our interpretation of probabilities.
 For a Bayesian, they represent degrees of belief.
 For a frequentist, they represent (relative) frequencies of events that result from a random process.
 This is a subtle but most important distinction.
+A Bayesian may assign a probability to a hypothetical world where a paper was p hacked, since probabilities represent their subjective believes.
+A frequentist (and hence severe tester), can not possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
+This is similar to the mistake, in frequentist philosophy, to say that an effect is with 95% probability in the confidence interval.
 
 :::reviewer
 Their rationalization is in essence based on the likelihood ratio.
@@ -105,7 +108,6 @@ But the workhorse in the rationalization that the authors provide is the likelih
 This does not change when we put a distribution on the Type 1 error rate (as the authors do).
 :::
 
-Yes, the Bayes formula can be conceptualized as a likelihood ratio scaled by priors.
 However, the mere use of the likelihood ratio in the Bayes theorem can not be grounds to reduce Bayesianism to likelihood ratios.
 
 :::reviewer
@@ -155,7 +157,7 @@ They point out that, assuming people only increase their alpha level when p-hack
 As such, they basically restate Mayo's (2018) argument about the severity of a test.
 :::
 
-Let us cite <https://doi.org/10.3758/s13423-022-02069-1"Nowhere in Mayo’s severity principle or in the specifications discussed below is the riskiness or specificity of a hypothesis, and the predictions it makes, incorporated as a requirement for a severe test (Meehl, 1978; 1986; 1990b, a; Roberts & Pashler, 2000)."
+Let us cite <https://doi.org/10.3758/s13423-022-02069-1> "Nowhere in Mayo’s severity principle or in the specifications discussed below is the riskiness or specificity of a hypothesis, and the predictions it makes, incorporated as a requirement for a severe test (Meehl, 1978; 1986; 1990b, a; Roberts & Pashler, 2000)."
 
 :::reviewer
 However, they never make this explicit, and I think this is to the detriment of the paper.
@@ -279,7 +281,9 @@ If a claim is made with 10% lower Type 1 error rate than it would have been made
 
 Our claim is that uncertainty is reduced, not theoretical risk directly.
 We claim that there are exploratory methods with a well-known error rate.
-For example, a neural network has extreme flexibility in fitting the data closely, yet it is calculable.
+In our argument, the difference between a t-test and a random forest is a matter of degree and not of kind.
+A t-test may maintain its 5%-alpha error and a random forest may find a variable important 30% of the time.
+For both, however, their behavior is mathematically analyzable, yielding a concrete expectation for their theoretical risk.
 
 :::reviewer
 Thus, preregistration in exploratory studies reduces the error rate inflation, but it does not make the error rate known.
@@ -291,7 +295,7 @@ We do not want to reduce the error rate inflation in preregistration - we want t
 Somehow, our argument seems to be flipped here.
 An exploratory study has low theoretical risk.
 A preregistered study has low uncertainty about theoretical risk.
-A preregistered exploratory study is more persuasive than a study with the same exploration going on that is not preregistered.
+A preregistered exploratory study is more persuasive than a study with the same degree of exploration that is not preregistered.
 
 :::reviewer
 If the error rate is not controlled, I do not know how severely a claim has been tested, and I can not use the claim to decide how to act as a scientist.
@@ -464,7 +468,7 @@ This could be, as Meehl would like, a range prediction. Or, in the example of th
 In Lakens, 2019, on page 224, I explain how a two-sided test, one-sided test, and a range prediction all differ in how severe they test the hypothesis, even if they all have the same 5% alpha level ("Note that the three tests differ in severity even when they are tested with the same Type 1 error rate.").
 :::
 
-Yes, indeed, this could all have low theoretical risk.
+Yes, indeed, these could all have low theoretical risk.
 We could include the disclaimer to the examples on p. 13 "Note that the three tests differ in theoretical risk even when they are tested with the same Type 1 error rate."
 
 :::reviewer
@@ -602,7 +606,7 @@ The should better integrate their ideas with existing ideas, especially Mayo's w
 :::
 
 We have discussed Mayo's Severity to show that these approaches fundamentally differ, and we have significantly extended the discussion to include literature that also uses a Bayesian rationale to investigate what methods researchers should employ.
-Additionally, we substantiated the "strawman" further because we believe that the minimizing vs communicating researchers' degrees of freedom confusion is at the centre of many debates around preregistration. 
+Additionally, we substantiated the "strawman" further because we believe that the minimizing vs communicating researchers' degrees of freedom confusion is at the center of many debates around preregistration. 
 
 :::reviewer
 \label{pt:nullhacking}
