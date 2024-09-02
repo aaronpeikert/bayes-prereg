@@ -570,9 +570,10 @@ After all, the hypothesis that it had to happen the way it did happen is irrefut
 In fact, both cases should be problematic to anyone who subscribes to the statistical relevancy condition because if we choose the hypothesis in accordance with the data or vice versa, without restrictions, they are not related anymore (i.e., observing the data does not tell us anything about the hypothesis and the other way around).
 Case 3 is different since here the theoretical risk is not necessarily low but simply uncertain (and perhaps best represented by the dotted line in Figure \ref{fig:posterior}/\ref{fig:other-measures}).
 In case 4, the theoretical risk is neither zero (unless the researcher plans to do run variations of analyses until a favourable outcome is obtained, then we have a particular instance case of 1) nor high (as this is the nature of exploratory approaches).
-However, we can take advantage of computational reproducibility, use statistical properties, simulation or resampling methods, together with scientific reasoning, to get a reasonably certain evaluation of the theoretical risk and hence are in a somewhat favourable position (i.e., close to the solid line in n Figure \ref{fig:posterior}/\ref{fig:other-measures}).
+However, we can take advantage of computational reproducibility, use statistical properties, simulation or resampling methods, together with scientific reasoning, to get a reasonably certain evaluation of the theoretical risk.
+Low uncertainty about high theoretical risk is a somewhat favourable position (i.e., close to the solid line in Figure \ref{fig:posterior}/\ref{fig:other-measures}).
 This favorable position leads us to recommend preregistration of exploratory studies.
-Case 5 shares the neither zero nor high theoretical risk of case 4 but has additional uncertainty about how much exploration was going on (how hard did researcher try to come up with favourable results).
+Case 5 shares the neither zero nor high theoretical risk of case 4 but has additional uncertainty about how much exploration was going on (how hard exactly did the researchers try to come up with favourable results).
 Its low *and uncertain* theoretical risk make it difficult to produce compelling evidence.
 
 # Discussion
