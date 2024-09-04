@@ -122,6 +122,7 @@ knitr::opts_chunk$set(
   echo = FALSE,
   dev = "tikz"
 )
+options(tinytex.clean = FALSE)
 knitr::read_chunk("R/plots.R")
 
 if(!requireNamespace("pacman"))install.packages("pacman")
