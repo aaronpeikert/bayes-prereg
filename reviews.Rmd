@@ -98,7 +98,7 @@ All else equal, a lower Type 1 error rate means that observing a significant res
 Of course a higher likelihood ratio also means a higher Bayes factor, which means a higher probability that H1 is true in a Bayesian framework.
 :::
 
-It is well known that the math for frequentists is similar or even identical to Bayesian under the right conditions.
+Indeed, the math for frequentist inference is identical to Bayesian under the right conditions.
 Still, a frequentist would not conclude anything about the probability of H1.
 However, our goal is to say something about how preregistration changes how believable researchers should find claims made in the literature.
 This necessitates a Bayesian perspective on the process of scientific inquiry (which we adopted) yet it applies to cases of researchers either using frequentist and Bayesian inference in their daily routine.
@@ -150,7 +150,7 @@ Therefore, the authors limit themselves to relative likelihoods.
 
 We did not limit ourselves to relative liklihoods.
 We explicitly include both the "firmness" and "increase in firmness" perspective.
-That a firmness perspective has significant flaws is of no matter to our argument since we intend to show that someone who subscribes to either must be more persuaded by a preregistered study.
+Since we showed that our justification of preregistration holds for both perspectives, the discussion about specific flaws of the firmness perspective does not concern our argument.  
 
 :::reviewer
 They point out that, assuming people only increase their alpha level when p-hacking, preregistration leads to tests with a lower alpha level.
@@ -165,6 +165,26 @@ However, they never make this explicit, and I think this is to the detriment of 
 
 We added a new section that deals with the concept of severity, making it explicit how our approach differs fundamentally.
 
+> Theoretical risk may conceptually be related to the framework of "severity" [@mayoStatisticalInferenceSevere2018; @mayoErrorStatistics2011].
+Severity, is a Neopopperian view which asserts that there is evidence for a hypothesis just to the extent that it survives stringent scrutiny.
+However, there are crucial differences between the two.
+First, our perspective on theoretical risk is not primarily concerned with avoiding inductive reasoning but with subjective changes of belief.
+This is important because, while severity is calculable, it remains unclear how severity should be valued, e.g. if an increase in severity from .80 to .81 should be as impressive as from .99 to .999.
+Second, severity considerations are mainly after the fact.
+Severity, a measure with which we can rule out alternative explanations, can only be calculated after evidence was observed.
+This makes it difficult to guide a priori decisions in planning a study, after all severity disregards power, if we observe evidence, and disregards Type I error rate when we do not.
+This implies that for a priori balancing Type I and Type II error rate, a researcher must assign a priori probabilities to, for example, the size of an effect.
+Since such a move not in line with frequentist rationale there is no guidelines available on how to do this.
+Third, we would argue that severity considerations assume full information about how the evidence came about and hence imply axiomatically the need for perfect preregistration.
+This comes down to frequentist understanding of probability as the outcome of a well defined random experiments.
+When judging a particular study, a frequentist, and hence a severe tester, may not assign probability to the event that the researchers did, for example, p-hack.
+The lack of knowledge on the readers side does not turn the p hacking into a random event of which we can calculate the long run frequency aka frequentist probability.
+A severe test, hence, must assume that they know the Type I and Type II error rate precisely.
+Full transparency, is hence assumed, and we can not imagine many ways except preregistration that get close to this ideal.
+This assumptions also makes it difficult to deal with less than perfect preregistrations and post-hoc changes without appealing to principles outside the core philosophy of severity.
+
+> However, there also are communalities, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
+
 :::reviewer
 The fact that they subsequently add a Bayesian sauce to the likelihood ratio (by adding a distribution to the Type 1 error rate when a study is not preregistered, instead of simply making some assumption about a point-value of the inflated Type 1 error rate) does not add anything to their argument.
 So, I believe the authors have basically attempted to re-invent Mayo's severity argument.
@@ -172,8 +192,8 @@ So, I believe the authors have basically attempted to re-invent Mayo's severity 
 
 The whole second part of the paper deals with the problem of not being able to reduce the theoretical risk to a point estimate.
 The statistical procedure has an objective Type 1 error rate, for which we can come up with a point estimate if we agree on the conditions, which is a starting point for evaluating the theoretical risk of the scientific (!= statistical) procedure.
-Since, a reader does not have access to the whole scientific procedure, they must judge it with uncertainty.
-We find it important to distentengle the statistical procedure, the scientific procedure, and the outside perspective of the reader.
+Since readers do not have access to the whole scientific procedure, they must judge it with uncertainty.
+We find it important to disentangle the statistical procedure, the scientific procedure, and the outside perspective of the reader.
 
 :::reviewer
 The fact that this is not immediately clear is mainly due to missing discussions of the existing literature.
@@ -193,6 +213,7 @@ I hope the authors see how strongly the ideas are related, and forgive me for ci
 :::
 
 Of course, we see the relevance of Laken's work; we met in Eindhoven to discuss an early version of the paper.
+With respect to how well developed our respective arguments are, we would like to point out that we think that a key part of our argument is the mathematical formulation that enables research to actually compute tradeoffs they face during the research process instead of juggling with vague notions of unquantifiable philosophical principles.
 
 :::reviewer
 The authors argue that one interpretation of preregistration is "the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -408,7 +429,6 @@ Indeed, one might even say that we are always balancing Type 1 and Type 2 error 
 In any case, the authors fail to adequately argue why power can be ignored, and the Type 1 error rate is important.
 :::
 
-We can not deliver a treaty on statistical inference as a whole.
 Nowhere have we stated that power can be ignored for statistical inference; we just do not think that power is the main reason why preregistration is a good thing.
 We agree that detectability is important; after all, it shows in every mathematical consideration we made that it is a vital consideration for a Bayesian.
 
@@ -557,7 +577,8 @@ Instead, the authors could cite a better paper, like my own: "The goal of prereg
 I worked quite hard on conceptually clarifying the role of preregistration, correcting exactly the kind of misconception the authors also respond against.
 :::
 
-We appreciate this hard work; we just do not think it is quite done yet.
+We appreciate this hard work.
+Yet we believe that this is not the only useful perspective on the utility of preregistration.
 
 :::reviewer
 The authors write "First, according to most interpretations of null hypothesis testing, the absence of a significant result should not generally be interpreted as evidence against the hypothesis (Mayo, 2018, p. 5.3)."
