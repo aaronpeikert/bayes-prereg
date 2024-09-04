@@ -4,7 +4,7 @@ authors        : "Aaron Peikert, Maximilian S. Ernst & Andreas M. Brandmaier"
 journal        : "Meta-Psychology"
 manuscript-id  : "4139"
 manuscript-src : "headings"
-
+bibliography   : references.bib
 cutout-quotes  : true
 class          : "draft"
 output         : papaja::revision_letter_pdf
@@ -58,6 +58,7 @@ Type I and Type II error rates:
 * Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc, depending on the test results and if the research hypothesis is H1 or H2. 
 
 Terminology and Conceptual Clarity:
+
 * Reviewer Concern: The terminology used, particularly “theoretical risk,” was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
 * Our Response: We provided additional references and explanations to support our terminology. We believe our terms accurately reflect the concepts within our Bayesian framework, but we differentiated our terminology further from frequentist reasoning.
 
@@ -108,7 +109,7 @@ But the workhorse in the rationalization that the authors provide is the likelih
 This does not change when we put a distribution on the Type 1 error rate (as the authors do).
 :::
 
-However, the mere use of the likelihood ratio in the Bayes theorem can not be grounds to reduce Bayesianism to likelihood ratios.
+The mere use of the likelihood ratio in the Bayes theorem can not be grounds to reduce Bayesianism to likelihood ratios.
 
 :::reviewer
 The distribution (or the move to a Bayesian rationalization) does not add anything (although of course it can be added).
