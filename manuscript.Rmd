@@ -45,7 +45,7 @@ keywords: |
 wordcount         : "`r tryCatch(wordcountaddin::word_count(), error = function(x)'~8390')`"
 figsintext: true
 figurelist: false
-tablelist : false
+tablelist: false
 footnotelist: false
 lineno: true
 linkcolor: "blue"
@@ -164,7 +164,7 @@ Second, there is no strict mapping of the categories preregistered vs. non-prere
 Obviously, researchers can conduct confirmatory research without preregistration — though it might be difficult to convince other researchers of the confirmatory nature of their research, that is, that they were free of cognitive biases, made no data-dependent decisions, and so forth.
 The opposite, that is, preregistered but not strictly confirmatory studies, are also becoming more commonplace [@dwanSystematicReviewEmpirical2008; @chanEmpiricalEvidenceSelective2004; @silagyPublishingProtocolsSystematic2002].
 
-This is the result of researchers applying one of two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterward [@lakensWhenHowDeviate2024].
+This is the result of researchers applying one of two strategies to evade the self-imposed restrictions of preregistrations: writing a loose preregistration to begin with [@stefanBigLittleLies2022] or deviating from the preregistration afterward [@lakensDeviate2024].
 The latter is a frequent occurrence and, perhaps more worryingly, often remains undisclosed [@akkerEffectivenessPreregistrationPsychology2023; @claesenComparingDreamReality2021].
 Both strategies may be used for sensible scientific reasons or with the self-serving intent of generating desirable results.
 Thus, insisting on equating preregistration and confirmation has led to the criticism that, all things considered, preregistration is actually harmful and neither sufficient nor necessary for doing good science [@szollosiPreregistrationWorthwhile2020; @phamPreregistrationNeitherSufficient2021].
@@ -601,7 +601,7 @@ Second, severity considerations are mainly after the fact.
 Severity, a measure with which we can rule out alternative explanations, can only be calculated after evidence was observed.
 This makes it difficult to guide a priori decisions in planning a study, after all severity disregards power, if we observe evidence, and disregards Type I error rate when we do not.
 This implies that for a priori balancing Type I and Type II error rate, a researcher must assign a priori probabilities to, for example, the size of an effect.
-Since such a move not in line with frequentist rationale there is no guidelines available on how to do this.
+Since such a move is not in line with frequentist rationale there is no guidelines available on how to do this.
 Third, we would argue that severity considerations assume full information about how the evidence came about and hence imply axiomatically the need for perfect preregistration.
 This comes down to frequentist understanding of probability as the outcome of a well defined random experiments.
 When judging a particular study, a frequentist, and hence a severe tester, may not assign probability to the event that the researchers did, for example, p-hack.
@@ -609,8 +609,13 @@ The lack of knowledge on the readers side does not turn the p hacking into a ran
 A severe test, hence, must assume that they know the Type I and Type II error rate precisely.
 Full transparency, is hence assumed, and we can not imagine many ways except preregistration that get close to this ideal.
 This assumptions also makes it difficult to deal with less than perfect preregistrations and post-hoc changes without appealing to principles outside the core philosophy of severity.
+One such approach is @lakensDeviate2024' introduction of validity as an additional consideration to severity when evaluating deviations from preregistrations.
+Interestingly, in this work he unconventionally defines high severity as high $P(E|H)$ and high $P(\neg{}E|\neg{}H)$, which is closer to definitions of "diagnosticity" [@fiedlerWhatConstitutesStrong2017; @oberauerAddressingTheoryCrisis2019] and falls under the broad class of measures for evaluating evidence we consider here.
+Notably, the original definition of severity does not satisfy the statistical relevancy condition and is not such a measure; @mayoStatisticalInferenceSevere2018, p. 14:
 
-However, there also are communalities, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
+> Severity Principle (strong): We have evidence for a claim C just to the extent it survives a stringent scrutiny. If C passes a test that was highly capable of findings flaws or discrepancies from C, and yet none or few are found, the passing result, x, is evidence for C.
+
+However, there also are communalities between our approach and severity, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
 
 Our latter result, on the importance of preregistration for minimizing uncertainty, has two important implications.
 The first is, that even if all imaginable actions regarding promoting higher theoretical risk are taken, confirmatory research should be preregistered.
