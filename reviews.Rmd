@@ -3,22 +3,25 @@ title          : "Why does preregistration increase the persuasiveness of eviden
 authors        : "Aaron Peikert, Maximilian S. Ernst & Andreas M. Brandmaier"
 journal        : "Meta-Psychology"
 manuscript-id  : "4139"
-manuscript-src : "headings"
-bibliography   : references.bib
 cutout-quotes  : true
 class          : "draft"
 output         : papaja::revision_letter_pdf
+manuscript-src : manuscript.Rmd
 ---
 
 Dear Dr. Rickard Carlsson,
 
 thank you very much for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
 In the following we address your and each reviewers'/editors' concerns point-by-point.
-For Daniel Laken's review we took the liberty to additionally include a high level summary, since we found it, at times, hard to follow the different interwoven discussions.
 
 All changes of the manuscript since this review can be viewed on GitHub:
 
 [https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main](https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main#diff-a9a4aad3fa8c9c10c5404b632bc3a01a25d2d8430eb932bc35c76769963e4b70)
+
+For Daniel Laken's review we took the liberty to additionally include a high level summary, since we found it, at times, hard to follow the different interwoven discussions.
+We took special care to change the manuscript in response to his summary of suggestions (RC \@ref(pt:change-start) to RC \@ref(pt:change-end)).
+
+Due to a technical issue, the citations in the manuscript excerpts in this letter do not work correctly (they are correct in the manuscript, however).
 
 # Daniel Lakens
 
@@ -40,7 +43,7 @@ Objective vs. Subjective Judgement:
 * Our Response: We argued that preregistration reduces uncertainty about theoretical risk, which is inherently a subjective evaluation made by the reader. Bayesian reasoning accommodates the subjectivity in scientific judgment, allowing for rational, individual interpretations of evidence.
 We acknowledged the reviewer’s concerns but maintained that the subjective aspect of Bayesian analysis is a strength, not a weakness.
 
-Control vs Transparency:
+Control vs. Transparency:
 
 * Reviewer Concern: The reviewer agrees that preregistration enhances transparency but believes we overstate its ability to minimize uncertainty, suggesting that error control should be the primary focus.
 * Our response: We contend that error control, as traditionally understood in the frequentist framework, assumes fully known random processes, making it difficult to analyse situations with incomplete or absent preregistration.
@@ -59,7 +62,7 @@ Type I and Type II error rates:
 
 Terminology and Conceptual Clarity:
 
-* Reviewer Concern: The terminology used, particularly “theoretical risk,” was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
+* Reviewer Concern: The terminology used, particularly "theoretical risk," was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
 * Our Response: We provided additional references and explanations to support our terminology. We believe our terms accurately reflect the concepts within our Bayesian framework, but we differentiated our terminology further from frequentist reasoning.
 
 :::reviewer
@@ -599,6 +602,8 @@ Line 425: There are 3 arguments, not 2.
 :::
 
 :::reviewer
+\label{pt:change-start}
+
 \label{pt:harking}
 Conclusion: Again, I appreciate the authors digging in to the justification of preregistration, but I think there are some important things missing in this version of the manuscript.
 How can the article be improved? The authors should address harking.
@@ -631,6 +636,7 @@ We have discussed Mayo's Severity to show that these approaches fundamentally di
 Additionally, we substantiated the "strawman" further because we believe that the minimizing vs communicating researchers' degrees of freedom confusion is at the center of many debates around preregistration. 
 
 :::reviewer
+\label{pt:change-end}
 \label{pt:nullhacking}
 They should also address 'null-hacking'.
 :::
