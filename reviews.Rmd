@@ -93,8 +93,9 @@ For a Bayesian, they represent degrees of belief.
 For a frequentist, they represent (relative) frequencies of events that result from a random process.
 This is a subtle but most important distinction.
 A Bayesian may assign a probability to a hypothetical world where a paper was p hacked, since probabilities represent their subjective believes.
-A frequentist (and hence severe tester), can not possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
-This is similar to the mistake, in frequentist philosophy, to say that an effect is with 95% probability in the confidence interval.
+A frequentist (and thus a severe tester, too), cannot possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
+This is similar to the mistake, in frequentist philosophy, to claim that an effect size found in a given study is with 95% probability inside the confidence interval.
+However, a frequentist can only make a statement about an expected values but not about a single case.
 
 :::reviewer
 Their rationalization is in essence based on the likelihood ratio.
@@ -152,7 +153,7 @@ After p-hacking, we could get a very high likelihood (or Bayes factor) that supp
 Therefore, the authors limit themselves to relative likelihoods.
 :::
 
-We did not limit ourselves to relative liklihoods.
+We did not limit ourselves to relative likelihoods.
 We explicitly include both the "firmness" and "increase in firmness" perspective.
 Since we showed that our justification of preregistration holds for both perspectives, the discussion about specific flaws of the firmness perspective does not concern our argument.  
 
@@ -167,7 +168,7 @@ Let us cite <https://doi.org/10.3758/s13423-022-02069-1> "Nowhere in Mayo’s se
 However, they never make this explicit, and I think this is to the detriment of the paper.
 :::
 
-We added a new section that deals with the concept of severity, making it explicit how our approach differs fundamentally.
+We added a new section that puts the concept of severity into perspective and explicates how our approach differs fundamentally from it:
 
 > Theoretical risk may conceptually be related to the framework of "severity" [@mayoStatisticalInferenceSevere2018; @mayoErrorStatistics2011].
 Severity, is a Neopopperian view which asserts that there is evidence for a hypothesis just to the extent that it survives stringent scrutiny.
