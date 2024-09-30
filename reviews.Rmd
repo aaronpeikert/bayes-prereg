@@ -53,7 +53,7 @@ Not so in our Bayesian framework, where transparency maps cleanly onto uncertain
 HARKing and Error-Statistical Perspective:
 
 * Reviewer Concern: The manuscript lacked a discussion on HARKing, a practice detrimental to the integrity of hypothesis testing, and the error-statistical perspective emphasizing the importance of severe tests.
-* Our Response: We acknowledged this oversight and added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
+* Our Response: We thank the reviewer for raising this issue. We added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
 
 Type I and Type II error rates:
 
