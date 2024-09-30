@@ -355,7 +355,7 @@ This is simply not true.
 No one discusses posterior probabilities of hypotheses in psychological science.
 :::
 
-Neither is severity as an absolute measure of corroboration a common consideration in empirical psychological work.
+Neither is severity -- as an absolute measure of corroboration -- a common consideration in empirical psychological work.
 However, the posterior probability is certainly the most classic measure of absolute confirmation in the philosophy of science.
 
 :::reviewer
@@ -410,7 +410,8 @@ Absolutely. However, note that our H is always the research hypothesis, independ
 If a researcher wants to provide evidence for a null hypothesis, this is their H, theoretical risk, then is related to power.
 We tried to clarify this in our revision:
 
-> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.
+> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling.
+Then, the roles of detectability, theoretical risk and type-I/II error rate switch, yet our line of reasoning stays the same.
 
 We reference the ideas of frequentist null hypothesis testing to provide readers who are more familiar with this line of reasoning with a better intuition, not to claim equivalence.
 
@@ -425,8 +426,7 @@ One could just as well say it is 'common sense' to reduce the Type 1 error rate.
 Furthermore, once again, we do not 'increase' error rates, we *control* them.
 :::
 
-Perhaps, we are a bit daft but a clear definition of error rate control eludes us.
-We are under the impression that two competing definitions are used here from time to time.
+We are under the impression that two inconsistent definitions of *control* of error rates are used by the reviewer.
 First, a definition in which control means the error rates are known (but then known by whom?).
 Second, control means ensuring certain acceptable bounds of error rates are not exceeded.
 
