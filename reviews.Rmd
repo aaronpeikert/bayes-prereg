@@ -460,7 +460,8 @@ The authors use the word 'theoretical risk' for the probability that a test of a
 As the authors exclusively talk about the probability that statistical tests will yield a correct conclusion, 'theoretical risk' feels as a misnomer (statistical risk would be better, but severity might also be a good general term).
 :::
 
-We talk about the scientific procedures, of which a statistical test is a piece.
+Please note that our framework adressess the entire scientific procedure, of which a statistical test is only one piece.
+It would cost our framework its generality if we reduced 'theoretical risk' to only a property of the statistical test (such as severity).
 
 :::reviewer
 True, in page 13 they give an example about theoretical risk that is actually theoretical risk - but this example has nothing to do with the remainder of the paper, as all three studies can have exactly the same alpha level!
@@ -472,6 +473,7 @@ We are unable to follow this argument without more elaboration.
 They are talking about a low frequentist error rate in all their examples, and as 'theoretical risk' is the inverse of the false positive rate, it might be easier to just talk about the Type 1 error rate.
 :::
 
+This concern is conceptually very similar to the second-to-last concern.
 The point of not using a Type 1 error rate is to differentiate the statistical test from the the researcher's scientific judgement.
 Type 1 error rate is a property of a test under certain conditions.
 Theoretical risk refers to the individual judgement of a researcher about the substantive hypothesis and the study design as a whole.
@@ -535,7 +537,7 @@ Minor points: The authors say "We note these relations to underline that the Bay
 
 No, we relate our work to beliefs we think are commonly held.
 Researchers find the idea of a risky test appealing.
-Popper gives one explanation for this appeal, but we happen to have a different view.
+Popper gives one explanation for this appeal, but we happen to adopt a different philosophical view here.
 
 :::reviewer
 However, this is misleading.
@@ -545,7 +547,7 @@ It must not be interpreted, therefore, as a degree of the rationality of our bel
 The author's proposal violates the philosophical work of Popper at it's very core, and is incommensurable.
 :::
 
-As stated above, if Popper would happen to agree, we indeed would have to rethink our arguments.
+As stated above, if Popper happened to agree, we indeed would have to rethink our arguments.
 
 :::reviewer
 Just because the authors also need to rely on the likelihood ratio, does not mean it 'reconstructs' Popperian philosophy of science.
@@ -584,7 +586,7 @@ Instead, the authors could cite a better paper, like my own: "The goal of prereg
 I worked quite hard on conceptually clarifying the role of preregistration, correcting exactly the kind of misconception the authors also respond against.
 :::
 
-We appreciate this hard work.
+We appreciate this important work.
 Yet we believe that this is not the only useful perspective on the utility of preregistration.
 
 :::reviewer
@@ -627,8 +629,8 @@ They should improve terminology.
 :::
 
 We take the criticism of the terminology seriously.
-Although we have opted to stick with most of the terms as we defined them, we provided more references.
-It might also be the case that the differences in philosophical traditions lead to some criticism.
+We have opted to stick with most of the terms as we defined them initially, as we did with good reasons, we now back them up with additional references.
+
 
 :::reviewer
 \label{pt:severity}
