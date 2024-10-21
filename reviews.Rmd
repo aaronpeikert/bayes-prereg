@@ -331,7 +331,7 @@ The authors seem happy with the fact that preregistration reduces the Type 1 err
 No. 
 As we argue in our manuscript, we are happy when uncertainty about theoretical risk is low.
 A typical exploratory study is in our framework characterized by low theoretical risk (high Type 1 error rate).
-Reducing uncertainty about its theoretical risk is still useful for scientific progress, in order for us to be better able to judge its theoretical risk (for example, the theoretical risk may low but higher than another exploratory study).
+Reducing uncertainty about its theoretical risk is still useful for scientific progress, in order to be better able to judge its theoretical risk.
 
 :::reviewer
 But I am not. Only claims with a known error rate are useful in science.
