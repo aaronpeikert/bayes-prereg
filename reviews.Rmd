@@ -488,13 +488,24 @@ The authors cite Kukla (1990), but after reading it, I am not convinced they are
 Theoretical risk means making an a-priori unlikely prediction if the theory was not true.
 :::
 
-This sentence sounds exactly like P(¬E|¬H) to us.
-The judgement about P(¬E|¬H) is a-priori, is about "prediction" as a statement about evidence E, given that the theory is not true (¬H).
-One might argue, that it should be multiplied by ¬H perhaps? 
+This sentence sounds exactly like $P(\neg{}E|\neg{}H)$ to us.
+The judgement about $P(\neg{}E|\neg{}H)$ is a-priori, is about "prediction" as a statement about evidence E, given that the theory is not true ($\neg{}H$).
+One might argue, that it should be multiplied by $\neg{}$ perhaps? 
 But that would not change any of the arguments.
 In any case, we provide clear mathematical definitions for our terms.
 If a reader does not agree with our terminology, they are free to term them differently.
 In fact, this happens in reference to a finding we found in the meantime (Oberauer and Lewandowsky (2019)), which we added to the discussion.
+
+> Whatever the difference in evaluating preregistration as a tool, maybe conceptually more profound is that @oberauerAddressingTheoryCrisis2019 conceptualizes "discovery-oriented research" differently than we do "exploratory".
+They assume the same theoretical risk ($P(\neg E| \neg H) = .05$) and detectability ($P(E| H)) = .8$) in their calculation example as we do but assign different prior probabilities, namely $.06$ for discovery versus $.6$ for theory testing.
+Then, they conclude that discovery-oriented researcher requires a much lower type-I error rate to control false positive in light of the low prior probability.
+This runs counter to our definition of exploratory research having low theoretical risk.
+Of course, we agree that low priors require more persuasive evidence; our disagreement, therefore, lies mainly in terminology.
+They imagine discovery-oriented researchers to conduct experiments where they have low expectations that they obtain positive evidence ($.06 \cdot .8 + .94 \cdot .05 = 0.095$), but if they do, it raises the posterior significantly (from $.06$ to $.51$)
+In our view, researchers who set out to explore a data set often find "something" (due to low $P(\neg E| \neg H)$); therefore, it should only slightly raise your posterior if they do.
+On a substantive matter, we believe both kinds of research are common in psychology.
+It is, therefore, mostly a disagreement on terminology.
+This disagreement only highlights why using a mathematical framework to investigate such things is so useful and ultimately indispensable because we can clearly see where and how we differ in our reasoning.
 
 :::reviewer
 This could be, as Meehl would like, a range prediction. Or, in the example of the authors on page 13, it is a test without confounds.
