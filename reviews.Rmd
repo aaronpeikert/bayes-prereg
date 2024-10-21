@@ -7,7 +7,6 @@ cutout-quotes  : true
 class          : "draft"
 output         : papaja::revision_letter_pdf
 manuscript-src : manuscript.Rmd
-bibliography   : references.bib
 ---
 
 Dear Dr. Rickard Carlsson,
