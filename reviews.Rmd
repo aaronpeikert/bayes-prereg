@@ -19,7 +19,7 @@ All changes of the manuscript since this review can be viewed on GitHub:
 [https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main](https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main#diff-a9a4aad3fa8c9c10c5404b632bc3a01a25d2d8430eb932bc35c76769963e4b70)
 
 Concerning Daniel Laken's review, we took the liberty to provide a high level summary of his main points because they are repeated across different subdiscussions throughout his letter.
-We took special care to change the manuscript in response to his summary of suggestions (RC \@ref(pt:change-start) to RC \@ref(pt:change-end)).
+We are grateful for his comments and revised the manuscript in response to his summary of suggestions (RC \@ref(pt:change-start) to RC \@ref(pt:change-end)).
 
 Due to a technical issue, the citations in the manuscript excerpts in this letter do not work correctly (they are correct in the manuscript, however).
 
