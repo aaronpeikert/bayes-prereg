@@ -7,6 +7,7 @@ cutout-quotes  : true
 class          : "draft"
 output         : papaja::revision_letter_pdf
 manuscript-src : manuscript.Rmd
+bibliography   : references.bib
 ---
 
 Dear Dr. Rickard Carlsson,
@@ -682,7 +683,7 @@ In other words, perhaps it is possible to put your ideas through a few test runs
 :::
 
 We are sure this would be possible and enlightening, but also way beyond the scope of the current paper.
-Out goal is more modest: we want to provide a bayesian justification of pre-registration that 1. clearly articulates the aims of a preregistration and 2. describes how preregistration achieves these goals.
+Out goal is more modest: we want to provide a Bayesian justification of pre-registration that 1. clearly articulates the aims of a preregistration and 2. describes how preregistration achieves these goals.
 As a result, it eliminates common missconceptions about preregistrations, for example, that you are not allowed to deviate under any circumstances.
 To achieve these goals, our examples are purposely schematic, as we want them to apply to all empirical sciences.
 
@@ -705,3 +706,4 @@ Sincerely, Jeff Starns Action Editor, Psychonomic Bulletin & Review
 Editor: James Brockmole
 :::
 
+# References
