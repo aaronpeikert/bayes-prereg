@@ -3,26 +3,33 @@ title          : "Why does preregistration increase the persuasiveness of eviden
 authors        : "Aaron Peikert, Maximilian S. Ernst & Andreas M. Brandmaier"
 journal        : "Meta-Psychology"
 manuscript-id  : "4139"
-manuscript-src : "headings"
-
 cutout-quotes  : true
 class          : "draft"
 output         : papaja::revision_letter_pdf
+manuscript-src : manuscript.Rmd
+bibliography   : references.bib
 ---
 
 Dear Dr. Rickard Carlsson,
 
 thank you very much for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
 In the following we address your and each reviewers'/editors' concerns point-by-point.
-For Daniel Laken's review we took the liberty to additionally include a high level summary, since we found it, at times, hard to follow the different interwoven discussions.
 
 All changes of the manuscript since this review can be viewed on GitHub:
 
 [https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main](https://github.com/aaronpeikert/bayes-prereg/compare/v0.2.0...main#diff-a9a4aad3fa8c9c10c5404b632bc3a01a25d2d8430eb932bc35c76769963e4b70)
 
-# Daniel Lakens
+Concerning Daniel Laken's review, we took the liberty to provide a high level summary of his main points because they are repeated across different subdiscussions throughout his letter.
+We are grateful for his comments and revised the manuscript in response to his summary of suggestions (RC \@ref(pt:change-start) to RC \@ref(pt:change-end)).
 
-Lakens and our own positions on preregistration built upon two long standing traditions in philosophy of science, namely inductionist and anti-inductionist, that differ fundamentally in their core assumptions.
+Due to a technical issue, the citations in the manuscript excerpts in this letter do not work correctly (they are correct in the manuscript, however).
+
+# Reviewer 1: Daniel Lakens
+We begin with a summarizing our understanding of Daniel Lakens philosophical position, his main points of criticisim and our general take on how to address these issues.
+Thereafter, we will provide point-by-point responses in the usual style of response letters.
+Lakens and our own positions on preregistration fundamentally differ.
+They each build upon two long standing traditions in philosophy of science, namely _inductionist_ and _anti-inductionist_, which differ in their core epistemological assumptions.
+We believe that a lot of seemingly critical points raised by Daniel Lakens can simply be traced back to differences in these philosophical stances and thus cannot be resolved in the various sub points he raised. 
 
 Integration with Existing Literature:
 
@@ -40,24 +47,26 @@ Objective vs. Subjective Judgement:
 * Our Response: We argued that preregistration reduces uncertainty about theoretical risk, which is inherently a subjective evaluation made by the reader. Bayesian reasoning accommodates the subjectivity in scientific judgment, allowing for rational, individual interpretations of evidence.
 We acknowledged the reviewer’s concerns but maintained that the subjective aspect of Bayesian analysis is a strength, not a weakness.
 
-Control vs Transparency:
+Control vs. Transparency:
 
 * Reviewer Concern: The reviewer agrees that preregistration enhances transparency but believes we overstate its ability to minimize uncertainty, suggesting that error control should be the primary focus.
 * Our response: We contend that error control, as traditionally understood in the frequentist framework, assumes fully known random processes, making it difficult to analyse situations with incomplete or absent preregistration.
-As a consequence, a severe tester must differentiate error control and transparency, the former supported by formal reasoning, and the latter a necessary addition outside of the core philosophy.
+As a consequence, a severe tester must differentiate error control and transparency, the former supported by formal reasoning, and the latter a necessary addition outside of the core philosophy of severity.
+Not so in our Bayesian framework, where transparency maps cleanly onto uncertainty which can be mathematically modeled.
 
 HARKing and Error-Statistical Perspective:
 
 * Reviewer Concern: The manuscript lacked a discussion on HARKing, a practice detrimental to the integrity of hypothesis testing, and the error-statistical perspective emphasizing the importance of severe tests.
-* Our Response: We acknowledged this oversight and added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
+* Our Response: We thank the reviewer for raising this issue. We added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
 
 Type I and Type II error rates:
 
 * Reviewer Concern: The manuscript was perceived as downplaying the importance of statistical power (P(E|H)) in favor of focusing on Type 1 error rates.
-* Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc, depending on the test results and if the research hypothesis is H1 or H2. 
+* Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc (i.e., after a test result was obtained from data) depending on the test results and if the research hypothesis is H0 or H1. 
 
 Terminology and Conceptual Clarity:
-* Reviewer Concern: The terminology used, particularly “theoretical risk,” was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
+
+* Reviewer Concern: The terminology used, particularly "theoretical risk," was seen as potentially confusing and misaligned with existing literature, such as the concept of severity.
 * Our Response: We provided additional references and explanations to support our terminology. We believe our terms accurately reflect the concepts within our Bayesian framework, but we differentiated our terminology further from frequentist reasoning.
 
 :::reviewer
@@ -73,7 +82,7 @@ So I applaud the authors for believing this is important.
 At the same time, their arguments were, I believe, not always equally convincing, and they do not adequately discuss the existing literature.
 :::
 
-We thank the reviewer for pointing out that we failed to include opposing philosophical perspectives.
+We thank the reviewer for pointing out that we failed to better acknowledge opposing philosophical perspectives.
 We are now citing Laken's and Mayo's positions and relate them to our perspective.
 
 :::reviewer
@@ -87,6 +96,10 @@ What makes the arguments "Bayesian" is our interpretation of probabilities.
 For a Bayesian, they represent degrees of belief.
 For a frequentist, they represent (relative) frequencies of events that result from a random process.
 This is a subtle but most important distinction.
+A Bayesian may assign a probability to a hypothetical world where a paper was p hacked, since probabilities represent their subjective believes.
+A frequentist (and thus a severe tester, too), cannot possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
+This is similar to the mistake, in frequentist philosophy, to claim that an effect size found in a given study is with 95% probability inside the confidence interval.
+However, a frequentist can only make a statement about an expected values but not about a single case.
 
 :::reviewer
 Their rationalization is in essence based on the likelihood ratio.
@@ -94,7 +107,7 @@ All else equal, a lower Type 1 error rate means that observing a significant res
 Of course a higher likelihood ratio also means a higher Bayes factor, which means a higher probability that H1 is true in a Bayesian framework.
 :::
 
-It is well known that the math for frequentists is similar or even identical to Bayesian under the right conditions.
+Indeed, the math for frequentist inference is identical to Bayesian under the right conditions.
 Still, a frequentist would not conclude anything about the probability of H1.
 However, our goal is to say something about how preregistration changes how believable researchers should find claims made in the literature.
 This necessitates a Bayesian perspective on the process of scientific inquiry (which we adopted) yet it applies to cases of researchers either using frequentist and Bayesian inference in their daily routine.
@@ -104,8 +117,7 @@ But the workhorse in the rationalization that the authors provide is the likelih
 This does not change when we put a distribution on the Type 1 error rate (as the authors do).
 :::
 
-Yes, the Bayes formula can be conceptualized as a likelihood ratio scaled by priors.
-However, the mere use of the likelihood ratio in the Bayes theorem can not be grounds to reduce Bayesianism to likelihood ratios.
+The mere use of the likelihood ratio in the Bayes theorem can not be grounds to reduce Bayesianism to likelihood ratios.
 
 :::reviewer
 The distribution (or the move to a Bayesian rationalization) does not add anything (although of course it can be added).
@@ -145,22 +157,42 @@ After p-hacking, we could get a very high likelihood (or Bayes factor) that supp
 Therefore, the authors limit themselves to relative likelihoods.
 :::
 
-We did not limit ourselves to relative liklihoods.
+We did not limit ourselves to relative likelihoods.
 We explicitly include both the "firmness" and "increase in firmness" perspective.
-That a firmness perspective has significant flaws is of no matter to our argument since we intend to show that someone who subscribes to either must be more persuaded by a preregistered study.
+Since we showed that our justification of preregistration holds for both perspectives, the discussion about specific flaws of the firmness perspective does not concern our argument.  
 
 :::reviewer
 They point out that, assuming people only increase their alpha level when p-hacking, preregistration leads to tests with a lower alpha level.
 As such, they basically restate Mayo's (2018) argument about the severity of a test.
 :::
 
-Let us cite <https://doi.org/10.3758/s13423-022-02069-1"Nowhere in Mayo’s severity principle or in the specifications discussed below is the riskiness or specificity of a hypothesis, and the predictions it makes, incorporated as a requirement for a severe test (Meehl, 1978; 1986; 1990b, a; Roberts & Pashler, 2000)."
+Let us cite <https://doi.org/10.3758/s13423-022-02069-1> "Nowhere in Mayo’s severity principle or in the specifications discussed below is the riskiness or specificity of a hypothesis, and the predictions it makes, incorporated as a requirement for a severe test (Meehl, 1978; 1986; 1990b, a; Roberts & Pashler, 2000)."
 
 :::reviewer
 However, they never make this explicit, and I think this is to the detriment of the paper.
 :::
 
-We added a new section that deals with the concept of severity, making it explicit how our approach differs fundamentally.
+We added a new section that puts the concept of severity into perspective and explicates how our approach differs fundamentally from it:
+
+> Theoretical risk may conceptually be related to the framework of "severity" [@mayoStatisticalInferenceSevere2018; @mayoErrorStatistics2011].
+Severity, is a Neopopperian view which asserts that there is evidence for a hypothesis just to the extent that it survives stringent scrutiny.
+However, there are crucial differences between the two.
+First, our perspective on theoretical risk is not primarily concerned with avoiding inductive reasoning but with subjective changes of belief.
+This is important because, while severity is calculable, it remains unclear how severity should be valued, e.g. if an increase in severity from .80 to .81 should be as impressive as from .99 to .999.
+Second, severity considerations are mainly after the fact.
+Severity, a measure with which we can rule out alternative explanations, can only be calculated after evidence was observed.
+This makes it difficult to guide a priori decisions in planning a study, after all severity disregards power, if we observe evidence, and disregards Type I error rate when we do not.
+This implies that for a priori balancing Type I and Type II error rate, a researcher must assign a priori probabilities to, for example, the size of an effect.
+Since such a move not in line with frequentist rationale there is no guidelines available on how to do this.
+Third, we would argue that severity considerations assume full information about how the evidence came about and hence imply axiomatically the need for perfect preregistration.
+This comes down to frequentist understanding of probability as the outcome of a well defined random experiment.
+When judging a particular study, a frequentist, and hence a severe tester, may not assign probability to the event that the researchers did, for example, p-hack.
+The lack of knowledge on the readers side does not turn the p hacking into a random event of which we can calculate the long run frequency aka frequentist probability.
+A severe test, hence, must assume that they know the Type I and Type II error rate precisely.
+Full transparency, is hence assumed, and we can not imagine many ways except preregistration that get close to this ideal.
+This assumptions also makes it hard to deal with less-than-perfect preregistrations and post-hoc changes without relying to principles outside the core philosophy of severity.
+
+> However, there also are communalities, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
 
 :::reviewer
 The fact that they subsequently add a Bayesian sauce to the likelihood ratio (by adding a distribution to the Type 1 error rate when a study is not preregistered, instead of simply making some assumption about a point-value of the inflated Type 1 error rate) does not add anything to their argument.
@@ -169,8 +201,8 @@ So, I believe the authors have basically attempted to re-invent Mayo's severity 
 
 The whole second part of the paper deals with the problem of not being able to reduce the theoretical risk to a point estimate.
 The statistical procedure has an objective Type 1 error rate, for which we can come up with a point estimate if we agree on the conditions, which is a starting point for evaluating the theoretical risk of the scientific (!= statistical) procedure.
-Since, a reader does not have access to the whole scientific procedure, they must judge it with uncertainty.
-We find it important to distentengle the statistical procedure, the scientific procedure, and the outside perspective of the reader.
+Since readers do not have access to the whole scientific procedure, they must judge it with uncertainty.
+We find it important to disentangle the statistical procedure, the scientific procedure, and the outside perspective of the reader.
 
 :::reviewer
 The fact that this is not immediately clear is mainly due to missing discussions of the existing literature.
@@ -180,7 +212,7 @@ I think this argument is in the right direction, but it is not fully developed.
 I was somewhat disappointed not to see a discussion of my own paper on a conceptual analysis of the value of preregistration, as I had a similar goal as the authors when I wrote my paper, and my arguments are in the same direction, but dare I say, slightly better developed.
 :::
 
-We find ourselves in a curios position, that perhaps may be summarised as "doing the right thing, for the wrong reasons", i.e., we agree with Laken's conclusions about preregistration but we disagree how to come to these conclusions.
+Importantly, we agree with Laken's conclusions about preregistration but we fundamentally disagree with how to arrive at these conclusions.
 We take a Bayesian/inductionist view, whereas Lakens takes a frequentist/anti-inductionist view, agreeing on the end result but disagreeing on everything that comes before.
 While we find it important that readers are aware, how anti-inductionist deal with preregistration, this paper was not meant as an exercise to compare Bayesian justification for preregistration with its frequentist counterpart.
 
@@ -190,6 +222,7 @@ I hope the authors see how strongly the ideas are related, and forgive me for ci
 :::
 
 Of course, we see the relevance of Laken's work; we met in Eindhoven to discuss an early version of the paper.
+With respect to how well developed our respective arguments are, we would like to point out that we think that a key part of our argument is the mathematical formulation that enables research to actually compute tradeoffs they face during the research process instead of juggling with vague notions of unquantifiable philosophical principles.
 
 :::reviewer
 The authors argue that one interpretation of preregistration is "the traditional application of preregistration to research paradigms that focus on confirmation by maximizing the theoretical risk or, equivalently, by limiting type-I error (when dichotomous decisions about theories are an inferential goal).
@@ -278,7 +311,9 @@ If a claim is made with 10% lower Type 1 error rate than it would have been made
 
 Our claim is that uncertainty is reduced, not theoretical risk directly.
 We claim that there are exploratory methods with a well-known error rate.
-For example, a neural network has extreme flexibility in fitting the data closely, yet it is calculable.
+In our argument, the difference between a t-test and a random forest is a matter of degree and not of kind.
+A t-test may maintain its 5%-alpha error and a random forest may find a variable important 30% of the time.
+For both, however, their behavior is mathematically analyzable, yielding a concrete expectation for their theoretical risk.
 
 :::reviewer
 Thus, preregistration in exploratory studies reduces the error rate inflation, but it does not make the error rate known.
@@ -290,15 +325,17 @@ We do not want to reduce the error rate inflation in preregistration - we want t
 Somehow, our argument seems to be flipped here.
 An exploratory study has low theoretical risk.
 A preregistered study has low uncertainty about theoretical risk.
-A preregistered exploratory study is more persuasive than a study with the same exploration going on that is not preregistered.
+A preregistered exploratory study is more persuasive than a study with the same degree of exploration that is not preregistered.
 
 :::reviewer
 If the error rate is not controlled, I do not know how severely a claim has been tested, and I can not use the claim to decide how to act as a scientist.
 The authors seem happy with the fact that preregistration reduces the Type 1 error rate even in an exploratory study.
 :::
 
-No, we are happy with low uncertainty about theoretical risk.
-An exploratory study is in our framework, signified by low theoretical risk (high Type 1 error rate).
+No. 
+As we argue in our manuscript, we are happy when uncertainty about theoretical risk is low.
+A typical exploratory study is in our framework characterized by low theoretical risk (high Type 1 error rate).
+Reducing uncertainty about its theoretical risk is still useful for scientific progress, in order to be better able to judge its theoretical risk.
 
 :::reviewer
 But I am not. Only claims with a known error rate are useful in science.
@@ -322,7 +359,7 @@ This is simply not true.
 No one discusses posterior probabilities of hypotheses in psychological science.
 :::
 
-Neither is severity as an absolute measure of corroboration a common consideration in empirical psychological work.
+Neither is severity -- as an absolute measure of corroboration -- a common consideration in empirical psychological work.
 However, the posterior probability is certainly the most classic measure of absolute confirmation in the philosophy of science.
 
 :::reviewer
@@ -377,7 +414,8 @@ Absolutely. However, note that our H is always the research hypothesis, independ
 If a researcher wants to provide evidence for a null hypothesis, this is their H, theoretical risk, then is related to power.
 We tried to clarify this in our revision:
 
-> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.
+> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling.
+Then, the roles of detectability, theoretical risk and type-I/II error rate switch, yet our line of reasoning stays the same.
 
 We reference the ideas of frequentist null hypothesis testing to provide readers who are more familiar with this line of reasoning with a better intuition, not to claim equivalence.
 
@@ -392,8 +430,7 @@ One could just as well say it is 'common sense' to reduce the Type 1 error rate.
 Furthermore, once again, we do not 'increase' error rates, we *control* them.
 :::
 
-Perhaps, we are a bit daft but a clear definition of error rate control eludes us.
-We are under the impression that two competing definitions are used here from time to time.
+We are under the impression that two inconsistent definitions of *control* of error rates are used by the reviewer.
 First, a definition in which control means the error rates are known (but then known by whom?).
 Second, control means ensuring certain acceptable bounds of error rates are not exceeded.
 
@@ -403,7 +440,6 @@ Indeed, one might even say that we are always balancing Type 1 and Type 2 error 
 In any case, the authors fail to adequately argue why power can be ignored, and the Type 1 error rate is important.
 :::
 
-We can not deliver a treaty on statistical inference as a whole.
 Nowhere have we stated that power can be ignored for statistical inference; we just do not think that power is the main reason why preregistration is a good thing.
 We agree that detectability is important; after all, it shows in every mathematical consideration we made that it is a vital consideration for a Bayesian.
 
@@ -428,7 +464,8 @@ The authors use the word 'theoretical risk' for the probability that a test of a
 As the authors exclusively talk about the probability that statistical tests will yield a correct conclusion, 'theoretical risk' feels as a misnomer (statistical risk would be better, but severity might also be a good general term).
 :::
 
-We talk about the scientific procedures, of which a statistical test is a piece.
+Please note that our framework adressess the entire scientific procedure, of which a statistical test is only one piece.
+It would cost our framework its generality if we reduced 'theoretical risk' to only a property of the statistical test (such as severity).
 
 :::reviewer
 True, in page 13 they give an example about theoretical risk that is actually theoretical risk - but this example has nothing to do with the remainder of the paper, as all three studies can have exactly the same alpha level!
@@ -440,6 +477,7 @@ We are unable to follow this argument without more elaboration.
 They are talking about a low frequentist error rate in all their examples, and as 'theoretical risk' is the inverse of the false positive rate, it might be easier to just talk about the Type 1 error rate.
 :::
 
+This concern is conceptually very similar to the second-to-last concern.
 The point of not using a Type 1 error rate is to differentiate the statistical test from the the researcher's scientific judgement.
 Type 1 error rate is a property of a test under certain conditions.
 Theoretical risk refers to the individual judgement of a researcher about the substantive hypothesis and the study design as a whole.
@@ -463,7 +501,7 @@ This could be, as Meehl would like, a range prediction. Or, in the example of th
 In Lakens, 2019, on page 224, I explain how a two-sided test, one-sided test, and a range prediction all differ in how severe they test the hypothesis, even if they all have the same 5% alpha level ("Note that the three tests differ in severity even when they are tested with the same Type 1 error rate.").
 :::
 
-Yes, indeed, this could all have low theoretical risk.
+Yes, indeed, these could all have low theoretical risk.
 We could include the disclaimer to the examples on p. 13 "Note that the three tests differ in theoretical risk even when they are tested with the same Type 1 error rate."
 
 :::reviewer
@@ -503,7 +541,7 @@ Minor points: The authors say "We note these relations to underline that the Bay
 
 No, we relate our work to beliefs we think are commonly held.
 Researchers find the idea of a risky test appealing.
-Popper gives one explanation for this appeal, but we happen to have a different view.
+Popper gives one explanation for this appeal, but we happen to adopt a different philosophical view here.
 
 :::reviewer
 However, this is misleading.
@@ -513,7 +551,7 @@ It must not be interpreted, therefore, as a degree of the rationality of our bel
 The author's proposal violates the philosophical work of Popper at it's very core, and is incommensurable.
 :::
 
-As stated above, if Popper would happen to agree, we indeed would have to rethink our arguments.
+As stated above, if Popper happened to agree, we indeed would have to rethink our arguments.
 
 :::reviewer
 Just because the authors also need to rely on the likelihood ratio, does not mean it 'reconstructs' Popperian philosophy of science.
@@ -552,7 +590,8 @@ Instead, the authors could cite a better paper, like my own: "The goal of prereg
 I worked quite hard on conceptually clarifying the role of preregistration, correcting exactly the kind of misconception the authors also respond against.
 :::
 
-We appreciate this hard work; we just do not think it is quite done yet.
+We appreciate this important work.
+Yet we believe that this is not the only useful perspective on the utility of preregistration.
 
 :::reviewer
 The authors write "First, according to most interpretations of null hypothesis testing, the absence of a significant result should not generally be interpreted as evidence against the hypothesis (Mayo, 2018, p. 5.3)."
@@ -572,6 +611,8 @@ Line 425: There are 3 arguments, not 2.
 :::
 
 :::reviewer
+\label{pt:change-start}
+
 \label{pt:harking}
 Conclusion: Again, I appreciate the authors digging in to the justification of preregistration, but I think there are some important things missing in this version of the manuscript.
 How can the article be improved? The authors should address harking.
@@ -592,8 +633,8 @@ They should improve terminology.
 :::
 
 We take the criticism of the terminology seriously.
-Although we have opted to stick with most of the terms as we defined them, we provided more references.
-It might also be the case that the differences in philosophical traditions lead to some criticism.
+We have opted to stick with most of the terms as we defined them initially, as we did with good reasons, we now back them up with additional references.
+
 
 :::reviewer
 \label{pt:severity}
@@ -601,9 +642,10 @@ The should better integrate their ideas with existing ideas, especially Mayo's w
 :::
 
 We have discussed Mayo's Severity to show that these approaches fundamentally differ, and we have significantly extended the discussion to include literature that also uses a Bayesian rationale to investigate what methods researchers should employ.
-Additionally, we substantiated the "strawman" further because we believe that the minimizing vs communicating researchers' degrees of freedom confusion is at the centre of many debates around preregistration. 
+Additionally, we substantiated the "strawman" further because we believe that the minimizing vs communicating researchers' degrees of freedom confusion is at the center of many debates around preregistration. 
 
 :::reviewer
+\label{pt:change-end}
 \label{pt:nullhacking}
 They should also address 'null-hacking'.
 :::
@@ -619,3 +661,49 @@ Daniel Lakens
 :::
 
 We thank Daniel Lakens for the review and for allowing us to share it!
+
+# James Brockmole
+
+
+:::reviewer
+Dear Mr. Peikert:
+
+I have now read Manuscript PBR-TR-23-119 entitled "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization" that you submitted to Psychonomic Bulletin & Review.
+You offer a new perspective on an important issue, and I truly enjoyed reading through your arguments for the role of preregistration in reducing uncertainty about theoretical risk.
+:::
+
+We are thankful for the kind words.
+
+:::reviewer
+That said, this is more of a think piece than a theoretical review, and the value of assessing theoretical risk remains hypothetical.
+I think you would agree that your examples are highly schematic and serve to illustrate the principles that you are proposing as opposed to reporting specific examples of how these principles can improve psychological research.
+Perhaps it would be possible to compare a range of studies with and without preregistrations to show how the act of preregistration helps clarify the reported results even when the preregistration does not report the level of detail required for a truly confirmatory study.
+Given your broad scope, the reviewed studies would ideally come from a variety of research domains.
+In other words, perhaps it is possible to put your ideas through a few test runs to see how they can be applied when all the messy details of specific research endeavors are considered.
+:::
+
+We are sure this would be possible and enlightening, but also way beyond the scope of the current paper.
+Out goal is more modest: we want to provide a Bayesian justification of pre-registration that 1. clearly articulates the aims of a preregistration and 2. describes how preregistration achieves these goals.
+As a result, it eliminates common missconceptions about preregistrations, for example, that you are not allowed to deviate under any circumstances.
+To achieve these goals, our examples are purposely schematic, as we want them to apply to all empirical sciences.
+
+:::reviewer
+In my view, theoretical reviews propose a new set of ideas *and* systematically apply the new ideas to existing findings to establish new discoveries or bolster conclusions with more rigorous methods.
+I don’t see the second element here, and I don’t see how getting reviewer comments would change that impression.
+:::
+
+We agree. Empirically establishing our perspective on preregistration as "correct" would be very difficult.
+
+:::reviewer
+ACTION: I am rejecting the manuscript.
+Although a desk reject seems like a very negative outcome, I want to again emphasize that I found your analysis creative and valuable.
+I just don’t think a PBR theoretical review is the appropriate outlet.
+
+Thank you for considering Psychonomic Bulletin & Review for the publication of your research.
+
+Sincerely, Jeff Starns Action Editor, Psychonomic Bulletin & Review
+
+Editor: James Brockmole
+:::
+
+# References
