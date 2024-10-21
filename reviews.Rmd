@@ -53,7 +53,7 @@ Not so in our Bayesian framework, where transparency maps cleanly onto uncertain
 HARKing and Error-Statistical Perspective:
 
 * Reviewer Concern: The manuscript lacked a discussion on HARKing, a practice detrimental to the integrity of hypothesis testing, and the error-statistical perspective emphasizing the importance of severe tests.
-* Our Response: We acknowledged this oversight and added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
+* Our Response: We thank the reviewer for raising this issue. We added a dedicated section titled “Hacking, harking, and other harms” to address how our Bayesian framework addresses these concerns.
 
 Type I and Type II error rates:
 
@@ -78,7 +78,7 @@ So I applaud the authors for believing this is important.
 At the same time, their arguments were, I believe, not always equally convincing, and they do not adequately discuss the existing literature.
 :::
 
-We thank the reviewer for pointing out that we failed to include opposing philosophical perspectives.
+We thank the reviewer for pointing out that we failed to better acknowledge opposing philosophical perspectives.
 We are now citing Laken's and Mayo's positions and relate them to our perspective.
 
 :::reviewer
@@ -93,8 +93,9 @@ For a Bayesian, they represent degrees of belief.
 For a frequentist, they represent (relative) frequencies of events that result from a random process.
 This is a subtle but most important distinction.
 A Bayesian may assign a probability to a hypothetical world where a paper was p hacked, since probabilities represent their subjective believes.
-A frequentist (and hence severe tester), can not possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
-This is similar to the mistake, in frequentist philosophy, to say that an effect is with 95% probability in the confidence interval.
+A frequentist (and thus a severe tester, too), cannot possibly assign a probability here because there is no random process but a single event that happened in the past, so the paper was either p hacked or not.
+This is similar to the mistake, in frequentist philosophy, to claim that an effect size found in a given study is with 95% probability inside the confidence interval.
+However, a frequentist can only make a statement about an expected values but not about a single case.
 
 :::reviewer
 Their rationalization is in essence based on the likelihood ratio.
@@ -152,7 +153,7 @@ After p-hacking, we could get a very high likelihood (or Bayes factor) that supp
 Therefore, the authors limit themselves to relative likelihoods.
 :::
 
-We did not limit ourselves to relative liklihoods.
+We did not limit ourselves to relative likelihoods.
 We explicitly include both the "firmness" and "increase in firmness" perspective.
 Since we showed that our justification of preregistration holds for both perspectives, the discussion about specific flaws of the firmness perspective does not concern our argument.  
 
@@ -167,7 +168,7 @@ Let us cite <https://doi.org/10.3758/s13423-022-02069-1> "Nowhere in Mayo’s se
 However, they never make this explicit, and I think this is to the detriment of the paper.
 :::
 
-We added a new section that deals with the concept of severity, making it explicit how our approach differs fundamentally.
+We added a new section that puts the concept of severity into perspective and explicates how our approach differs fundamentally from it:
 
 > Theoretical risk may conceptually be related to the framework of "severity" [@mayoStatisticalInferenceSevere2018; @mayoErrorStatistics2011].
 Severity, is a Neopopperian view which asserts that there is evidence for a hypothesis just to the extent that it survives stringent scrutiny.
@@ -180,12 +181,12 @@ This makes it difficult to guide a priori decisions in planning a study, after a
 This implies that for a priori balancing Type I and Type II error rate, a researcher must assign a priori probabilities to, for example, the size of an effect.
 Since such a move not in line with frequentist rationale there is no guidelines available on how to do this.
 Third, we would argue that severity considerations assume full information about how the evidence came about and hence imply axiomatically the need for perfect preregistration.
-This comes down to frequentist understanding of probability as the outcome of a well defined random experiments.
+This comes down to frequentist understanding of probability as the outcome of a well defined random experiment.
 When judging a particular study, a frequentist, and hence a severe tester, may not assign probability to the event that the researchers did, for example, p-hack.
 The lack of knowledge on the readers side does not turn the p hacking into a random event of which we can calculate the long run frequency aka frequentist probability.
 A severe test, hence, must assume that they know the Type I and Type II error rate precisely.
 Full transparency, is hence assumed, and we can not imagine many ways except preregistration that get close to this ideal.
-This assumptions also makes it difficult to deal with less than perfect preregistrations and post-hoc changes without appealing to principles outside the core philosophy of severity.
+This assumptions also makes it hard to deal with less-than-perfect preregistrations and post-hoc changes without relying to principles outside the core philosophy of severity.
 
 > However, there also are communalities, like the strong emphasis on counterfactual consideration (imagining the hypothesis was false), and there are even proposals to reconcile Bayesian and severity considerations [@vandongenBayesianPerspectiveSeverity2023].
 
@@ -207,7 +208,7 @@ I think this argument is in the right direction, but it is not fully developed.
 I was somewhat disappointed not to see a discussion of my own paper on a conceptual analysis of the value of preregistration, as I had a similar goal as the authors when I wrote my paper, and my arguments are in the same direction, but dare I say, slightly better developed.
 :::
 
-We find ourselves in a curios position, that perhaps may be summarised as "doing the right thing, for the wrong reasons", i.e., we agree with Laken's conclusions about preregistration but we disagree how to come to these conclusions.
+Importantly, we agree with Laken's conclusions about preregistration but we fundamentally disagree with how to arrive at these conclusions.
 We take a Bayesian/inductionist view, whereas Lakens takes a frequentist/anti-inductionist view, agreeing on the end result but disagreeing on everything that comes before.
 While we find it important that readers are aware, how anti-inductionist deal with preregistration, this paper was not meant as an exercise to compare Bayesian justification for preregistration with its frequentist counterpart.
 
@@ -327,8 +328,10 @@ If the error rate is not controlled, I do not know how severely a claim has been
 The authors seem happy with the fact that preregistration reduces the Type 1 error rate even in an exploratory study.
 :::
 
-No, we are happy with low uncertainty about theoretical risk.
-An exploratory study is in our framework, signified by low theoretical risk (high Type 1 error rate).
+No. 
+As we argue in our manuscript, we are happy when uncertainty about theoretical risk is low.
+A typical exploratory study is in our framework characterized by low theoretical risk (high Type 1 error rate).
+Reducing uncertainty about its theoretical risk is still useful for scientific progress, in order to be better able to judge its theoretical risk.
 
 :::reviewer
 But I am not. Only claims with a known error rate are useful in science.
@@ -352,7 +355,7 @@ This is simply not true.
 No one discusses posterior probabilities of hypotheses in psychological science.
 :::
 
-Neither is severity as an absolute measure of corroboration a common consideration in empirical psychological work.
+Neither is severity -- as an absolute measure of corroboration -- a common consideration in empirical psychological work.
 However, the posterior probability is certainly the most classic measure of absolute confirmation in the philosophy of science.
 
 :::reviewer
@@ -407,7 +410,8 @@ Absolutely. However, note that our H is always the research hypothesis, independ
 If a researcher wants to provide evidence for a null hypothesis, this is their H, theoretical risk, then is related to power.
 We tried to clarify this in our revision:
 
-> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling, where the roles of detectability, theoretical risk and type-I/II error rate switch.
+> In fact, it is entirely possible to assume the null hypothesis as a research hypothesis, as is commonly done in e.g., structural equation modelling.
+Then, the roles of detectability, theoretical risk and type-I/II error rate switch, yet our line of reasoning stays the same.
 
 We reference the ideas of frequentist null hypothesis testing to provide readers who are more familiar with this line of reasoning with a better intuition, not to claim equivalence.
 
@@ -422,8 +426,7 @@ One could just as well say it is 'common sense' to reduce the Type 1 error rate.
 Furthermore, once again, we do not 'increase' error rates, we *control* them.
 :::
 
-Perhaps, we are a bit daft but a clear definition of error rate control eludes us.
-We are under the impression that two competing definitions are used here from time to time.
+We are under the impression that two inconsistent definitions of *control* of error rates are used by the reviewer.
 First, a definition in which control means the error rates are known (but then known by whom?).
 Second, control means ensuring certain acceptable bounds of error rates are not exceeded.
 
@@ -457,7 +460,8 @@ The authors use the word 'theoretical risk' for the probability that a test of a
 As the authors exclusively talk about the probability that statistical tests will yield a correct conclusion, 'theoretical risk' feels as a misnomer (statistical risk would be better, but severity might also be a good general term).
 :::
 
-We talk about the scientific procedures, of which a statistical test is a piece.
+Please note that our framework adressess the entire scientific procedure, of which a statistical test is only one piece.
+It would cost our framework its generality if we reduced 'theoretical risk' to only a property of the statistical test (such as severity).
 
 :::reviewer
 True, in page 13 they give an example about theoretical risk that is actually theoretical risk - but this example has nothing to do with the remainder of the paper, as all three studies can have exactly the same alpha level!
@@ -469,6 +473,7 @@ We are unable to follow this argument without more elaboration.
 They are talking about a low frequentist error rate in all their examples, and as 'theoretical risk' is the inverse of the false positive rate, it might be easier to just talk about the Type 1 error rate.
 :::
 
+This concern is conceptually very similar to the second-to-last concern.
 The point of not using a Type 1 error rate is to differentiate the statistical test from the the researcher's scientific judgement.
 Type 1 error rate is a property of a test under certain conditions.
 Theoretical risk refers to the individual judgement of a researcher about the substantive hypothesis and the study design as a whole.
@@ -532,7 +537,7 @@ Minor points: The authors say "We note these relations to underline that the Bay
 
 No, we relate our work to beliefs we think are commonly held.
 Researchers find the idea of a risky test appealing.
-Popper gives one explanation for this appeal, but we happen to have a different view.
+Popper gives one explanation for this appeal, but we happen to adopt a different philosophical view here.
 
 :::reviewer
 However, this is misleading.
@@ -542,7 +547,7 @@ It must not be interpreted, therefore, as a degree of the rationality of our bel
 The author's proposal violates the philosophical work of Popper at it's very core, and is incommensurable.
 :::
 
-As stated above, if Popper would happen to agree, we indeed would have to rethink our arguments.
+As stated above, if Popper happened to agree, we indeed would have to rethink our arguments.
 
 :::reviewer
 Just because the authors also need to rely on the likelihood ratio, does not mean it 'reconstructs' Popperian philosophy of science.
@@ -581,7 +586,7 @@ Instead, the authors could cite a better paper, like my own: "The goal of prereg
 I worked quite hard on conceptually clarifying the role of preregistration, correcting exactly the kind of misconception the authors also respond against.
 :::
 
-We appreciate this hard work.
+We appreciate this important work.
 Yet we believe that this is not the only useful perspective on the utility of preregistration.
 
 :::reviewer
@@ -624,8 +629,8 @@ They should improve terminology.
 :::
 
 We take the criticism of the terminology seriously.
-Although we have opted to stick with most of the terms as we defined them, we provided more references.
-It might also be the case that the differences in philosophical traditions lead to some criticism.
+We have opted to stick with most of the terms as we defined them initially, as we did with good reasons, we now back them up with additional references.
+
 
 :::reviewer
 \label{pt:severity}
