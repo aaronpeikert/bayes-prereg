@@ -205,7 +205,7 @@ The second argument is that the theoretical risk for a given study is generally 
 The third and last argument is that this uncertainty is reduced by applying preregistration.
 We conclude that because preregistration decreases uncertainty about the theoretical risk, which in turn increases the amount of knowledge we gain from a particular study, preregistration is potentially useful for any kind of study, no matter where it falls on the exploratory-confirmatory continuum.
 
-# Persuation and the Bayesian rationale
+# Persuasion and the Bayesian rationale
 
 If researchers plan to conduct a study, they usually hope that it will change their assessment of some theory's verisimilitude [@niiniluotoVerisimilitudeThirdPeriod1998].
 Moreover, they hope to convince other researchers can be persuaded to change their believe in a theory as well.

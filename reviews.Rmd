@@ -24,8 +24,11 @@ We are grateful for his comments and revised the manuscript in response to his s
 Due to a technical issue, the citations in the manuscript excerpts in this letter do not work correctly (they are correct in the manuscript, however).
 
 # Reviewer 1: Daniel Lakens
-
-Lakens and our own positions on preregistration built upon two long standing traditions in philosophy of science, namely inductionist and anti-inductionist, that differ fundamentally in their core assumptions.
+We begin with a summarizing our understanding of Daniel Lakens philosophical position, his main points of criticisim and our general take on how to address these issues.
+Thereafter, we will provide point-by-point responses in the usual style of response letters.
+Lakens and our own positions on preregistration fundamentally differ.
+They each build upon two long standing traditions in philosophy of science, namely _inductionist_ and _anti-inductionist_, which differ in their core epistemological assumptions.
+We believe that a lot of seemingly critical points raised by Daniel Lakens can simply be traced back to differences in these philosophical stances and thus cannot be resolved in the various sub points he raised. 
 
 Integration with Existing Literature:
 
@@ -58,7 +61,7 @@ HARKing and Error-Statistical Perspective:
 Type I and Type II error rates:
 
 * Reviewer Concern: The manuscript was perceived as downplaying the importance of statistical power (P(E|H)) in favor of focusing on Type 1 error rates.
-* Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc, depending on the test results and if the research hypothesis is H1 or H2. 
+* Our Response: The Bayesian rational considers theoretical risk and detectability simultaneously a priori. From a severity perspective, either Type I or Type II, never both, is considered post hoc (i.e., after a test result was obtained from data) depending on the test results and if the research hypothesis is H0 or H1. 
 
 Terminology and Conceptual Clarity:
 
