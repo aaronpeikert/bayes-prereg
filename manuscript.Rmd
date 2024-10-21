@@ -664,7 +664,7 @@ Within our framework, researchers have the ability to input their assumptions re
 We put subjective evaluations at the center of our considerations; we deal explicitly with researchers who are proponents of some theory (they have higher priors for the theory being true), researchers who suspect confounding variables (they assume lower theoretical risk), or those who remain doubtful if everything relevant was reported (they have higher uncertainty about theoretical risk) or even those who place greater value on incongruent evidence than others (they differ in their confirmation function).
 We, therefore, hope to not only provide a rationale for preregistration for those who subscribe to a Bayesian philosophy of science but also a framework to navigate the complicated questions that arise in the practice of preregistration.
 
-At the same time, approaching the evaluation of evidence using a Bayesian formalism is far from novel [e.g., @kuklaClinicalStatisticalTheory1990 @fiedlerWhatConstitutesStrong2017;@sprengerBayesianPhilosophyScience2019].
+At the same time, approaching the evaluation of evidence using a Bayesian formalism is far from novel [e.g., @kuklaClinicalStatisticalTheory1990; @fiedlerWhatConstitutesStrong2017; @sprengerBayesianPhilosophyScience2019].
 To our knowledge, it was not yet applied to the problem of preregistration.
 However, @oberauerAddressingTheoryCrisis2019 made use of the formalism to model the relation between theory, hypothesis, and evidence.
 In the context of this conceptualization, they discussed the usefulness of preregistration, though without applying the formalism there.
